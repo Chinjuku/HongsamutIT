@@ -5,7 +5,7 @@
 <div>
     <a href="/">Back</a>
     <a href="/" class="todo">To Do List</a>
-    <a href="/">Next</a>
+    <a href="/member">Next</a>
 </div>
 
 <style>

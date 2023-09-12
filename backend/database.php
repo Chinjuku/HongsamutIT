@@ -1,5 +1,4 @@
 <?php
-
     $host = "161.246.127.24";
     $dbUsername = "admin";
 

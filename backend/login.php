@@ -3,7 +3,6 @@ include 'database.php';
 session_start();
 $email = $_POST['email'];
 $password = $_POST['password'];
-
 // $type = $_GET['type'];
 // echo $type;
 
@@ -22,9 +21,10 @@ if ($result->num_rows > 0) {
     $_SESSION['gender'] = $row['gender'];
 
   }
-
+  
 } else {
-  echo "0 results";
+  // echo '<script>alert("Your account is incorrect.");</script>';
+  echo '<script>window.location.href = "../frontend/login.php";</script>';
 }
-header('location:../frontend/index.php');
+
 ?>

@@ -7,19 +7,6 @@
         
     </head>
     <body>
-        <header class="header"> 
-            <H2 class="logo"><a href="home-newarrival.html">HONGSAMUT</a></H2>
-            <nav class="menubar">
-
-                <a href="all.html">VIEW BOOK</a>
-                <a href="backpack.html">BACKPACK</a>
-
-                <a href="#">bibi</a>
-                <i class="bi bi-person-circle"></i>
-                
-                
-            </nav>
-        </header>
         
         <div class="main">
             <div class="leftbar"> 

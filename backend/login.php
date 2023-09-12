@@ -3,8 +3,10 @@ include 'database.php';
 session_start();
 $email = $_POST['email'];
 $password = $_POST['password'];
+// $type = $_GET['type'];
+// echo $type;
 
-$sql = "SELECT * FROM users where email = '{$email}' and password = '{$password}'";
+$sql = "SELECT * FROM register where email = '{$email}' and password = '{$password}'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -19,5 +21,5 @@ if ($result->num_rows > 0) {
 } else {
   echo "0 results";
 }
-header('location:home.php');
+header('location:../frontend/index.php');
 ?>

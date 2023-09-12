@@ -1,13 +1,12 @@
 <?php
 
-    $host = "localhost";
-    $dbUsername = "root";
-    
-    $conn = new mysqli($host, $dbUsername, "", "db_login");
+    $host = "161.246.127.24";
+    $dbUsername = "admin";
+
+    $conn = new mysqli($host, $dbUsername, "admin", "hongsamutit", 9059);
 
     if($conn->connect_error) {
         die("connection failed: " . $conn->connect_error);
     }
-    echo "Connect Successfully";
-
+    // echo "Connect Successfully";
 ?>

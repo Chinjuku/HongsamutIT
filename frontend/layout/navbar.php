@@ -1,3 +1,7 @@
+<?php
+session_start();
+$name = $_SESSION['name'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,10 +25,16 @@
 <body>
 <ul>
   <div class="list"><a href="default.asp">Home</a>
-       <a href="news.asp">News</a>
+       <a href="allbook.php">News</a>
        <a href="contact.asp">Contact</a>
        <a href="login.php">login</a></div>
-  <div><a href="about.asp">About</a></div>
+  <div><a href="about.asp">About</a>
+  <?php
+  if (isset($_SESSION['id'])){
+    echo $name;
+    echo "<a href='../backend/logout.php'> logout</a>";
+  }
+  ?></div>
 </ul>
 </body>
 </html>

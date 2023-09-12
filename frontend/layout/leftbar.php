@@ -8,11 +8,11 @@
 </head>
 <body>
 <div class="leftbar"> 
-    <h3><a href="home-newarrival.html">NEW ARRIVALS</a></h3>
+    <h3><a href="viewbook.php">NEW ARRIVALS</a></h3>
     <header>CATEGORIES</header>
     <div class="leftbarlist">
-        <a href="all.html">ALL BOOKS</a>
-        <a href="comic.html">COMIC</a>
+        <a href="all.php">ALL BOOKS</a>
+        <a href="comic.php">COMIC</a>
         <a href="#">DETECTIVE</a>
         <a href="#">FANTASY</a>
         <a href="#">FICTION</a>

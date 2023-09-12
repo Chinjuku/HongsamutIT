@@ -1,3 +1,9 @@
+<?php
+    include './layout/navbar.php';
+    include './layout/leftbar.php';
+    
+?>
+
 <!DOCTYPE html>
     <head>
         <title>HONGSAMUT</title>
@@ -7,38 +13,6 @@
         
     </head>
     <body>
-        <header class="header"> 
-            <H2 class="logo"><a href="home-newarrival.html">HONGSAMUT</a></H2>
-            <nav class="menubar">
-
-                <a href="all.html">VIEW BOOK</a>
-                <a href="backpack.html">BACKPACK</a>
-
-                <a href="#">bibi</a>
-                <i class="bi bi-person-circle"></i>
-                
-                
-            </nav>
-        </header>
-        
-        <div class="main">
-            <div class="leftbar"> 
-                <h3><a href="home-newarrival.html">NEW ARRIVALS</a></h3>
-                <header>CATEGORIES</header>
-                <div class="leftbarlist">
-                    <a href="all.html" class="all">ALL BOOKS</a>
-                    <a href="comic.html">COMIC</a>
-                    <a href="#">DETECTIVE</a>
-                    <a href="#">FANTASY</a>
-                    <a href="#">FICTION</a>
-                    <a href="#">GUIDE</a>
-                    <a href="#">HEALTH</a>
-                    <a href="#">HISTORY</a>
-                    <a href="#">HORROR</a>
-                    <a href="#">KNOWLEDGE</a>
-                    <a href="#">MYSTERY</a>
-                    <a href="#">ROMANCE</a>
-                </div>  
 
             </div>
             <div class="mid">

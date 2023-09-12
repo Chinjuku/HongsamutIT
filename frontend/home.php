@@ -11,9 +11,9 @@
 </head>
 <body>
     <?php
-    if (isset($_SESSION['id']) == null) {
-        header("location: login.php");
-    }
+    // if (isset($_SESSION['id']) == null) {
+    //     header("location: login.php");
+    // }
     ?>
     <h1>kuy</h1>
 </body>

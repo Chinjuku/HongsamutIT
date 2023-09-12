@@ -74,9 +74,9 @@ session_start();
 <body>
 <ul>
         <header class="header"> 
-            <H2 class="logo"><a href="home.php">HONGSAMUT</a></H2>
+            <H2 class="logo"><a href="index.php">HONGSAMUT</a></H2>
             <nav class="menubar">
-                <a href="allbook.php">VIEW BOOK</a>
+                <a href="viewbook.php">VIEW BOOK</a>
                 <a href="backpack.php">BACKPACK</a>
                 <?php
                     if (isset($_SESSION['id'])){
@@ -88,7 +88,7 @@ session_start();
                 </a>
             </nav>
         </header>
-  </div>
+    </div>
 </ul>
 </body>
 </html>

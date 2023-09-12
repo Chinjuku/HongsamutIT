@@ -13,11 +13,11 @@
 
 <body>
     <?php
-    if (isset($_SESSION['id']) == null) {
-        header("location: login.php");
-    } else {
-        echo "<p>1</p>";
-    }
+    // if (isset($_SESSION['id']) == null) {
+    //     header("location: login.php");
+    // } else {
+    //     echo "<p>1</p>";
+    // }
     ?>
     <p>test</p>
 </body>

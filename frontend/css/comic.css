@@ -4,16 +4,13 @@
     box-sizing: border-box;
     font: comic;
 }
-
 body{
     height: 100vh;
     background-color: #FDF5D0;
     text-align: center;
     display: flex;
     flex-direction: column;
-
 }
-
 .leftbar{
     padding-top: 70px;
     position: fixed;

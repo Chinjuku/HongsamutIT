@@ -1,3 +1,7 @@
+<?php
+    include 'layout/navbar.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +13,6 @@
 
 <body>
     <?php
-    include 'layout/navbar.php';
     if (isset($_SESSION['id']) == null) {
         header("location: login.php");
     } else {

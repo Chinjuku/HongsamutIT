@@ -9,7 +9,7 @@ include "layout/navbar.php";
     <title>Document</title>
 </head>
 <body>
-    <form action="../backend/login.php?type=1" method="post">
+    <form action="../backend/login.php" method="post">
         <input type="email" name="email" id="email">
         <input type="password" name="password" id="password">
         <br><button type="submit">sign in</button>

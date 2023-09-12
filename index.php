@@ -17,11 +17,6 @@
             <nav class="menubar">
                 <a href="allbook.php">VIEW BOOK</a>
                 <a href="backpack.php">BACKPACK</a>
-                <?php
-                    if (isset($_SESSION['id'])){
-                        echo $_SESSION['name'];
-                    }
-                ?>
                 <a href="./frontend/login.php">
                     <i href="login.php" class="bi bi-person-circle"></i>
                 </a>

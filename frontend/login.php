@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-    <a href="../index.php">Back</a>
+    <a href="../frontend/index.php">Back</a>
     <form action="../backend/login.php" method="post">
         <input type="email" name="email" id="email">
         <input type="password" name="password" id="password">

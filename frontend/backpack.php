@@ -1,3 +1,8 @@
+<?php
+    include './layout/navbar.php';
+    // include './layout/leftbar.php';
+?>
+
 <!DOCTYPE html>
     <head>
         <title>HONGSAMUT</title>
@@ -7,21 +12,11 @@
         
     </head>
     <body>
-        <header class="header"> 
-            <H2 class="logo"><a href="home-newarrival.html">HONGSAMUT</a></H2>
-            <nav class="menubar">
-
-                <a href="all.html">VIEW BOOK</a>
-                <a href="backpack.html">BACKPACK</a>
-
-                <a href="#">bibi</a>
-                <i class="bi bi-person-circle"></i>
-                
-                
-            </nav>
-        </header>
-        
-
+        <?php
+            if (isset($_SESSION['id']) == null) {
+                header("location: login.php");
+            }
+        ?>
         <div class="mid">
             <div class="backpack ">BACKPACK JA</div>
         </div>    

@@ -22,7 +22,8 @@
 <ul>
   <div class="list"><a href="default.asp">Home</a>
        <a href="news.asp">News</a>
-       <a href="contact.asp">Contact</a></div>
+       <a href="contact.asp">Contact</a>
+       <a href="login.php">login</a></div>
   <div><a href="about.asp">About</a></div>
 </ul>
 </body>

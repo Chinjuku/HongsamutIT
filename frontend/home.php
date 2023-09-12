@@ -1,5 +1,5 @@
 <?php
     session_start();
-    include './layout/header.php';
-    echo "Kuyraisus";
+    include './layout/navbar.php';
+    echo "12345";
 ?>

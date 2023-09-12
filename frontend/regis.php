@@ -1,8 +1,6 @@
 <?php
     session_start();
-    include './layout/header.php';
-
-
+    include './layout/navbar.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,7 +11,7 @@
 </head>
 <body>
 <div class="container">
-        <form class="page" action="regis.php" method="post">
+        <form class="page" action="../backend/register.php" method="post">
             <!-- /db-project/backend/userconnect.php -->
             <h3 class="lb">Registor Form</h3>
             

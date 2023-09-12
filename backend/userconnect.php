@@ -1,6 +1,5 @@
 <?php
 session_start();
-echo 'hee';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $name = $_POST["inputname"];
@@ -51,3 +50,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "All field are required";
     }
 }
+?>

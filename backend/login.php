@@ -3,8 +3,6 @@ include 'database.php';
 session_start();
 $email = $_POST['email'];
 $password = $_POST['password'];
-// $type = $_GET['type'];
-// echo $type;
 
 $sql = "SELECT * FROM register where email = '{$email}' and password = '{$password}'";
 $result = $conn->query($sql);
@@ -17,9 +15,11 @@ if ($result->num_rows > 0) {
     $_SESSION['password'] = $row['password'];
     $_SESSION['gender'] = $row['gender'];
   }
+  header('location:../frontend/index.php');
   
 } else {
-  echo "0 results";
+  echo '<script>alert("Your account is incorrect.");</script>';
+  echo '<script>window.location.href = "../frontend/login.php";</script>';
 }
-header('location:../frontend/index.php');
+
 ?>

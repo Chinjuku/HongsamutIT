@@ -1,6 +1,6 @@
 <?php
 session_start();
-$name = $_SESSION['name'];
+// $yourname = $_SESSION['name'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +31,7 @@ $name = $_SESSION['name'];
   <div><a href="about.asp">About</a>
   <?php
   if (isset($_SESSION['id'])){
-    echo $name;
+    echo $_SESSION['name'];
     echo "<a href='../backend/logout.php'> logout</a>";
   }
   ?></div>

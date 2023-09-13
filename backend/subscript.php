@@ -9,10 +9,10 @@
     $_SESSION['plan_id'] = $plan_id;
 
 
-    $sql = "SELECT * FROM user WHERE email = '{$email}'";
-    $result = $conn->query($sql);
+    $sql = "SELECT * FROM user WHERE email = '{$email}' AND plan_id = NULL"; // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
+    $result = $conn->query($sql); // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
 
-    if ($result->num_rows > 0) {
+    if ($result->num_rows == 0) {
 
       $subscription_sql = "SELECT * FROM subscription_plans WHERE plan_id = {$plan_id}";
       $subscription_result = $conn->query($subscription_sql); // ดึงข้อมูล subscription plan ที่ user เลือก

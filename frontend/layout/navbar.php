@@ -66,9 +66,6 @@ session_start();
         align-items: center;
         padding: 1px 20px;
     }
-    i {
-        margin-left: 30px;
-    }
     </style>
 </head>
 <body>
@@ -78,14 +75,15 @@ session_start();
             <nav class="menubar">
                 <a href="viewbook.php">VIEW BOOK</a>
                 <a href="backpack.php">BACKPACK</a>
-                <?php
+                <a href="profile.php">
+                    <i href="login.php" class="bi bi-person-circle"></i>
+                    <?php
                     if (isset($_SESSION['id'])){
                         echo $_SESSION['name'];
                     }
-                ?>
-                <a href="profile.php">
-                    <i href="login.php" class="bi bi-person-circle"></i>
+                    ?>
                 </a>
+                
             </nav>
         </header>
     </div>

@@ -21,6 +21,7 @@ if ($result->num_rows > 0) {
     $_SESSION['gender'] = $row['gender'];
 
   }
+  header('location:../frontend/index.php');
   
 } else {
   // echo '<script>alert("Your account is incorrect.");</script>';

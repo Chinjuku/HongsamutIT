@@ -26,4 +26,19 @@
     </div>
 </div>
 </body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        // Wait for the document to be fully loaded before binding the click event.
+        $("a").click(function(event) {
+            event.preventDefault(); // Prevent the default behavior of the anchor element.
+            
+            // Remove background color from all anchor elements.
+            $("a").css("background-color", "");
+            
+            // Set the background color of the clicked anchor element to white.
+            $(this).css("background-color", "white");
+        });
+    });
+</script>
+</script>
 </html>

@@ -19,7 +19,6 @@
     width: 100%;
     line-height: 60px;
     border-top: 1px solid #000000;
-
 }
 .leftbar header{
     background-color: #4A4141;
@@ -45,7 +44,19 @@ h3{
     text-decoration: none;
 }
 .leftbar h3{
-
     background-color: #485545;
     padding-left: 20px;
+}
+.leftbar a[href="all.php"]:active {
+    background-color: #485545;
+}
+
+/* Style for Page 2 */
+.leftbar a[href="comic.php"]:active {
+    background-color: #485545;
+}
+
+/* Style for Page 3 */
+.leftbar a[href=""] {
+    background-color: #485545;
 }

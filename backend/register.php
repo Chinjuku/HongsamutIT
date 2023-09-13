@@ -1,19 +1,27 @@
 <?php
     include 'database.php';
-    session_start();
+
     $name = $_POST["inputname"];
     $email = $_POST["email"];
     $password = $_POST["password"];
-    $gender = $_POST["gender"];
+    $phone_num = $_POST["phone_num"];
     
     // คำสั่ง SQL สำหรับค้นหาชื่อและอีเมลในฐานข้อมูล
     $sql = "SELECT * FROM register WHERE email = '{$email}' LIMIT 1";
     $stmt = $conn->query($sql);
 
+    $sql_2 = "SELECT * FROM register WHERE phone_number = '{$phone_num}' LIMIT 1";
+    $stmt_2 = $conn->query($sql_2);
+
     if ($stmt->num_rows == 1) {
-        echo '<script>alert("This name/email already existed.");</script>';
+        echo '<script>alert("This email already existed.");</script>';
         echo '<script>window.location.href = "../frontend/regis.php";</script>';
         // header('Location: ../frontend/regis.php');
+    }
+    else if($stmt_2->num_rows == 1){
+        echo '<script>alert("This phonenumber already existed.");</script>';
+        echo '<script>window.location.href = "../frontend/regis.php";</script>';
+
     } else {
         // ถ้าไม่มีชื่อหรืออีเมลนี้ในระบบ สามารถเพิ่มข้อมูลได้
         $sql = "INSERT INTO register (name, email, password, gender)

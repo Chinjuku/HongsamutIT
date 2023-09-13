@@ -6,7 +6,7 @@
     $email = $_SESSION['email'];
     $plan_id = $_POST['plan'];
 
-    $sql = "SELECT * FROM register WHERE email = '{$email}'";
+    $sql = "SELECT * FROM user WHERE email = '{$email}'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

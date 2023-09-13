@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include './layout/navbar.php';
 ?>
 <!DOCTYPE html>
@@ -16,40 +15,45 @@
             <h3 class="lb">Registor Form</h3>
             
             <div class="form-control">    
-            <label class="lb">Fullname</label>
-             <input id="inputname" type="text" name="inputname" placeholder="Fullname" class="input" required>
+            <label class="lb">Username</label>
+            <input id="user_name" type="text" name="user_name" placeholder="Username" class="input" required>
+            <small>type error</small>
+            </div>
+
+            <div class="form-control">    
+            <label class="lb">First Name</label>
+            <input id="first_name" type="text" name="first_name" placeholder="First name" class="input" required>
+            <small>type error</small>
+            </div>
+
+            <div class="form-control">    
+            <label class="lb">Last Name</label>
+            <input id="last_name" type="text" name="last_name" placeholder="Last name" class="input" required>
             <small>type error</small>
             </div>
             
             <div class="form-control">    
             <label for="input-email" class="lb">Email</label>
-             <input id="input-email" type="text" name="email" placeholder="Email" class="input" required>
+            <input id="input-email" type="text" name="email" placeholder="Email" class="input" required>
             <small>type error</small>
             </div>
 
             <div class="form-control">    
             <label for="input-password" class="lb">Password</label>
-             <input id="input-password" type="password" name="password" placeholder="Password" class="input" required>
-            <small>type error</small>
-            </div>  
-
-            <div class="form-control">
-            <label for="input-confirm-password" class="lb">Confirm Password</label>
-             <input id="input-confirm-password" type="password" name="confirm-password" placeholder="Confirm-Password" class="input" required>
+            <input id="input-password" type="password" name="password" placeholder="Password" class="input" required>
             <small>type error</small>
             </div>
 
             <div class="form-control">    
-            <label for="input-gender" class="lb">Gender</label>
-            <div><input type="radio" id="male" name="gender" value="male" required><label for="male">Male</label></div>
-            <div><input type="radio" id="female" name="gender" value="female" required><label for="female">Female</label></div>
+            <label for="phone_num" class="lb">Phone Number</label>
+            <input type="text" name="phone_num" placeholder="phone_num" class="input" required>
             <small>type error</small>
             </div>
 
             <button type="submit" class="button mar" value="submit">Registor</button>
         </form>
     </div>
-    <p id="child" class="ageform">kk
+    <p id="child" class="ageform">
     </p>
 </body>
 </html>

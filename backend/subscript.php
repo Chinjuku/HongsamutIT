@@ -2,7 +2,7 @@
 <?php
     include 'database.php';
   
-    $user_id = $_SESSION['user_id'] 
+    $user_id = $_SESSION['user_id'];
     $email = $_SESSION['email'];
     $plan_id = $_POST['plan'];
 

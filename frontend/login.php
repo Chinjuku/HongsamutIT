@@ -13,7 +13,7 @@
 <body>
     <a href="../frontend/index.php">Back</a>
     <form action="../backend/login.php" method="post">
-        <input type="email" name="email" id="email">
+        <input type="text" name="user_name" id="username">
         <input type="password" name="password" id="password">
         <br><button type="submit">sign in</button>
     </form>

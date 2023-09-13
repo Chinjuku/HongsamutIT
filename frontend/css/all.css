@@ -37,17 +37,12 @@ body{
     left: 0;
     width: 250px;
     height: 100%;
-    
-
     color: #eaeaea;
 
 }
 
-
-
 .mid{
     margin-top: 10%;
-
     justify-content: center;
     padding-left: 13%;
     width: 100%;
@@ -117,7 +112,6 @@ h3{
     text-decoration: none;
 }
 .all{
-
     background-color: #485545;
 }
 .container{
@@ -135,7 +129,6 @@ h3{
     width: 200px;
     height: 300px;
     z-index: 1000;
-
     margin: 10px;
     border: #812d2d;
     border-style: solid;

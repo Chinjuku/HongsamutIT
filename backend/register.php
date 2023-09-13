@@ -1,16 +1,19 @@
 <?php
     include 'database.php';
+    session_start();
 
-    $name = $_POST["inputname"];
+    $username = $_POST["user_name"];
+    $firstname = $_POST["first_name"];
+    $lastname = $_POST["last_name"];
     $email = $_POST["email"];
     $password = $_POST["password"];
     $phone_num = $_POST["phone_num"];
     
     // คำสั่ง SQL สำหรับค้นหาชื่อและอีเมลในฐานข้อมูล
-    $sql = "SELECT * FROM register WHERE email = '{$email}' LIMIT 1";
+    $sql = "SELECT * FROM user WHERE email = '{$email}' LIMIT 1";
     $stmt = $conn->query($sql);
 
-    $sql_2 = "SELECT * FROM register WHERE phone_number = '{$phone_num}' LIMIT 1";
+    $sql_2 = "SELECT * FROM user WHERE phone_number = '{$phone_num}' LIMIT 1";
     $stmt_2 = $conn->query($sql_2);
 
     if ($stmt->num_rows == 1) {
@@ -24,16 +27,15 @@
 
     } else {
         // ถ้าไม่มีชื่อหรืออีเมลนี้ในระบบ สามารถเพิ่มข้อมูลได้
-        $sql = "INSERT INTO register (name, email, password, gender)
-         VALUES ('{$name}', '{$email}', '{$password}', '{$gender}')";
+        $sql = "INSERT INTO user (user_name, first_name, last_name, email, password, phone_number)
+         VALUES ('{$username}', '{$firstname}', '{$lastname}','{$email}', '{$password}', '{$phone_num}')";
 
         // ใช้ prepared statement
         $stmt = $conn->prepare($sql);
-        // $stmt->bind_param("ssss", $name, $email, $password, $gender);
 
         if ($stmt->execute()) {
             echo "New record created successfully";
-            header('Location: ../frontend/home.php');
+            header('Location: ../frontend/index.php');
             exit();
         } else {
             echo "Error: " . $stmt->error;

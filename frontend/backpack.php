@@ -13,7 +13,7 @@
     </head>
     <body>
         <?php
-            if (isset($_SESSION['id']) == null) {
+            if (isset($_SESSION['user_id']) == null) {
                 header("location: login.php");
             }
         ?>

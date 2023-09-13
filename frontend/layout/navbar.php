@@ -1,6 +1,5 @@
 <?php
 session_start();
-// $yourname = $_SESSION['name'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,13 +16,10 @@ session_start();
         box-sizing: border-box;
         font: comic;
     }
-    /* body{
-        height: 100vh;
+    body{
         background-color: #FDF5D0;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    } */
+        margin-top: 100px;
+    }
     .menubar a:after{
     content: "";
     position: absolute;
@@ -78,8 +74,8 @@ session_start();
                 <a href="profile.php">
                     <i href="login.php" class="bi bi-person-circle"></i>
                     <?php
-                    if (isset($_SESSION['id'])){
-                        echo $_SESSION['name'];
+                    if (isset($_SESSION['user_id'])){
+                        echo $_SESSION['user_name'];
                     }
                     ?>
                 </a>

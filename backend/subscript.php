@@ -3,13 +3,13 @@
     include 'database.php';
     require_once 'gbprimepay.php';
   
-    $user_id = $_SESSION['user_id'] 
+    $user_id = $_SESSION['user_id'];
     $email = $_SESSION['email'];
     $plan_id = $_POST['plan'];
     $_SESSION['plan_id'] = $plan_id;
 
 
-    $sql = "SELECT * FROM register WHERE email = '{$email}'";
+    $sql = "SELECT * FROM user WHERE email = '{$email}'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

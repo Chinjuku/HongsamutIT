@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mid{
+    position: absolute;
+    margin-top: 69px;
+    background-color: #FDF5D0;
+    width: 100%;
+    height: 800px
+}
+
+.mybackpack{
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    color: #485545;
+    margin-top: 100px;
+    padding-left: 250px;
+}
+.mybackpackdes{
+    color: #372114;
+    margin-top: 10px;
+    padding-left: 270px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottombar{
+
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #FDF5D0;
+    padding: 10px;
+    justify-content: right;
+    /* border-top: 2px solid black; */
+
+}
+
+.borrowing{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    width: 500px;
+    height: 80px;
+    padding: 5px;
+    margin-right: 100px;
+    line-height: 68px;
+    /* padding: 20px; */
+    /* margin-left: 1200px;
+    margin-right: 100px; */
+}
+
+
+
+.table2{
+    width: 1400px;
+    margin-top: 30px;
+    background-color: #fffef8;
+    border-collapse: collapse;
+    margin-left: 240px;
+    font-size: 20px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+
+}
+.table2 thead tr{
+    color: white;
+    background-color: #372114;
+    text-align: left;
+    font-weight: bold;
+}
+.table2 th, .table2 td{
+    padding: 25px 15px;
+}
+.table2 tbody tr{
+    border-bottom: 1px solid #f8f8f8;
+
+}
+.table2 tbody tr:nth-of-type(even){
+    background-color: #e9e6d9;
+    
+}
+.table2 tbody tr:last-of-type{
+    border-bottom: 1px solid #372114 ;
+}
+.circle1{
+    background-color: #697566;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.circle2{
+    background-color: #697566;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.circle3{
+    background-color: #697566;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.circle4{
+    background-color: #697566;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.circle5{
+    background-color: #372114;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+hr{
+    margin-left: 200px;
+    padding-left: 20px;
+    margin-top: 170px;
+    border-top: 2px solid #2D342C;
+    border-radius: 10px;
+    width: 1500px;
+}

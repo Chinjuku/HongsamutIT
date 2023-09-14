@@ -37,13 +37,15 @@
         if ($stmt->execute()) {
             session_start();
             echo "New record created successfully";
-            header('Location: ../frontend/index.php');
+            echo '<script>window.location.href = "../frontend/index.php";</script>';
             exit();
         } else {
             echo "Error: " . $stmt->error;
-            header('Location: ../frontend/regis.php');
+            echo '<script>window.location.href = "../frontend/regis.php";</script>';
             exit();
         }
     }
 
 ?>
+
+

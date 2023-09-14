@@ -12,7 +12,7 @@
 </head>
 <body>
     <section class="add-books">
-        <h1 class="title">Book</h1>
+        <h1 class="title">BOOK</h1>
 
         <form action="" method="post" enctype="multipart/form-data">
             <h3>add a books</h3>

@@ -1,5 +1,6 @@
 .leftbar{
-    /* padding-top: 70px; */
+    /* margin-top: 65px; */
+    padding-top: 65px;
     position: fixed;
     background-color: #272222;
     flex-direction: column;
@@ -17,7 +18,7 @@
     display: block;
     height: 100%;
     width: 100%;
-    line-height: 60px;
+    line-height: 42px;
     border-top: 1px solid #000000;
 }
 .leftbar header{

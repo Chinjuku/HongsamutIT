@@ -18,7 +18,8 @@
             <h3>add a books</h3>
             <input type="text" name="name" class="box" placeholder="enter book name" require>
             <input type="text" name="name" class="box" placeholder="enter author" require>
-            <input type="text" name="name" class="box" placeholder="enter category" require>
+            <!-- <input type="text" name="name" class="box" placeholder="enter category" require> -->
+            <!-- ทำเป็นselector -->
 
             <input type="file" accept="image/jpg, image/jpeg, image/png" class="box1" require>
 

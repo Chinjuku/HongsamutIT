@@ -1,35 +1,33 @@
 *{
     margin: 0;
     padding: 0;
+    max-width: 1480px;
+}
+body{
+    background-color: #FDF5D0;
 }
 .mid{
     position: absolute;
     margin-top: 69px;
     background-color: #FDF5D0;
-    width: 100%;
+    max-width: 1480px;
     height: 800px
 }
-
 .mybackpack{
     position: relative;
     font-size: 40px;
     font-weight: bold;
     color: #3a3535;
     margin-top: 100px;
-    padding-left: 250px;
+    padding-left: 50px;
 }
 .mybackpackdes{
     color: #697566;
     margin-top: 10px;
-    padding-left: 270px;
+    padding-left: 10px;
     font-size: 20px;
 }
-
-
-
-
 .bottombar{
-
     display: flex;
     position: fixed;
     width: 100%;
@@ -65,7 +63,7 @@
     margin-top: 30px;
     background-color: #f5f5f5;
     border-collapse: collapse;
-    margin-left: 240px;
+    margin-left: 40px;
     font-size: 20px;
     border-radius: 10px 10px 0 0;
     overflow: hidden;

@@ -23,7 +23,7 @@
     <div id = "card">
         <div class="profile-box">
             <div class="back-icon">
-            <a href="#"><i class="fa fa-backward" aria-hidden="true"></i></a>
+            <a href="index.php"><i class="fa fa-backward" aria-hidden="true"></i></a>
             </div>
             <div class="txt_field">
                 <label>Username: </label>

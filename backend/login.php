@@ -1,6 +1,6 @@
 <?php
-include 'database.php';
 session_start();
+include 'database.php';
 $username = $_POST['user_name'];
 $password = $_POST['password'];
 // $type = $_GET['type'];

@@ -34,6 +34,7 @@
         $stmt = $conn->prepare($sql);
 
         if ($stmt->execute()) {
+            session_start();
             echo "New record created successfully";
             header('Location: ../frontend/index.php');
             exit();

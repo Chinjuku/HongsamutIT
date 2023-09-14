@@ -67,6 +67,7 @@
 <body>
 <ul>
         <header class="header"> 
+
             <H2 class="logo"><a href="index.php">HONGSAMUT</a></H2>
             <nav class="menubar">
                 <a href="viewbook.php">VIEW BOOK</a>
@@ -76,7 +77,10 @@
                     <?php
                     if (isset($_SESSION['user_id'])){
                         echo $_SESSION['user_name'];
-                    }
+                            if($_SESSION['user_type'] == "admin") {
+                            echo "<a href='addbook.php'>ADD BOOK</a>";
+                        }
+                        }            
                     ?>
                 </a>
                 

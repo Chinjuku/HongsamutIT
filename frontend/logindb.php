@@ -29,11 +29,11 @@ if ($result->num_rows > 0) {
     $_SESSION['password'] = $row['password'];
 
   }
-  header('location:../frontend/index.php');
+  header('location:index.php');
   
 } else {
   // echo '<script>alert("Your account is incorrect.");</script>';
-  echo '<script>window.location.href = "../frontend/login.php";</script>';
+  echo '<script>window.location.href = "login.php";</script>';
 }
 
 ?>

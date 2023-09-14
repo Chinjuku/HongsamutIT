@@ -59,13 +59,6 @@
             </select>
             </div>
 
-            <!-- <div class="form-control">    
-            <label for="user_type" class="lb">Gender</label>
-            <div><input type="radio" name="user_type" value="user" checked>User</div>
-            <div><input type="radio" name="user_type" value="admin">Admin</div>
-            <small>type error</small>
-            </div> -->
-
             <button type="submit" class="button mar" value="submit">Registor</button>
         </form>
     </div>

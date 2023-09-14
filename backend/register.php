@@ -37,7 +37,7 @@
         if ($stmt->execute()) {
             session_start();
             echo "New record created successfully";
-            echo '<script>window.location.href = "../frontend/index.php";</script>';
+            echo '<script>window.location.href = "../frontend/login.php";</script>';
             exit();
         } else {
             echo "Error: " . $stmt->error;

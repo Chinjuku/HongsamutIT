@@ -12,7 +12,7 @@
     </head>
     <body>
         <?php
-            session_start();
+            // session_start();
             include './layout/navbar.php';
             if (isset($_SESSION['user_id']) == null) {
                 echo '<script>window.location.href = "login.php";</script>';

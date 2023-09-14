@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include './layout/navbar.php';
     include './layout/leftbar.php';
 ?>

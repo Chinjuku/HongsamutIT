@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include './layout/navbar.php';
     include './layout/page.php';
 ?>
@@ -16,7 +15,8 @@
         if (isset($_SESSION['user_id']) == null) {
             header("location: login.php");
         }
-        echo "<a href='../backend/logout.php'> logout</a>";
+        // echo "<a href='../backend/logout.php'> logout</a>";
     ?>
+    <a href="../backend/logout.php">logout</a>
 </body>
 </html>

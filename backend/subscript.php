@@ -48,5 +48,5 @@
     } else {
       echo "YOU ALREADY SUBSCRIBED TO A PLAN";
     }
-
+    
     header('location:../frontend/index.php');

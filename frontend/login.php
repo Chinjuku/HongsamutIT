@@ -16,7 +16,7 @@
             <!-- <h2><a href="../frontend/index.php"><i class="fa fa-backward" aria-hidden="true"></i>Back</a></h2>
 </div> -->
     <div class="main">
-        <h1>ลอกคราบ</h1>
+        <h1>login</h1>
         <form action="../backend/login.php" method="post">
             <div class="txt_field">
                 <input type="text" name="user_name" id="username">

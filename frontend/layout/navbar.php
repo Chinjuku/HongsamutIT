@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,6 +74,7 @@ session_start();
                 <a href="profile.php">
                     <i href="login.php" class="bi bi-person-circle"></i>
                     <?php
+                    session_start();
                     if (isset($_SESSION['user_id'])){
                         echo $_SESSION['user_name'];
                     }

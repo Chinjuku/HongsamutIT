@@ -50,10 +50,9 @@
                     echo $_SESSION['email'];
                 ?>
             </div>
-            <?php
-                    // echo $_SESSION['user_type'];
-                ?>
-            <a href='../backend/logout.php'> logout</a>
+            <form action="../backend/logout.php" class="log">
+            <button type="submit"> Logout </button>
+            </form>
         </div>
     </div>
 </body>

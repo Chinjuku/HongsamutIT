@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
     $_SESSION['password'] = $row['password'];
 
   }
-  header('location:../frontend/index.php');
+  echo '<script>window.location.href = "../frontend/index.php";</script>'
   
 } else {
   // echo '<script>alert("Your account is incorrect.");</script>';

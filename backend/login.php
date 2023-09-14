@@ -1,10 +1,8 @@
 <?php
-session_start();
+// session_start();
 include 'database.php';
 $username = $_POST['user_name'];
 $password = $_POST['password'];
-// $type = $_GET['type'];
-// echo $type;
 
 $sql = "SELECT * FROM user where user_name = '{$username}' and password = '{$password}'";
 $result = $conn->query($sql);
@@ -19,6 +17,10 @@ if ($result->num_rows > 0) {
     $_SESSION['user_id'] = $row['user_id'];
     $_SESSION['user_name'] = $row['user_name'];
     $_SESSION['password'] = $row['password'];
+    $_SESSION['first_name'] = $row['first_name'];
+    $_SESSION['last_name'] = $row['last_name'];
+    $_SESSION['user_type'] = $row['user_type'];
+    $_SESSION['phone_num'] = $row['phone_number'];
 
   }
   echo '<script>window.location.href = "../frontend/index.php";</script>';

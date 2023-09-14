@@ -1,4 +1,4 @@
-!-- create supscription system for already login user -->
+<!-- create supscription system for already login user -->
 <?php
     include 'database.php';
     require_once 'gbprimepay.php';
@@ -37,7 +37,7 @@
         $qrcode = $gbprimepay->promptpay([ // สร้าง qrcode สำหรับชำระเงิน
             'amount' => '$plan_price',
             'referenceNo' => '$payment_id',
-            'backgroundUrl' => 'https://[weburl]/gbprimepay.webhook.php', // ให้ GBPrimePay ส่งข้อมูลกลับมาที่ไหน
+            'backgroundUrl' => 'https://hongsamutit2.iservkmitl.tech/gbprimepay.webhook.php', // ให้ GBPrimePay ส่งข้อมูลกลับมาที่ไหน
         ], $token);
         echo '<img src="' . $qrcode . '">'; // แสดง qrcode สำหรับชำระเงิน
         

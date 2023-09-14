@@ -16,9 +16,9 @@
 <body>
     <?php
         if (isset($_SESSION['user_id']) == null) {
-            header("location: login.php");
+            echo '<script>window.location.href = "login.php";</script>';
         }
-        echo "<a href='../backend/logout.php'> logout</a>";
+        // echo "<a href='../backend/logout.php'> logout</a>";
     ?>
     <div id = "card">
         <div class="profile-box">
@@ -26,21 +26,34 @@
             <a href="#"><i class="fa fa-backward" aria-hidden="true"></i></a>
             </div>
             <div class="txt_field">
-                <label>Username</label>
-                <input type="text" name="user_name" id="username" disabled>
+                <label>Username: </label>
+                <?php
+                    echo $_SESSION['user_name'];
+                ?>
             </div>
             <div class="txt_field1">
-                <label>Name</label>
-                <input type="text" name="user_name" id="username" disabled>
+                <label>Name: </label>
+                <?php
+                    echo $_SESSION['first_name'], ' ' ,$_SESSION['last_name'];
+                ?>
             </div>
             <div class="txt_field2">
-                <label>Tel</label>
-                <input type="text" name="user_name" id="username" disabled>
+                <label>Tel:</label>
+                <?php
+                    echo $_SESSION['phone_num'];
+                    // var_dump($_SESSION['phone_num']);
+                ?>
             </div>
             <div class="txt_field1">
-                <label>Email</label>
-                <input type="text" name="user_name" id="username" disabled>
+                <label>Email:</label>
+                <?php
+                    echo $_SESSION['email'];
+                ?>
             </div>
+            <?php
+                    // echo $_SESSION['user_type'];
+                ?>
+            <a href='../backend/logout.php'> logout</a>
         </div>
     </div>
 </body>

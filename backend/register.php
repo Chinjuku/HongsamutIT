@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     include 'database.php';
 
     $username = $_POST["user_name"];
@@ -37,12 +37,15 @@
         if ($stmt->execute()) {
             session_start();
             echo "New record created successfully";
-            header('Location: ../frontend/index.php');
+            echo '<script>window.location.href = "../frontend/login.php";</script>';
             exit();
         } else {
             echo "Error: " . $stmt->error;
-            header('Location: ../frontend/regis.php');
+            echo '<script>window.location.href = "../frontend/regis.php";</script>';
             exit();
         }
     }
+
 ?>
+
+

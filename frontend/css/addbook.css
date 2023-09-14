@@ -1,0 +1,9 @@
+.add-books form{
+    background-color: antiquewhite;
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    
+}

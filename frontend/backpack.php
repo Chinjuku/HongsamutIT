@@ -15,7 +15,7 @@
             session_start();
             include './layout/navbar.php';
             if (isset($_SESSION['user_id']) == null) {
-                header("location: login.php");
+                echo '<script>window.location.href = "login.php";</script>';
             }
         ?>
         <div class="mid">

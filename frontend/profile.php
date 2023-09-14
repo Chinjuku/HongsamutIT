@@ -16,7 +16,7 @@
 <body>
     <?php
         if (isset($_SESSION['user_id']) == null) {
-            header("location: login.php");
+            echo '<script>window.location.href = "login.php";</script>';
         }
         // echo "<a href='../backend/logout.php'> logout</a>";
     ?>

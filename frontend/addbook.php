@@ -19,8 +19,12 @@
             <input type="text" name="name" class="box" placeholder="enter book name" require>
             <input type="text" name="name" class="box" placeholder="enter author" require>
             <input type="text" name="name" class="box" placeholder="enter category" require>
-            <input type="file" accept="image/jpg, image/jpeg, image/png" class="box" require>
-            <input type="submit" value="add book" name="add_book" class="btn">
+
+            <input type="file" accept="image/jpg, image/jpeg, image/png" class="box1" require>
+
+            <div>
+                <input type="submit" value="add book" name="add_book" class="btn">
+            </div>
         </form>
 
     </section>

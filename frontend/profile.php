@@ -13,12 +13,12 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <?php
+    <?php
         if (isset($_SESSION['user_id']) == null) {
             header("location: login.php");
         }
         echo "<a href='../backend/logout.php'> logout</a>";
-    ?> -->
+    ?>
     <div id = "card">
         <div class="profile-box">
             <div class="back-icon">

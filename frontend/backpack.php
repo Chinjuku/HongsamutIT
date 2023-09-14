@@ -1,6 +1,4 @@
 <?php
-    session_start();
-    include './layout/navbar.php';
     // include './layout/leftbar.php';
 ?>
 
@@ -14,6 +12,8 @@
     </head>
     <body>
         <?php
+            session_start();
+            include './layout/navbar.php';
             if (isset($_SESSION['user_id']) == null) {
                 header("location: login.php");
             }

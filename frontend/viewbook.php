@@ -1,7 +1,6 @@
 <?php
     include './layout/navbar.php';
     include './layout/leftbar.php';
-    
 ?>
 
 <!DOCTYPE html>

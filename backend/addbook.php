@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     include 'database.php';
 
     $book_name = $_POST['bookname'];

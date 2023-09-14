@@ -70,6 +70,11 @@
 
             <H2 class="logo"><a href="index.php">HONGSAMUT</a></H2>
             <nav class="menubar">
+                <?php
+                    if($_SESSION['user_type'] == "user") {
+                        echo "<a href='member.php'>MEMBER</a>";
+                    }
+                ?>
                 <a href="viewbook.php">VIEW BOOK</a>
                 <a href="backpack.php">BACKPACK</a>
                 <a href="profile.php">

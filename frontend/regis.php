@@ -1,5 +1,6 @@
 <?php
-    include './layout/navbar.php';
+    // session_start();
+    include './layout/page.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -48,6 +49,14 @@
             <label for="phone_num" class="lb">Phone Number</label>
             <input type="text" name="phone_num" placeholder="phone_num" class="input" required>
             <small>type error</small>
+            </div>
+
+            <div class="form-control">    
+            <label for="phone_num" class="lb">User Type</label>
+            <select name="user_type" class="input">
+                <option value="user" name="user_type" required>User</option>
+                <option value="admin" name="user_type">Admin</option>
+            </select>
             </div>
 
             <button type="submit" class="button mar" value="submit">Registor</button>

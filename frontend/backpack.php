@@ -1,6 +1,7 @@
 <?php
-    include './layout/navbar.php';
+    session_start();
     // include './layout/leftbar.php';
+    include './layout/navbar.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,8 +14,8 @@
     </head>
     <body>
         <?php
-            if (isset($_SESSION['user_id']) == null) {
-                header("location: login.php");
+            if ($_SESSION['user_id'] == NULL) {
+                echo '<script>window.location.href = "login.php";</script>';
             }
         ?>
         <div class="main">

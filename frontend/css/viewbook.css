@@ -9,8 +9,8 @@ body{
     background-color: #FDF5D0;
     text-align: center;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    padding-left: 400px;
 }
 
 .mid{
@@ -32,7 +32,7 @@ body{
     position: relative;
     display: flex;
     margin-top: 5%;
-    margin-left: 8.5%;
+    margin-left: 100px;
     width: 100%;
     height: auto;
     justify-content: center;

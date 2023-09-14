@@ -1,5 +1,5 @@
 <?php
-session_start();
+    // session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,8 +67,14 @@ session_start();
 <body>
 <ul>
         <header class="header"> 
+
             <H2 class="logo"><a href="index.php">HONGSAMUT</a></H2>
             <nav class="menubar">
+                <?php
+                    if($_SESSION['user_type'] == "user") {
+                        echo "<a href='member.php'>MEMBER</a>";
+                    }
+                ?>
                 <a href="viewbook.php">VIEW BOOK</a>
                 <a href="backpack.php">BACKPACK</a>
                 <a href="profile.php">
@@ -76,7 +82,10 @@ session_start();
                     <?php
                     if (isset($_SESSION['user_id'])){
                         echo $_SESSION['user_name'];
-                    }
+                            if($_SESSION['user_type'] == "admin") {
+                            echo "<a href='addbook.php'>ADD BOOK</a>";
+                        }
+                        }            
                     ?>
                 </a>
                 

@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $host = "161.246.127.24";
     $dbUsername = "admin";
 
@@ -7,5 +8,7 @@
     if($conn->connect_error) {
         die("connection failed: " . $conn->connect_error);
     }
-    echo "Connect Successfully";
+    else{
+        echo "Connect Successfully";
+    }
 ?>

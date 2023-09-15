@@ -18,7 +18,7 @@
                 <p>Starter</p>
                 <h3>10$ <span>/ month</span></h3>
                 <ul>
-                    <li>สามารถยืมหนังสือได้ 10 เล่มขึ้นไป</li>
+                    <li>สามารถยืมหนังสือได้สูงสุด 10 เล่ม</li>
                     <li>1 ครั้ง / 1 เดือน</li>
                 </ul>
                 <button>Add to Member</button>
@@ -27,7 +27,7 @@
                 <p>Premium</p>
                 <h3>15$ <span>/ month</span></h3>
                 <ul>
-                    <li>สามารถยืมหนังสือได้ 20 เล่มขึ้นไป</li>
+                    <li>สามารถยืมหนังสือได้สูงสุด 20 เล่ม</li>
                     <li>1 ครั้ง / 1 เดือน</li>
                 </ul>
                 <button>Add to Member</button>
@@ -36,8 +36,8 @@
                 <p>All-in</p>
                 <h3>100$ <span>/ year</span></h3>
                 <ul>
-                    <li>สามารถยืมหนังสือได้ 10 เล่มขึ้นไป</li>
-                    <li>1 ครั้ง / 1 เดือน</li>
+                    <li>สามารถยืมหนังสือสูงสุด 10 เล่ม</li>
+                    <li>1 ครั้ง / 1 ปี</li>
                 </ul>
                 <button>Add to Member</button>
             </div>

@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #FDF5D0;
+}
 .mid{
     width: 100%;
     position: absolute;
@@ -126,7 +129,6 @@ hr{
     width: 1500px;
 }
 
-
 @media only screen and (max-width: 1440px){
     .table2{
         width: 1200px;
@@ -137,7 +139,6 @@ hr{
         font-size: 20px;
         border-radius: 10px 10px 0 0;
         overflow: hidden;
-    
     }
     .bottombar{
         display: flex;
@@ -148,7 +149,6 @@ hr{
         padding: 10px;
         justify-content: right;
         /* border-top: 2px solid black; */
-    
     }
     .mid{
         width: 1440px;

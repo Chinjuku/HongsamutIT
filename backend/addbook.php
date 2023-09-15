@@ -27,8 +27,8 @@
         // if(ชื่อหนังสือกับชื่อเจ้าของตรงกัน){
             //เพิ่มจำนวนหนังสือ +1
         // }
-        $sql = "INSERT INTO books (book_id, book_name, book_owner, cate_id, status, imgsrc)
-        VALUES (12,'{$book_name}', '{$book_owner}', '{$cate_id}', 1, '{$url}')";
+        $sql = "INSERT INTO books (book_name, book_owner, cate_id, status, imgsrc)
+        VALUES ('{$book_name}', '{$book_owner}', '{$cate_id}', 1, '{$url}')";
 
         $stmt = $conn->prepare($sql);
 

@@ -1,5 +1,6 @@
 <?php
-    // session_start();
+    session_start();
+    include './layout/navbar.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

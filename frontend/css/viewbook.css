@@ -22,7 +22,7 @@ body{
 .newarrival{
     width: 100%;
     margin-top: 10%;
-    /* margin-left: 8.5%; */
+    margin-left: 8.5%;
     font-size: 120px;
     align-items: center;
     color:#272222;
@@ -34,13 +34,13 @@ body{
     display: flex;
     margin-top: 5%;
     margin-left: 160px;
-    width: 100%;
+    width: 1000px;
     height: auto;
 }
 .nabox{
     position: relative;
     background-color:#FBFCF8;
-    width: 200px;
+    width: 20%;
     height: 300px;
     border-radius: 10px;
     margin: 10px;

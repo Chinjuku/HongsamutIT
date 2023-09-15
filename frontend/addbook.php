@@ -37,7 +37,8 @@
                 </select>
             </div>
             <!-- ทำเป็นselector -->
-            <input type="file" accept="image/jpg, image/jpeg, image/png" class="box1" name="imgsrc" id='file' required>
+            <!-- <input type="file" accept="image/jpg, image/jpeg, image/png" class="box1" name="imgsrc" id='file' required> -->
+            <input type="url" name="imgsrc" placeholder="Enter your url image" required>
             <div>
                 <input type="submit" value="add book" name="add_book" class="btn">
             </div>

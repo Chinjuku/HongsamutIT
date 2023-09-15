@@ -4,9 +4,10 @@
     $book_name = $_POST['bookname'];
     $book_owner = $_POST['bookowner'];   
     $cate_id = $_POST['cate_id']; //รับมาจากไอดีหมวดหมู่ 1-7 (เบ็ดเตล็ด == 8 - ค่าเริ่มต้น)
-    $imagePath = $_FILES['imgsrc']['tmp_name'];  // เปลี่ยนเป็นตำแหน่งของรูปภาพของคุณ
-    $imageData = file_get_contents($imagePath);
-    $url = base64_encode($imageData);
+    $url = $_POST['imgsrc'];
+    // $imagePath = $_FILES['imgsrc']['tmp_name'];  // เปลี่ยนเป็นตำแหน่งของรูปภาพของคุณ
+    // $imageData = file_get_contents($imagePath);
+    // $url = base64_encode($imageData);
     // $status = $_POST['status']; //0 false , 1 true
 
     $sql = "SELECT * FROM books WHERE book_name IS NULL";
@@ -41,6 +42,4 @@
         }
         
     }
-        
-
 ?>

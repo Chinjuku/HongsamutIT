@@ -7,7 +7,7 @@ $password = $_POST['password'];
 $sql = "SELECT * FROM user where user_name = '{$username}' and password = '{$password}'";
 $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
+if ($result->num_rows == 1) {
 
   // output data of each row
 
@@ -21,6 +21,18 @@ if ($result->num_rows > 0) {
     $_SESSION['last_name'] = $row['last_name'];
     $_SESSION['user_type'] = $row['user_type'];
     $_SESSION['phone_num'] = $row['phone_number'];
+
+    $plan_id_sql = "SELECT * FROM user WHERE email = '{$_SESSION['email']}' AND plan_id = NULL"; // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
+    $plan_id_result = $conn->query($sql);
+
+    if ($plan_id_result->num_rows == 0) { // ถ้ามี subscription plan ที่ user เลือกอยู่ในระบบ
+      $_SESSION['plan_id'] = $row['plan_id'];
+    }
+    else{
+      $_SESSION['plan_id'] = NULL;
+    }
+
+
 
   }
   echo '<script>window.location.href = "../frontend/index.php";</script>';

@@ -11,7 +11,7 @@
     <style>
         body{
             background-color: #FDF5D0;
-            margin-top: 120px;
+            margin-top: 100px;
         }
     </style>
 </head>

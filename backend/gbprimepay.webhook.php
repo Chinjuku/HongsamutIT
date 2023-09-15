@@ -19,11 +19,10 @@ if (in_array($_SERVER['REMOTE_ADDR'], $white_list)) {
     fwrite($respFile, $json_str . "nn");
     $json_obj = json_decode($json_str);
 
-    $subscription_sql = "SELECT * FROM subscription_plans WHERE plan_id = '{$_SESSION['plan_id']}'"; // ดึงข้อมูล subscription plan ที่ user เลือก
+    $subscription_sql = "SELECT * FROM subscription_plans WHERE plan_id = '{$_SESSION['selected_plan_id']}'"; // ดึงข้อมูล subscription plan ที่ user เลือก
     $subscription_result = $conn->query($subscription_sql); 
-
-    $subscription_row = $subscription_result->fetch_assoc(); 
-    $plan_duration = $subscription_row['duration']; 
+    $subscription_row = $subscription_result->fetch_assoc();  
+    $plan_duration = $subscription_row['duration']; // ดึงระยะเวลา subscription plan ที่ user เลือก
 
     
     $update_payment = "UPDATE payments SET is_success = 1 WHERE payment_id = '{$json_obj->referenceNo}'";// อัพเดท payment ว่าสำเร็จ
@@ -32,8 +31,8 @@ if (in_array($_SERVER['REMOTE_ADDR'], $white_list)) {
     $start_date = $current_date;
     $end_date = date('Y-m-d', strtotime("+$plan_duration days", strtotime($current_date)));
 
-    $insert_subscription_sql = "INSERT INTO user_subscriptions (user_id, plan_id, date_start, date_end) VALUES ('{$_SESSION['user_id']}', '{$_SESSION['plan_id']}', '{$start_date}', '{$end_date}')"; //
-    $update_user_sql = "UPDATE user SET plan_id = '{$_SESSION['plan_id']}' WHERE user_id = '{$_SESSION['user_id']}'"; // อัพเดท user ว่ามี subscription plan อะไร
+    $insert_subscription_sql = "INSERT INTO user_subscriptions (user_id, plan_id, date_start, date_end) VALUES ('{$_SESSION['user_id']}', '{$_SESSION['selected_plan_id']}', '{$start_date}', '{$end_date}')"; //
+    $update_user_sql = "UPDATE user SET plan_id = '{$_SESSION['selected_plan_id']}' WHERE user_id = '{$_SESSION['user_id']}'"; // อัพเดท user ว่ามี subscription plan อะไร
 
     fwrite($respFile, $json_obj);
     fclose($respFile);

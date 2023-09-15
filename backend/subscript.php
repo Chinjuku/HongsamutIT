@@ -6,6 +6,7 @@
     $user_id = $_SESSION['user_id'];
     $email = $_SESSION['email'];
     $plan_id = $_SESSION['plan_id'];
+    $selected_plan_id = $_POST['plan_id'];// รับค่า plan id ที่ user เลือกมา
 
 
     $sql = "SELECT * FROM user WHERE email = '{$email}' AND plan_id = NULL"; // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
@@ -13,7 +14,7 @@
 
     if ($result->num_rows == 1) {
 
-      $subscription_sql = "SELECT * FROM subscription_plans WHERE plan_id = {$plan_id}";
+      $subscription_sql = "SELECT * FROM subscription_plans WHERE plan_id = {$selected_plan_id}"; 
       $subscription_result = $conn->query($subscription_sql); // ดึงข้อมูล subscription plan ที่ user เลือก
 
       if ($subscription_result->num_rows > 0) { // ถ้ามี subscription plan ที่ user เลือกอยู่ในระบบ

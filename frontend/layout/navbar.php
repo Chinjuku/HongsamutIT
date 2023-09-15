@@ -16,10 +16,9 @@
         box-sizing: border-box;
         font: comic;
     }
-    body{
+    /* body{ */
         /* background-color: #FDF5D0; */
-
-    }
+    /* } */
     .menubar a:after{
     content: "";
     position: absolute;

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: comic;
+}
+
+.container{
+    /* padding: 150px; */
+    width: 100%;
+    min-height: 100vh;
+    background: #FDF5D0;
+}
+.container h2{
+    color: #494639;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.pricerow{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.pricecol{
+    background: #ffff;
+    padding: 50px 55px;
+    border-radius: 10px;
+    color: #494639;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.pricecol p{
+    font-size: 22px;
+}
+
+.pricecol h3{
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+
+.pricecol h3 span{
+    font-size: 18px;
+}
+
+.pricecol ul{
+    text-align: left;
+    margin: 20px 0;
+    color: #494639;
+    list-style: none;
+}
+
+.pricecol ul li{
+    margin: 15px 0;
+}
+
+.pricecol ul li::before{
+    content: '\2023';
+    color: #485545;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.pricecol button{
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #9F967F;
+    font-size: 15px;
+    border: 1px solid #494639;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.pricecol button:hover{
+    background-color:#494639;
+    color:#AFC0B1 ;
+}

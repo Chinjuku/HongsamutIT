@@ -10,32 +10,32 @@ body{
     text-align: center;
     display: flex;
     flex-direction: row;
-    padding-left: 400px;
+    /* padding-left: 400px; */
 }
 
 .mid{
     margin-top: 10%;
     justify-content: center;
-    /* padding-left: 13%; */
+    padding-left: 13%;
     width: 100%;
 }
 .newarrival{
     width: 100%;
     margin-top: 10%;
-    margin-left: 8.5%;
+    /* margin-left: 8.5%; */
     font-size: 120px;
     align-items: center;
     color:#272222;
 
 }
 .container{
+    background-color: white;
     position: relative;
     display: flex;
     margin-top: 5%;
-    margin-left: 100px;
+    margin-left: 160px;
     width: 100%;
     height: auto;
-    justify-content: center;
 }
 .nabox{
     position: relative;

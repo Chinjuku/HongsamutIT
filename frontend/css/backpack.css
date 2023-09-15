@@ -125,37 +125,3 @@ hr{
     border-radius: 10px;
     width: 1500px;
 }
-
-
-@media only screen and (max-width: 1440px){
-    .table2{
-        width: 1200px;
-        margin-top: 30px;
-        background-color: #f5f5f5;
-        border-collapse: collapse;
-        margin-left: 130px;
-        font-size: 20px;
-        border-radius: 10px 10px 0 0;
-        overflow: hidden;
-    
-    }
-    .bottombar{
-        display: flex;
-        position: fixed;
-        width: 1440px;
-        bottom: 0;
-        background-color: #FDF5D0;
-        padding: 10px;
-        justify-content: right;
-        /* border-top: 2px solid black; */
-    
-    }
-    .mid{
-        width: 1440px;
-        
-        margin-top: 69px;
-        background-color: #FDF5D0;
-        height: 800px;
-    
-    }
-}

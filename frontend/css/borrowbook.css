@@ -99,7 +99,7 @@ hr{
     top: 20px;
     width: 100px;
     color: #252222;
-
+    cursor: pointer;
     align-items: end;
     left: 750px;
 }

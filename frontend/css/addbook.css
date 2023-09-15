@@ -9,6 +9,7 @@ body{
     background-color: #FDF5D0;
     text-align: center;
     display: grid;
+    margin-top: -60px;
     flex-direction: column;
     place-items: center;
 }

@@ -28,7 +28,7 @@
             //เพิ่มจำนวนหนังสือ +1
         // }
         $sql = "INSERT INTO books (book_id, book_name, book_owner, cate_id, status, imgsrc)
-        VALUES (233,'{$book_name}', '{$book_owner}', '{$cate_id}', 1, '{$url}')";
+        VALUES (12,'{$book_name}', '{$book_owner}', '{$cate_id}', 1, '{$url}')";
 
         $stmt = $conn->prepare($sql);
 

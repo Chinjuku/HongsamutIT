@@ -70,12 +70,14 @@
 
             <H2 class="logo"><a href="index.php">HONGSAMUT</a></H2>
             <nav class="menubar">
+                <a href="borrowbook.php">ฝาก POPUP</a>
+                <a href="viewbook.php">VIEW BOOK</a>
                 <?php
                     if($_SESSION['user_type'] == "user") {
                         echo "<a href='member.php'>MEMBER</a>";
                     }
                 ?>
-                <a href="viewbook.php">VIEW BOOK</a>
+                
                 <a href="backpack.php">BACKPACK</a>
                 <a href="profile.php">
                     <i href="login.php" class="bi bi-person-circle"></i>

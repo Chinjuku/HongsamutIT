@@ -16,7 +16,6 @@
 
       $subscription_sql = "SELECT * FROM subscription_plans WHERE plan_id = {$selected_plan_id}"; 
       $subscription_result = $conn->query($subscription_sql); // ดึงข้อมูล subscription plan ที่ user เลือก
-
       if ($subscription_result->num_rows > 0) { // ถ้ามี subscription plan ที่ user เลือกอยู่ในระบบ
         $subscription_row = $subscription_result->fetch_assoc(); // ดึงข้อมูล subscription plan ที่ user เลือก
         $plan_price = $subscription_row['price']; // ดึงราคา subscription plan ที่ user เลือก

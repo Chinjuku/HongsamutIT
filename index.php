@@ -101,9 +101,9 @@
             alt="lineright3519"
             class="landing-lineright"
           />
-          <div class="landing-frame14button button">
+          <a href = "https://hongsamutit2.iservkmitl.tech/frontend/regis.php" class="landing-frame14button button">
             <span class="landing-text09"><span>LOGIN</span></span>
-          </div>
+          </a>
         </div>
       </div>
     </div>

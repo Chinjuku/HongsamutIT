@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="english">
   <head>
-    <title>exported project</title>
+    <title>HONGSAMUT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -42,11 +42,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
       data-tag="font"
     />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&amp;display=swap"
       data-tag="font"
-    /> -->
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -55,76 +60,50 @@
 
       <div class="landing-container">
         <div class="landing-landing">
-          <a
-            href="https://hongsamutit2.iservkmitl.tech/frontend/"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="landing-text"
-          >
+          <span class="landing-text button">
             <span>EXPLORE OUR BOOKS</span>
-          </a>
+          </span>
           <span class="landing-text02"><span>or</span></span>
-          <a
-            href="https://hongsamutit2.iservkmitl.tech/frontend/regis.php"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="landing-text04"
-          >
-            <span>REGISTER</span>
-          </a>
+          <div class="landing-container1">
+            <span class="landing-text04">
+              <span>dont’t have and account?</span>
+            </span>
+            <span class="landing-text06 button">REGISTER</span>
+          </div>
           <img
-            src="public/external/leftlsvg3512-6t7.svg"
+            src="public/external/leftlsvg3512-03rk.svg"
             alt="leftlsvg3512"
             class="landing-leftlsvg"
           />
           <img
-            src="public/external/rightlsvg4544-7poe.svg"
+            src="public/external/rightlsvg4544-4coe.svg"
             alt="rightlsvg4544"
             class="landing-rightlsvg"
           />
           <img
-            src="public/external/bookssvg4542-d52m.svg"
+            src="public/external/bookssvg4542-c5l8.svg"
             alt="bookssvg4542"
             class="landing-bookssvg"
           />
-          <a
-            href="https://hongsamutit2.iservkmitl.tech/frontend/"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="landing-link"
-          >
-            <img
-              src="public/external/logosvgbutton4543-8cm8.svg"
-              alt="logosvgbutton4543"
-              class="landing-logosvgbutton"
-            />
-          </a>
-          <a
-            href="https://hongsamutit2.iservkmitl.tech/frontend/"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="landing-text06"
-          >
-            <span>ห้องสมุดสุดเฟี้ยว</span>
-          </a>
           <img
-            src="public/external/lineleft3519-0a9.svg"
+            src="public/external/logosvg4543-bevd.svg"
+            alt="logosvg4543"
+            class="landing-logosvg"
+          />
+          <span class="landing-text07"><span>ห้องสมุดสุดเฟี้ยว</span></span>
+          <img
+            src="public/external/lineleft3519-k7a8.svg"
             alt="lineleft3519"
             class="landing-lineleft"
           />
           <img
-            src="public/external/lineright3519-rze.svg"
+            src="public/external/lineright3519-kswb.svg"
             alt="lineright3519"
             class="landing-lineright"
           />
-          <a
-            href="https://hongsamutit2.iservkmitl.tech/frontend/login.php"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="landing-loginbutton"
-          >
-            <span class="landing-text08"><span>LOGIN</span></span>
-          </a>
+          <div class="landing-frame14button button">
+            <span class="landing-text09"><span>LOGIN</span></span>
+          </div>
         </div>
       </div>
     </div>

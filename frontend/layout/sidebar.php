@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <head>
-        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="../css/sidebar.css">
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <script scr="https://code.jquery.com/jquery-3.4.1.js"></script>

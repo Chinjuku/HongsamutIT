@@ -4,7 +4,7 @@
     include './layout/navbar.php';
 ?>
 
-<!Document html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>HONGSAMUT</title>

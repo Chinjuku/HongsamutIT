@@ -1,0 +1,203 @@
+.landing-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.landing-landing {
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-image: linear-gradient(180deg, rgba(239, 231, 222, 1) 0%, rgba(150, 112, 68, 1) 100%);
+}
+.landing-text {
+  top: 658px;
+  left: 0px;
+  color: rgba(73, 70, 57, 1);
+  right: 0px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Extra Bold;
+  text-align: center;
+  transition: 0.3s;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  border-width: 0px;
+  font-stretch: normal;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.landing-text:hover {
+  color: #ff5111;
+}
+.landing-text02 {
+  top: 618px;
+  left: 0px;
+  color: rgba(73, 70, 57, 1);
+  right: 0px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Extra Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landing-container1 {
+  top: 561px;
+  left: 0px;
+  right: 0px;
+  width: 433px;
+  height: 29px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.landing-text04 {
+  top: 0px;
+  left: 0px;
+  color: rgba(73, 70, 57, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Extra Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landing-text06 {
+  top: -8px;
+  color: rgb(72, 85, 69);
+  right: 26px;
+  width: 119px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Extra Bold;
+  text-align: left;
+  transition: 0.3s;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  border-width: 0px;
+  font-stretch: normal;
+  border-radius: 0px;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.landing-text06:hover {
+  color: #b98775;
+}
+.landing-leftlsvg {
+  width: 349px;
+  height: 426px;
+  align-self: flex-end;
+}
+.landing-rightlsvg {
+  right: 0px;
+  width: 508px;
+  bottom: 0px;
+  height: 533px;
+  position: absolute;
+  align-self: flex-end;
+}
+.landing-bookssvg {
+  top: 772px;
+  left: 0px;
+  right: 0px;
+  width: 539px;
+  height: 320px;
+  margin: auto;
+  position: absolute;
+}
+.landing-logosvg {
+  top: 45.812408447265625px;
+  left: 0px;
+  right: 0px;
+  width: 255px;
+  height: 215px;
+  margin: auto;
+  position: absolute;
+}
+.landing-text07 {
+  top: 228px;
+  left: 0px;
+  color: rgba(73, 70, 57, 1);
+  right: 0px;
+  width: 698px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 96px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mitr;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landing-lineleft {
+  top: 311px;
+  left: 183px;
+  width: 354px;
+  height: 1px;
+  position: absolute;
+}
+.landing-lineright {
+  top: 311px;
+  left: 1613px;
+  width: 354px;
+  height: 1px;
+  position: absolute;
+}
+.landing-frame14button {
+  top: 421px;
+  flex: 0;
+  left: 0px;
+  right: 0px;
+  width: 408px;
+  height: 99px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  transition: 0.3s;
+  align-items: center;
+  flex-shrink: 1;
+  border-radius: 30px;
+  justify-content: center;
+  background-color: #485545;
+}
+.landing-frame14button:hover {
+  width: 420px;
+  height: 101px;
+}
+.landing-text09 {
+  color: rgba(253, 245, 208, 1);
+  height: auto;
+  font-size: 40px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Mitr;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}

@@ -67,7 +67,7 @@
     text-decoration: underline;
   }
   
-  .LANDING .vector {
+  .LANDING .left-l {
     position: absolute;
     width: 332px;
     height: 340px;
@@ -75,7 +75,7 @@
     left: 0;
   }
   
-  .LANDING .img {
+  .LANDING .right-l {
     position: absolute;
     width: 280px;
     height: 416px;
@@ -83,7 +83,7 @@
     left: 1160px;
   }
   
-  .LANDING .vector-2 {
+  .LANDING .books {
     position: absolute;
     width: 539px;
     height: 252px;
@@ -99,7 +99,7 @@
     left: 372px;
   }
   
-  .LANDING .vector-3 {
+  .LANDING .logo {
     position: absolute;
     width: 255px;
     height: 215px;
@@ -107,7 +107,7 @@
     left: 211px;
   }
   
-  .LANDING .text-wrapper-5 {
+  .LANDING .name {
     position: absolute;
     width: 698px;
     top: 181px;
@@ -120,20 +120,20 @@
     line-height: normal;
   }
   
-  .LANDING .line {
-    width: 183px;
-    left: 0;
+  .LANDING .lineleft {
     position: absolute;
+    width: 183px;
     height: 11px;
     top: 311px;
+    left: 0;
   }
   
-  .LANDING .line-2 {
-    width: 181px;
-    left: 1259px;
+  .LANDING .lineright {
     position: absolute;
+    width: 181px;
     height: 11px;
     top: 311px;
+    left: 1259px;
   }
   
   .LANDING .login-button {
@@ -155,7 +155,7 @@
     border-radius: 46px;
   }
   
-  .LANDING .text-wrapper-6 {
+  .LANDING .text-wrapper-5 {
     position: absolute;
     top: 11px;
     left: 104px;
@@ -167,3 +167,4 @@
     line-height: normal;
     white-space: nowrap;
   }
+  

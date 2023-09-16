@@ -11,21 +11,19 @@
         <div class="text-wrapper-2">or</div>
         <div class="text-wrapper-3">dont’t have and account?</div>
         <div class="text-wrapper-4">REGISTER</div>
-        <img class="vector" src="img/image.svg" />
-        <img class="img" src="img/vector-3.svg" />
-        <img class="vector-2" src="img/vector.svg" />
+        <img class="left-l" src="img/left-l.svg" />
+        <img class="right-l" src="img/right-l.svg" />
+        <img class="books" src="img/books.svg" />
         <div class="overlap">
-          <img class="vector-3" src="img/vector-2.svg" />
-          <div class="text-wrapper-5">ห้องสมุดสุดเฟี้ยว</div>
+          <img class="logo" src="img/logo.svg" />
+          <div class="name">ห้องสมุดสุดเฟี้ยว</div>
         </div>
-        <img class="line" src="img/line-1.svg" />
-        <img class="line-2" src="img/line-2.svg" />
+        <img class="lineleft" src="img/lineleft.svg" />
+        <img class="lineright" src="img/lineright.svg" />
         <button class="login-button">
-          <div class="overlap-group"><div class="text-wrapper-6">LOGIN</div></div>
+          <div class="overlap-group"><div class="text-wrapper-5">LOGIN</div></div>
         </button>
       </div>
     </div>
   </body>
 </html>
-
-<!-- echo '<script>window.location.href = "../frontend/index.php";</script>' -->

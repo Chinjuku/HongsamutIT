@@ -73,17 +73,17 @@
             <span>REGISTER</span>
           </a>
           <img
-            src="public/external/leftlsvg3512-ctwm.svg"
+            src="public/external/leftlsvg3512-6t7.svg"
             alt="leftlsvg3512"
             class="landing-leftlsvg"
           />
           <img
-            src="public/external/rightlsvg4544-rx2k.svg"
+            src="public/external/rightlsvg4544-7poe.svg"
             alt="rightlsvg4544"
             class="landing-rightlsvg"
           />
           <img
-            src="public/external/bookssvg4542-px58.svg"
+            src="public/external/bookssvg4542-d52m.svg"
             alt="bookssvg4542"
             class="landing-bookssvg"
           />
@@ -94,7 +94,7 @@
             class="landing-link"
           >
             <img
-              src="public/external/logosvgbutton4543-jl7.svg"
+              src="public/external/logosvgbutton4543-8cm8.svg"
               alt="logosvgbutton4543"
               class="landing-logosvgbutton"
             />
@@ -108,12 +108,12 @@
             <span>ห้องสมุดสุดเฟี้ยว</span>
           </a>
           <img
-            src="public/external/lineleft3519-hzcp.svg"
+            src="public/external/lineleft3519-0a9.svg"
             alt="lineleft3519"
             class="landing-lineleft"
           />
           <img
-            src="public/external/lineright3519-n1ov.svg"
+            src="public/external/lineright3519-rze.svg"
             alt="lineright3519"
             class="landing-lineright"
           />
@@ -121,11 +121,9 @@
             href="https://hongsamutit2.iservkmitl.tech/frontend/login.php"
             target="_blank"
             rel="noreferrer noopener"
-            class="landing-link1"
+            class="landing-loginbutton"
           >
-            <div class="landing-group14button">
-              <span class="landing-text08"><span>LOGIN</span></span>
-            </div>
+            <span class="landing-text08"><span>LOGIN</span></span>
           </a>
         </div>
       </div>

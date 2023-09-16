@@ -14,7 +14,7 @@
   position: relative;
   align-items: flex-start;
   flex-shrink: 0;
-  background-image: linear-gradient(180deg, rgb(239, 231, 222) 1.00%,rgb(192, 167, 140) 100.00%);
+  background-image: linear-gradient(180deg, rgba(239, 231, 222, 1) 0%, rgba(191, 167, 139, 1) 54%, rgba(150, 112, 68, 1) 100%);
 }
 .landing-text {
   top: 658px;
@@ -55,7 +55,6 @@
   left: 0px;
   color: rgba(72, 85, 69, 1);
   right: 0px;
-  width: 119px;
   height: auto;
   margin: auto;
   position: absolute;
@@ -108,13 +107,12 @@
   left: 0px;
   color: rgba(73, 70, 57, 1);
   right: 0px;
-  width: 698px;
   height: auto;
   margin: auto;
   position: absolute;
   font-size: 96px;
   font-style: Bold;
-  text-align: left;
+  text-align: center;
   font-family: Mitr;
   font-weight: 700;
   line-height: normal;
@@ -135,33 +133,24 @@
   height: 1px;
   position: absolute;
 }
-.landing-link1 {
-  display: contents;
-}
-.landing-group14button {
-  top: 426px;
+.landing-loginbutton {
+  gap: 10px;
+  top: 416px;
   left: 0px;
   right: 0px;
-  width: 245px;
-  height: 86px;
+  width: 197px;
   margin: auto;
   display: flex;
+  padding: 19px 36px;
   position: absolute;
   align-items: center;
-  flex-shrink: 1;
-  flex-direction: row;
+  border-radius: 32px;
   justify-content: center;
   background-color: rgba(72, 85, 69, 1);
 }
 .landing-text08 {
-  top: 19px;
-  left: 0px;
   color: rgba(253, 245, 208, 1);
-  right: 0px;
-  width: 172px;
   height: auto;
-  margin: auto;
-  position: absolute;
   font-size: 40px;
   font-style: Extra Bold;
   text-align: center;

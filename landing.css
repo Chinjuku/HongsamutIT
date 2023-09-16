@@ -173,6 +173,7 @@ body{
   justify-content: center;
   background-color: rgba(73, 70, 57, 1);
 }
+
 .landing-loginbuttoninput:hover {
   left: 0px;
   right: 0px;
@@ -182,6 +183,39 @@ body{
   padding: 11px;
   text-align: center;
 }
+
+button{
+  gap: 10px;
+  top: 442px;
+  left: 0px;
+  color: rgba(255, 255, 255, 1);
+  right: 0px;
+  width: 333px;
+  margin: auto;
+  display: flex;
+  padding: 11px 104px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 40px;
+  text-align: left;
+  transition: 0.3s;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 700;
+  border-radius: 46px;
+  justify-content: center;
+  background-color: rgba(73, 70, 57, 1);
+}
+button:hover {
+  left: 0px;
+  right: 0px;
+  width: 405px;
+  height: 85px;
+  margin: auto;
+  padding: 11px;
+  text-align: center;
+}
+
 .landing-leftlsvg {
   left: 0px;
   width: 437px;

@@ -19,7 +19,7 @@
 .landing-text {
   top: 658px;
   left: 0px;
-  color: rgba(73, 70, 57, 1);
+  color: rgba(72, 85, 69);
   right: 0px;
   height: auto;
   margin: auto;
@@ -33,11 +33,10 @@
   line-height: normal;
   border-width: 0px;
   font-stretch: normal;
-  text-decoration: underline;
   background-color: transparent;
 }
 .landing-text:hover {
-  color: #ff5111;
+  color: #363220;
 }
 .landing-text02 {
   top: 618px;
@@ -69,7 +68,7 @@
 }
 .landing-text04 {
   top: 0px;
-  left: 0px;
+  left: -15px;
   color: rgba(73, 70, 57, 1);
   height: auto;
   position: absolute;
@@ -84,6 +83,7 @@
 }
 .landing-text06 {
   top: -8px;
+  margin-right: -15px;
   color: rgb(72, 85, 69);
   right: 26px;
   width: 119px;
@@ -99,11 +99,11 @@
   border-width: 0px;
   font-stretch: normal;
   border-radius: 0px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   background-color: transparent;
 }
 .landing-text06:hover {
-  color: #ff5111;
+  color: #363220;
 }
 .landing-leftlsvg {
   width: 349px;
@@ -135,6 +135,7 @@
   height: 215px;
   margin: auto;
   position: absolute;
+  animation: float 4s ease-in-out infinite;
 }
 .landing-text07 {
   top: 228px;
@@ -153,6 +154,7 @@
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
+  animation: float 4.5s ease-in-out infinite;
 }
 .landing-lineleft {
   top: 311px;
@@ -201,3 +203,44 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-20px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+
+
+.landing-text06::before,.landing-text06::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+
+}
+.landing-text06::before {
+  background-color: #363220;
+  height: 2px;
+  bottom: 10px;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.landing-text06:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.landing-text06:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+

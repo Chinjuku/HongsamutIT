@@ -60,15 +60,15 @@
 
       <div class="landing-container">
         <div class="landing-landing">
-          <span href="https://hongsamutit2.iservkmitl.tech/frontend/" class="landing-text button">
+          <span class="landing-text button">
             <span>EXPLORE OUR BOOKS</span>
           </span>
           <span class="landing-text02"><span>or</span></span>
           <div class="landing-container1">
             <span class="landing-text04">
-              <span>dont't have and account?</span>
+              <span>doesn't have and account?</span>
             </span>
-            <span href="https://hongsamutit2.iservkmitl.tech/frontend/regis.php" class="landing-text06 button">REGISTERs</span>
+            <span class="landing-text06 button">REGISTER</span>
           </div>
           <img
             src="public/external/leftlsvg3512-03rk.svg"
@@ -90,7 +90,7 @@
             alt="logosvg4543"
             class="landing-logosvg"
           />
-          <span href="https://hongsamutit2.iservkmitl.tech/frontend/" class="landing-text07"><span>ห้องสมุดสุดเฟี้ยว</span></span>
+          <span class="landing-text07"><span>ห้องสมุดสุดเฟี้ยว</span></span>
           <img
             src="public/external/lineleft3519-k7a8.svg"
             alt="lineleft3519"
@@ -101,10 +101,8 @@
             alt="lineright3519"
             class="landing-lineright"
           />
-          <div href="https://hongsamutit2.iservkmitl.tech/frontend/login.php"
-              target="_blank"
-              rel="noreferrer noopener" class="landing-frame14button button">
-            <span class="landing-text09"><span>LOGINs</span></span>
+          <div class="landing-frame14button button">
+            <span class="landing-text09"><span>LOGIN</span></span>
           </div>
         </div>
       </div>

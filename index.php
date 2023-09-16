@@ -65,9 +65,6 @@
           </span>
           <span class="landing-text02"><span>or</span></span>
           <div class="landing-container1">
-            <span class="landing-text04">
-              <span>dont’t have and account?</span>
-            </span>
             <span class="landing-text06 button">REGISTER</span>
           </div>
           <img

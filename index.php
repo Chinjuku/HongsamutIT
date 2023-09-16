@@ -68,7 +68,7 @@
             <span class="landing-text04">
               <span>doesn't have and account?</span>
             </span>
-            <span class="landing-text06 button"><a href="https://hongsamutit2.iservkmitl.tech/frontend/regis.php">REGISTER</a></span>
+            <span class="landing-text06 button"><a href="https://hongsamutit2.iservkmitl.tech/frontend/regis.php"><br>REGISTER</a></span>
           </div>
           <img
             src="public/external/leftlsvg3512-03rk.svg"

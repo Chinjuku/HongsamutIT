@@ -26,28 +26,34 @@
             <a href="index.php"><i class="fa fa-backward" aria-hidden="true"></i></a>
             </div>
             <div class="txt_field">
-                <label>Username: </label>
+                <label>Username : </label>
                 <?php
                     echo $_SESSION['user_name'];
                 ?>
             </div>
             <div class="txt_field1">
-                <label>Name: </label>
+                <label>Name : </label>
                 <?php
                     echo $_SESSION['first_name'], ' ' ,$_SESSION['last_name'];
                 ?>
             </div>
             <div class="txt_field2">
-                <label>Tel:</label>
+                <label>Tel : </label>
                 <?php
                     echo $_SESSION['phone_num'];
                     // var_dump($_SESSION['phone_num']);
                 ?>
             </div>
             <div class="txt_field1">
-                <label>Email:</label>
+                <label>Email : </label>
                 <?php
                     echo $_SESSION['email'];
+                ?>
+            </div>
+            <div class="txt_field1">
+                <label>Password : </label>
+                <?php
+                    echo $_SESSION['password'];
                 ?>
             </div>
             <form action="../backend/logout.php" class="log">

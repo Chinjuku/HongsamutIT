@@ -54,7 +54,7 @@
     />
   </head>
   <body>
-    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
     <div>
       <link href="./index.css" rel="stylesheet" />
 

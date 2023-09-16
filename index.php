@@ -61,7 +61,7 @@
       <div class="landing-container">
         <div class="landing-landing">
           <a href="https://hongsamutit2.iservkmitl.tech/frontend/" class="landing-text button">
-            <span>EXPLORE OUR BOOKS</span>
+            <div><span>EXPLORE OUR BOOKS</span></div>
           </a>
           <span class="landing-text02"><span>or</span></span>
           <div class="landing-container1">

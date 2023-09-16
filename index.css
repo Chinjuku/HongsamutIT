@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Mitr;
+  src: url("Mitr-Regular.ttf");
+}
 .landing-container {
   width: 100%;
   display: flex;

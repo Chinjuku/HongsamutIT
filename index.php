@@ -69,7 +69,7 @@
               <span class="landing-text04">
                 <span>doesn't have and account?</span>
               </span>
-              <span class="landing-text06 button">  REGISTER</span>
+              <span class="landing-text06 button">REGISTERs</span>
             </a>
           </div>
           <img

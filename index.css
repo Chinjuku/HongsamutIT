@@ -204,6 +204,7 @@
   align-items: center;
   flex-shrink: 1;
   border-radius: 30px;
+  border-width: 0px;
   justify-content: center;
   background-color: #485545;
 }

@@ -47,11 +47,6 @@
       href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&amp;display=swap"
       data-tag="font"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&amp;display=swap"
-      data-tag="font"
-    />
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -60,49 +55,76 @@
 
       <div class="landing-container">
         <div class="landing-landing">
-          <span class="landing-text button">
+          <a
+            href="https://hongsamutit2.iservkmitl.tech/frontend/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="landing-text"
+          >
             <span>EXPLORE OUR BOOKS</span>
-          </span>
-          <span class="landing-text02 button">
-            <span>doesnt have account?</span>
-            <span class="landing-text04"></span>
-            <span class="landing-text05">REGISTER</span>
-          </span>
-          <span class="landing-text06"><span>or</span></span>
+          </a>
+          <span class="landing-text02"><span>or</span></span>
+          <a
+            href="https://hongsamutit2.iservkmitl.tech/frontend/regis.php"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="landing-text04"
+          >
+            <span>REGISTER</span>
+          </a>
           <img
-            src="public/external/leftlsvg3512-03rk.svg"
+            src="public/external/leftlsvg3512-6t7.svg"
             alt="leftlsvg3512"
             class="landing-leftlsvg"
           />
           <img
-            src="public/external/rightlsvg4544-4coe.svg"
+            src="public/external/rightlsvg4544-7poe.svg"
             alt="rightlsvg4544"
             class="landing-rightlsvg"
           />
           <img
-            src="public/external/bookssvg4542-c5l8.svg"
+            src="public/external/bookssvg4542-d52m.svg"
             alt="bookssvg4542"
             class="landing-bookssvg"
           />
+          <a
+            href="https://hongsamutit2.iservkmitl.tech/frontend/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="landing-link"
+          >
+            <img
+              src="public/external/logosvgbutton4543-8cm8.svg"
+              alt="logosvgbutton4543"
+              class="landing-logosvgbutton"
+            />
+          </a>
+          <a
+            href="https://hongsamutit2.iservkmitl.tech/frontend/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="landing-text06"
+          >
+            <span>ห้องสมุดสุดเฟี้ยว</span>
+          </a>
           <img
-            src="public/external/logosvg4543-bevd.svg"
-            alt="logosvg4543"
-            class="landing-logosvg"
-          />
-          <span class="landing-text08"><span>ห้องสมุดสุดเฟี้ยว</span></span>
-          <img
-            src="public/external/lineleft3519-k7a8.svg"
+            src="public/external/lineleft3519-0a9.svg"
             alt="lineleft3519"
             class="landing-lineleft"
           />
           <img
-            src="public/external/lineright3519-kswb.svg"
+            src="public/external/lineright3519-rze.svg"
             alt="lineright3519"
             class="landing-lineright"
           />
-          <div class="landing-frame14button button">
-            <span class="landing-text10"><span>LOGIN</span></span>
-          </div>
+          <a
+            href="https://hongsamutit2.iservkmitl.tech/frontend/login.php"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="landing-loginbutton"
+          >
+            <span class="landing-text08"><span>LOGIN</span></span>
+          </a>
         </div>
       </div>
     </div>

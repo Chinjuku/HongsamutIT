@@ -76,7 +76,7 @@
   display: flex !important;
   transform: none !important;
 }
-.Content {
+.Content { 
   font-size: 16px;
   font-family: Inter;
   font-weight: 400;

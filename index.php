@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1920, height=1080, initial-scale=1">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="./landing.css" rel="stylesheet" />
-</head>
-<body>
 <div>
+  <link href="./landing.css" rel="stylesheet" />
   <div class="landing-container">
     <div class="landing-landing">
       <span class="landing-text button"><span>EXPLORE OUR BOOKS</span></span>
       <span class="landing-text02"><span>or</span></span>
       <div class="landing-container1">
         <span class="landing-text04">
-          <span>don't have and account?</span>
+          <span>dont’t have and account?</span>
         </span>
         <span class="landing-text06 button">REGISTER</span>
       </div>
@@ -56,4 +47,3 @@
     </div>
   </div>
 </div>
-</body>

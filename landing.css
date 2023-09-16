@@ -1,11 +1,3 @@
-body{
-  background-color: #2D342C;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: comic;
-  overflow: hidden;
-}
 .landing-container {
   width: 100%;
   display: flex;

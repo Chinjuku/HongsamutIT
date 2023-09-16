@@ -101,7 +101,7 @@
             class="landing-lineright"
           />
           <div class="landing-frame14button button">
-            <span class="landing-text10"><span>LOGIN</span></span>
+            <span class="landing-text10"><span>LOGINs</span></span>
           </div>
         </div>
       </div>

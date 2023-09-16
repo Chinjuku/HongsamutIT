@@ -1,8 +1,7 @@
 <?php
     session_start();
     include './layout/navbar.php';
-    // include './layout/leftbar.php';
-    // include './layout/leftbar.php';
+    include 'layout/sidebar.php';
 ?>
 
 <!DOCTYPE html>

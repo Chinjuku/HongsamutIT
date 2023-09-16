@@ -17,6 +17,7 @@
         }
         .add-books{
             background-color: rgb(255, 255, 255);
+            border-radius: 10px;
         }
     </style>
 </head>

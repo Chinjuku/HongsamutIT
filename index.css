@@ -16,7 +16,7 @@
   flex-shrink: 0;
   background-image: linear-gradient(180deg, rgba(239, 231, 222, 1) 0%, rgba(150, 112, 68, 1) 100%);
 }
-.landing-text {
+.landing-text button{
   top: 658px;
   left: 0px;
   color: rgba(73, 70, 57, 1);
@@ -36,7 +36,7 @@
   text-decoration: underline;
   background-color: transparent;
 }
-.landing-text:hover {
+.landing-text button:hover {
   color: #ff5111;
 }
 .landing-text02 {
@@ -82,7 +82,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.landing-text06 {
+.landing-text06 button{
   top: 0px;
   color: rgb(72, 85, 69);
   /* right: 26px;
@@ -104,7 +104,7 @@
   text-decoration: underline;
   background-color: transparent;
 }
-.landing-text06:hover {
+.landing-text06 button:hover {
   color: #ff5112;
 }
 .landing-leftlsvg {
@@ -170,7 +170,7 @@
   height: 1px;
   position: absolute;
 }
-.landing-frame14button {
+.landing-frame14button button{
   top: 421px;
   flex: 0;
   left: 0px;
@@ -187,7 +187,7 @@
   justify-content: center;
   background-color: #485545;
 }
-.landing-frame14button:hover {
+.landing-frame14button button:hover {
   background-color: #ff5111;
   width: 420px;
   height: 101px;

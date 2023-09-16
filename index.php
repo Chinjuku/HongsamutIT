@@ -63,12 +63,13 @@
           <span class="landing-text button">
             <span>EXPLORE OUR BOOKS</span>
           </span>
-          <span class="landing-text02 button">
-            <span class="landing-text03">doesn't have account?</span>
-            <span class="landing-text04"></span>
-            <span class="landing-text05">REGISTER</span>
-          </span>
-          <span class="landing-text06"><span>or</span></span>
+          <span class="landing-text02"><span>or</span></span>
+          <div class="landing-container1">
+            <span class="landing-text04">
+              <span>dont’t have and account?</span>
+            </span>
+            <span class="landing-text06 button">REGISTER</span>
+          </div>
           <img
             src="public/external/leftlsvg3512-03rk.svg"
             alt="leftlsvg3512"
@@ -89,7 +90,7 @@
             alt="logosvg4543"
             class="landing-logosvg"
           />
-          <span class="landing-text08"><span>ห้องสมุดสุดเฟี้ยว</span></span>
+          <span class="landing-text07"><span>ห้องสมุดสุดเฟี้ยว</span></span>
           <img
             src="public/external/lineleft3519-k7a8.svg"
             alt="lineleft3519"
@@ -101,7 +102,7 @@
             class="landing-lineright"
           />
           <div class="landing-frame14button button">
-            <span class="landing-text10"><span>LOGIN</span></span>
+            <span class="landing-text09"><span>LOGIN</span></span>
           </div>
         </div>
       </div>

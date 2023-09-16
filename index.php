@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="english">
   <head>
-    <title>Hongsamut IT</title>
+    <title>exported project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -54,7 +54,7 @@
     />
   </head>
   <body>
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
     <div>
       <link href="./index.css" rel="stylesheet" />
 
@@ -63,13 +63,12 @@
           <span class="landing-text button">
             <span>EXPLORE OUR BOOKS</span>
           </span>
-          <span class="landing-text02"><span>or</span></span>
-          <div class="landing-container1">
-            <span class="landing-text04">
-              <span>don't have and account?</span>
-            </span>
-            <span class="landing-text06 button">REGISTER</span>
-          </div>
+          <span class="landing-text02 button">
+            <span>doesnt have account?</span>
+            <span></span>
+            <span>REGISTER</span>
+          </span>
+          <span class="landing-text06"><span>or</span></span>
           <img
             src="public/external/leftlsvg3512-03rk.svg"
             alt="leftlsvg3512"
@@ -90,7 +89,7 @@
             alt="logosvg4543"
             class="landing-logosvg"
           />
-          <span class="landing-text07"><span>ห้องสมุดสุดเฟี้ยว</span></span>
+          <span class="landing-text08"><span>ห้องสมุดสุดเฟี้ยว</span></span>
           <img
             src="public/external/lineleft3519-k7a8.svg"
             alt="lineleft3519"
@@ -102,7 +101,7 @@
             class="landing-lineright"
           />
           <div class="landing-frame14button button">
-            <span class="landing-text09"><span>LOGIN</span></span>
+            <span class="landing-text10"><span>LOGIN</span></span>
           </div>
         </div>
       </div>

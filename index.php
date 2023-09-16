@@ -68,7 +68,7 @@
             <span class="landing-text04">
               <span>don't have and account?</span>
             </span>
-            <span class="landing-text06 button">REGISTER</span>
+            <span class="landing-text06 button">REGISTERs</span>
           </div>
           <img
             src="public/external/leftlsvg3512-03rk.svg"

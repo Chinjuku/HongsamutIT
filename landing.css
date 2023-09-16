@@ -198,7 +198,7 @@ button{
   cursor: pointer;
   outline: none;
 }
-button:hover{
+.landing-loginbuttoninput:hover{
   border-color: #FBFCF8;
   transition: .5s;
 }

@@ -60,9 +60,9 @@
 
       <div class="landing-container">
         <div class="landing-landing">
-          <span class="landing-text button">
+          <a href="https://hongsamutit2.iservkmitl.tech/frontend/" class="landing-text button">
             <span>EXPLORE OUR BOOKS</span>
-          </span>
+          </a>
           <span class="landing-text02"><span>or</span></span>
           <div class="landing-container1">
             <span class="landing-text04">
@@ -101,7 +101,7 @@
             alt="lineright3519"
             class="landing-lineright"
           />
-          <a href = "https://hongsamutit2.iservkmitl.tech/frontend/regis.php" class="landing-frame14button button">
+          <a href = "https://hongsamutit2.iservkmitl.tech/frontend/login.php" class="landing-frame14button button">
             <span class="landing-text09"><span>LOGIN</span></span>
           </a>
         </div>

@@ -10,13 +10,13 @@ body{
     text-align: center;
     display: flex;
     flex-direction: row;
-    padding-left: 400px;
+    /* padding-left: 400px; */
 }
 
 .mid{
     margin-top: 10%;
     justify-content: center;
-    /* padding-left: 13%; */
+    padding-left: 13%;
     width: 100%;
 }
 .newarrival{
@@ -29,18 +29,18 @@ body{
 
 }
 .container{
+    background-color: white;
     position: relative;
     display: flex;
     margin-top: 5%;
-    margin-left: 100px;
-    width: 100%;
+    margin-left: 160px;
+    width: 1000px;
     height: auto;
-    justify-content: center;
 }
 .nabox{
     position: relative;
     background-color:#FBFCF8;
-    width: 200px;
+    width: 20%;
     height: 300px;
     border-radius: 10px;
     margin: 10px;

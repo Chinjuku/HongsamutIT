@@ -1,1 +1,1 @@
-<a href="frontend/index.php">go to my project</a>
+echo '<script>window.location.href = "../frontend/index.php";</script>'

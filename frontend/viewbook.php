@@ -1,8 +1,7 @@
 <?php
     session_start();
     include './layout/navbar.php';
-    // include './layout/leftbar.php';
-    include 'sidebar.php';
+    include './layout/leftbar.php';
 ?>
 
 <!DOCTYPE html>
@@ -14,28 +13,23 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     </head>
     <body>
+
         <div class="main">
             <div class="mid">
                 <div class="newarrival">NEW ARRIVALS</div>
                 <div class="container">
-                    <div class="nabox">Box1</div>
-                    <div class="nabox">Box2</div>
+                    <div class="nabox"><?php echo $_SESSION['book_name'],'<br>',$_SESSION['book_owner']; ?></div>
+                    
+                    <!-- <div class="nabox">Box2</div>
                     <div class="nabox">Box3</div>
                     <div class="nabox">Box4</div>
-                    <div class="nabox">Box5</div>
-                </div>  
-            </div>
-            <div class="mid">
-                <div class="newarrival">NEW ARRIVALS</div>
-                <div class="container">
-                    <div class="nabox">Box1</div>
-                    <div class="nabox">Box2</div>
-                    <div class="nabox">Box3</div>
-                    <div class="nabox">Box4</div>
-                    <div class="nabox">Box5</div>
+                    <div class="nabox">Box5</div> -->
                 </div>  
             </div>
             
         </div>
+                    
+
+        <script src="javascript/addbook.js"></script>
     </body>
 </html>

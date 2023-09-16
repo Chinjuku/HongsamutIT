@@ -1,5 +1,7 @@
 <?php
-// include './layout/navbar.php';
+    session_start();
+    include './layout/page.php';
+    include './layout/navbar.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +18,7 @@
         <div class="pricerow">
             <div class="pricecol">
                 <p>Starter</p>
-                <h3>10$ <span>/ month</span></h3>
+                <h3>1฿ <span>/ month</span></h3>
                 <ul>
                     <li>สามารถยืมหนังสือได้สูงสุด 10 เล่ม</li>
                     <li>1 ครั้ง / 1 เดือน</li>

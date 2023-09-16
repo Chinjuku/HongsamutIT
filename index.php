@@ -101,8 +101,10 @@
             alt="lineright3519"
             class="landing-lineright"
           />
-          <div href="https://hongsamutit2.iservkmitl.tech/frontend/login.php" class="landing-frame14button button">
-            <span class="landing-text09"><span>LOGIN</span></span>
+          <div href="https://hongsamutit2.iservkmitl.tech/frontend/login.php"
+              target="_blank"
+              rel="noreferrer noopener" class="landing-frame14button button">
+            <span class="landing-text09"><span>LOGINs</span></span>
           </div>
         </div>
       </div>

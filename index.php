@@ -48,7 +48,7 @@
         alt="lineright3519"
         class="landing-lineright"
       />
-      <button class="landing-loginbuttoninput button" type="submit">LOGIN</button>
+      <button type="submit">LOGIN</button>
     </div>
   </div>
 </div>

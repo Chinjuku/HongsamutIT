@@ -59,13 +59,9 @@
   background-color: transparent;
 }
 .landing-text02:hover {
-  color: #ff5111;
-}
-.landing-text03 {
-  color: #494639;
+  color: #b12a2a;
 }
 .landing-text04 {
-  color: #494639;
   text-decoration: underline;
 }
 .landing-text05 {
@@ -94,11 +90,10 @@
   align-self: flex-end;
 }
 .landing-rightlsvg {
-  right: 0px;
+  right: -35px;
   width: 508px;
-  bottom: 0px;
+  bottom: -69px;
   height: 533px;
-  display: none;
   position: absolute;
   align-self: flex-end;
 }

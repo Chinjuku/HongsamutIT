@@ -64,7 +64,7 @@
             <span>EXPLORE OUR BOOKS</span>
           </span>
           <span class="landing-text02 button">
-            <span class="landing-text03">doesnt have account?</span>
+            <span>doesnt have account?</span>
             <span class="landing-text04"></span>
             <span class="landing-text05">REGISTER</span>
           </span>

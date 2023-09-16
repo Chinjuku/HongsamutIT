@@ -64,12 +64,14 @@
             <span>EXPLORE OUR BOOKS</span>
           </span>
           <span class="landing-text02"><span>or</span></span>
-          <a href="https://hongsamutit2.iservkmitl.tech/frontend/regis.php" class="landing-container1">
-            <span class="landing-text04">
-              <span>doesn't have and account?</span>
-            </span>
-            <span class="landing-text06 button">REGISTER</span>
-          </a>
+          <div class="landing-container1">
+            <a href="https://hongsamutit2.iservkmitl.tech/frontend/regis.php">
+              <span class="landing-text04">
+                <span>doesn't have and account?</span>
+              </span>
+              <span class="landing-text06 button">REGISTERs</span>
+            </a>
+          </div>
           <img
             src="public/external/leftlsvg3512-03rk.svg"
             alt="leftlsvg3512"

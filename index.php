@@ -28,4 +28,4 @@
   </body>
 </html>
 
-echo '<script>window.location.href = "../frontend/index.php";</script>'
+<!-- echo '<script>window.location.href = "../frontend/index.php";</script>' -->

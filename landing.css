@@ -185,3 +185,8 @@ body{
   justify-content: center;
   background-color: rgba(73, 70, 57, 1);
 }
+
+button:hover{
+  border-color: #FBFCF8;
+  transition: .5s;
+}

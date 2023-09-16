@@ -85,14 +85,12 @@
             alt="bookssvg4542"
             class="landing-bookssvg"
           />
-          <div class = "floating">
-            <img
-              src="public/external/logosvg4543-bevd.svg"
-              alt="logosvg4543"
-              class="landing-logosvg"
-            />
-            <span class="landing-text07"><span>ห้องสมุดสุดเฟี้ยว</span></span>
-          </div>
+          <img
+            src="public/external/logosvg4543-bevd.svg"
+            alt="logosvg4543"
+            class="landing-logosvg"
+          />
+          <span class="landing-text07"><span>ห้องสมุดสุดเฟี้ยว</span></span>
           <img
             src="public/external/lineleft3519-k7a8.svg"
             alt="lineleft3519"

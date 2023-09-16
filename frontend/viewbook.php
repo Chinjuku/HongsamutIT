@@ -1,8 +1,7 @@
 <?php
     session_start();
     include './layout/navbar.php';
-    include './layout/leftbar.php';
-    include '../backend/bookinfo.php';
+    include 'sidebar.php';
 ?>
 
 <!DOCTYPE html>

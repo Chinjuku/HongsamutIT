@@ -14,7 +14,7 @@
         margin: 0%;
         padding: 0%;
         box-sizing: border-box;
-        font: comic;
+        font-family: "Poppings", sans-serif;
     }
     /* body{ */
         /* background-color: #FDF5D0; */

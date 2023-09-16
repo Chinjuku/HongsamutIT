@@ -1,7 +1,7 @@
 <?php
 session_start();
     include 'layout/navbar.php';
-    include 'layout/leftbar.php';
+    include 'sidebar.php';
     
 ?>
 
@@ -17,7 +17,7 @@ session_start();
 
             </div>
             <div class="mid">
-                <div class="allbooks ">All Books</div>
+                <div class="allbooks ">ALL BOOKS</div>
                 <div class="container">
                     <div class="nabox">Box1</div>
                     <div class="nabox">Box2</div>

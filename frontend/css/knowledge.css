@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font: comic;
+    font-family: "Poppings", sans-serif;
 }
 body{
     height: 100vh;
@@ -41,7 +41,7 @@ body{
     border-style: solid;
     border-width: thin;
 }
-.comic{
+.knowledge{
     text-align: left;
     padding-left: 300px;
     font-size: 50px;

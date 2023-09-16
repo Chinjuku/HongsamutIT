@@ -1,6 +1,7 @@
 <?php
+    session_start();
     include './layout/navbar.php';
-    include './layout/leftbar.php';
+    include 'sidebar.php';
 
 ?>
 <!DOCTYPE html>
@@ -16,7 +17,7 @@
 
             </div>
             <div class="mid">
-                <div class="comic ">Comic</div>
+                <div class="comic">COMIC</div>
                 <div class="container">
                     <div class="nabox">Book1</div>
                     <div class="nabox">Book2</div>

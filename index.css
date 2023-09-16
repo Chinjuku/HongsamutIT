@@ -109,6 +109,11 @@
   width: 349px;
   height: 426px;
   align-self: flex-end;
+  transition: 0.3s;
+}
+.landing-leftlsvg:hover {
+  width: 360px;
+  height: 437px;
 }
 .landing-rightlsvg {
   right: 0px;
@@ -117,6 +122,11 @@
   height: 533px;
   position: absolute;
   align-self: flex-end;
+  transition: 0.3s;
+}
+.landing-rightlsvg:hover {
+  width: 519px;
+  height: 544px;
 }
 .landing-bookssvg {
   top: 772px;
@@ -125,7 +135,13 @@
   width: 539px;
   height: 320px;
   margin: auto;
+  transition : 0.3s;
   position: absolute;
+}
+.landing-bookssvg:hover {
+  width: 550px;
+  height: 331px;
+  top: 761px;
 }
 .landing-logosvg {
   top: 45.812408447265625px;
@@ -154,7 +170,11 @@
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
+  transition: 0.3s;
   animation: float 4.5s ease-in-out infinite;
+}
+.landing-text07:hover {
+  color: #485545;
 }
 .landing-lineleft {
   top: 311px;

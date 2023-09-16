@@ -17,7 +17,7 @@
 
             </div>
             <div class="mid">
-                <div class="comic ">Comic</div>
+                <div class="comic">COMIC</div>
                 <div class="container">
                     <div class="nabox">Book1</div>
                     <div class="nabox">Book2</div>

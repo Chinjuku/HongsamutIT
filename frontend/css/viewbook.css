@@ -15,7 +15,7 @@ body{
 }
 
 .mid{
-    margin-left: 36%;
+    margin-left: 45%;
     margin-top: 7%;
     /* padding-left: 30%; */
     width: 100%;
@@ -38,13 +38,10 @@ body{
 .newarrival{
     top: 0px;
     width: 100%;
-    /* margin-top: 10%; */
-    /* margin-left: 30%; */
+
     font-size: 50px;
-    /* align-items: center; */
     color:#272222;
-    /* text-align: center; */
-    /* background-color: aqua; */
+
 
 }
 .container{
@@ -81,8 +78,4 @@ body{
 img {
     width: 150px;
     height: 180px;
-}
-p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 3px 0;
 }

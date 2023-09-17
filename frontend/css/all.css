@@ -21,7 +21,8 @@ body{
     /* padding-left: 30%; */
     width: 100%;
     /* text-align: center; */
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 .head{
     gap: 20px;

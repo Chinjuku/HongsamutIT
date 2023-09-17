@@ -79,3 +79,24 @@ img {
     width: 150px;
     height: 180px;
 }
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 3px 0;
+}
+@media (max-width:1620px){
+    .mid{
+        margin-left: 36%;
+        margin-top: 7%;
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width:1500px){
+    .mid{
+        margin-left: 34%;
+        margin-top: 7%;
+        width: 100%;
+        display: block;
+    }
+}

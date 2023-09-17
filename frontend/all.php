@@ -29,13 +29,9 @@
                     
                 </div>
                 
-                <div class="container">
-                    <div class="nabox">Box1</div>
-                    <div class="nabox">Box2</div>
-                    <div class="nabox">Box3</div>
-                    <div class="nabox">Box4</div>
-                    <div class="nabox">Box5</div>
-            </div>
+                <?php
+                    include '../backend/bookinfo.php';
+                ?>
             
         </div>
                     

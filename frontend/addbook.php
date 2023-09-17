@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
     <title>HONGSAMUT</title>
-    <link rel="stylesheet" href="./css/addbook.css">
+    <link rel="stylesheet" href="css/addbook.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- <style>

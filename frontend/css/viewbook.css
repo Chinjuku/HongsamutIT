@@ -8,52 +8,73 @@
 
 body{
     background-color: #FDF5D0;
-    text-align: center;
+
     display: flex;
     flex-direction: row;
     /* padding-left: 400px; */
 }
 
 .mid{
-    margin-top: 10%;
-    justify-content: center;
-    padding-left: 18.5%;
+    margin-left: 36%;
+    margin-top: 7%;
+    /* padding-left: 30%; */
     width: 100%;
+    /* text-align: center; */
+    display: block;
+}
+.head{
+    gap: 20px;
+    left: 0px;
+    margin-top: 5%;
+    margin-left: 1%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.square{
+    width: 10px;
+    height: 120px;
+    background-color: #485545;
 }
 .newarrival{
+    top: 0px;
     width: 100%;
-    margin-top: 10%;
-    margin-left: 5%;
-    font-size: 120px;
-    align-items: center;
+    /* margin-top: 10%; */
+    /* margin-left: 30%; */
+    font-size: 50px;
+    /* align-items: center; */
     color:#272222;
+    /* text-align: center; */
+    /* background-color: aqua; */
 
 }
 .container{
-    background-color: white;
+    
+    /* background-color: white; */
     position: relative;
     display: flex;
     flex-wrap: wrap;
     margin-top: 5%;
-    margin-left: 160px;
     gap: 10px;
-    width: 1000px;
+    width: 1100px;
     height: auto;
+
 }
 .nabox{
     position: relative;
-    background-color:#FBFCF8;
-    width: 19%;
-    height: 300px;
+    background-color: white;
+    width: 17%;
+    height: 280px;
     border-radius: 10px;
-    /* margin: 10px; */
+    
+    text-align: center;
+    margin: 10px;
     border-style: solid;
     border-width: thin;
-    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.1);
+    
 }
 
 .nabox:hover{
-    box-shadow: 20px 20px 30px rgba(255, 255, 255, 0.06);
+    background-color: rgb(238, 238, 238);
     z-index: 1;
 }
 

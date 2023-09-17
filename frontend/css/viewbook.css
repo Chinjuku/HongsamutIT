@@ -2,8 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    /* font: comic; */
-    font-family:Mitr ;
+    font: comic;
 }
 
 body{
@@ -17,13 +16,13 @@ body{
 .mid{
     margin-top: 10%;
     justify-content: center;
-    padding-left: 18.5%;
+    padding-left: 13%;
     width: 100%;
 }
 .newarrival{
     width: 100%;
     margin-top: 10%;
-    margin-left: 5%;
+    margin-left: 8.5%;
     font-size: 120px;
     align-items: center;
     color:#272222;
@@ -33,31 +32,24 @@ body{
     background-color: white;
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     margin-top: 5%;
     margin-left: 160px;
-    gap: 10px;
     width: 1000px;
     height: auto;
 }
 .nabox{
     position: relative;
     background-color:#FBFCF8;
-    width: 19%;
+    width: 20%;
     height: 300px;
     border-radius: 10px;
-    /* margin: 10px; */
+    margin: 10px;
     border-style: solid;
     border-width: thin;
-    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.1);
 }
 
 .nabox:hover{
-    box-shadow: 20px 20px 30px rgba(255, 255, 255, 0.06);
+    transform: scale(1.05);
+    transition: transform 200ms ease-in-out;
     z-index: 1;
-}
-
-img {
-    width: 150px;
-    height: 180px;
 }

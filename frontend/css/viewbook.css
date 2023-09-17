@@ -22,7 +22,7 @@ body{
 .newarrival{
     width: 100%;
     margin-top: 10%;
-    margin-left: 8.5%;
+    margin-left: 5%;
     font-size: 120px;
     align-items: center;
     color:#272222;
@@ -32,8 +32,10 @@ body{
     background-color: white;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin-top: 5%;
-    margin-left: 160px;
+    margin-left: 50px;
     width: 1000px;
     height: auto;
 }
@@ -49,7 +51,6 @@ body{
 }
 
 .nabox:hover{
-    transform: scale(1.05);
-    transition: transform 200ms ease-in-out;
+    box-shadow: 20px 20px 30px rgba(255, 255, 255, 0.06);
     z-index: 1;
 }

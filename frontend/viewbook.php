@@ -19,7 +19,10 @@
                 <div class="newarrival">NEW ARRIVALS</div>
                 <div class="container">
                     <button onclick="togglePopup()" class="nabox"><?php echo $_SESSION['book_name'],'<br>',$_SESSION['book_owner']; ?></button>
-                    
+                    <button onclick="togglePopup()" class="nabox"><?php echo $_SESSION['book_name'],'<br>',$_SESSION['book_owner']; ?></button>
+                    <button onclick="togglePopup()" class="nabox"><?php echo $_SESSION['book_name'],'<br>',$_SESSION['book_owner']; ?></button>
+                    <button onclick="togglePopup()" class="nabox"><?php echo $_SESSION['book_name'],'<br>',$_SESSION['book_owner']; ?></button>
+                    <button onclick="togglePopup()" class="nabox"><?php echo $_SESSION['book_name'],'<br>',$_SESSION['book_owner']; ?></button>
                     <!-- <div class="nabox">Box2</div>
                     <div class="nabox">Box3</div>
                     <div class="nabox">Box4</div>

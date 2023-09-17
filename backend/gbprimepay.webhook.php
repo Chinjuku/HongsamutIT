@@ -26,13 +26,16 @@ if (in_array($_SERVER['REMOTE_ADDR'], $white_list)) {
 
     
     $update_payment = "UPDATE payments SET is_success = 1 WHERE payment_id = '{$json_obj->referenceNo}'";// อัพเดท payment ว่าสำเร็จ
-    
+    $conn->query($update_payment);
+
     $current_date = date('Y-m-d');
     $start_date = $current_date;
     $end_date = date('Y-m-d', strtotime("+$plan_duration days", strtotime($current_date)));
 
     $insert_subscription_sql = "INSERT INTO user_subscriptions (user_id, plan_id, date_start, date_end) VALUES ('{$_SESSION['user_id']}', '{$_SESSION['selected_plan_id']}', '{$start_date}', '{$end_date}')"; //
+    $conn->query($insert_subscription_sql);// เพิ่ม subscription plan ให้ user
     $update_user_sql = "UPDATE user SET plan_id = '{$_SESSION['selected_plan_id']}' WHERE user_id = '{$_SESSION['user_id']}'"; // อัพเดท user ว่ามี subscription plan อะไร
+    $conn->query($update_user_sql);// อัพเดท user ว่ามี subscription plan อะไร
 
     fwrite($respFile, $json_obj);
     fclose($respFile);

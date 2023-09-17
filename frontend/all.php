@@ -26,7 +26,7 @@ session_start();
                     <div class="nabox">Box3</div>
                     <div class="nabox">Box4</div>
                     <div class="nabox">Box5</div>
-            </div>
+                </div>
             
         </div>
     </body>

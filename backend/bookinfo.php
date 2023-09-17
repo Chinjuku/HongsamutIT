@@ -20,8 +20,8 @@ include 'database.php'; // Include your database connection script
         echo '<p>' . $row['book_name'] . '</p>';
         echo '<p>' . $row['book_owner'] . '</p>';
         echo '<img src="' . $row['imgsrc'] . '" alt="Image">';
-        // include '../frontend/borrowbook.php';
-        // echo '<button onclick="togglePopup()"> CLICK TO VIEW </button>';
+        // include 'borrowbook.php';
+        echo '<button onclick="togglePopup()"> CLICK TO VIEW </button>';
         echo '</div>';
         }
     }
@@ -32,3 +32,4 @@ include 'database.php'; // Include your database connection script
 // Step 4: Close the database connection
 $conn->close();
 ?>
+

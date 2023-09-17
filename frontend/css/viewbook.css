@@ -2,7 +2,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font: comic;
+    /* font: comic; */
+    font-family:Mitr ;
 }
 
 body{
@@ -16,13 +17,13 @@ body{
 .mid{
     margin-top: 10%;
     justify-content: center;
-    padding-left: 13%;
+    padding-left: 18.5%;
     width: 100%;
 }
 .newarrival{
     width: 100%;
     margin-top: 10%;
-    margin-left: 8.5%;
+    margin-left: 5%;
     font-size: 120px;
     align-items: center;
     color:#272222;
@@ -33,9 +34,15 @@ body{
     position: relative;
     display: flex;
     flex-wrap: wrap;
+<<<<<<< HEAD
     margin-top: 5%;
     margin-left: 160px;
     gap: 10px;
+=======
+    justify-content: flex-start;
+    margin-top: 5%;
+    margin-left: 100px;
+>>>>>>> 575cd3abc028ade042218895dab7d49408f31448
     width: 1000px;
     height: auto;
 }
@@ -48,11 +55,11 @@ body{
     /* margin: 10px; */
     border-style: solid;
     border-width: thin;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.1);
 }
 
 .nabox:hover{
-    transform: scale(1.05);
-    transition: transform 200ms ease-in-out;
+    box-shadow: 20px 20px 30px rgba(255, 255, 255, 0.06);
     z-index: 1;
 }
 

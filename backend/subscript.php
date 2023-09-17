@@ -9,9 +9,9 @@
     $selected_plan_id = $_POST['plan_id'];// รับค่า plan id ที่ user เลือกมา
 
 
-    $sql = "SELECT * FROM user WHERE email = '{$email}' AND plan_id = NULL"; // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
+    $sql = "SELECT * FROM user WHERE email = '{$email}' AND plan_id IS NULL;"; // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
     $result = $conn->query($sql); // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
-
+    var_dump($result->num_rows);
     if ($result->num_rows == 1) {
 
       $subscription_sql = "SELECT * FROM subscription_plans WHERE plan_id = {$selected_plan_id}"; 
@@ -23,7 +23,9 @@
         $current_date = date('Y-m-d'); // วันที่ปัจจุบัน
         $start_date = $current_date; // วันที่เริ่มต้น
         
-        $insert_payment_sql = "INSERT INTO payments (amount, user_id, date_paid, is_success) VALUES ('$plan_price', '{$user_id}', '{$start_date}', 0)"; // สร้าง payment ใหม่
+        $insert_payment_sql = "INSERT INTO payments (amount, date_paid, user_id, is_success) VALUES ('{$plan_price}', '{$start_date}', '{$user_id}', 0)"; // สร้าง payment ใหม่
+        $conn->query($insert_payment_sql); // สร้าง payment ใหม่
+
         
         $payment_sql = "SELECT * FROM payments WHERE user_id = '{$user_id}' AND is_success = 0"; // ดึง payment ที่สร้างไปใหม่
         $payment_result = $conn->query($payment_sql);
@@ -48,4 +50,4 @@
       echo "YOU ALREADY SUBSCRIBED TO A PLAN";
     }
     
-    header('location:../frontend/index.php');
+    // header('location:../frontend/index.php');

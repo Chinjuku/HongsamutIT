@@ -5,7 +5,7 @@
     font-family: comic;
 }
 .container{
-    margin-top: 200px;
+    padding-top: 50px;
     width: 100%;
     min-height: 100vh;
     background: #FDF5D0;

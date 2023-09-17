@@ -115,13 +115,13 @@
         overflow: hidden;
     }
     #check:checked~.menubar{
-        height: 15rem;
+        height: 16rem;
     }
 
     .menubar a{
         display: block;
         font-size: 1.1rem;
-        margin: 1.8rem 0;
+        margin: 1.5rem 0;
         text-align: center;
         transform: translateY(-50px);
         transition: .3s ease;

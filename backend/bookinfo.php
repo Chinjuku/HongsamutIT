@@ -32,4 +32,10 @@ include 'database.php'; // Include your database connection script
 // Step 4: Close the database connection
 $conn->close();
 ?>
+<style>
+    p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 3px 0;
+    }
+</style>
 

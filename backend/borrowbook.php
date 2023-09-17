@@ -69,7 +69,7 @@
                     ?>
                 </div>  
             </div>
-            <!-- <button onclick="togglePopup()"> CLICK TO VIEW</button> -->
+            <button onclick="togglePopup()"> CLICK TO VIEW</button>
         </div>
     </head>
     <script>

@@ -1,4 +1,4 @@
-+<?php
+<?php
 class GBPrimePay
 {
     private string $url;
@@ -83,5 +83,4 @@ class GBPrimePay
             return $response;
         }
     }
-    
 }

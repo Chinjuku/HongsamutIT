@@ -19,7 +19,7 @@ include 'database.php'; // Include your database connection script
         echo '<div class="nabox">';
         echo '<p>' . $row['book_name'] . '</p>';
         echo '<p>' . $row['book_owner'] . '</p>';
-        echo '<img src="' . $row['imgsrc'] . '" alt="Image">';
+        echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
         // include 'borrowbook.php';
         echo '<button onclick="togglePopup()"> CLICK TO VIEW </button>';
         echo '</div>';

@@ -26,7 +26,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $white_list)) {
 
     
     $update_payment = "UPDATE payments SET is_success = 1 WHERE payment_id = '{$json_obj->referenceNo}'";// อัพเดท payment ว่าสำเร็จ
-    
+    $conn->query($update_payment);
     $current_date = date('Y-m-d');
     $start_date = $current_date;
     $end_date = date('Y-m-d', strtotime("+$plan_duration days", strtotime($current_date)));

@@ -1,3 +1,9 @@
+<?php
+if (isset($_SESSION['user_id'])) {
+  echo '<script>window.location.href = "./frontend/";</script>';;
+  exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="english">
   <head>

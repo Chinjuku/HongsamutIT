@@ -118,18 +118,18 @@
                     <span><i class="bi bi-caret-down"></i></span>
                 </a>
                 <ul class="feat-show">
-                    <li><a href="all.php">ALL BOOKS</a></li>
-                    <li><a href="comic.php">COMIC</a></li>
-                    <li><a href="detective.php">DETECTIVE</a></li>
-                    <li><a href="fantasy.php">FANTASY</a></li>
-                    <li><a href="fiction.php">FICTION</a></li>
-                    <li><a href="guide.php">GUIDE</a></li>
-                    <li><a href="health.php">HEALTH</a></li>
-                    <li><a href="history.php">HISTORY</a></li>
-                    <li><a href="horror.php">HORROR</a></li>
-                    <li><a href="knowledge.php">KNOWLEDGE</a></li>
-                    <li><a href="mystery.php">MYSTERY</a></li>
-                    <li><a href="romance.php">ROMANCE</a></li>
+                    <li><a href="./all.php">ALL BOOKS</a></li>
+                    <li><a href="./comic.php">COMIC</a></li>
+                    <li><a href="./detective.php">DETECTIVE</a></li>
+                    <li><a href="./fantasy.php">FANTASY</a></li>
+                    <li><a href="./fiction.php">FICTION</a></li>
+                    <li><a href="./guide.php">GUIDE</a></li>
+                    <li><a href="./health.php">HEALTH</a></li>
+                    <li><a href="./history.php">HISTORY</a></li>
+                    <li><a href="./horror.php">HORROR</a></li>
+                    <li><a href="./knowledge.php">KNOWLEDGE</a></li>
+                    <li><a href="./mystery.php">MYSTERY</a></li>
+                    <li><a href="./romance.php">ROMANCE</a></li>
                 </ul>
             </li>
         </ul>

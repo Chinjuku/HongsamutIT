@@ -12,6 +12,12 @@
         <link rel="stylesheet" href="css/viewbook.css">
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <style>
+            img{
+                width: 150px;
+                height: 180px;
+            }
+        </style>
     </head>
     <body>
 

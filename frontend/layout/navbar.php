@@ -72,9 +72,6 @@
         padding: 1px 20px;
         transition: 0.3s;
     }
-    .logo a:hover{
-        font-size: 2rem;
-    }
     </style>
 </head>
 <body>

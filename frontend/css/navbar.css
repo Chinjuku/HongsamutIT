@@ -121,7 +121,7 @@
     .menubar a{
         display: block;
         font-size: 1.1rem;
-        margin: 1.5rem 0;
+        margin: 1.2rem 0;
         text-align: center;
         transform: translateY(-50px);
         transition: .3s ease;
@@ -147,6 +147,6 @@
     
     }
     .header{
-        padding: 2.3rem;
+        padding: 2.4rem;
     }
 }

@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     $host = "161.246.127.24";
     $dbUsername = "admin";
 

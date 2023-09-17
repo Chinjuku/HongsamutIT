@@ -11,13 +11,16 @@ include 'database.php'; // Include your database connection script
     // output data of each row
 
     while($row = $result->fetch_assoc()) {
-    
-    $_SESSION['book_id'] = $row['book_id'];
-    $_SESSION['book_name'] = $row['book_name'];
-    $_SESSION['book_owner'] = $row['book_owner'];
-    $_SESSION['img_src'] = $row['imgsrc'];
-    $_SESSION['cate_name'] = $row['cate_id'];
-
+        // $_SESSION['book_id'] = $row['book_id'];
+        // $_SESSION['book_name'] = $row['book_name'];
+        // $_SESSION['book_owner'] = $row['book_owner'];
+        // $_SESSION['img_src'] = $row['imgsrc'];
+        // $_SESSION['cate_name'] = $row['cate_id'];
+        echo '<div class="nabox">';
+        echo $row['book_name'], '<br>';
+        echo $row['book_owner'], '<br>';
+        echo '<img src="' . $row['imgsrc'] . '" alt="Image">';
+        echo '</div>';
         }
     }
  else {

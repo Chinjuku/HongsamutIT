@@ -17,9 +17,11 @@ include 'database.php'; // Include your database connection script
         // $_SESSION['img_src'] = $row['imgsrc'];
         // $_SESSION['cate_name'] = $row['cate_id'];
         echo '<div class="nabox">';
-        echo $row['book_name'], '<br>';
-        echo $row['book_owner'], '<br>';
+        echo '<p>' . $row['book_name'] . '</p>';
+        echo '<p>' . $row['book_owner'] . '</p>';
         echo '<img src="' . $row['imgsrc'] . '" alt="Image">';
+        // include '../frontend/borrowbook.php';
+        // echo '<button onclick="togglePopup()"> CLICK TO VIEW </button>';
         echo '</div>';
         }
     }

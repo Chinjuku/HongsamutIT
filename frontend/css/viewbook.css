@@ -56,8 +56,12 @@ body{
     box-shadow: 20px 20px 30px rgba(255, 255, 255, 0.06);
     z-index: 1;
 }
-
+/* ปรับหนังสือฝั่ง backend */
 img {
     width: 150px;
     height: 180px;
+}
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 3px 0;
 }

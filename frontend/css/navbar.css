@@ -90,7 +90,7 @@
         padding: 1.3rem 5%;
     }
 }
-@media (max-width:870px){
+@media (max-width:980px){
     .icon{
         display:
         inline-flex;

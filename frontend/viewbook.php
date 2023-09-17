@@ -23,7 +23,12 @@
 
         <div class="main">
             <div class="mid">
-                <div class="newarrival">NEW ARRIVALS</div>
+                <div class="head">
+                    <div class="square"></div>
+                    <div class="newarrival"><b>NEW</b><br>ARRIVALS</div>
+                    
+                </div>
+                
                 <div class="container">
                     <!-- <button onclick="togglePopup()" class="nabox"> -->
                     <?php

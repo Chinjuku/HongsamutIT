@@ -19,18 +19,28 @@
     /* body{ */
         /* background-color: #FDF5D0; */
     /* } */
-    .menubar a:after{
-    content: "";
-    position: absolute;
-    background-color: #FDF5D0;
-    height: 3px;
-    width: 0%;
-    left: 0;
-    bottom: -10px;
+    .menubar a::before,.menubar a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+
     }
-    .menubar a:hover::after{
-    width: 100%;
+    .menubar a::before {
+        background-color: #FBFCF8;
+        height: 3px;
+        bottom: 3px;
+        transform-origin: 100% 50%;
+        transform: scaleX(0);
+        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
     }
+    .menubar a:hover::before {
+        transform-origin: 0% 50%;
+        transform: scaleX(1);
+    }
+    .menubar a:hover::after {
+        transform: translate3d(0, 0, 0);
+    }
+    
     .header{
         position: fixed;
         display: flex;

@@ -53,3 +53,8 @@ body{
     transition: transform 200ms ease-in-out;
     z-index: 1;
 }
+
+img {
+    width: 150px;
+    height: 180px;
+}

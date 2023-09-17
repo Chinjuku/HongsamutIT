@@ -2,6 +2,7 @@
     session_start();
     include './layout/navbar.php';
     include './layout/sidebar.php';
+    include '../backend/bookinfo.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +19,8 @@
             <div class="mid">
                 <div class="newarrival">NEW ARRIVALS</div>
                 <div class="container">
-                    <button onclick="togglePopup()" class="nabox"><?php echo $_SESSION['book_name'],'<br>',$_SESSION['book_owner']; ?></button>
+                    <button onclick="togglePopup()" class="nabox"><?php $imageURL = $_SESSION['img_src'];
+                    echo $_SESSION['book_name'],'<br>',$_SESSION['book_owner'], '<br>' ,'<img src="' . $imageURL . '" alt="Image">';?></button>
                     
                     <!-- <div class="nabox">Box2</div>
                     <div class="nabox">Box3</div>

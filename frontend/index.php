@@ -10,6 +10,11 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&amp;display=swap"
+            data-tag="font"
+        />
     </head>
     <body>
         <div class="main">

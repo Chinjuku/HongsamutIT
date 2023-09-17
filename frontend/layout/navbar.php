@@ -72,7 +72,8 @@
                 <a href="borrowbook.php">ฝาก POPUP</a>
                 <a href="viewbook.php">VIEW BOOK</a>
                 <?php
-                    if($_SESSION['user_type'] == "user") {
+                    $check_type = $_SESSION['user_type'];
+                    if($check_type == "user") {
                         echo "<a href='member.php'>MEMBER</a>";
                     }
                 ?>

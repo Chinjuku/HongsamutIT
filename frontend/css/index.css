@@ -2,7 +2,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font: comic;
+    /* font: comic; */
+    font-family: Mitr;
 }
 
 body{
@@ -15,12 +16,14 @@ body{
 
 .mid{
     margin-top: 10%;
-    justify-content: center;
+    justify-content: center; 
     /* padding-left: 13%; */
     width: 100%;
 }
 .newarrival{
     width: 100%;
+    font-family: Mitr;
+    font-style: Bold;
     margin-top: 10%;
     font-size: 120px;
     align-items: center;

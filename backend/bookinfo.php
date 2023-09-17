@@ -17,9 +17,11 @@ include 'database.php'; // Include your database connection script
         // $_SESSION['img_src'] = $row['imgsrc'];
         // $_SESSION['cate_name'] = $row['cate_id'];
         echo '<div class="nabox">';
-        echo $row['book_name'], '<br>';
-        echo $row['book_owner'], '<br>';
-        echo '<img src="' . $row['imgsrc'] . '" alt="Image">';
+        echo '<p>' . $row['book_name'] . '</p>';
+        echo '<p>' . $row['book_owner'] . '</p>';
+        echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+        // include 'borrowbook.php';
+        echo '<button onclick="togglePopup()"> CLICK TO VIEW </button>';
         echo '</div>';
         }
     }
@@ -30,3 +32,4 @@ include 'database.php'; // Include your database connection script
 // Step 4: Close the database connection
 $conn->close();
 ?>
+

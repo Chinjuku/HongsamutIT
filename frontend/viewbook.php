@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include './layout/navbar.php';
     include './layout/sidebar.php';
     include '../backend/bookinfo.php';

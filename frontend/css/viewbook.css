@@ -16,7 +16,7 @@ body{
 .mid{
     margin-top: 10%;
     justify-content: center;
-    padding-left: 13%;
+    padding-left: 18.5%;
     width: 100%;
 }
 .newarrival{
@@ -35,7 +35,7 @@ body{
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-top: 5%;
-    margin-left: 50px;
+    margin-left: 100px;
     width: 1000px;
     height: auto;
 }
@@ -48,6 +48,7 @@ body{
     margin: 10px;
     border-style: solid;
     border-width: thin;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.1);
 }
 
 .nabox:hover{

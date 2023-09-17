@@ -34,15 +34,9 @@ body{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-<<<<<<< HEAD
     margin-top: 5%;
     margin-left: 160px;
     gap: 10px;
-=======
-    justify-content: flex-start;
-    margin-top: 5%;
-    margin-left: 100px;
->>>>>>> 575cd3abc028ade042218895dab7d49408f31448
     width: 1000px;
     height: auto;
 }

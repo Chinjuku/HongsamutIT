@@ -55,6 +55,8 @@ $conn->close();
     .popup-content {
         background-color: #fff;
         padding: 20px;
+        /* width: 800px;
+        height: 500px; */
         border-radius: 5px;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     }
@@ -66,6 +68,18 @@ $conn->close();
         right: 10px;
         cursor: pointer;
     }
+    .pic{
+        width: 300px;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    .aa{  
+        margin: 30px 0;
+        border: solid black 1px;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
 </style>
 
 <script>
@@ -76,9 +90,10 @@ $conn->close();
 
         // Set the content for the popup
         popupContent.innerHTML = '<span class="popup-close" onclick="closePopup()">X</span>' +
-                                 '<h2>' + bookName + '</h2>' +
-                                 '<p>Owner: ' + bookOwner + '</p>' +
-                                 '<img src="' + imgSrc + '" alt="Image">';
+                                 '<h2>Book name :' + ' ' +bookName + '</h2>' +
+                                 '<p>Author : ' + ' ' + bookOwner + '</p>' +
+                                 '<img class="pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
+                                 '<a class="aa" href="../frontend/backpack.php">BORROW NOW</a>';
 
         // Show the popup
         popup.style.display = 'flex';
@@ -94,7 +109,6 @@ $conn->close();
 <html>
 <div class="popup-overlay" id="popup">
     <div class="popup-content" id="popup-content">
-        <!-- Popup content goes here -->
         <!-- <span class="popup-close" onclick="closePopup()">X</span> -->
     </div>
 </div>

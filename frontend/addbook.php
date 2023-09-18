@@ -55,7 +55,6 @@
                 <input type="submit" value="add book" name="add_book" class="btn">
             </div>
         </form>
-            <input type="submit" href="./viewbook.php" class="btns"></input>
     </section>
 
     <script src="javascript/addbook.js"></script>

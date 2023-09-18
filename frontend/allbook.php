@@ -9,7 +9,7 @@
     <head>
         <title>HONGSAMUT</title>
         <meta name="viewport" content="width=1920, height=1080, initial-scale=1">
-        <link rel="stylesheet" href="css/viewbook.css">
+        <link rel="stylesheet" href="css/allbook.css">
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <style>
@@ -25,7 +25,7 @@
             <div class="mid">
                 <div class="head">
                     <div class="square"></div>
-                    <div class="newarrival"><b>NEW</b><br>ARRIVALS</div>
+                    <div class="newarrival"><b>ALL</b><br>BOOKS</div>
                     
                 </div>
                 

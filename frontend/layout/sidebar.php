@@ -118,7 +118,7 @@
                     <span><i class="bi bi-caret-down"></i></span>
                 </a>
                 <ul class="feat-show">
-                    <li><a href="./all.php">ALL BOOKS</a></li>
+                    <li><a href="./allbook.php">ALL BOOKS</a></li>
                     <li><a href="./comic.php">COMIC</a></li>
                     <li><a href="./detective.php">DETECTIVE</a></li>
                     <li><a href="./fantasy.php">FANTASY</a></li>

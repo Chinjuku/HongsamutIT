@@ -169,7 +169,6 @@ include 'database.php'; // Include your database connection script
                     }
             }
         }
-// echo $_SESSION['book_id'], $_SESSION['book_owner'];
 // Step 4: Close the database connection
 $conn->close();
 ?>

@@ -79,6 +79,8 @@ img {
     width: 150px;
     height: 180px;
 }
+.clicktoview{
+}
 @media (max-width:1620px){
     .mid{
         margin-left: 36%;
@@ -95,8 +97,6 @@ img {
         width: 100%;
         display: block;
     }
-}
-.clicktoview{
 }
 @media (max-width:1700px){
     .mid{

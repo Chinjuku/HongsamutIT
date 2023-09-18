@@ -26,27 +26,20 @@
                 <div class="head">
                     <div class="square"></div>
                     <div class="newarrival"><b>NEW</b><br>ARRIVALS</div>
-                    
                 </div>
-                
+                <div class="container">
+                        <!-- ใส่ new book นะ (ใส่ไว้ได้เลย แต่เอาข้อมูลหนังสือใหม่เข้า database ด้วย)-->
+                </div>
+                <br>
+                <div class="head">
+                    <div class="square"></div>
+                    <div class="newarrival"><b>ALL</b><br>BOOKS</div>
+                </div>
+                    
                 <div class="container">
                     <!-- <button onclick="togglePopup()" class="nabox"> -->
                     <?php
                         include '../backend/bookinfo.php';
-                        // $products = [
-                        //     ["book_name" => $_SESSION['book_name'], "book_owner" => $_SESSION['book_owner'], "img_src" => $_SESSION['img_src']],
-                        //     ["book_name" => "Book 2", "book_owner" => "Author 2", "img_src" => "image2.jpg"],
-                        //     ["book_name" => "Book 2", "book_owner" => "Author 2", "img_src" => "image2.jpg"],
-                        //     ["book_name" => "Book 2", "book_owner" => "Author 2", "img_src" => "image2.jpg"],
-                        //     ["book_name" => "Book 2", "book_owner" => "Author 2", "img_src" => "image2.jpg"]
-                        // ];
-                        // foreach ($products as $product) {
-                        //     echo '<div class="nabox">';
-                        //     echo $product['book_name'], '<br>';
-                        //     echo $product['book_owner'], '<br>';
-                        //     echo '<img src="' . $product['img_src'] . '" alt="Image">';
-                        //     echo '</div>';
-                        // }
                     ?>
             </div>
             

@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     include './layout/navbar.php';
     include './layout/sidebar.php';
 
@@ -21,11 +21,16 @@
             <div class="mid">
                 <div class="comic">COMIC</div>
                 <div class="container">
-                    <div class="nabox">Book1</div>
-                    <div class="nabox">Book2</div>
-                    <div class="nabox">Book3</div>
-                    <div class="nabox">Book4</div>
-                    <div class="nabox">Book5</div>
+                    <?php
+                        include '../backend/bookinfo.php';
+                            // echo '<div class="nabox">';
+                            // echo '<p>' . $row['book_name'] . '</p>';
+                            // echo '<p>' . $row['book_owner'] . '</p>';
+                            // echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                            // // include 'borrowbook.php';
+                            // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                            // echo '</div>';
+                    ?>
             </div>
             
         </div>

@@ -18,7 +18,7 @@
 
             </div>
             <div class="mid">
-                <div class="detective">DETECTIVE</div>
+                <div class="detective">ROMANCE</div>
                 <div class="container">
                     <?php
                         include '../backend/bookinfo.php';

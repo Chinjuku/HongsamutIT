@@ -17,24 +17,22 @@ include 'database.php'; // Include your database connection script
         if ($allbook_page === "/frontend/allbook.php") {
             while($row = $result->fetch_assoc()) {
                 echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
-                echo '</div>';
+                    echo '<p>Book: ' . $row['book_name'] . '</p>';
+                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
+                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '</div>';
             }
         }
         if ($allbook_page === "/frontend/comic.php"){
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 1){
-                echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
-                echo '</div>';
+                    echo '<div class="nabox">';
+                    echo '<p>Book: ' . $row['book_name'] . '</p>';
+                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
+                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '</div>';
                     }
                 }
             }
@@ -42,91 +40,84 @@ include 'database.php'; // Include your database connection script
         if ($allbook_page === "/frontend/detective.php"){
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 2){
-                echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
-                echo '</div>';
+                    echo '<div class="nabox">';
+                    echo '<p>Book: ' . $row['book_name'] . '</p>';
+                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
+                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '</div>';
                     }
                 }
         }
         if ($allbook_page === "/frontend/fantasy.php"){
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 3){
-                echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
-                echo '</div>';
+                    echo '<div class="nabox">';
+                    echo '<p>Book: ' . $row['book_name'] . '</p>';
+                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
+                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '</div>';
                     }
                 }
         }
         if ($allbook_page === "/frontend/fantasy.php"){
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 3){
-                echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
-                echo '</div>';
+                    echo '<div class="nabox">';
+                    echo '<p>Book: ' . $row['book_name'] . '</p>';
+                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
+                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '</div>';
                     }
                 }
         }
         if ($allbook_page === "/frontend/fiction.php"){
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 4){
-                echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
-                echo '</div>';
+                    echo '<div class="nabox">';
+                    echo '<p>Book: ' . $row['book_name'] . '</p>';
+                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
+                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '</div>';
                     }
                 }
         }
         if ($allbook_page === "/frontend/guide.php"){
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 5){
-                echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
-                echo '</div>';
+                    echo '<div class="nabox">';
+                    echo '<p>Book: ' . $row['book_name'] . '</p>';
+                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
+                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '</div>';
                     }
                 }
         }
         if ($allbook_page === "/frontend/health.php"){
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 6){
-                echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
-                echo '</div>';
+                    echo '<div class="nabox">';
+                    echo '<p>Book: ' . $row['book_name'] . '</p>';
+                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
+                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '</div>';
                     }
                 }
         }
         if ($allbook_page === "/frontend/history.php"){
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 7){
-                echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
-                echo '</div>';
+                    echo '<div class="nabox">';
+                    echo '<p>Book: ' . $row['book_name'] . '</p>';
+                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
+                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '</div>';
                     }
                 }
         }
@@ -134,60 +125,55 @@ include 'database.php'; // Include your database connection script
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 9){
                 echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
+                echo '<p>Book: ' . $row['book_name'] . '</p>';
+                echo '<p>Author: ' . $row['book_owner'] . '</p>';
                 echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
                 echo '</div>';
                     }
-                }
+            }
         }
         if ($allbook_page === "/frontend/knowledge.php"){
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 10){
                 echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
+                echo '<p>Book: ' . $row['book_name'] . '</p>';
+                echo '<p>Author: ' . $row['book_owner'] . '</p>';
                 echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
                 echo '</div>';
                     }
-                }
+            }
         }
         if ($allbook_page === "/frontend/mystery.php"){
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 11){
                 echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
+                echo '<p>Book: ' . $row['book_name'] . '</p>';
+                echo '<p>Author: ' . $row['book_owner'] . '</p>';
                 echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
                 echo '</div>';
                     }
-                }
+            }
         }
         if ($allbook_page === "/frontend/romance.php"){
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 12){
                 echo '<div class="nabox">';
-                echo '<p>' . $row['book_name'] . '</p>';
-                echo '<p>' . $row['book_owner'] . '</p>';
+                echo '<p>Book: ' . $row['book_name'] . '</p>';
+                echo '<p>Author: ' . $row['book_owner'] . '</p>';
                 echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                // include 'borrowbook.php';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
                 echo '</div>';
                     }
-                }
+            }
         }
 // echo $_SESSION['book_id'], $_SESSION['book_owner'];
 // Step 4: Close the database connection
 $conn->close();
 ?>
 <style>
-    /* Style for the popup overlay */
     p{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         margin: 3px 0;
@@ -244,8 +230,8 @@ $conn->close();
 
         // Set the content for the popup
         popupContent.innerHTML = '<span class="popup-close" onclick="closePopup()">X</span>' +
-                                 '<h2>Book name :' + ' ' +bookName + '</h2>' +
                                  '<p>Author : ' + ' ' + bookOwner + '</p>' +
+                                 '<h1>Book :' + ' ' +bookName + '</h1>' +
                                  '<img class="pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                  '<a class="aa" href="../frontend/backpack.php">BORROW NOW</a>';
 

@@ -21,7 +21,7 @@ include 'database.php'; // Include your database connection script
         echo '<p>' . $row['book_owner'] . '</p>';
         echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
         // include 'borrowbook.php';
-        echo '<button onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+        echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
         echo '</div>';
         }
     }

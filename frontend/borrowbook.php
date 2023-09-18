@@ -1,41 +1,3 @@
-<?php
-    // include '../backend/bookinfo.php'
-// include 'database.php'; // Include your database connection script
-
-// // Step 2: Execute a SQL query to retrieve data
-//     $sql = "SELECT * FROM books"; // Replace 'your_table_name' with your actual table name
-//     $result = $conn->query($sql);
-
-// // Step 3: Fetch and display the data
-//     if ($result->num_rows > 0) {
-
-//         while ($row = $result->fetch_assoc()) {
-//             echo '<div class="popup" id="popup-1">';
-//             echo '<div class="overlay"></div>';
-//             echo '<div class="content"> ';
-//             echo '<div class="bg"></div>';
-//             echo '<div class="left">';
-//             echo '<div class="author">' . $row['book_owner'] . '</div>';
-//             echo '<div class="title">' . $row['book_name'] . '</div>';
-//             echo '<hr>';
-//             echo '<button class="borrow">BORROW NOW</button>';
-//             echo '</div>';
-//             echo '<div class="right">';
-//             echo '<div class="icon">';
-//             echo '<i class="bi bi-dash-square" onclick="togglePopup()"></i>';
-//             echo '</div>';
-//             echo '<img src="' . $row['imgsrc'] . '" alt="Books">';
-//             echo '</div>';
-//             echo '</div>';
-//             echo '<button onclick="togglePopup()"> CLICK TO VIEW</button>';
-//             echo '</div>';
-//             echo '<script src="javascript/borrowbook.js"></script>';
-//         }
-//     }
-?>
-
-
-
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
@@ -72,6 +34,7 @@
             <button onclick="togglePopup()"> CLICK TO VIEW</button>
         </div>
     </head>
+    <!-- javascript -->
     <script>
         function togglePopup(){
             document.getElementById("popup-1").classList.toggle("active");

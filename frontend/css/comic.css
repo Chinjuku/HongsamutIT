@@ -72,7 +72,7 @@ body{
 
 .nabox:hover{
     background-color: rgb(238, 238, 238);
-    z-index: 1;
+    z-index: 1; margin: 20px;
 }
 /* ปรับหนังสือฝั่ง backend */
 img {

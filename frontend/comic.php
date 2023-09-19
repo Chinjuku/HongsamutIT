@@ -16,13 +16,16 @@
     </head>
     <body>
         
-
-            </div>
+        <div class="main">
             <div class="mid">
-                <div class="comic">COMIC</div>
-                <div class="container">
-                    <?php
-                        include '../backend/bookinfo.php';
+            <div class="head">
+                <div class="square"></div>
+                <div class="comic"><b>COMIC</b></div>
+                    
+            </div>
+            <div class="container">
+                <?php
+                    include '../backend/bookinfo.php';
                             // echo '<div class="nabox">';
                             // echo '<p>' . $row['book_name'] . '</p>';
                             // echo '<p>' . $row['book_owner'] . '</p>';
@@ -30,9 +33,10 @@
                             // // include 'borrowbook.php';
                             // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
                             // echo '</div>';
-                    ?>
+                ?>
             </div>
             
-        </div>
+            </div>
+        </div>    
     </body>
 </html>

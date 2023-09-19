@@ -16,15 +16,19 @@
     <body>
         
 
-            </div>
+        <div class="main">
             <div class="mid">
-                <div class="detective">GUIDE</div>
+                <div class="head">
+                    <div class="square"></div>
+                    <div class="guide"><b>GUIDE</b></div>
+                    
+                </div>
                 <div class="container">
                     <?php
                         include '../backend/bookinfo.php';
                     ?>
                 </div>
-            
+            </div>    
         </div>
     </body>
 </html>

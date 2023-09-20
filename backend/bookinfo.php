@@ -20,7 +20,7 @@ include 'database.php'; // Include your database connection script
                     echo '<p>Book: ' . $row['book_name'] . '</p>';
                     echo '<p>Author: ' . $row['book_owner'] . '</p>';
                     echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                     echo '</div>';
             }
         }
@@ -31,7 +31,7 @@ include 'database.php'; // Include your database connection script
                     echo '<p>Book: ' . $row['book_name'] . '</p>';
                     echo '<p>Author: ' . $row['book_owner'] . '</p>';
                     echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                     echo '</div>';
                     }
                 }
@@ -44,7 +44,7 @@ include 'database.php'; // Include your database connection script
                     echo '<p>Book: ' . $row['book_name'] . '</p>';
                     echo '<p>Author: ' . $row['book_owner'] . '</p>';
                     echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                     echo '</div>';
                     }
                 }
@@ -56,7 +56,7 @@ include 'database.php'; // Include your database connection script
                     echo '<p>Book: ' . $row['book_name'] . '</p>';
                     echo '<p>Author: ' . $row['book_owner'] . '</p>';
                     echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                     echo '</div>';
                     }
                 }
@@ -68,7 +68,7 @@ include 'database.php'; // Include your database connection script
                     echo '<p>Book: ' . $row['book_name'] . '</p>';
                     echo '<p>Author: ' . $row['book_owner'] . '</p>';
                     echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                     echo '</div>';
                     }
                 }
@@ -80,7 +80,7 @@ include 'database.php'; // Include your database connection script
                     echo '<p>Book: ' . $row['book_name'] . '</p>';
                     echo '<p>Author: ' . $row['book_owner'] . '</p>';
                     echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                     echo '</div>';
                     }
                 }
@@ -92,7 +92,7 @@ include 'database.php'; // Include your database connection script
                     echo '<p>Book: ' . $row['book_name'] . '</p>';
                     echo '<p>Author: ' . $row['book_owner'] . '</p>';
                     echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                     echo '</div>';
                     }
                 }
@@ -104,7 +104,7 @@ include 'database.php'; // Include your database connection script
                     echo '<p>Book: ' . $row['book_name'] . '</p>';
                     echo '<p>Author: ' . $row['book_owner'] . '</p>';
                     echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                     echo '</div>';
                     }
                 }
@@ -116,7 +116,7 @@ include 'database.php'; // Include your database connection script
                     echo '<p>Book: ' . $row['book_name'] . '</p>';
                     echo '<p>Author: ' . $row['book_owner'] . '</p>';
                     echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                     echo '</div>';
                     }
                 }
@@ -128,7 +128,7 @@ include 'database.php'; // Include your database connection script
                 echo '<p>Book: ' . $row['book_name'] . '</p>';
                 echo '<p>Author: ' . $row['book_owner'] . '</p>';
                 echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
             }
@@ -140,7 +140,7 @@ include 'database.php'; // Include your database connection script
                 echo '<p>Book: ' . $row['book_name'] . '</p>';
                 echo '<p>Author: ' . $row['book_owner'] . '</p>';
                 echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
             }
@@ -152,7 +152,7 @@ include 'database.php'; // Include your database connection script
                 echo '<p>Book: ' . $row['book_name'] . '</p>';
                 echo '<p>Author: ' . $row['book_owner'] . '</p>';
                 echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
             }
@@ -164,7 +164,7 @@ include 'database.php'; // Include your database connection script
                 echo '<p>Book: ' . $row['book_name'] . '</p>';
                 echo '<p>Author: ' . $row['book_owner'] . '</p>';
                 echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">CLICK TO VIEW</button>';
+                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
             }

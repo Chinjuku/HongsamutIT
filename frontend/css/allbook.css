@@ -99,12 +99,12 @@ img {
 .clicktoview{
     width: 50%;
     background: #485545;
-    padding: 20px 10px;
+    padding: 2px 2px;
     color: #FDF5D0;
     border-radius: 5px;
-    box-shadow: 3px 3px #272222;
+    box-shadow: 1.5px 1.5px #272222;
 }
 
 .clicktoview:hover{
-    box-shadow: 3px 3px #FDF5D0;
+    box-shadow: 1.5px 1.5px #FDF5D0;
 }

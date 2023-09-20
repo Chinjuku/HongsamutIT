@@ -57,9 +57,8 @@ nav ul ul li{
     border-bottom: none;
 
 }
-nav ul .feat-show.show{
-    display: block;
-    
+nav ul .feat-show{
+    display: none;
 }
 nav ul ul{
     position: static;
@@ -88,7 +87,7 @@ nav ul li a span{
     font-size: 22px;
     transition: transform 0.4s;
 }
-nav ul li a:hover span{
+nav ul li a:active span{
     transform: translateY(-50%) rotate(-180deg);
 
 }

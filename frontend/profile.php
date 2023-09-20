@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include './layout/navbar.php';
     include './layout/page.php';
 ?>
@@ -23,7 +22,7 @@
     <div id = "card">
         <div class="profile-box">
             <div class="back-icon">
-            <a href="index.php"><i class="fa fa-backward" aria-hidden="true"></i></a>
+            <a href="home.php"><i class="fa fa-backward" aria-hidden="true"></i></a>
             </div>
             <div class="txt_field">
                 <label>Username : </label>
@@ -41,7 +40,6 @@
                 <label>Tel : </label>
                 <?php
                     echo $_SESSION['phone_num'];
-                    // var_dump($_SESSION['phone_num']);
                 ?>
             </div>
             <div class="txt_field1">

@@ -19,11 +19,12 @@
             width: 250px;
             height: 100%;
             left: 0px;
-            margin-top: 70px;
+            margin-top: 69px;
             padding-left: 0px;
             background-color: #272222;
         }
         .sidebar .text{
+            
             color: white;
             font-size: 15px;
             font-weight: 600;
@@ -55,7 +56,7 @@
             font-weight: 500;
             display: block;
             width: 100%;
-            padding-left: 0px;
+
             margin-left: 0px;
             
         }

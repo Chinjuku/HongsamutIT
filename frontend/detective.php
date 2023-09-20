@@ -15,16 +15,19 @@
     </head>
     <body>
         
-
-            </div>
+        <div class="main">
             <div class="mid">
-                <div class="detective">DETECTIVE</div>
+                <div class="head">
+                    <div class="square"></div>
+                    <div class="detective"><b>DETECTIVE</b></div>
+                    
+                </div>
                 <div class="container">
                     <?php
                         include '../backend/bookinfo.php';
                     ?>
                 </div>
-            
+            </div>
         </div>
     </body>
 </html>

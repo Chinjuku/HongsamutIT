@@ -31,7 +31,7 @@
                     ?>
                 </div>  
             </div>
-            <button onclick="togglePopup()"> CLICK TO VIEW</button>
+            <button onclick="togglePopup()">VIEW</button>
         </div>
     </head>
     <!-- javascript -->

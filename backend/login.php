@@ -21,6 +21,7 @@ if ($result->num_rows == 1) {
     $_SESSION['last_name'] = $row['last_name'];
     $_SESSION['user_type'] = $row['user_type'];
     $_SESSION['phone_num'] = $row['phone_number'];
+    $_SESSION['date_register'] = $row['date_register'];
 
     $plan_id_sql = "SELECT * FROM user WHERE email = '{$_SESSION['email']}' AND plan_id = NULL"; // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
     $plan_id_result = $conn->query($sql);
@@ -31,11 +32,8 @@ if ($result->num_rows == 1) {
     else{
       $_SESSION['plan_id'] = NULL;
     }
-
-
-
   }
-  echo '<script>window.location.href = "../frontend/index.php";</script>';
+  echo '<script>window.location.href = "../frontend/home.php";</script>';
   
 } else {
   // echo '<script>alert("Your account is incorrect.");</script>';

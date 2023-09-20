@@ -20,7 +20,7 @@
             <div class="mid">
                 <div class="head">
                     <div class="square"></div>
-                    <div class="health"><b>HEALTH</b></div>
+                    <div class="newarrival"><b>HEALTH</b></div>
                     
                 </div>
                 <div class="container">

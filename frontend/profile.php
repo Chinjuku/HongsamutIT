@@ -56,6 +56,12 @@
                     echo $_SESSION['password'];
                 ?>
             </div>
+            <div class="txt_field1">
+                <label>Date Register : </label>
+                <?php
+                    echo $_SESSION['date_register'];
+                ?>
+            </div>
             <form action="../backend/logout.php" class="log">
             <button type="submit"> Logout </button>
             </form>

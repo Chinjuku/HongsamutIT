@@ -19,7 +19,7 @@
             <div class="mid">
                 <div class="head">
                     <div class="square"></div>
-                    <div class="detective"><b>DETECTIVE</b></div>
+                    <div class="newarrival"><b>DETECTIVE</b></div>
                     
                 </div>
                 <div class="container">

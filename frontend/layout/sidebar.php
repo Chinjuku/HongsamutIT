@@ -115,10 +115,10 @@
             </li>
 
             <li>
-                <a href="#" class="feat-btn"><i class="bi bi-book"></i> CATEGORIES
+                <a id="toggleButton" class="feat-btn"><i class="bi bi-book"></i> CATEGORIES
                     <span><i class="bi bi-caret-down"></i></span>
                 </a>
-                <ul class="feat-show">
+                <ul class="feat-show" id="content">
                     <li><a href="./allbook.php">ALL BOOKS</a></li>
                     <li><a href="./comic.php">COMIC</a></li>
                     <li><a href="./detective.php">DETECTIVE</a></li>
@@ -136,11 +136,18 @@
         </ul>
     </nav>
 
-    <!-- <script>
-        $('.feat-btn').click(function(){
-            $('nav ul .feat-show').toggleClass("show");
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const content = document.getElementById('content');
+        
+        toggleButton.addEventListener('click', () => {
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
         });
-    </script> -->
+    </script>
 
 
     </body>

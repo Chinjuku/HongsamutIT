@@ -2,7 +2,7 @@
 // ถ้าเป็น ip ของ GBPrimePay ถึงจะให้ทำงานโค้ดใน if
 include 'database.php';
 
- $white_list = [
+$white_list = [
     '203.151.205.45',
     '203.151.205.33',
     '18.143.213.62',

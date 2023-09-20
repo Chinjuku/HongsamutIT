@@ -111,7 +111,7 @@
         <div class="text">Menu</div>
         <ul>
             <li class="newarr">
-                <a href="viewbook.php"><i class="bi bi-stars"></i> NEW ARRIVALS</a>
+                <a href="home.php"><i class="bi bi-stars"></i> NEW ARRIVALS</a>
             </li>
 
             <li>

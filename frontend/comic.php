@@ -8,6 +8,10 @@
     <head>
         <title>HONGSAMUT</title>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600;700&family=Mitr:wght@200;300;400;500;600;700&display=swap" 
+        rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/allbook.css">
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">

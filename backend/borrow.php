@@ -38,7 +38,8 @@
             echo '<script>window.location.href = "../frontend/allbook.php";</script>';
             exit();
         } else {
-            echo '<script>window.location.href = "../frontend/allbook.php";</script>';
+            // echo '<script>window.location.href = "../frontend/allbook.php";</script>';
+            echo("Bruh");
             exit();
         }
     }

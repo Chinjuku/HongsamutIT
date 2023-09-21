@@ -8,7 +8,7 @@
     $email = $_POST["email"];
     $password = $_POST["password"];
     $phone_num = $_POST["phone_num"];
-    $usertype = $_POST["user_type"];
+    $usertypeid = $_POST["user_type"];
     date_default_timezone_set('Asia/Bangkok');
     $date_register = date('Y-m-d H:i:s');
 
@@ -30,8 +30,8 @@
 
     } else {
         // ถ้าไม่มีชื่อหรืออีเมลนี้ในระบบ สามารถเพิ่มข้อมูลได้
-        $sql = "INSERT INTO user (user_name, first_name, last_name, email, password, phone_number, user_type, date_register)
-         VALUES ('{$username}', '{$firstname}', '{$lastname}','{$email}', '{$password}', '{$phone_num}', '{$usertype}', '{$date_register}')";
+        $sql = "INSERT INTO user (user_name, first_name, last_name, email, password, phone_number, user_type_id, date_register)
+         VALUES ('{$username}', '{$firstname}', '{$lastname}','{$email}', '{$password}', '{$phone_num}', '{$usertypeid}', '{$date_register}')";
 
         // ใช้ prepared statement
         $stmt = $conn->prepare($sql);

@@ -19,7 +19,7 @@ if ($result->num_rows == 1) {
     $_SESSION['password'] = $row['password'];
     $_SESSION['first_name'] = $row['first_name'];
     $_SESSION['last_name'] = $row['last_name'];
-    $_SESSION['user_type'] = $row['user_type'];
+    $_SESSION['user_type'] = $row['user_type_id'];
     $_SESSION['phone_num'] = $row['phone_number'];
     $_SESSION['date_register'] = $row['date_register'];
     $plan_id_sql = "SELECT * FROM user WHERE email = '{$_SESSION['email']}' AND plan_id IS NULL"; // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan

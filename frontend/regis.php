@@ -54,8 +54,8 @@
             <div class="form-control">    
             <label for="phone_num" class="lb">User Type</label>
             <select name="user_type" class="input">
-                <option value="user" name="user_type" required>User</option>
-                <option value="admin" name="user_type">Admin</option>
+                <option value="1" name="user_type" required>User</option>
+                <option value="2" name="user_type">Admin</option>
             </select>
             </div>
 

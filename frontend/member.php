@@ -15,6 +15,7 @@
 <body>
     <div class="container">
         <h2>Choose your plan</h2>
+        <form action="../backend/subscript.php" method="post">
         <div class="pricerow">
             <div class="pricecol">
                 <p>Starter</p>
@@ -23,7 +24,8 @@
                     <li>สามารถยืมหนังสือได้สูงสุด 10 เล่ม</li>
                     <li>1 ครั้ง / 1 เดือน</li>
                 </ul>
-                <button>Add to Member</button>
+                <input name="plan_id" type="hidden" value="1">
+                <button type="submit">Add to Member</button>
             </div>
             <div class="pricecol">
                 <p>Premium</p>
@@ -32,7 +34,8 @@
                     <li>สามารถยืมหนังสือได้สูงสุด 20 เล่ม</li>
                     <li>1 ครั้ง / 1 เดือน</li>
                 </ul>
-                <button>Add to Member</button>
+                <input name="plan_id" type="hidden" value="2">
+                <button type="submit">Add to Member</button>
             </div>
             <div class="pricecol">
                 <p>All-in</p>
@@ -41,9 +44,11 @@
                     <li>สามารถยืมหนังสือสูงสุด 10 เล่ม</li>
                     <li>1 ครั้ง / 1 ปี</li>
                 </ul>
-                <button>Add to Member</button>
+                <input name="plan_id" type="hidden" value="3">
+                <button type="submit">Add to Member</button>
             </div>
         </div>
+        </form>
     </div>
 </body>
 </html>

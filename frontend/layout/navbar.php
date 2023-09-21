@@ -30,7 +30,7 @@
                 <a href="allbook.php" style="--i:1;">VIEW BOOK</a>
                 <?php
                     $check_type = $_SESSION['user_type'];
-                    if($check_type == "user") {
+                    if($check_type == 1) {
                         echo "<a href='member.php'>MEMBER</a>";
                     }
                 ?>
@@ -41,7 +41,7 @@
                     <?php
                     if (isset($_SESSION['user_id'])){
                         echo $_SESSION['user_name'];
-                            if($_SESSION['user_type'] == "admin") {
+                            if($_SESSION['user_type'] == 2) {
                             echo "<a href='addbook.php'>ADD BOOK</a>";
                         }
                         }            

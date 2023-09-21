@@ -57,6 +57,6 @@
         </form>
     </section>
 
-    <script src="javascript/addbook.js"></script>
+    <!-- <script src="javascript/addbook.js"></script> -->
 </body>
 </html>

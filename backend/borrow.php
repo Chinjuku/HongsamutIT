@@ -2,6 +2,12 @@
     session_start();
     include 'database.php';
     $plan_id = $_SESSION['plan_id'];
+    //check if user subscribe to any plan
+    if ($plan_id == NULL) {
+        echo '<script>alert("You have not subscribed to any plan.");</script>';
+        echo '<script>window.location.href = "../frontend/member.php";</script>';
+        exit();
+    }
     $book_id = $_POST["book_id"];
     // $userid = $_SESSION['user_id'];
     date_default_timezone_set('Asia/Bangkok');

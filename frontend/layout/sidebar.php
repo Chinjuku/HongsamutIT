@@ -1,6 +1,10 @@
 <!DOCTYPE html>
     <head>
         <!-- <link rel="stylesheet" href="../css/sidebar.css"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600;700&family=Mitr:wght@200;300;400;500;600;700&display=swap" 
+        rel="stylesheet">
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <script scr="https://code.jquery.com/jquery-3.4.1.js"></script>

@@ -51,7 +51,6 @@
 
         }
         nav ul li a{
-            
             position: relative;
             color: white;
             text-decoration: none;
@@ -60,7 +59,6 @@
             font-weight: 500;
             display: block;
             width: 100%;
-
             margin-left: 0px;
             
         }
@@ -124,18 +122,18 @@
                 </a>
                 <!-- <ul class="feat-show" id="content"> -->
                     <form action="../../backend/bookinfoez.php" method="post" class="feat-show" id="content">
-                    <li><button type="submit" href="./allbook.php" name="categories" value='100'>ALL BOOKS</button></li>
-                    <li><button type="submit" href="./allbook.php" name="categories" value='1'>COMIC</button></li>
-                    <li><button type="submit" href="./allbook.php" name="categories" value='2'>DETECTIVE</button></li>
-                    <li><button type="submit" href="./allbook.php" name="categories" value='3'>FANTASY</button></li>
-                    <li><button type="submit" href="./allbook.php" name="categories" value='4'>FICTION</button></li>
-                    <li><button type="submit" href="./allbook.php" name="categories" value='5'>GUIDE</button></li>
-                    <li><button type="submit" href="./allbook.php" name="categories" value='6'>HEALTH</button></li>
-                    <li><button type="submit" href="./allbook.php" name="categories" value='7'>HISTORY</button></li>
-                    <li><button type="submit" href="./allbook.php" name="categories" value='9'>HORROR</button></li>
-                    <li><button type="submit" href="./allbook.php" name="categories" value='10'>KNOWLEDGE</button></li>
-                    <li><button type="submit" href="./allbook.php" name="categories" value='11'>MYSTERY</button></li>
-                    <li><button type="submit" href="./allbook.php" name="categories" value='12'>ROMANCE</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='100'>ALL BOOKS</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='1'>COMIC</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='2'>DETECTIVE</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='3'>FANTASY</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='4'>FICTION</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='5'>GUIDE</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='6'>HEALTH</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='7'>HISTORY</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='9'>HORROR</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='10'>KNOWLEDGE</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='11'>MYSTERY</button></li>
+                    <li><button type="submit" href="./allbookez.php" name="categories" value='12'>ROMANCE</button></li>
                     </form>
                 <!-- </ul> -->
             </li>

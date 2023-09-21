@@ -10,9 +10,6 @@
     echo $book_id, '<br>', $date_borrow , '<br>', $date_return;
     // $sql = "INSERT INTO borrow&return_books (book_id, date_borrow)
     // VALUES ('{$book_id}', '{$date_borrow}')";
+
     
-    
-
-
-
 ?>

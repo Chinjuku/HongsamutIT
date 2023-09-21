@@ -24,7 +24,7 @@
     if ($check_stmt->num_rows >= $max_book) {
         // echo '<script>alert("You have reached the maximum number of books you can borrow.");</script>';
         echo $max_book;
-        echo '<script>window.location.href = "../frontend/allbook.php";</script>';
+        // echo '<script>window.location.href = "../frontend/allbook.php";</script>';
         exit();
     }else{
         //add to borrow table
@@ -35,7 +35,7 @@
             $update_sql = "UPDATE books SET status = 0 WHERE book_id = '{$book_id}'";
             $update_stmt = $conn->prepare($update_sql);
             $update_stmt->execute();
-            echo '<script>window.location.href = "../frontend/allbook.php";</script>';
+            // echo '<script>window.location.href = "../frontend/allbook.php";</script>';
             exit();
         } else {
             // echo '<script>window.location.href = "../frontend/allbook.php";</script>';

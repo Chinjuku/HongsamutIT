@@ -35,7 +35,7 @@ if ($result->num_rows == 1) {
   echo '<script>window.location.href = "../frontend/home.php";</script>';
   
 } else {
-  // echo '<script>alert("Your account is incorrect.");</script>';
+  echo '<script>alert("Your account is incorrect.");</script>';
   echo '<script>window.location.href = "../frontend/login.php";</script>';
 }
 

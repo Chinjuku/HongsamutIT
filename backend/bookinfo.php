@@ -225,12 +225,14 @@ $conn->close();
     function togglePopup(bookName, bookOwner, imgSrc) {
         var popup = document.getElementById('popup');
         var popupContent = document.getElementById('popup-content');
-
-        popupContent.innerHTML = '<span class="popup-close" onclick="closePopup()">X</span>' +
+                            
+        popupContent.innerHTML = '<form action="" method="post">' +
+                                 '<span class="popup-close" onclick="closePopup()">X</span>' +
                                  '<p>Author : ' + ' ' + bookOwner + '</p>' +
                                  '<h1>Book :' + ' ' +bookName + '</h1>' +
                                  '<img class="pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
-                                 '<a class="aa" href="../frontend/backpack.php">BORROW NOW</a>';
+                                 '<a class="aa" href="../frontend/backpack.php">BORROW NOW</a>' + 
+                                 '</form>';
 
         popup.style.display = 'flex';
     }
@@ -243,7 +245,9 @@ $conn->close();
 
 <html>
 <div class="popup-overlay" id="popup">
-    <div class="popup-content" id="popup-content"></div>
+    <div class="popup-content" id="popup-content">
+        
+    </div>
 </div>
 </html>
 

@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include 'database.php';
     $plan_id = $_SESSION['plan_id'];
     $book_id = $_POST["book_id"];
@@ -17,6 +18,7 @@
     $num_book_stmt = $conn->query($num_book);
     $num_book_row = $num_book_stmt->fetch_assoc();
     $max_book = $num_book_row['max_book'];
+    
 
 
 
@@ -25,20 +27,32 @@
         echo '<script>window.location.href = "../frontend/allbook.php";</script>';
         exit();
     }else{
-        //add to borrow table
-        $borrow_sql = "INSERT INTO borrow (book_id, user_id, date_borrow, date_return) VALUES ('{$book_id}', '{$_SESSION['user_id']}', '{$date_borrow}', '{$date_return}')";
-        $borrow_stmt = $conn->prepare($borrow_sql);
-        if ($borrow_stmt->execute()) {
-            //update status in books table
-            $update_sql = "UPDATE books SET status = 0 WHERE book_id = '{$book_id}'";
-            $update_stmt = $conn->prepare($update_sql);
-            $update_stmt->execute();
-            echo '<script>window.location.href = "../frontend/allbook.php";</script>';
-            exit();
-        } else {
+        //check if book is available
+        $check_book_sql = "SELECT * FROM books WHERE book_id = '{$book_id}' AND status = 1";
+        $check_book_stmt = $conn->query($check_book_sql);
+        if ($check_book_stmt->num_rows == 0) {
+            echo '<script>alert("This book is not available.");</script>';
             echo '<script>window.location.href = "../frontend/allbook.php";</script>';
             exit();
         }
+        else{
+            //add to borrow table
+            $borrow_sql = "INSERT INTO borrow (book_id, user_id, date_borrow, date_return) VALUES ('{$book_id}', '{$_SESSION['user_id']}', '{$date_borrow}', '{$date_return}')";
+            $borrow_stmt = $conn->prepare($borrow_sql);
+            if ($borrow_stmt->execute()) {
+                //update status in books table
+                $update_sql = "UPDATE books SET status = 0 WHERE book_id = '{$book_id}'";
+                $update_stmt = $conn->prepare($update_sql);
+                $update_stmt->execute();
+                echo '<script>window.location.href = "../frontend/allbook.php";</script>';
+                exit();
+            } else {
+                echo '<script>window.location.href = "../frontend/allbook.php";</script>';
+                echo("Bruh");
+                exit();
+            }
+        }
+        
     }
     
     

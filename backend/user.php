@@ -25,7 +25,7 @@
     $_SESSION['user_type'] = $row['user_type'];
     $_SESSION['phone_num'] = $row['phone_num'];
 
-     }
+        }
     }
 
 ?>

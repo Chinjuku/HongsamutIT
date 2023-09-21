@@ -55,9 +55,9 @@
                 ?>
             </div>
             <div class="txt_field1">
-                <label>Date Register : </label>
+                <label>Plan_id : </label>
                 <?php
-                    echo $_SESSION['date_register'];
+                    echo $_SESSION['plan_id'];
                 ?>
             </div>
             <form action="../backend/logout.php" class="log">

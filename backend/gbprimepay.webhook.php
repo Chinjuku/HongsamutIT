@@ -1,5 +1,6 @@
 +<?php
 // ถ้าเป็น ip ของ GBPrimePay ถึงจะให้ทำงานโค้ดใน if
+session_start();
 include 'database.php';
 
 $white_list = [

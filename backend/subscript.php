@@ -1,5 +1,6 @@
 <!-- create supscription system for already login user -->
 <?php
+    session_start();
     include 'database.php';
     require_once 'gbprimepay.php';
   

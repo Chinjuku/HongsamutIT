@@ -10,7 +10,7 @@
     $stmt = $conn->prepare($sql);
 
     if ($stmt->execute()) {
-        echo '<script>window.location.href = "../frontend/addbook.php";</script>';
+        echo '<script>window.location.href = "../frontend/allbook.php";</script>';
         exit();
     } else {
         echo '<script>window.location.href = "../frontend/addbook.php";</script>';

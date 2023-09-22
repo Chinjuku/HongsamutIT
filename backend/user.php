@@ -22,7 +22,7 @@
     $_SESSION['password'] = $row['password'];
     $_SESSION['first_name'] = $row['first_name'];
     $_SESSION['last_name'] = $row['last_name'];
-    $_SESSION['user_type'] = $row['user_type'];
+    $_SESSION['user_type'] = $row['user_type_id'];
     $_SESSION['phone_num'] = $row['phone_num'];
 
         }

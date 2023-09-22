@@ -7,7 +7,7 @@
     $url = $_POST['imgsrc'];
     $bookurl = $_POST['urlbook'];
 
-    $sql = "INSERT INTO books (book_name, book_owner, cate_id, imgsrc, urlbook) VALUES ('{$book_name}', '{$book_owner}', '{$cate_id}', '{$url}', '{$urlbook}')";
+    $sql = "INSERT INTO books (book_name, book_owner, cate_id, status, imgsrc, urlbook) VALUES ('{$book_name}', '{$book_owner}', '{$cate_id}', 1, '{$url}', '{$urlbook}')";
     $stmt = $conn->prepare($sql);
 
     if ($stmt->execute()) {

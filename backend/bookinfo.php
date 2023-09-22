@@ -205,6 +205,7 @@ $conn->close();
         cursor: pointer;
     }
     .pic{
+        display:flex;
         background:lightgreen;
         margin-top:40px;
         margin-right: 120px;
@@ -220,6 +221,7 @@ $conn->close();
         border-radius: 10px;
     }
     .clicktoview{
+
     width: 30%;
     background: #485545;
     padding: 5px 10px;
@@ -231,6 +233,7 @@ $conn->close();
         box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
     }
     .popup-bookname{
+        display:flex;
         background-color:lightcoral;
         position: fixed;
         padding:20px;
@@ -250,6 +253,7 @@ $conn->close();
         box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-author{
+        display:flex;
         background-color:lightskyblue;
     }
 </style>

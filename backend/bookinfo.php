@@ -218,9 +218,9 @@ $conn->close();
         position:absolute;
         display:inline-block;
         background:lightgreen;
-        margin-top:5%;
-        width: 110px;
-        height: 160px;
+        margin-top:6%;
+        width: 70px;
+        height: 140px;
         right: 34%;
     }
     .aa{  

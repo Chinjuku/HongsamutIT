@@ -169,8 +169,9 @@
 $conn->close();
 ?>
 <style>
-    p{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    p{  
+        font-family:"Poppings";
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
         margin: 3px 0;
     }
     .popup-overlay {
@@ -205,7 +206,7 @@ $conn->close();
     }
     .pic{
         position: fixed;
-        display:flex;
+        /* display:flex; */
         margin-top:20px;
         margin-right: 80px;
         width: 210px;
@@ -220,8 +221,9 @@ $conn->close();
         border-radius: 10px;
     }
     .clicktoview{
-    width: 50%;
+    width: 30%;
     background: #485545;
+    margin-top: 10%;
     padding: 5px 10px;
     color: #FDF5D0;
     border-radius: 5px;
@@ -233,7 +235,7 @@ $conn->close();
     .popup-bookname{
         position: fixed;
         margin-top: 20px;
-        margin-left:10px;
+        margin-left:20px;
 
         font: "Poppings";
     }

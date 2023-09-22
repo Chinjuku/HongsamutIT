@@ -233,10 +233,19 @@ $conn->close();
     }
     .popup-bookname{
         position: fixed;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left:20px;
-
+        font-size:40px;
         font: "Poppings";
+    }
+    .clicktoborrow{
+        width: 20%;
+        margin-top:20%;
+        background: #485545;
+        padding: 5px 10px;
+        color: #FDF5D0;
+        border-radius: 5px;
+        box-shadow: 2px 2px rgb(39,34,34);
     }
 </style>
 
@@ -253,7 +262,7 @@ $conn->close();
                                  '<img class="pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                  '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
                                  '<p class="popup-author">Author : ' + ' ' + bookOwner + '</p>' +
-                                 '<button type="submit" class="clicktoview">BORROW NOW</button>' + 
+                                 '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
                                  '</form>';
 
         popup.style.display = 'flex';

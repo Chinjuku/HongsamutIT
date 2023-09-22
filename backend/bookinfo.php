@@ -209,10 +209,10 @@ $conn->close();
         position:absolute;
         display:inline-block;
         background:lightgreen;
-        margin-top:50px;
-        width: 210px;
-        height: 330px;
-        right: 50px;
+        margin-top:20%;
+        width: 190px;
+        height: 310px;
+        right: 40%;
     }
     .aa{  
         margin: 30px 0;
@@ -247,16 +247,17 @@ $conn->close();
     }
     .clicktoborrow{
         position:absolute;
-        position: fixed;
+        display:inline-block;
         width: 20%;
-        margin:40px 0 40px 2%;
+        margin-top:30%;
         background: #485545;
-        padding: 6px 8px;
+        padding: 10% 5%;
         color: #FDF5D0;
         border-radius: 3px;
         box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-author{
+        margin:20% 0 20% 2%;
         font-family:"Poppings";
         position:absolute;
         display:inline-block;

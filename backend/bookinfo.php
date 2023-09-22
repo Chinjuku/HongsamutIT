@@ -205,9 +205,10 @@ $conn->close();
     }
     .pic{
         position: absolute;
-        margin-right: 40%;
-        width: 250px;
-        height: 380px;
+        margin-top:10%;
+        margin-right: 30%;
+        width: 200px;
+        height: 330px;
         right: 0;
     }
     .aa{  

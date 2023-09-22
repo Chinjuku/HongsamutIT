@@ -187,16 +187,16 @@ $conn->close();
         margin: 3px 0;
     }
     .popup-overlay {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100vw;
-        height: 100vh;
-        background:rgba(0, 0, 0, 0.7) ;
-        z-index: 1;
-        display: none;
-        opacity: 1;
-        transition: all 200ms ease-in-out;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(1.15);
+        opacity: 0;
+        background-color: #FDF5D0;
+        width: 800px;
+        height: 500px;
+        z-index: 2;
+        transition: all 300ms ease-in-out;
     }
 
     /* Style for the popup content */

@@ -233,15 +233,16 @@ $conn->close();
     }
     .popup-bookname{
         position: fixed;
-        margin-top: 40px;
+        padding:20px;
+        margin-top: 50px;
         margin-left:20px;
-        font-size:40px;
+        font-size:50px;
         font: "Poppings";
     }
     .clicktoborrow{
         position: fixed;
         width: 20%;
-        margin:40% 0 0 2%;
+        margin:40% 0 40% 2%;
         background: #485545;
         padding: 6px 8px;
         color: #FDF5D0;

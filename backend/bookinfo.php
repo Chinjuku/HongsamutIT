@@ -205,6 +205,7 @@ $conn->close();
         cursor: pointer;
     }
     .pic{
+        position:absolute;
         display:inline-block;
         background:lightgreen;
         margin-top:40px;
@@ -233,16 +234,18 @@ $conn->close();
         box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
     }
     .popup-bookname{
+        position:absolute;
         display:inline-block;
         background-color:lightcoral;
         position: fixed;
-        padding:20px;
+        padding:20px 10px;
         margin-top: 50px;
         margin-left:20px;
         font-size:50px;
         font: "Poppings";
     }
     .clicktoborrow{
+        position:absolute;
         position: fixed;
         width: 20%;
         margin:40px 0 40px 2%;
@@ -253,6 +256,7 @@ $conn->close();
         box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-author{
+        position:absolute;
         display:inline-block;
         background-color:lightskyblue;
     }

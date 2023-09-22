@@ -92,7 +92,7 @@
                 if($row['cate_id'] == 5){
                 echo '<div class="nabox">';
                 echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                echo '<p>' . $row['book_name'] . '</p>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
                 echo '<p>Author: ' . $row['book_owner'] . '</p>';
                 
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
@@ -105,7 +105,7 @@
                 if($row['cate_id'] == 6){
                 echo '<div class="nabox">';
                 echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                echo '<p>' . $row['book_name'] . '</p>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
                 echo '<p>Author: ' . $row['book_owner'] . '</p>';
                 
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';

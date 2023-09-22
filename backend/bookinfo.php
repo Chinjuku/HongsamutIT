@@ -204,7 +204,8 @@ $conn->close();
         cursor: pointer;
     }
     .pic{
-        position: absolute;
+        position: fixed;
+        display:flex;
         margin-top:10%;
         margin-right: 30%;
         width: 200px;

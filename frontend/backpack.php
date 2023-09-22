@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include '../backend/database.php';
     // include './layout/leftbar.php';
     include './layout/navbar.php';
 ?>
@@ -16,7 +17,31 @@
         rel="stylesheet">
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+            data-tag="font"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+            data-tag="font"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+            data-tag="font"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&amp;display=swap"
+            data-tag="font"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&amp;display=swap"
+            data-tag="font"
+        />
     </head>
     <body>
         <?php
@@ -31,6 +56,7 @@
                 <table class="table2">
                     <thead>
                         <tr>
+                        <th>COVER</th>
                         <th>TITLE</th>
                         <th>CATEGORY</th>
                         <!-- <th>STATUS</th> -->
@@ -39,46 +65,48 @@
                         </tr>
                     </thead>
                     <tbody>
-
-                        <tr>
-                        <td>bibibiibbibibiibibibibibibbibibi</td>
-                        <td>romance</td>
-                        <!-- <td>available</td> -->
-                        <td>01/07/66</td>
-                        <td>8/07/66</td>
-                        </tr>
-
-                        <tr>
-                        <td>cheraim</td>
-                        <td>fiction</td>
-                        <!-- <td>available</td> -->
-                        <td>01/07/66</td>
-                        <td>8/07/66</td>
-                        </tr>
-
-                        <tr>
-                        <td>nornor</td>
-                        <td>comic</td>
-                        <!-- <td>unavailble</td> -->
-                        <td>01/07/66</td>
-                        <td>8/07/66</td>
-                        </tr>
-
-                        <tr>
-                        <td>chinjuku</td>
-                        <td>fantasy</td>
-                        <!-- <td>unavailble</td> -->
-                        <td>01/07/66</td>
-                        <td>8/07/66</td>
-                        </tr>
-
-                        <tr>
-                        <td>sprite</td>
-                        <td>detective</td>
-                        <!-- <td>unavailble</td> -->
-                        <td>01/07/66</td>
-                        <td>8/07/66</td>
-                        </tr>
+                        <!-- get book id from borrow table where user_id = session-userid -->
+                        <?php
+                            $sql = "SELECT * FROM borrow WHERE user_id = '{$_SESSION['user_id']}'";
+                            $result = $conn->query($sql);
+                            if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) { // วนลูปแสดงรายการหนังสือที่ยืม
+                                    $book_id = $row['book_id'];
+                                    $book_sql = "SELECT * FROM books WHERE book_id = '{$book_id}'";
+                                    $book_result = $conn->query($book_sql);
+                                    if ($book_result->num_rows > 0) {
+                                        while($row2 = $book_result->fetch_assoc()) {
+                                            $book_name = $row2['book_name'];
+                                            $cate_id = $row2['cate_id'];
+                                            $status = $row2['status'];
+                                            $imgsrc = $row2['imgsrc'];
+                                            $cate_sql = "SELECT * FROM categories WHERE cate_id = '{$cate_id}'";
+                                            $cate_res = $conn->query($cate_sql);
+                                            if ($cate_res->num_rows > 0) {
+                                                while($row3 = $cate_res->fetch_assoc()) {
+                                                    $cate_name = $row3['category_name'];
+                                                    $sql4 = "SELECT * FROM borrow WHERE book_id = '{$book_id}'";
+                                                    $result4 = $conn->query($sql4);
+                                                    if ($result4->num_rows > 0) {
+                                                        while($row4 = $result4->fetch_assoc()) {
+                                                            $date_borrow = $row4['date_borrow'];
+                                                            $date_return = $row4['date_return'];
+                                                            echo "<tr>";
+                                                            // show 20x20 book's cover
+                                                            echo "<td><img src='{$imgsrc}' width = '150' height = '150'></td>";
+                                                            echo "<td>{$book_name}</td>";
+                                                            echo "<td>{$cate_name}</td>";
+                                                            echo "<td>{$date_borrow}</td>";
+                                                            echo "<td>{$date_return}</td>";
+                                                            echo "</tr>";
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }?>
                     </tbody>
                     
                 </table>

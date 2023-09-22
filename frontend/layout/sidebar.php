@@ -15,7 +15,7 @@
                 padding: 0;
                 user-select: none;
                 box-sizing: border-box;
-                font-family: "Poppings", sans-serif;
+                /* font-family: Mitr; */
             }
         .sidebar{
             position: fixed;
@@ -60,7 +60,7 @@
             font-weight: 500;
             display: block;
             width: 100%;
-
+            font-family: Mitr;
             margin-left: 0px;
             
         }

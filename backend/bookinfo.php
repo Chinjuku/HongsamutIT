@@ -267,7 +267,7 @@ $conn->close();
         box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-author{
-        margin:2% 0 20% 4%;
+        margin:4% 0 20% 4%;
         font-family:"Poppings";
         position:absolute;
         display:inline-block;

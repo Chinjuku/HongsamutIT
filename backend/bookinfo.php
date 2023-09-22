@@ -205,9 +205,9 @@ $conn->close();
     }
     .pic{
         position: absolute;
-        margin-right: 20%;
-        width: 300px;
-        height: 430px;
+        margin-right: 40%;
+        width: 250px;
+        height: 380px;
         right: 0;
     }
     .aa{  
@@ -230,7 +230,7 @@ $conn->close();
     }
     .popup-bookname{
         position: absolute;
-        dis
+        font: "Poppings";
     }
 </style>
 

@@ -206,7 +206,7 @@ $conn->close();
     }
     .pic{
         position: fixed;
-        display:flex;
+        
         margin-top:20px;
         margin-right: 80px;
         width: 210px;
@@ -239,12 +239,13 @@ $conn->close();
         font: "Poppings";
     }
     .clicktoborrow{
+        position: fixed;
         width: 20%;
-        margin-top:20%;
+        margin:40% 0 0 2%;
         background: #485545;
-        padding: 5px 10px;
+        padding: 6px 8px;
         color: #FDF5D0;
-        border-radius: 5px;
+        border-radius: 3px;
         box-shadow: 2px 2px rgb(39,34,34);
     }
 </style>

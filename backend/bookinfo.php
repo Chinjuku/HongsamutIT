@@ -217,9 +217,9 @@ $conn->close();
     .popup-pic{
         position:absolute;
         display:inline-block;
-        background:lightgreen;
+        /* background:lightgreen; */
         margin-top:5%;
-        width: 200px;
+        width: 220px;
         height: 340px;
         right: 32%;
     }
@@ -246,7 +246,7 @@ $conn->close();
         font-family:"Poppings";
         position:absolute;
         display:inline-block;
-        background-color:lightcoral;
+        /* background-color:lightcoral; */
         padding:20px 100px 20px 40px;
         margin-top: 70px;
         margin-left:20px;
@@ -271,7 +271,7 @@ $conn->close();
         font-family:"Poppings";
         position:absolute;
         display:inline-block;
-        background-color:lightskyblue;
+        /* background-color:lightskyblue; */
     }
 </style>
 

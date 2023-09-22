@@ -15,7 +15,7 @@
                 padding: 0;
                 user-select: none;
                 box-sizing: border-box;
-                /* font-family: Mitr; */
+                font-family: Mitr;
             }
         .sidebar{
             position: fixed;
@@ -51,7 +51,6 @@
 
         }
         nav ul li a{
-            
             position: relative;
             color: white;
             text-decoration: none;

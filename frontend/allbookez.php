@@ -30,7 +30,15 @@
             <div class="mid">
                 <div class="head">
                     <div class="square"></div>
-                    <div class="newarrival"><b>ALL</b><br>BOOKS</div>
+                    <div class="newarrival">
+                    <?php
+                        // $sql = "SELECT * FROM books";
+                        // $sql2 = "SELECT * from categories";
+                        // while ($row = $result->fetch_assoc()) {
+
+                        // }
+                    ?>
+                    <b>ALL</b><br>BOOKS</div>
                     
                 </div>
                 
@@ -49,12 +57,6 @@
                                     $display = true;
                                 } elseif (empty($_POST['categories'])) {
                                     $display = true;
-                                    echo '<div class="nabox">';
-                                    echo '<p>Book: ' . $row['book_name'] . '</p>';
-                                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
-                                    echo '</div>';
                                 } else {
                                     $display = false;
                                 }

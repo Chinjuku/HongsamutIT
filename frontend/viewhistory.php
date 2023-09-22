@@ -44,8 +44,13 @@
         />
     </head>
     <body>
+        
         <div class="main">
             <div class="mid">
+            <div class="select">
+                <a href="viewhistory.php">View BORROW</a>
+                <a href="historypayment.php">View PAYMENT</a>
+            </div>
                 <div class="borrow"><h2 style="font-size: 50px;text-align: center;">History of Borrow</h2></div>
                 <table class="table2">
                     <thead>
@@ -58,6 +63,41 @@
                         <th>FINISHED</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        <?php
+                            include '../backend/database.php';
+                            
+                            $sql = "SELECT * FROM borrow";
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                    $sql2 = "SELECT * FROM user WHERE user_id = '{$row['user_id']}'";
+                                    $result2 = $conn->query($sql2);
+                                    while($row2 = $result2->fetch_assoc()) {
+                                        $username = $row2['user_name'];
+                                    }
+                                    $sql3 = "SELECT * FROM books WHERE book_id = '{$row['book_id']}'";
+                                    $result3 = $conn->query($sql3);
+                                    while($row3 = $result3->fetch_assoc()) {
+                                        $bookname = $row3['book_name'];
+                                        $sql4 = "SELECT * FROM categories WHERE cate_id = '{$row3['cate_id']}'";
+                                        $result4 = $conn->query($sql4);
+                                        while($row4 = $result4->fetch_assoc()) {
+                                        $category = $row4['category_name'];
+                                        }
+                                    }
+                                    echo "<tr>";
+                                    echo "<td>" . $username . "</td>";
+                                    echo "<td>" . $bookname . "</td>";
+                                    echo "<td>" . $category . "</td>";
+                                    echo "<td>" . $row['date_borrow'] . "</td>";
+                                    echo "<td>" . $row['date_return'] . "</td>";
+                                    echo "</tr>";
+                                }
+                            }
+                        ?>
+                    </tbody>
                 </table>
             </div>
 

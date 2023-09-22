@@ -8,12 +8,10 @@
 
 body{
     background-color: #FDF5D0;
-
     display: flex;
     flex-direction: row;
     /* padding-left: 400px; */
 }
-
 .table2{
     width: 1400px;
     margin-top: 30px;

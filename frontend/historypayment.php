@@ -46,6 +46,10 @@
     <body>
         <div class="main">
             <div class="mid">
+            <div class="select">
+                <a href="viewhistory.php">View BORROW</a>
+                <a href="historypayment.php">View PAYMENT</a>
+            </div>
                 <div class="payment"><h2 style="font-size: 50px;text-align: center;">History of Payment</h2></div>
                 <table class="table2">
                     <thead>

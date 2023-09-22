@@ -200,13 +200,15 @@ $conn->close();
     .popup-close {
         /* position: absolute; */
         top: 10px;
-        right: 10px;
+        right: 0px;
         cursor: pointer;
     }
     .pic{
+        position: absolute;
+        padding-right: 20%;
         width: 300px;
-        height: 350px;
-        margin-bottom: 20px;
+        height: 430px;
+        right: 0;
     }
     .aa{  
         margin: 30px 0;
@@ -226,6 +228,10 @@ $conn->close();
     .clicktoview:hover{
         box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
     }
+    .popup-bookname{
+        position: absolute;
+        dis
+    }
 </style>
 
 <script>
@@ -235,10 +241,12 @@ $conn->close();
                             
         popupContent.innerHTML = '<form action="../backend/borrow.php" method="post">' +
                                  '<span class="popup-close" onclick="closePopup()">X</span>' +
-                                 '<p>Author : ' + ' ' + bookOwner + '</p>' +
+                                 
                                  '<input type="hidden" name="book_id" value="' + bookId + '">' +
-                                 '<h1>Book :' + ' ' + bookName + '</h1>' +
+                                 
                                  '<img class="pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
+                                 '<h1 class="popup-bookname">Book :' + ' ' + bookName + '</h1>' +
+                                 '<p class="popup-author">Author : ' + ' ' + bookOwner + '</p>' +
                                  '<button type="submit" class="clicktoview">BORROW NOW</button>' + 
                                  '</form>';
 

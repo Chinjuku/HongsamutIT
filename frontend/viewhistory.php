@@ -46,7 +46,7 @@
     <body>
         <div class="main">
             <div class="mid">
-                <div class="borrow">History of Borrow</div>
+                <div class="borrow"><h2 style="font-size: 50px;text-align: center;">History of Borrow</h2></div>
                 <table class="table2">
                     <thead>
                         <tr>

@@ -3,7 +3,7 @@
     padding: 0%;
     box-sizing: border-box;
     /* font: comic; */
-    font-family:Mitr ;
+    /* font-family:Mitr ; */
 }
 
 body{
@@ -39,7 +39,7 @@ body{
 .newarrival{
     top: 0px;
     width: 100%;
-
+    font: "Poppings";
     font-size: 50px;
     color:#272222;
 
@@ -76,6 +76,10 @@ body{
 img {
     width: 140px;
     height: 170px;
+}
+.bookname{
+    font-size: 20px;
+    font-weight: bold;
 }
 /* @media (max-width:1620px){
     .mid{

@@ -296,7 +296,7 @@ $conn->close();
         popup.style.display = 'none';
     }
 </script>
-
+<!DOCTYPE html>
 <html>
     <body>
         <div class="popup-overlay" id="popup">

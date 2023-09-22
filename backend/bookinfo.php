@@ -208,7 +208,7 @@ $conn->close();
         display:flex;
         margin-top:20px;
         margin-right: 80px;
-        width: 200px;
+        width: 210px;
         height: 330px;
         right: 0;
     }

@@ -204,10 +204,11 @@ $conn->close();
         cursor: pointer;
     }
     .pic{
+        position: absolute;
         /* padding-left:20px; */
         width: 220px;
         height: 300px;
-        margin-left: 2%;
+        padding-right: 20%;
     }
     .aa{  
         margin: 30px 0;
@@ -227,6 +228,10 @@ $conn->close();
     .clicktoview:hover{
         box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
     }
+    .popup-bookname{
+        position: absolute;
+        dis
+    }
 </style>
 
 <script>
@@ -240,8 +245,8 @@ $conn->close();
                                  '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                  
                                  '<img class="pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
-                                 '<h1>Book :' + ' ' + bookName + '</h1>' +
-                                 '<p>Author : ' + ' ' + bookOwner + '</p>' +
+                                 '<h1 class="popup-bookname">Book :' + ' ' + bookName + '</h1>' +
+                                 '<p class="popup-author">Author : ' + ' ' + bookOwner + '</p>' +
                                  '<button type="submit" class="clicktoview">BORROW NOW</button>' + 
                                  '</form>';
 

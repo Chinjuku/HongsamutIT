@@ -174,7 +174,7 @@ $conn->close();
         margin: 3px 0;
     }
     .popup-overlay {
-        display: none;
+        display: inline-block;
         position: fixed;
         top: 0;
         left: 0;

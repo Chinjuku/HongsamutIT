@@ -75,8 +75,8 @@ body{
 /* ปรับหนังสือฝั่ง backend */
 .pic {
     margin-top: 7%;
-    width: 90px;
-    height: 160px;
+    width: 60px;
+    height: 150px;
 }
 .bookname{
     font-size: 20px;

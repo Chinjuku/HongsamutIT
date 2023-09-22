@@ -32,18 +32,22 @@
                     $check_type = $_SESSION['user_type'];
                     if($check_type == 1) {
                         echo "<a href='member.php'>MEMBER</a>";
+                        echo "<a href='backpack.php' style='--i:2;'>BACKPACK</a>";
                     }
                 ?>
-
-                <a href="backpack.php" style="--i:2;">BACKPACK</a>
+                
+                <?php
+                    if($_SESSION['user_type'] == 2) {
+                        echo "<a href='addbook.php'>ADD BOOK</a>";
+                        echo "<a href='viewhistory.php'>HISTORY</a>";
+                    }
+                ?>
+                
                 <a href="profile.php" style="--i:3;">
                     <i href="login.php" class="bi bi-person-circle"></i>
                     <?php
                     if (isset($_SESSION['user_id'])){
                         echo $_SESSION['user_name'];
-                            if($_SESSION['user_type'] == 2) {
-                            echo "<a href='addbook.php'>ADD BOOK</a>";
-                        }
                         }            
                     ?>
                 </a>

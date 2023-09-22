@@ -240,6 +240,7 @@ $conn->close();
     box-shadow: 2px 2px rgb(39,34,34);
     }
     .clicktoview:hover{
+        background: #657661;
         box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
     }
     .popup-bookname{

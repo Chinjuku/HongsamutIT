@@ -219,7 +219,7 @@ $conn->close();
         display:inline-block;
         background:lightgreen;
         margin-top:5%;
-        width: 190px;
+        width: 200px;
         height: 310px;
         right: 34%;
     }

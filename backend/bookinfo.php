@@ -237,6 +237,7 @@ $conn->close();
     box-shadow: 2px 2px rgb(39,34,34);
     }
     .clicktoview:hover{
+        color: #485545;
         box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
     }
 </style>
@@ -251,6 +252,7 @@ $conn->close();
                                  '<p>Author : ' + ' ' + bookOwner + '</p>' +
                                  '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                  '<h1>Book :' + ' ' + bookName + '</h1>' +
+                                 
                                  '<img class="pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                  '<button type="submit" class="clicktoview">BORROW NOW</button>' + 
                                  '</form>';

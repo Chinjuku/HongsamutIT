@@ -205,9 +205,9 @@ $conn->close();
     }
     .pic{
         position: absolute;
-        /* padding-left:20px; */
-        width: 430px;
-        height: 300px;
+        padding-right: 20%;
+        width: 300px;
+        height: 430px;
         right: 0;
     }
     .aa{  

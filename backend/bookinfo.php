@@ -206,7 +206,7 @@ $conn->close();
     }
     .pic{
         position: fixed;
-        /* display:flex; */
+        display:flex;
         margin-top:20px;
         margin-right: 80px;
         width: 210px;
@@ -223,14 +223,12 @@ $conn->close();
     .clicktoview{
     width: 30%;
     background: #485545;
-    margin-top: 10%;
     padding: 5px 10px;
     color: #FDF5D0;
     border-radius: 5px;
     box-shadow: 2px 2px rgb(39,34,34);
     }
     .clicktoview:hover{
-        color: #485545;
         box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
     }
     .popup-bookname{

@@ -235,10 +235,12 @@ $conn->close();
                             
         popupContent.innerHTML = '<form action="../backend/borrow.php" method="post">' +
                                  '<span class="popup-close" onclick="closePopup()">X</span>' +
-                                 '<p>Author : ' + ' ' + bookOwner + '</p>' +
+                                 
                                  '<input type="hidden" name="book_id" value="' + bookId + '">' +
-                                 '<h1>Book :' + ' ' + bookName + '</h1>' +
+                                 
                                  '<img class="pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
+                                 '<h1>Book :' + ' ' + bookName + '</h1>' +
+                                 '<p>Author : ' + ' ' + bookOwner + '</p>' +
                                  '<button type="submit" class="clicktoview">BORROW NOW</button>' + 
                                  '</form>';
 

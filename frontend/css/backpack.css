@@ -1,8 +1,11 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: "Poppings", sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* font: comic; */
+    font-family:Mitr;
 }
+
 body{
     background-color: #FDF5D0;
 }

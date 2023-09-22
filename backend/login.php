@@ -22,15 +22,16 @@ if ($result->num_rows == 1) {
     $_SESSION['user_type'] = $row['user_type_id'];
     $_SESSION['phone_num'] = $row['phone_number'];
     $_SESSION['date_register'] = $row['date_register'];
-    $plan_id_sql = "SELECT * FROM user WHERE email = '{$_SESSION['email']}' AND plan_id IS NULL"; // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
-    $plan_id_result = $conn->query($sql);
+    $_SESSION['plan_id'] = $row['plan_id'];
+    // $plan_id_sql = "SELECT * FROM user WHERE email = '{$_SESSION['email']}' AND plan_id IS NULL"; // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
+    // $plan_id_result = $conn->query($sql);
 
-    if ($plan_id_result->num_rows == 0) { // ถ้ามี subscription plan ที่ user เลือกอยู่ในระบบ
-      $_SESSION['plan_id'] = $row['plan_id'];
-    }
-    else{
-      $_SESSION['plan_id'] = NULL;
-    }
+    // if ($plan_id_result->num_rows == 0) { // ถ้ามี subscription plan ที่ user เลือกอยู่ในระบบ
+    //   $_SESSION['plan_id'] = $row['plan_id'];
+    // }
+    // else{
+    //   $_SESSION['plan_id'] = NULL;
+    // }
   }
   echo '<script>window.location.href = "../frontend/home.php";</script>';
   

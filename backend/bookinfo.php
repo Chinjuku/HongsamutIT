@@ -169,7 +169,8 @@
 $conn->close();
 ?>
 <style>
-    .square{
+    .square2{
+        
         width: 100%;
         height:100%;
         background: #485545;
@@ -217,7 +218,7 @@ $conn->close();
         margin-top:5%;
         width: 190px;
         height: 310px;
-        right: 32%;
+        right: 34%;
     }
     .aa{  
         margin: 30px 0;
@@ -297,11 +298,14 @@ $conn->close();
 </script>
 
 <html>
-<div class="popup-overlay" id="popup">
-    <div class="popup-content" id="popup-content">
-        <div class="square"></div>
-    </div>
-</div>
+    <body>
+        <div class="popup-overlay" id="popup">
+            <div class="popup-content" id="popup-content">
+                <div class="square2"></div>
+            </div>
+        </div>
+    </body>
+
 </html>
 
 

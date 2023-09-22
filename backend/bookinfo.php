@@ -204,9 +204,10 @@ $conn->close();
         cursor: pointer;
     }
     .pic{
-        width: 300px;
-        height: 350px;
-        margin-bottom: 20px;
+        /* padding-left:20px; */
+        width: 220px;
+        height: 300px;
+        margin-left: 2%;
     }
     .aa{  
         margin: 30px 0;

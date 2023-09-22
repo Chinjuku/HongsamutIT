@@ -220,7 +220,7 @@ $conn->close();
         background:lightgreen;
         margin-top:5%;
         width: 200px;
-        height: 1000px;
+        height: 260px;
         right: 34%;
     }
     .aa{  

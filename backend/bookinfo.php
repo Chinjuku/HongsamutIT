@@ -205,8 +205,9 @@ $conn->close();
         cursor: pointer;
     }
     .pic{
+        background:lightgreen;
         margin-top:40px;
-        margin-right: 140px;
+        margin-right: 120px;
         width: 210px;
         height: 330px;
         right: 0;
@@ -230,6 +231,7 @@ $conn->close();
         box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
     }
     .popup-bookname{
+        background-color:lightcoral;
         position: fixed;
         padding:20px;
         margin-top: 50px;
@@ -246,6 +248,9 @@ $conn->close();
         color: #FDF5D0;
         border-radius: 3px;
         box-shadow: 2px 2px rgb(39,34,34);
+    }
+    .popup-author{
+        background-color:lightskyblue;
     }
 </style>
 

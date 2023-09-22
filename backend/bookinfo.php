@@ -218,10 +218,10 @@ $conn->close();
         position:absolute;
         display:inline-block;
         /* background:lightgreen; */
-        margin-top:5%;
+        margin-top:4%;
         width: 220px;
         height: 340px;
-        right: 32%;
+        right: 34%;
     }
     .aa{  
         margin: 30px 0;

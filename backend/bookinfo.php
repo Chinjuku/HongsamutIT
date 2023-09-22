@@ -189,6 +189,7 @@ $conn->close();
 
     /* Style for the popup content */
     .popup-content {
+        font-family:"Poppings";
         background-color: #FDF5D0;
         padding: 0px;
         width: 800px;
@@ -208,11 +209,10 @@ $conn->close();
         position:absolute;
         display:inline-block;
         background:lightgreen;
-        margin-top:40px;
-        margin-left: 40px;
+        margin-top:50px;
         width: 210px;
         height: 330px;
-        right: 0;
+        right: 50px;
     }
     .aa{  
         margin: 30px 0;
@@ -234,6 +234,7 @@ $conn->close();
         box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
     }
     .popup-bookname{
+        font-family:"Poppings";
         position:absolute;
         display:inline-block;
         background-color:lightcoral;
@@ -256,6 +257,7 @@ $conn->close();
         box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-author{
+        font-family:"Poppings";
         position:absolute;
         display:inline-block;
         background-color:lightskyblue;

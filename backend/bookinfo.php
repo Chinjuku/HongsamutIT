@@ -205,10 +205,8 @@ $conn->close();
         cursor: pointer;
     }
     .pic{
-        position: fixed;
-        
-        margin-top:20px;
-        margin-right: 80px;
+        margin-top:40px;
+        margin-right: 140px;
         width: 210px;
         height: 330px;
         right: 0;
@@ -242,7 +240,7 @@ $conn->close();
     .clicktoborrow{
         position: fixed;
         width: 20%;
-        margin:40% 0 40% 2%;
+        margin:40px 0 40px 2%;
         background: #485545;
         padding: 6px 8px;
         color: #FDF5D0;

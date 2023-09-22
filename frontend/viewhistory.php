@@ -50,7 +50,7 @@
                 <table class="table2">
                     <thead>
                         <tr>
-                        <th>NAME</th>
+                        <th>USERNAME</th>
                         <th>TITLE</th>
                         <th>CATEGORY</th>
                         <!-- <th>STATUS</th> -->

@@ -206,8 +206,8 @@ $conn->close();
     .pic{
         position: fixed;
         display:flex;
-        margin-top:10%;
-        margin-right: 30%;
+        margin-top:10px;
+        margin-right: 30px;
         width: 200px;
         height: 330px;
         right: 0;

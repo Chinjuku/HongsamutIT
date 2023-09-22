@@ -73,7 +73,7 @@ body{
 
 
 /* ปรับหนังสือฝั่ง backend */
-img {
+.pic {
     margin-top: 7%;
     width: 500px;
     height: 160px;

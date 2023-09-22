@@ -231,7 +231,10 @@ $conn->close();
         box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
     }
     .popup-bookname{
-        position: absolute;
+        position: fixed;
+        margin-top: 20px;
+        margin-left:10px;
+
         font: "Poppings";
     }
 </style>
@@ -247,7 +250,7 @@ $conn->close();
                                  '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                  
                                  '<img class="pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
-                                 '<h1 class="popup-bookname">Book :' + ' ' + bookName + '</h1>' +
+                                 '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
                                  '<p class="popup-author">Author : ' + ' ' + bookOwner + '</p>' +
                                  '<button type="submit" class="clicktoview">BORROW NOW</button>' + 
                                  '</form>';

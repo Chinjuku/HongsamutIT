@@ -200,7 +200,7 @@ $conn->close();
     .popup-close {
         /* position: absolute; */
         top: 10px;
-        right: 10px;
+        right: 0px;
         cursor: pointer;
     }
     .pic{

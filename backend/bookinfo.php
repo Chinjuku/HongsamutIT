@@ -206,7 +206,7 @@ $conn->close();
     .pic{
         position: absolute;
         /* padding-left:20px; */
-        width: 220px;
+        width: 500px;
         height: 300px;
         padding-right: 20%;
     }

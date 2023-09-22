@@ -169,6 +169,11 @@
 $conn->close();
 ?>
 <style>
+    .square{
+        width: 100%;
+        height:100%;
+        background: #485545;
+    }
     p{  
         font-family:"Poppings";
         /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
@@ -294,7 +299,7 @@ $conn->close();
 <html>
 <div class="popup-overlay" id="popup">
     <div class="popup-content" id="popup-content">
-        
+        <div class="square"></div>
     </div>
 </div>
 </html>

@@ -170,7 +170,7 @@ $conn->close();
 ?>
 <style>
     .bookname{
-        font-weight: bold;
+        font-weight:bold;
     }
     .square2{
         
@@ -218,9 +218,9 @@ $conn->close();
         position:absolute;
         display:inline-block;
         background:lightgreen;
-        margin-top:6%;
-        width: 70px;
-        height: 140px;
+        margin-top:5%;
+        width: 190px;
+        height: 310px;
         right: 34%;
     }
     .aa{  

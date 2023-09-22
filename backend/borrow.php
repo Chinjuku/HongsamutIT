@@ -2,6 +2,12 @@
     session_start();
     include 'database.php';
     $plan_id = $_SESSION['plan_id'];
+    //check if user subscribe to any plan
+    if ($plan_id == NULL) {
+        echo '<script>alert("You have not subscribed to any plan.");</script>';
+        echo '<script>window.location.href = "../frontend/member.php";</script>';
+        exit();
+    }
     $book_id = $_POST["book_id"];
     // $userid = $_SESSION['user_id'];
     date_default_timezone_set('Asia/Bangkok');
@@ -9,7 +15,8 @@
     $date_return = date("Y-m-d H:i:s", strtotime("+7 days", strtotime($date_borrow)));
 
     //check if user own more than 10 books.
-    $check_sql = "SELECT * FROM borrow WHERE user_id = '{$_SESSION['user_id']}' AND date('Y-m-d H:i:s') <= date_return";
+    $check_sql = "SELECT * FROM borrow WHERE user_id = '{$_SESSION['user_id']}' AND date_return >= '{$date_borrow}'";
+    // $check_sql = "SELECT * FROM borrow WHERE user_id = '{$_SESSION['user_id']}' AND  <= date_return";
     $check_stmt = $conn->query($check_sql);
     //check numrow
 

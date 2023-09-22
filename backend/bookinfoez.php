@@ -17,7 +17,7 @@ if ($result->num_rows > 0) {
             $display = false;
         }
         if ($display) {
-            echo '';
+            // echo '<script>window.location.href = "../frontend/allbookez.php";</script>';
             echo '<div class="nabox">';
             echo '<p>Book: ' . $row['book_name'] . '</p>';
             echo '<p>Author: ' . $row['book_owner'] . '</p>';

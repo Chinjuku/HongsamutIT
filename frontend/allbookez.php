@@ -1,5 +1,6 @@
 <?php
-    // session_start();
+    session_start();
+    include '../backend/database.php';
     include './layout/navbar.php';
     include './layout/sidebarez.php';
     
@@ -36,13 +37,41 @@
                 <div class="container">
                     <!-- <button onclick="togglePopup()" class="nabox"> -->
                     <?php
-                        include '../backend/bookinfoez.php';
+                        $sql = "SELECT * FROM books"; 
+                        $result = $conn->query($sql);
+
+                        if ($result->num_rows > 0) {
+
+                            $allbook_page = $_SERVER['REQUEST_URI'];
+                            
+                            while ($row = $result->fetch_assoc()) {
+                                if (!empty($_POST['categories']) && $row['cate_id'] == $_POST['categories']) {
+                                    $display = true;
+                                } elseif (empty($_POST['categories'])) {
+                                    $display = true;
+                                    echo '<div class="nabox">';
+                                    echo '<p>Book: ' . $row['book_name'] . '</p>';
+                                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
+                                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
+                                    echo '</div>';
+                                } else {
+                                    $display = false;
+                                }
+                                if ($display) {
+                                    echo '<div class="nabox">';
+                                    echo '<p>Book: ' . $row['book_name'] . '</p>';
+                                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
+                                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
+                                    echo '</div>';
+                                } 
+                            }
+                        }
+                        $conn->close();
                     ?>
             </div>
             
         </div>
-                    
-
-        <script src="javascript/addbook.js"></script>
     </body>
 </html>

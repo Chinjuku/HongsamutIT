@@ -51,6 +51,7 @@
             <!-- ทำเป็นselector -->
             <!-- <input type="file" accept="image/jpg, image/jpeg, image/png" class="box1" name="imgsrc" id='file' required> -->
             <input type="url" name="imgsrc" class="box" placeholder="Enter your url image" required>
+            <input type="url" name="book" class="box" placeholder="Enter your url book" required>
             <div>
                 <input type="submit" value="add book" name="add_book" class="btn">
             </div>

@@ -220,8 +220,8 @@ $conn->close();
         background:lightgreen;
         margin-top:5%;
         width: 200px;
-        height: 260px;
-        right: 34%;
+        height: 340px;
+        right: 32%;
     }
     .aa{  
         margin: 30px 0;
@@ -267,7 +267,7 @@ $conn->close();
         box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-author{
-        margin:2% 0 20% 2%;
+        margin:2% 0 20% 4%;
         font-family:"Poppings";
         position:absolute;
         display:inline-block;
@@ -299,6 +299,7 @@ $conn->close();
         popup.style.display = 'none';
     }
 </script>
+
 <!DOCTYPE html>
 <html>
     <body>

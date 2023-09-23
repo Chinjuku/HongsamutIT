@@ -290,7 +290,7 @@ $conn->close();
                                 '<span class="popup-close" onclick="closePopup()">X</span>' +
                                 
                                 '<input type="hidden" name="book_id" value="' + bookId + '">' +
-                                '<div class="square2"></div>' +
+                                '<div class="square2">bbbbb</div>' +
                                 '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                 '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
                                 '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +

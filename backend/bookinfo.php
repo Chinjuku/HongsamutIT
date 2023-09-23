@@ -204,7 +204,7 @@ $conn->close();
         z-index: 1;
     }
     hr{
-        position: absolute;
+        /* position: absolute; */
         width:10px;
         margin-top: 20rem;
     }
@@ -296,12 +296,13 @@ $conn->close();
                             
         popupContent.innerHTML = '<form action="../backend/borrow.php" method="post">' +
                                 '<span class="popup-close" onclick="closePopup()">X</span>' +
-                                '<hr>'+
+                                
                                 '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                 '<div class="square2"></div>' +
                                 '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                 '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
                                 '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
+                                '<hr>'+
                                 '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
                                 '</form>';
 

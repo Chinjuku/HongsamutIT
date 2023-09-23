@@ -48,7 +48,7 @@
         <div class="main">
             <div class="mid">
             <div class="select">
-                <a href="viewhistory.php" class="navhistory">View BORROW</a>
+                <a href="historyborrow.php" class="navhistory">View BORROW</a>
                 <a href="historypayment.php"class="navhistory">View PAYMENT</a>
             </div>
                 <div class="borrow"><h2 style="font-size: 50px;text-align: center;">History of Borrow</h2></div>

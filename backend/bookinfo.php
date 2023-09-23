@@ -169,6 +169,11 @@
 $conn->close();
 ?>
 <style>
+    .pic{
+        margin-top: 7%;
+        width: 95px;
+        height: 140px;
+    }
     .bookname{
         font-weight:bold;
     }

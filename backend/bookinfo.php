@@ -217,8 +217,9 @@ $conn->close();
 
     /* Close button style */
     .popup-close {
-        /* position: absolute; */
+        position: absolute;
         top: 10px;
+        margin-left: 50rem;
         right: 0px;
         cursor: pointer;
     }

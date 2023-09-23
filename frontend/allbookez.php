@@ -127,6 +127,12 @@
                 width:95px;
                 height: 140px;
             }
+            .square1{
+                margin-top: 9%;
+                width: 10px;
+                height: 120px;
+                background-color: #485545;
+            }
             .square2{
                 margin-top: 7%;
                 width: 10px;

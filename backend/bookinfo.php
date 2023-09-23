@@ -223,10 +223,10 @@ $conn->close();
         position:absolute;
         display:inline-block;
         /* background:lightgreen; */
-        margin-top:100px;
+        margin-top:90px;
         width: 220px;
         height: 340px;
-        right: 200px;
+        right: 10rem;
     }
     .aa{  
         margin: 30px 0;
@@ -256,7 +256,7 @@ $conn->close();
         padding:20px 120px 20px 40px;
         margin-top: 60px;
         margin-left:20px;
-        margin-right:40px;
+        margin-right:200px;
         font-size:40px;
         font: "Poppings";
     }

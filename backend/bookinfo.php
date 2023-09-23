@@ -240,6 +240,7 @@ $conn->close();
         width: 220px;
         height: 340px;
         margin-left:30rem;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     }
     .aa{  
         margin: 30px 0;

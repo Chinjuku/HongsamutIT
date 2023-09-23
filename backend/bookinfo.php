@@ -261,7 +261,7 @@ $conn->close();
     .clicktoview:hover{
         background: #657661;
         box-shadow: 2px 2px rgb(39,34,34);
-        padding: 8px 13px;
+        padding: 8px 13px 8px 13px;
     }
     .popup-bookname{
         font-family:"Poppings";

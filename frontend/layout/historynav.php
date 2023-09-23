@@ -9,7 +9,8 @@
             align-items: center;
             align-content: center;
             text-align: center;
-            margin: 30px 0;
+            margin: 30px 30px;
+            padding: 30px;
             height: auto;
             justify-content: space-around;
 
@@ -23,10 +24,24 @@
         .bor{
             border-radius: 50px 0 0 50px;
             background-color: #657661;
+            background-color: #2e2a2a;
         }
         .pay{
+            background-color: #2e2a2a;
+            border-left:1px solid black;
             border-radius: 0 50px 50px 0;
-            background-color: lightblue;
+            
+        }
+        .bor:hover{
+            background-color: #657661;
+        }
+        .pay:hover{
+            
+            background-color: #657661;
+        }
+        .pay::after{
+            
+            background-color: #2e2a2a;
         }
     </style>
 </head>

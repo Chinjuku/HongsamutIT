@@ -25,9 +25,6 @@
     $num_book_stmt = $conn->query($num_book);
     $num_book_row = $num_book_stmt->fetch_assoc();
     $max_book = $num_book_row['max_book'];
-    
-
-
 
     if ($check_stmt->num_rows >= $max_book) {
         echo '<script>alert("You have reached the maximum number of books you can borrow.");</script>';

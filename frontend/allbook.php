@@ -99,13 +99,12 @@
                 border-radius: 10px;
             }
             .clicktoview{
-
             width: 30%;
             background: #485545;
-            padding: 5px 10px;
+            padding: 4px 10px;
             color: #FDF5D0;
             border-radius: 5px;
-            box-shadow: 2px 2px rgb(39,34,34);
+            /* box-shadow: 2px 2px rgb(39,34,34); */
             }
             .clicktoview:hover{
                 background: #657661;
@@ -166,6 +165,10 @@
                 height: 50px;
                 background-color: #485545;
             }
+            .un{
+                color: red;
+                font-size: 14px;
+            }
         </style>
     </head>
     <body>
@@ -203,7 +206,12 @@
                     <?php
                         $sql = "SELECT * FROM books"; 
                         $result = $conn->query($sql);
-
+                        
+                        // $sql2 = "SELECT * FROM user_type";
+                        // $result2 = $conn->query($sql2);
+                        // while ($row2 = $result2->fetch_assoc()) {
+                        //     $usertype = $row2['user_type'];
+                        // }
                         if ($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
                                 if (!empty($cates) && $row['cate_id'] == $cates) {
@@ -218,6 +226,9 @@
                                     echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
                                     echo '<p class="bookname">' . $row['book_name'] . '</p>';
                                     echo '<p>' . $row['book_owner'] . '</p>';
+                                    if($row['status'] == 0){
+                                        echo '<p class="bookname un">The book is unavaliable.</p>';
+                                    }
                                     echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                                     echo '</div>';
                                 } 
@@ -245,7 +256,7 @@
                                         '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                         '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
                                         '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
-                                        // '<hr>'+
+                                        
                                         '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
                                         '</form>';
 

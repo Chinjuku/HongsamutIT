@@ -15,7 +15,6 @@
 
         }
         .navhistory {
-            background-color: #657661;
             color:white;
             text-decoration: none;
             margin: 0 -10px;

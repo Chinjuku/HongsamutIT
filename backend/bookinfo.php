@@ -204,10 +204,11 @@ $conn->close();
         z-index: 1;
     }
     hr{
+        background: #485545;
         position: absolute;
         width: 400px;
         margin-top: 5rem;
-        margin-left: 2rem: 
+        margin-left: 5rem: 
     }
     /* Style for the popup content */
     .popup-content {
@@ -224,7 +225,7 @@ $conn->close();
     .popup-close {
         position: absolute;
         
-        margin-top: 5rem;
+        margin-top: 20rem;
         margin-left: 30rem;
         cursor: pointer;
     }

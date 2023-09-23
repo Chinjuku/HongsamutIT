@@ -229,7 +229,7 @@ $conn->close();
         position: absolute;
         width:400px;
         margin-top: 1rem;
-        margin-left: 60rem;
+        margin-left: 50rem;
         cursor: pointer;
     }
     .popup-pic{

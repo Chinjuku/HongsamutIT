@@ -222,9 +222,9 @@ $conn->close();
     /* Close button style */
     .popup-close {
         position: absolute;
-        top: 10px;
-        margin-left: 50rem;
-        right: 0px;
+        
+        margin-top: 20rem;
+        margin-left: 10rem;
         cursor: pointer;
     }
     .popup-pic{
@@ -234,7 +234,7 @@ $conn->close();
         margin-top:60px;
         width: 220px;
         height: 340px;
-        margin-left:10rem;
+        margin-left:40rem;
     }
     .aa{  
         margin: 30px 0;

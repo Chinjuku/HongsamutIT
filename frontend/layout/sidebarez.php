@@ -15,7 +15,7 @@
                 padding: 0;
                 user-select: none;
                 box-sizing: border-box;
-                font-family: "Poppings", sans-serif;
+                font-family: Mitr;
             }
         .sidebar{
             position: fixed;
@@ -77,7 +77,7 @@
             /* display: none; */
         }
         nav ul form li button:hover{
-            margin-right: 20%;
+            /* margin-right: 20%; */
             padding-left: 20px;
             color: #FDF5D0;
             background-color: #485545;
@@ -91,7 +91,7 @@
             width: 100%;
             color: white;
             font-size: 17px;
-            /* padding-left: 80px; */
+            align-items: start;
             border: none;
             background-color: #272222;
         }

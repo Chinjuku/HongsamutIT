@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     include '../backend/database.php';
     include './layout/navbar.php';
     include './layout/sidebarez.php';
@@ -54,7 +54,7 @@
                 right: 0px;
                 cursor: pointer;
             }
-            .pic{
+            .pics{
                 position:absolute;
                 display:inline-block;
                 background:lightgreen;
@@ -112,7 +112,7 @@
                 display:inline-block;
                 background-color:lightskyblue;
             }
-            img{
+            .pic{
                 width:150px;
                 height: 180px;
             }
@@ -126,13 +126,19 @@
                     <div class="square"></div>
                     <div class="newarrival">
                     <?php
-                        // $sql = "SELECT * FROM books";
-                        // $sql2 = "SELECT * from categories";
-                        // while ($row = $result->fetch_assoc()) {
-
-                        // }
+                        $sql = "SELECT * FROM categories";
+                        $result = $conn->query($sql);
+                        while ($row = $result->fetch_assoc()) {
+                            if($_POST['categories'] == $row['cate_id']){
+                                echo '<b>' . strtoupper($row['category_name']) . '</b>';
+                            } 
+                            else if(empty($_POST['categories'])){
+                                echo '<b>ALL</b><br>BOOKS';
+                                break;
+                            }
+                        }
                     ?>
-                    <b>ALL</b><br>BOOKS</div>
+                    </div>
                     
                 </div>
                 
@@ -156,9 +162,9 @@
                                 }
                                 if ($display) {
                                     echo '<div class="nabox">';
-                                    echo '<p>Book: ' . $row['book_name'] . '</p>';
-                                    echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                                    echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                                    echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                                    echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                                    echo '<p>' . $row['book_owner'] . '</p>';
                                     echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                                     echo '</div>';
                                 } 
@@ -183,7 +189,7 @@
                                         
                                         '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                         
-                                        '<img class="pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
+                                        '<img class="pics" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                         '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
                                         '<p class="popup-author">Author : ' + ' ' + bookOwner + '</p>' +
                                         '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 

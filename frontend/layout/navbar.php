@@ -45,13 +45,13 @@
                 ?>
                 
                 <a href="profile.php" style="--i:3;">
-                    <i href="login.php" class="bi bi-person-circle"></i>
+                    
                     <?php
                     if (isset($_SESSION['user_id'])){
                         echo $_SESSION['user_name'];
                         }
                     else{
-                        echo 'Guest';
+                        echo 'LOGIN';
                     }
                     ?>
                 </a>

@@ -8,7 +8,7 @@
     $phone_num = $_POST["phone_num"];
     $usertype = $_POST["user_type"];
 
-    $sql = "SELECT * FROM user";
+    $sql = "SELECT * FROM users";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

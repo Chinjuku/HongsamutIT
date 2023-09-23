@@ -13,10 +13,10 @@
     $date_register = date('Y-m-d H:i:s');
 
     // คำสั่ง SQL สำหรับค้นหาชื่อและอีเมลในฐานข้อมูล
-    $sql = "SELECT * FROM user WHERE email = '{$email}' LIMIT 1";
+    $sql = "SELECT * FROM users WHERE email = '{$email}' LIMIT 1";
     $stmt = $conn->query($sql);
 
-    $sql_2 = "SELECT * FROM user WHERE phone_number = '{$phone_num}' LIMIT 1";
+    $sql_2 = "SELECT * FROM users WHERE phone_number = '{$phone_num}' LIMIT 1";
     $stmt_2 = $conn->query($sql_2);
 
     if ($stmt->num_rows == 1) {
@@ -30,7 +30,7 @@
 
     } else {
         // ถ้าไม่มีชื่อหรืออีเมลนี้ในระบบ สามารถเพิ่มข้อมูลได้
-        $sql = "INSERT INTO user (user_name, first_name, last_name, email, password, phone_number, user_type_id, date_register)
+        $sql = "INSERT INTO users (user_name, first_name, last_name, email, password, phone_number, user_type_id, date_register)
          VALUES ('{$username}', '{$firstname}', '{$lastname}','{$email}', '{$password}', '{$phone_num}', '{$usertypeid}', '{$date_register}')";
 
         // ใช้ prepared statement

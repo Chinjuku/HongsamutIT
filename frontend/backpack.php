@@ -65,7 +65,7 @@
                     <tbody>
                         <!-- get book id from borrow table where user_id = session-userid -->
                         <?php
-                            $sql = "SELECT * FROM borrowbook WHERE user_id = '{$_SESSION['user_id']}'";
+                            $sql = "SELECT * FROM borrow_books WHERE user_id = '{$_SESSION['user_id']}'";
                             $result = $conn->query($sql);
                             if ($result->num_rows > 0) {
                                 while($row = $result->fetch_assoc()) { // วนลูปแสดงรายการหนังสือที่ยืม
@@ -83,7 +83,7 @@
                                             if ($cate_res->num_rows > 0) {
                                                 while($row3 = $cate_res->fetch_assoc()) {
                                                     $cate_name = $row3['category_name'];
-                                                    $sql4 = "SELECT * FROM borrowbook WHERE book_id = '{$book_id}'";
+                                                    $sql4 = "SELECT * FROM borrow_books WHERE book_id = '{$book_id}'";
                                                     $result4 = $conn->query($sql4);
                                                     if ($result4->num_rows > 0) {
                                                         while($row4 = $result4->fetch_assoc()) {

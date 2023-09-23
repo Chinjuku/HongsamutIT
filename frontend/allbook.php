@@ -206,7 +206,7 @@
                     <?php
                         $sql = "SELECT * FROM books"; 
                         $result = $conn->query($sql);
-                        $sql2 = "SELECT * FROM user";
+                        $sql2 = "SELECT * FROM users";
                         $result2 = $conn->query($sql2);
                         while ($row2 = $result2->fetch_assoc()) {
                             $user = $row2['user_type_id'];

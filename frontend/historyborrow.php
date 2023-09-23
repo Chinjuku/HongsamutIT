@@ -66,7 +66,7 @@
                         <?php
                             include '../backend/database.php';
                             
-                            $sql = "SELECT * FROM borrow";
+                            $sql = "SELECT * FROM borrow_books";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {

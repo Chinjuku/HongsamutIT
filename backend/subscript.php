@@ -10,7 +10,7 @@
     $selected_plan_id = $_POST['plan_id'];// รับค่า plan id ที่ user เลือกมา
 
 
-    $sql = "SELECT * FROM user WHERE email = '{$email}' AND plan_id IS NULL;"; // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
+    $sql = "SELECT * FROM users WHERE email = '{$email}' AND plan_id IS NULL;"; // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
     $result = $conn->query($sql); // ดึงข้อมูล user ที่มี email ตรงกับที่ user กรอกมา และยังไม่มี subscription plan
     var_dump($result->num_rows);
     if ($result->num_rows == 1) {

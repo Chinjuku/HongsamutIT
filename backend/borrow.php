@@ -15,7 +15,7 @@
     $date_return = date("Y-m-d H:i:s", strtotime("+7 days", strtotime($date_borrow)));
 
     //check if user own more than 10 books.
-    $check_sql = "SELECT * FROM borrowbook WHERE user_id = '{$_SESSION['user_id']}' AND date_return >= '{$date_borrow}'";
+    $check_sql = "SELECT * FROM borrow_books WHERE user_id = '{$_SESSION['user_id']}' AND date_return >= '{$date_borrow}'";
     // $check_sql = "SELECT * FROM borrow WHERE user_id = '{$_SESSION['user_id']}' AND  <= date_return";
     $check_stmt = $conn->query($check_sql);
     //check numrow

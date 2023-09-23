@@ -204,11 +204,13 @@ $conn->close();
         z-index: 1;
     }
     hr{
+        border-top: 1px solid #485545;
         background: #485545;
         position: absolute;
         width: 400px;
         margin-top: 5rem;
-        margin-left: 5rem: 
+        margin-left: 5rem;
+        /* padding-left:5rem; */
     }
     /* Style for the popup content */
     .popup-content {
@@ -224,9 +226,9 @@ $conn->close();
     /* Close button style */
     .popup-close {
         position: absolute;
-        
-        margin-top: 20rem;
-        margin-left: 30rem;
+        width:400px;
+        margin-top: 10rem;
+        margin-left: 2rem;
         cursor: pointer;
     }
     .popup-pic{

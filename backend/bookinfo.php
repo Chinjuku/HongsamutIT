@@ -269,7 +269,7 @@ $conn->close();
         /* background-color:lightcoral; */
         padding:20px 0px 20px 40px;
         margin-top: 60px;
-        margin-left:50px;
+        margin-left:45px;
         margin-right:55rem;
         font-size:40px;
         font: "Poppings";

@@ -203,16 +203,16 @@ $conn->close();
         justify-content: center;
         z-index: 1;
     }
-    hr{
+    /* hr{
         color:#485545;
         border-top: 1px solid #485545;
-        background-color: #485545;
+        background: #485545;
         position: absolute;
         width: 360px;
         margin-top: 5rem;
         margin-left: 4rem;
         /* padding-left:5rem; */
-    }
+    } */
     /* Style for the popup content */
     .popup-content {
         font-family:"Poppings";
@@ -266,7 +266,7 @@ $conn->close();
         position:absolute;
         display:inline-block;
         /* background-color:lightcoral; */
-        padding:20px -20px 20px 40px;
+        padding:20px 0px 20px 40px;
         margin-top: 60px;
         margin-left:20px;
         margin-right:55rem;
@@ -307,7 +307,7 @@ $conn->close();
                                 '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                 '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
                                 '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
-                                '<hr>'+
+                                // '<hr>'+
                                 '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
                                 '</form>';
 

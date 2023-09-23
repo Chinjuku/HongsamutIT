@@ -180,8 +180,8 @@ $conn->close();
     .square2{
         position: absolute;
         top: 0;
-        margin-top: 20rem;
-        margin-left: 40rem;
+        margin-top: 14rem;
+        margin-left: 38rem;
         width: 150px;
         height: 500px;
         background-color: #485545;
@@ -203,7 +203,11 @@ $conn->close();
         justify-content: center;
         z-index: 1;
     }
-
+    hr{
+        position: absolute;
+        width:10px;
+        margin-top: 20rem;
+    }
     /* Style for the popup content */
     .popup-content {
         font-family:"Poppings";

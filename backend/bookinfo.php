@@ -256,7 +256,7 @@ $conn->close();
         padding:20px 120px 20px 40px;
         margin-top: 60px;
         margin-left:20px;
-        margin-right:65rem;
+        margin-right:55rem;
         font-size:40px;
         font: "Poppings";
     }

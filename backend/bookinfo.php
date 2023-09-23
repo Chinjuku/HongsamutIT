@@ -179,9 +179,9 @@ $conn->close();
     }
     .square2{
         position: absolute;
-        margin-top: 9%;
-        width: 10px;
-        height: 120px;
+        
+        width: 200px;
+        height: 500px;
         background-color: #485545;
     }
     p{  
@@ -291,7 +291,7 @@ $conn->close();
                                 '<span class="popup-close" onclick="closePopup()">X</span>' +
                                 
                                 '<input type="hidden" name="book_id" value="' + bookId + '">' +
-                                '<div class="square2">bbbbb</div>' +
+                                '<div class="square2"></div>' +
                                 '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                 '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
                                 '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +

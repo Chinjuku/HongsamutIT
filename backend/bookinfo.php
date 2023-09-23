@@ -265,7 +265,7 @@ $conn->close();
         font-family:"Poppings";
         position:absolute;
         display:inline-block;
-        background-color:lightcoral;
+        /* background-color:lightcoral; */
         padding:20px 0px 20px 40px;
         margin-top: 60px;
         margin-left:58px;

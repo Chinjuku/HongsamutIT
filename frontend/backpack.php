@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     include '../backend/database.php';
     // include './layout/leftbar.php';
     include './layout/navbar.php';

@@ -206,12 +206,11 @@
                     <?php
                         $sql = "SELECT * FROM books"; 
                         $result = $conn->query($sql);
-                        
-                        // $sql2 = "SELECT * FROM user_type";
-                        // $result2 = $conn->query($sql2);
-                        // while ($row2 = $result2->fetch_assoc()) {
-                        //     $usertype = $row2['user_type'];
-                        // }
+                        $sql2 = "SELECT * FROM user";
+                        $result2 = $conn->query($sql2);
+                        while ($row2 = $result2->fetch_assoc()) {
+                            $user = $row2['user_type_id'];
+                        }
                         if ($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
                                 if (!empty($cates) && $row['cate_id'] == $cates) {
@@ -229,9 +228,10 @@
                                     if($row['status'] == 0){
                                         echo '<p class="bookname un">The book is unavaliable.</p>';
                                     }
-                                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
+                                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\',
+                                    \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\',  \'' . $user . '\')">VIEW</button>';
                                     echo '</div>';
-                                } 
+                                }
                             }
                         }
                         $conn->close();
@@ -244,7 +244,7 @@
             </div>
         </div>
         <script>
-            function togglePopup(bookName, bookOwner, imgSrc, bookId) {
+            function togglePopup(bookName, bookOwner, imgSrc, bookId, userType) {
                 var popup = document.getElementById('popup');
                 var popupContent = document.getElementById('popup-content');
                                     
@@ -255,8 +255,11 @@
                                         '<div class="square2"></div>' +
                                         '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                         '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
-                                        '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
-                                        
+                                        '<p class="popup-author">by ' + ' ' + bookOwner + '</p>'+
+                                        // if (userType == 1) {
+                                        //     popupContent.innerHTML += '<button type="submit" class="clicktoborrow">BORROW NOW</button>';
+                                        // }
+                                        // popupContent.innerHTML += '</form>';
                                         '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
                                         '</form>';
 

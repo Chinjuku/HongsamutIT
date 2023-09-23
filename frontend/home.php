@@ -40,7 +40,7 @@
                                 echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
                                 echo '<p class="bookname">' . $row['book_name'] . '</p>';
                                 echo '<p>' . $row['book_owner'] . '</p>';
-                                echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
+                                // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                                 echo '</div>';
                                 $num++;
                                 }

@@ -305,7 +305,7 @@ $conn->close();
                                 '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                 '<div class="square2"></div>' +
                                 '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
-                                '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
+                                '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
                                 '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
                                 '<hr>'+
                                 '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 

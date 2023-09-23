@@ -254,9 +254,9 @@ $conn->close();
         display:inline-block;
         background-color:lightcoral;
         padding:20px 150px 20px 40px;
-        margin-top: 70px;
+        margin-top: 60px;
         margin-left:20px;
-        margin-right:35%;
+        margin-right:40px;
         font-size:40px;
         font: "Poppings";
     }
@@ -264,16 +264,16 @@ $conn->close();
         position:absolute;
         display:inline-block;
         width: 10%;
-        margin-left:4%;
-        margin-top:19%;
+        margin-left:50px;
+        margin-top:100px;
         background: #485545;
-        padding: 1% 1.5%;
+        padding: 20px 15px 20px 15px;
         color: #FDF5D0;
         border-radius: 3px;
         box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-author{
-        margin:4% 0 20% 4%;
+        margin:50px 0 20px 40px;
         font-family:"Poppings";
         position:absolute;
         display:inline-block;

@@ -180,8 +180,9 @@ $conn->close();
     .square2{
         position: absolute;
         top: 0;
-        margin-left: 20rem;
-        width: 200px;
+        margin-top: 20rem;
+        margin-left: 40rem;
+        width: 150px;
         height: 500px;
         background-color: #485545;
     }
@@ -254,7 +255,7 @@ $conn->close();
         font-family:"Poppings";
         position:absolute;
         display:inline-block;
-        background-color:lightcoral;
+        /* background-color:lightcoral; */
         padding:20px 120px 20px 40px;
         margin-top: 60px;
         margin-left:20px;
@@ -290,7 +291,7 @@ $conn->close();
                             
         popupContent.innerHTML = '<form action="../backend/borrow.php" method="post">' +
                                 '<span class="popup-close" onclick="closePopup()">X</span>' +
-                                
+                                '<hr>'+
                                 '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                 '<div class="square2"></div>' +
                                 '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +

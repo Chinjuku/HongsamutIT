@@ -228,8 +228,8 @@ $conn->close();
     .popup-close {
         position: absolute;
         width:400px;
-        margin-top: 2rem;
-        margin-left: 30rem;
+        margin-top: 1rem;
+        margin-left: 60rem;
         cursor: pointer;
     }
     .popup-pic{
@@ -286,7 +286,7 @@ $conn->close();
         box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-author{
-        margin:40px 0 50px 70px;
+        margin:50px 0 50px 70px;
         font-family:"Poppings";
         position:absolute;
         display:inline-block;

@@ -226,7 +226,7 @@ $conn->close();
         margin-top:60px;
         width: 220px;
         height: 340px;
-        right: 40rem;
+        right: 38rem;
     }
     .aa{  
         margin: 30px 0;
@@ -256,7 +256,7 @@ $conn->close();
         padding:20px 120px 20px 40px;
         margin-top: 60px;
         margin-left:20px;
-        margin-right:200px;
+        margin-right:20rem;
         font-size:40px;
         font: "Poppings";
     }
@@ -265,7 +265,7 @@ $conn->close();
         display:inline-block;
         width: 10%;
         margin-left:50px;
-        margin-top:25rem;
+        margin-top:20rem;
         background: #485545;
         padding: 20px 15px 20px 15px;
         color: #FDF5D0;

@@ -132,23 +132,6 @@ hr{
     border-radius: 10px;
     width: 1500px;
 }
-.select{
-    background-color: #657661;
-
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    margin: 0 40rem;
-    padding: 20px 90px;
-    justify-content: space-between;
-
-}
-.navhistory {
-    color:white;
-    text-decoration: none;
-    margin: 0%;
-    padding: 1.3rem 10%;
-}
 @media only screen and (max-width: 1440px){
     .table2{
         width: 1200px;

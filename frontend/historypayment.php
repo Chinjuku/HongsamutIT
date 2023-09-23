@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include '../backend/database.php';
     // include './layout/leftbar.php';
     include './layout/navbar.php';
@@ -46,10 +45,9 @@
     <body>
         <div class="main">
             <div class="mid">
-            <div class="select">
-                <a href="historyborrow.php" class="navhistory">View BORROW</a>
-                <a href="historypayment.php" class="navhistory">View PAYMENT</a>
-            </div>
+                <?php
+                    include './layout/historynav.php';
+                ?>
                 <div class="payment"><h2 style="font-size: 50px;text-align: center;">History of Payment</h2></div>
                 <table class="table2">
                     <thead>

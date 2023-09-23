@@ -208,9 +208,9 @@ $conn->close();
         border-top: 1px solid #485545;
         background: #485545;
         position: absolute;
-        width: 400px;
+        width: 360px;
         margin-top: 5rem;
-        margin-left: 3rem;
+        margin-left: 4rem;
         /* padding-left:5rem; */
     }
     /* Style for the popup content */
@@ -228,8 +228,8 @@ $conn->close();
     .popup-close {
         position: absolute;
         width:400px;
-        margin-top: 7rem;
-        margin-left: 10rem;
+        margin-top: 5rem;
+        margin-left: 20rem;
         cursor: pointer;
     }
     .popup-pic{
@@ -265,7 +265,7 @@ $conn->close();
         font-family:"Poppings";
         position:absolute;
         display:inline-block;
-        /* background-color:lightcoral; */
+        background-color:lightcoral;
         padding:20px 120px 20px 40px;
         margin-top: 60px;
         margin-left:20px;

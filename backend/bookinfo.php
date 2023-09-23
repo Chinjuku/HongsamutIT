@@ -169,6 +169,20 @@
 $conn->close();
 ?>
 <style>
+    .nabox{
+    position: relative;
+    background-color: #fffcee;
+    width: 20%;
+    height: 290px;
+    /* border-radius: 10px; */
+    
+    text-align: center;
+    margin: 10px;
+    border-style: solid;
+    border-width: thin;
+    box-shadow: 10px 10px 5px #fdf1b9;
+    
+}
     .pic{
         margin-top: 7%;
         width: 95px;

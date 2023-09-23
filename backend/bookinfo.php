@@ -209,7 +209,7 @@ $conn->close();
         position: absolute;
         width: 400px;
         margin-top: 5rem;
-        margin-left: 5rem;
+        margin-left: 3rem;
         /* padding-left:5rem; */
     }
     /* Style for the popup content */
@@ -227,8 +227,8 @@ $conn->close();
     .popup-close {
         position: absolute;
         width:400px;
-        margin-top: 10rem;
-        margin-left: 2rem;
+        margin-top: 7rem;
+        margin-left: 10rem;
         cursor: pointer;
     }
     .popup-pic{

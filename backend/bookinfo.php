@@ -229,7 +229,7 @@ $conn->close();
         position: absolute;
         width:400px;
         margin-top: 1rem;
-        margin-left: 50rem;
+        margin-left: 48rem;
         cursor: pointer;
     }
     .popup-pic{
@@ -265,7 +265,7 @@ $conn->close();
         font-family:"Poppings";
         position:absolute;
         display:inline-block;
-        background-color:lightcoral;
+        /* background-color:lightcoral; */
         padding:20px 0px 20px 40px;
         margin-top: 60px;
         margin-left:20px;

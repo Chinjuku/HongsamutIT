@@ -223,10 +223,10 @@ $conn->close();
         position:absolute;
         display:inline-block;
         /* background:lightgreen; */
-        margin-top:90px;
+        margin-top:80px;
         width: 220px;
         height: 340px;
-        right: 10rem;
+        right: 30rem;
     }
     .aa{  
         margin: 30px 0;
@@ -265,7 +265,7 @@ $conn->close();
         display:inline-block;
         width: 10%;
         margin-left:50px;
-        margin-top:200px;
+        margin-top:30rem;
         background: #485545;
         padding: 20px 15px 20px 15px;
         color: #FDF5D0;
@@ -273,7 +273,7 @@ $conn->close();
         box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-author{
-        margin:50px 0 20px 40px;
+        margin:40px 0 20px 50px;
         font-family:"Poppings";
         position:absolute;
         display:inline-block;

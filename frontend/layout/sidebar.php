@@ -155,7 +155,7 @@
                     <span><i class="bi bi-caret-down"></i></span>
                 </a>
                 <!-- <ul class="feat-show" id="content"> -->
-                    <form action="allbookez.php" method="post" class="feat-show" id="content">
+                    <form action="allbook.php" method="post" class="feat-show" id="content">
                     <li><button type="submit" name="categories" value=''>ALL BOOKS</button></li>
                     <li><button type="submit" name="categories" value='1'>COMIC   </button></li>
                     <li><button type="submit" name="categories" value='2'>DETECTIVE</button></li>

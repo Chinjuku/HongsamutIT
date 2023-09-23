@@ -2,7 +2,7 @@
     // session_start();
     include '../backend/database.php';
     include './layout/navbar.php';
-    include './layout/sidebarez.php';
+    include './layout/sidebar.php';
     $cates = $_POST['categories'];
 ?>
 

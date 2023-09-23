@@ -1,7 +1,7 @@
 <?php
     // session_start();
     include './layout/navbar.php';
-    include './layout/sidebarez.php';
+    include './layout/sidebar.php';
     
 ?>
 

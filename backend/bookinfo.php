@@ -174,8 +174,8 @@ $conn->close();
     }
     .square2{
         z-index: 10;
-        width: 100%;
-        height:100%;
+        width: 500%;
+        height:500%;
         background: #485545;
     }
     p{  
@@ -282,15 +282,15 @@ $conn->close();
         var popupContent = document.getElementById('popup-content');
                             
         popupContent.innerHTML = '<form action="../backend/borrow.php" method="post">' +
-                                 '<span class="popup-close" onclick="closePopup()">X</span>' +
-                                 
-                                 '<input type="hidden" name="book_id" value="' + bookId + '">' +
-                                 
-                                 '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
-                                 '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
-                                 '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
-                                 '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
-                                 '</form>';
+                                '<span class="popup-close" onclick="closePopup()">X</span>' +
+                                
+                                '<input type="hidden" name="book_id" value="' + bookId + '">' +
+                                '<div class="square2"></div>' +
+                                '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
+                                '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
+                                '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
+                                '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
+                                '</form>';
 
         popup.style.display = 'flex';
     }

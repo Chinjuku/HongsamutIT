@@ -178,10 +178,10 @@ $conn->close();
         font-weight:bold;
     }
     .square2{
-        z-index: 10;
-        width: 500%;
-        height:500%;
-        background: #485545;
+        margin-top: 9%;
+        width: 10px;
+        height: 120px;
+        background-color: #485545;
     }
     p{  
         font-family:"Poppings";

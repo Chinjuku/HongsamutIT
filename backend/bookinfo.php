@@ -277,7 +277,7 @@ $conn->close();
         position:absolute;
         display:inline-block;
         width: 10%;
-        margin-left:50px;
+        margin-left:100px;
         margin-top:20rem;
         background: #485545;
         padding: 20px 15px 20px 15px;

@@ -256,7 +256,7 @@ $conn->close();
         padding:20px 120px 20px 40px;
         margin-top: 60px;
         margin-left:20px;
-        margin-right:50rem;
+        margin-right:60rem;
         font-size:40px;
         font: "Poppings";
     }
@@ -273,7 +273,7 @@ $conn->close();
         box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-author{
-        margin:40px 0 40px 50px;
+        margin:40px 0 50px 70px;
         font-family:"Poppings";
         position:absolute;
         display:inline-block;

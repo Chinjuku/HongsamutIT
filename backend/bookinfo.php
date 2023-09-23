@@ -178,6 +178,7 @@ $conn->close();
         font-weight:bold;
     }
     .square2{
+        position: absolute;
         margin-top: 9%;
         width: 10px;
         height: 120px;

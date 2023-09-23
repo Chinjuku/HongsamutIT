@@ -248,7 +248,7 @@
                 var popup = document.getElementById('popup');
                 var popupContent = document.getElementById('popup-content');
                                     
-                popupContent.innerHTML = '<form action="../backend/borrow.php" method="post">' +
+                var popupcoN = '<form action="../backend/borrow.php" method="post">' +
                                         '<span class="popup-close" onclick="closePopup()">X</span>' +
                                         
                                         '<input type="hidden" name="book_id" value="' + bookId + '">' +
@@ -257,9 +257,10 @@
                                         '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
                                         '<p class="popup-author">by ' + ' ' + bookOwner + '</p>';
                                         if (userType == 1) {
-                                            popupContent.innerHTML += '<button type="submit" class="clicktoborrow">BORROW NOW</button>';
+                                            popupcoN += '<button type="submit" class="clicktoborrow">BORROW NOW</button>';
                                         }
-                                        popupContent.innerHTML += '</form>';
+                                        popupcoN += '</form>';
+                                        popupContent.innerHTML = popupcoN;
                                         // '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
                                         // '</form>';
 

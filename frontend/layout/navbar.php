@@ -27,7 +27,7 @@
                 <i class="bi bi-x-square"id="close-icon"></i>
             </label>
             <nav class="menubar">
-                <a href="allbookez.php" style="--i:1;">VIEW BOOK</a>
+                <a href="allbook.php" style="--i:1;">VIEW BOOK</a>
                 <?php
                     $check_type = $_SESSION['user_type'];
                     if($check_type == 1) {

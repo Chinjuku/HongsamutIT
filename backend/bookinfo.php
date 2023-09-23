@@ -287,6 +287,18 @@ $conn->close();
         border-radius: 3px;
         box-shadow: 2px 2px rgb(39,34,34);
     }
+    .clicktoborrow:hover{
+        position:absolute;
+        display:inline-block;
+        width: 10%;
+        margin-left:100px;
+        margin-top:20rem;
+        background: #657661;
+        padding: 23px 18px 23px 18px;
+        color: #FDF5D0;
+        border-radius: 3px;
+        box-shadow: 2px 2px rgb(39,34,34);
+    }
     .popup-author{
         margin:50px 0 50px 70px;
         font-family:"Poppings";

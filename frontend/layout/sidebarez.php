@@ -116,12 +116,13 @@
         }
         nav ul li button:hover{
             font-size: 17px;
-            padding: 10px 0;
+            padding: 7px 0;
             padding-right: 80px;
         }
         nav ul li button{
             font-size: 17px;
-            padding-left: 80px;
+            font-weight: 600;
+            padding: 0 20px 0 80px;
             background-color: #272222;
             border: none;
             color: white;

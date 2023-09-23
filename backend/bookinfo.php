@@ -282,7 +282,6 @@ $conn->close();
         margin-left:100px;
         margin-top:20rem;
         background: #485545;
-        padding: 20px 15px 20px 15px;
         color: #FDF5D0;
         border-radius: 3px;
         box-shadow: 2px 2px rgb(39,34,34);
@@ -294,7 +293,7 @@ $conn->close();
         margin-left:100px;
         margin-top:20rem;
         background: #657661;
-        padding: 23px 18px 23px 18px;
+
         color: #FDF5D0;
         border-radius: 3px;
         box-shadow: 2px 2px rgb(39,34,34);

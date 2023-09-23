@@ -24,9 +24,10 @@
 
         <div class="main">
             <div class="mid">
+                <div class="greenbg"></div>
                 <div class="head">
                     <!-- <div class="square"></div> -->
-                    <div class="newarrival">NEW ARRIVALS</div>
+                    <div class="newarrival"><i>NEW ARRIVALS</i></div>
                 </div>
                 <div class="container">
                     <!-- ใส่ new book นะ (ใส่ไว้ได้เลย แต่เอาข้อมูลหนังสือใหม่เข้า database ด้วย)-->

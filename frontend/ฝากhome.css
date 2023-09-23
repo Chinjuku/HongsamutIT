@@ -24,19 +24,12 @@ body{
     /* text-align: center; */
     display: block;
 }
-.greenbg{
-    z-index: -1;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 350px;
-    background: #485545;
-}
+.greenbg{}
 .head{
     gap: 20px;
     left: 0px;
-    margin-top: 6%;
-    margin-left: 22%;
+    margin-top: 5%;
+    margin-left: 25%;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -49,10 +42,12 @@ body{
 }
 .newarrival{
     top: 0px;
-    font: "Poppings";
+    
     width: 100%;
-    font-size: 70px;
-    color:#ffffff;
+    font: "Poppings";
+    font-size: 50px;
+    color:#272222;
+    background-color: rgb(255, 231, 231);
 
 }
 .container{
@@ -61,7 +56,7 @@ body{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 7%;
+    margin-top: 5%;
     gap: 10px;
     width: 1100px;
     height: auto;
@@ -78,7 +73,7 @@ body{
     margin: 10px;
     border-style: solid;
     border-width: thin;
-
+    box-shadow: 10px 10px 5px #fdf1b9;
     
 }
 

@@ -181,7 +181,7 @@ $conn->close();
         position: absolute;
         
         margin-top: 0rem;
-        margin-left: 33rem;
+        margin-left: 32.5rem;
         width: 150px;
         height: 500px;
         background-color: #485545;

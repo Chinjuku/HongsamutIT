@@ -266,9 +266,9 @@ $conn->close();
         position:absolute;
         display:inline-block;
         background-color:lightcoral;
-        padding:20px 20px 20px 40px;
+        padding:20px 0px 20px 40px;
         margin-top: 60px;
-        margin-left:60px;
+        margin-left:58px;
         margin-right:58rem;
         font-size:40px;
         font: "Poppings";
@@ -307,7 +307,7 @@ $conn->close();
                                 '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                 '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
                                 '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
-                                '<hr>'+
+                                // '<hr>'+
                                 '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
                                 '</form>';
 

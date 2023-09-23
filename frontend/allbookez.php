@@ -18,6 +18,15 @@
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <style>
+            .bookname{
+                font-weight:bold;
+            }
+            .square2{
+                
+                width: 100%;
+                height:100%;
+                background: #485545;
+            }
             p{  
                 font-family:"Poppings";
                 /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
@@ -54,14 +63,14 @@
                 right: 0px;
                 cursor: pointer;
             }
-            .pics{
+            .popup-pic{
                 position:absolute;
                 display:inline-block;
-                background:lightgreen;
-                margin-top:6%;
-                width: 190px;
-                height: 310px;
-                right: 32%;
+                /* background:lightgreen; */
+                margin-top:4%;
+                width: 220px;
+                height: 340px;
+                right: 34%;
             }
             .aa{  
                 margin: 30px 0;
@@ -80,25 +89,27 @@
             box-shadow: 2px 2px rgb(39,34,34);
             }
             .clicktoview:hover{
+                background: #657661;
                 box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
             }
             .popup-bookname{
                 font-family:"Poppings";
                 position:absolute;
                 display:inline-block;
-                background-color:lightcoral;
-                position: fixed;
-                padding:20px 10px;
+                /* background-color:lightcoral; */
+                padding:20px 100px 20px 40px;
                 margin-top: 70px;
                 margin-left:20px;
+                margin-right:50%;
                 font-size:50px;
                 font: "Poppings";
             }
             .clicktoborrow{
                 position:absolute;
                 display:inline-block;
-                width: 20%;
-                margin-top:30%;
+                width: 10%;
+                margin-left:4%;
+                margin-top:19%;
                 background: #485545;
                 padding: 1% 1.5%;
                 color: #FDF5D0;
@@ -106,11 +117,11 @@
                 box-shadow: 2px 2px rgb(39,34,34);
             }
             .popup-author{
-                margin:4% 0 20% 2%;
+                margin:4% 0 20% 4%;
                 font-family:"Poppings";
                 position:absolute;
                 display:inline-block;
-                background-color:lightskyblue;
+                /* background-color:lightskyblue; */
             }
             .pic{
                 width:150px;
@@ -189,7 +200,7 @@
                                         
                                         '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                         
-                                        '<img class="pics" src="' + imgSrc + '" alt="Image">' + '<br>' +
+                                        '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                         '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
                                         '<p class="popup-author">Author : ' + ' ' + bookOwner + '</p>' +
                                         '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 

@@ -78,23 +78,24 @@
         }
         nav ul form li button:hover{
             /* margin-right: 20%; */
-            padding-left: 20px;
+            /* padding-right: 60px; */
             color: #FDF5D0;
+            font-size: 17px;
             background-color: #485545;
-            padding: 10px 20px;
+            padding: 5px 20px;
         }
         nav ul form li button:hover{
-            font-size: 17px;
             padding-left: 60px;
         }
         nav ul form li button{
             width: 100%;
             color: white;
             font-size: 17px;
-            align-items: start;
             border: none;
+            align-items: start;
             background-color: #272222;
         }
+
         nav ul li a span{
             position: absolute;
             top: 50%;

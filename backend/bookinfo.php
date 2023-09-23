@@ -204,6 +204,7 @@ $conn->close();
         z-index: 1;
     }
     hr{
+        color:#485545;
         border-top: 1px solid #485545;
         background: #485545;
         position: absolute;

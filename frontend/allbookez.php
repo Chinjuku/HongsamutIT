@@ -124,7 +124,7 @@
                 /* background-color:lightskyblue; */
             }
             .pic{
-                width:120px;
+                width:95px;
                 height: 140px;
             }
         </style>

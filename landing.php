@@ -60,7 +60,7 @@
 
       <div class="landing-container">
         <div class="landing-landing">
-          <a href="./frontend/" class="landing-text button">
+          <a href="./frontend/home.php" class="landing-text button">
             <div><span>EXPLORE OUR BOOKS</span></div>
           </a>
           <span class="landing-text02"><span>or</span></span>

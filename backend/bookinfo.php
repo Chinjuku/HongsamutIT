@@ -180,8 +180,8 @@ $conn->close();
     .square2{
         position: absolute;
         
-        margin-top: 5rem;
-        margin-left: 35rem;
+        margin-top: 1rem;
+        margin-left: 32rem;
         width: 150px;
         height: 500px;
         background-color: #485545;
@@ -204,8 +204,8 @@ $conn->close();
         z-index: 1;
     }
     hr{
-        /* position: absolute; */
-        width:10px;
+        position: absolute;
+        width: 100px;
         margin-top: 20rem;
     }
     /* Style for the popup content */

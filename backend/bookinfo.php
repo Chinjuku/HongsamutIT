@@ -228,8 +228,8 @@ $conn->close();
     .popup-close {
         position: absolute;
         width:400px;
-        margin-top: 5rem;
-        margin-left: 20rem;
+        margin-top: 3rem;
+        margin-left: 25rem;
         cursor: pointer;
     }
     .popup-pic{
@@ -266,7 +266,7 @@ $conn->close();
         position:absolute;
         display:inline-block;
         background-color:lightcoral;
-        padding:20px 120px 20px 40px;
+        padding:20px 20px 20px 40px;
         margin-top: 60px;
         margin-left:20px;
         margin-right:55rem;

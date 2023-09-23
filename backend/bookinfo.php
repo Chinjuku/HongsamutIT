@@ -247,12 +247,12 @@ $conn->close();
         font-family:"Poppings";
         position:absolute;
         display:inline-block;
-        /* background-color:lightcoral; */
+        background-color:lightcoral;
         padding:20px 100px 20px 40px;
         margin-top: 70px;
         margin-left:20px;
-        margin-right:50%;
-        font-size:50px;
+        margin-right:30%;
+        font-size:40px;
         font: "Poppings";
     }
     .clicktoborrow{

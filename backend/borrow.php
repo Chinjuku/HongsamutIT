@@ -41,7 +41,7 @@
         }
         else{
             //add to borrow table
-            $borrow_sql = "INSERT INTO borrow (book_id, user_id, date_borrow, date_return) VALUES ('{$book_id}', '{$_SESSION['user_id']}', '{$date_borrow}', '{$date_return}')";
+            $borrow_sql = "INSERT INTO borrow_books (book_id, user_id, date_borrow, date_return) VALUES ('{$book_id}', '{$_SESSION['user_id']}', '{$date_borrow}', '{$date_return}')";
             $borrow_stmt = $conn->prepare($borrow_sql);
             if ($borrow_stmt->execute()) {
                 //update status in books table

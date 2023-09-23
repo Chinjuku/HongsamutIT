@@ -132,7 +132,7 @@ hr{
     border-radius: 10px;
     width: 1500px;
 }
-@media only screen and (max-width: 1440px){
+@media only screen and (max-width: 1500px){
     .table2{
         width: 1200px;
         margin-top: 30px;

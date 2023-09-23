@@ -71,7 +71,7 @@
 
                             if ($result->num_rows > 0) {
                                 while($row = $result->fetch_assoc()) {
-                                    $sql2 = "SELECT * FROM user WHERE user_id = '{$row['user_id']}'";
+                                    $sql2 = "SELECT * FROM users WHERE user_id = '{$row['user_id']}'";
                                     $result2 = $conn->query($sql2);
                                     while($row2 = $result2->fetch_assoc()) {
                                         $username = $row2['user_name'];

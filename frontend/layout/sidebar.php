@@ -122,7 +122,7 @@
         nav ul li button{
             font-size: 17px;
             font-weight: 600;
-            padding: 0 70px 0 80px;
+            padding: 0 68px 0 80px;
             background-color: #272222;
             border: none;
             color: white;

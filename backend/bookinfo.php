@@ -206,7 +206,7 @@ $conn->close();
     hr{
         color:#485545;
         border-top: 1px solid #485545;
-        background: #485545;
+        background-color: #485545;
         position: absolute;
         width: 360px;
         margin-top: 5rem;
@@ -266,7 +266,7 @@ $conn->close();
         position:absolute;
         display:inline-block;
         /* background-color:lightcoral; */
-        padding:20px 0px 20px 40px;
+        padding:20px -20px 20px 40px;
         margin-top: 60px;
         margin-left:20px;
         margin-right:55rem;

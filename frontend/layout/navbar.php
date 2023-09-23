@@ -39,7 +39,7 @@
                 <?php
                     if($_SESSION['user_type'] == 2) {
                         echo "<a href='addbook.php'>ADD BOOK</a>";
-                        echo "<a href='viewhistory.php'>HISTORY</a>";
+                        echo "<a href='historyborrow.php'>HISTORY</a>";
                     }
                 ?>
                 

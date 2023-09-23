@@ -205,9 +205,6 @@
                         $result = $conn->query($sql);
 
                         if ($result->num_rows > 0) {
-
-                            $allbook_page = $_SERVER['REQUEST_URI'];
-                            
                             while ($row = $result->fetch_assoc()) {
                                 if (!empty($cates) && $row['cate_id'] == $cates) {
                                     $display = true;

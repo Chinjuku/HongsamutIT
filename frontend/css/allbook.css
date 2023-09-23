@@ -59,10 +59,10 @@ body{
 }
 .nabox{
     position: relative;
-    background-color: white;
-    width: 17%;
-    height: 280px;
-    border-radius: 10px;
+    background-color: #dbd1a1;
+    width: 20%;
+    height: 290px;
+    /* border-radius: 10px; */
     
     text-align: center;
     margin: 10px;

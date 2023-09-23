@@ -223,10 +223,10 @@ $conn->close();
         position:absolute;
         display:inline-block;
         /* background:lightgreen; */
-        margin-top:80px;
+        margin-top:60px;
         width: 220px;
         height: 340px;
-        right: 30rem;
+        right: 40rem;
     }
     .aa{  
         margin: 30px 0;
@@ -265,7 +265,7 @@ $conn->close();
         display:inline-block;
         width: 10%;
         margin-left:50px;
-        margin-top:30rem;
+        margin-top:25rem;
         background: #485545;
         padding: 20px 15px 20px 15px;
         color: #FDF5D0;

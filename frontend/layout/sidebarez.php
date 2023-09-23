@@ -122,10 +122,11 @@
         nav ul li button{
             font-size: 17px;
             font-weight: 600;
-            padding: 0 20px 0 80px;
+            padding: 0 70px 0 80px;
             background-color: #272222;
             border: none;
             color: white;
+            cursor: pointer;
         }
         nav ul li button span{
             position: absolute;
@@ -156,7 +157,7 @@
                 <!-- <ul class="feat-show" id="content"> -->
                     <form action="allbookez.php" method="post" class="feat-show" id="content">
                     <li><button type="submit" name="categories" value=''>ALL BOOKS</button></li>
-                    <li><button type="submit" name="categories" value='1'>COMIC</button></li>
+                    <li><button type="submit" name="categories" value='1'>COMIC   </button></li>
                     <li><button type="submit" name="categories" value='2'>DETECTIVE</button></li>
                     <li><button type="submit" name="categories" value='3'>FANTASY</button></li>
                     <li><button type="submit" name="categories" value='4'>FICTION</button></li>

@@ -3,7 +3,7 @@
     include '../backend/database.php';
     include './layout/navbar.php';
     include './layout/sidebarez.php';
-    
+    $cates = $_POST['categories'];
 ?>
 
 <!DOCTYPE html>
@@ -127,6 +127,12 @@
                 width:95px;
                 height: 140px;
             }
+            .square2{
+                margin-top: 7%;
+                width: 10px;
+                height: 50px;
+                background-color: #485545;
+            }
         </style>
     </head>
     <body>
@@ -134,22 +140,28 @@
         <div class="main">
             <div class="mid">
                 <div class="head">
-                    <div class="square"></div>
-                    <div class="newarrival">
+                    <!-- <div class="square"></div> -->
+                    <!-- <div class="newarrival"> -->
                     <?php
                         $sql = "SELECT * FROM categories";
                         $result = $conn->query($sql);
                         while ($row = $result->fetch_assoc()) {
-                            if($_POST['categories'] == $row['cate_id']){
+                            if($cates == $row['cate_id']){
+                                echo '<div class="square2"></div>';
+                                echo '<div class="newarrival">';
                                 echo '<b>' . strtoupper($row['category_name']) . '</b>';
+                                echo '</div>';
                             } 
-                            else if(empty($_POST['categories'])){
+                            else if(empty($cates)){
+                                echo '<div class="square1"></div>';
+                                echo '<div class="newarrival">';
                                 echo '<b>ALL</b><br>BOOKS';
+                                echo '</div>';
                                 break;
                             }
                         }
                     ?>
-                    </div>
+                    <!-- </div> -->
                     
                 </div>
                 
@@ -164,9 +176,9 @@
                             $allbook_page = $_SERVER['REQUEST_URI'];
                             
                             while ($row = $result->fetch_assoc()) {
-                                if (!empty($_POST['categories']) && $row['cate_id'] == $_POST['categories']) {
+                                if (!empty($cates) && $row['cate_id'] == $cates) {
                                     $display = true;
-                                } elseif (empty($_POST['categories'])) {
+                                } elseif (empty($cates)) {
                                     $display = true;
                                 } else {
                                     $display = false;

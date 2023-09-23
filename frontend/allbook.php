@@ -229,7 +229,7 @@
                                         echo '<p class="bookname un">The book is unavaliable.</p>';
                                     }
                                     echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\',
-                                    \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\',  \'' . $user . '\')">VIEW</button>';
+                                    \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\',  \'' . $_SESSION['user_type'] . '\')">VIEW</button>';
                                     echo '</div>';
                                 }
                             }
@@ -255,13 +255,13 @@
                                         '<div class="square2"></div>' +
                                         '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                         '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
-                                        '<p class="popup-author">by ' + ' ' + bookOwner + '</p>'+
-                                        // if (userType == 1) {
-                                        //     popupContent.innerHTML += '<button type="submit" class="clicktoborrow">BORROW NOW</button>';
-                                        // }
-                                        // popupContent.innerHTML += '</form>';
-                                        '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
-                                        '</form>';
+                                        '<p class="popup-author">by ' + ' ' + bookOwner + '</p>';
+                                        if (userType == 1) {
+                                            popupContent.innerHTML += '<button type="submit" class="clicktoborrow">BORROW NOW</button>';
+                                        }
+                                        popupContent.innerHTML += '</form>';
+                                        // '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
+                                        // '</form>';
 
                 popup.style.display = 'flex';
             }

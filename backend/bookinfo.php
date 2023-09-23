@@ -236,7 +236,7 @@ $conn->close();
         position:absolute;
         display:inline-block;
         /* background:lightgreen; */
-        margin-top:60px;
+        margin-top:70px;
         width: 220px;
         height: 340px;
         margin-left:30rem;

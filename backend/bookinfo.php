@@ -181,7 +181,7 @@ $conn->close();
         position: absolute;
         
         margin-top: 0rem;
-        margin-left: 32rem;
+        margin-left: 33rem;
         width: 150px;
         height: 500px;
         background-color: #485545;
@@ -239,7 +239,7 @@ $conn->close();
         margin-top:75px;
         width: 220px;
         height: 340px;
-        margin-left:29rem;
+        margin-left:30rem;
     }
     .aa{  
         margin: 30px 0;

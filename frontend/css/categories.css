@@ -88,3 +88,21 @@ img {
 .clicktoview:hover{
     box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
 }
+
+@media (max-width:1620px){
+    .mid{
+        margin-left: 36%;
+        margin-top: 7%;
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width:1500px){
+    .mid{
+        margin-left: 34%;
+        margin-top: 7%;
+        width: 100%;
+        display: block;
+    }
+}

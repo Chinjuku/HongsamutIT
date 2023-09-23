@@ -46,8 +46,7 @@
         }
 
         nav ul li{
-            
-            line-height: 42px;
+            line-height: 60px;
 
         }
         nav ul li a{
@@ -59,10 +58,11 @@
             font-weight: 500;
             display: block;
             width: 100%;
+            font-family: Mitr;
             margin-left: 0px;
             
         }
-        nav ul ul li{
+        nav ul form li{
             text-align: start;
             line-height: 42px;
             border-bottom: none;
@@ -76,26 +76,22 @@
             position: static;
             /* display: none; */
         }
-        nav ul form li button:hover{
-            /* margin-right: 20%; */
-            /* padding-right: 60px; */
+        nav ul li a:hover{
+            margin-right: 20%;
+            padding-left: 20px;
             color: #FDF5D0;
-            font-size: 17px;
+            width: 100%;
             background-color: #485545;
-            padding: 5px 20px;
         }
-        nav ul form li button:hover{
+        nav ul ul li a:hover{
+            font-size: 17px;
             padding-left: 60px;
         }
-        nav ul form li button{
-            width: 100%;
-            color: white;
+        nav ul ul li a{
             font-size: 17px;
-            border: none;
-            align-items: start;
-            background-color: #272222;
-        }
+            padding-left: 80px;
 
+        }
         nav ul li a span{
             position: absolute;
             top: 50%;
@@ -110,6 +106,37 @@
         }
         .newarr{
             border-bottom: 0.1px solid rgb(158, 158, 158);
+        }
+        nav ul li button:hover{
+            margin-right: 20%;
+            padding-left: 20px;
+            width: 100%;
+            color: #FDF5D0;
+            background-color: #485545;
+        }
+        nav ul li button:hover{
+            font-size: 17px;
+            padding: 10px 0;
+            padding-right: 80px;
+        }
+        nav ul li button{
+            font-size: 17px;
+            padding-left: 80px;
+            background-color: #272222;
+            border: none;
+            color: white;
+        }
+        nav ul li button span{
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 22px;
+            transition: transform 0.4s;
+        }
+        nav ul li button:hover span{
+            transform: translateY(-50%) rotate(-180deg);
+
         }
         </style>
     </head>

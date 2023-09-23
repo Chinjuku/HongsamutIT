@@ -180,7 +180,7 @@ $conn->close();
     .square2{
         position: absolute;
         
-        margin-top: 1rem;
+        margin-top: 0rem;
         margin-left: 32rem;
         width: 150px;
         height: 500px;
@@ -234,7 +234,7 @@ $conn->close();
         margin-top:60px;
         width: 220px;
         height: 340px;
-        margin-right:10rem;
+        margin-left:10rem;
     }
     .aa{  
         margin: 30px 0;

@@ -93,7 +93,7 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
-/* @media (max-width:1620px){
+@media (max-width:1620px){
     .mid{
         margin-left: 36%;
         margin-top: 7%;
@@ -109,7 +109,7 @@ body{
         width: 100%;
         display: block;
     }
-} */
+}
 
 
 .clicktoview{

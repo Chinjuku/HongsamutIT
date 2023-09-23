@@ -1,5 +1,6 @@
 <?php
     session_start();
+    error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 ?>
 <!DOCTYPE html>
     <html lang="en">
@@ -48,7 +49,10 @@
                     <?php
                     if (isset($_SESSION['user_id'])){
                         echo $_SESSION['user_name'];
-                        }            
+                        }
+                    else{
+                        echo 'Guest';
+                    }
                     ?>
                 </a>
 

@@ -28,7 +28,7 @@
         }
         .pay{
             background-color: #2e2a2a;
-            border-left:1px solid black;
+            border-left:1px solid white;
             border-radius: 0 50px 50px 0;
             
         }

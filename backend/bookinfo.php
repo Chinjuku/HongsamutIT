@@ -179,7 +179,7 @@ $conn->close();
     }
     .square2{
         position: absolute;
-        margin-bottom: 10px;
+        top: 0;
         margin-left: 20rem;
         width: 200px;
         height: 500px;

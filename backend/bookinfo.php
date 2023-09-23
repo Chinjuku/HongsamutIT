@@ -306,7 +306,7 @@ $conn->close();
     <body>
         <div class="popup-overlay" id="popup">
             <div class="popup-content" id="popup-content">
-                <div class="square2">biooboob</div>
+                
             </div>
         </div>
     </body>

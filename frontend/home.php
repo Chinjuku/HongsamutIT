@@ -1,7 +1,7 @@
 <?php
     // session_start();
     include './layout/navbar.php';
-    include './layout/sidebar.php';
+    include './layout/sidebarez.php';
     
 ?>
 
@@ -35,7 +35,7 @@
                 <div class="container">
                     <!-- <button onclick="togglePopup()" class="nabox"> -->
                     <?php
-                        include '../backend/bookinfo.php';
+                        // include '../backend/bookinfo.php';
                     ?>
             </div>
             

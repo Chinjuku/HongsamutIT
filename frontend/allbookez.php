@@ -18,14 +18,22 @@
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <style>
+            .pic{
+                margin-top: 7%;
+                width: 95px;
+                height: 140px;
+            }
             .bookname{
                 font-weight:bold;
             }
             .square2{
+                position: absolute;
                 
-                width: 100%;
-                height:100%;
-                background: #485545;
+                margin-top: 0rem;
+                margin-left: 32.5rem;
+                width: 150px;
+                height: 500px;
+                background-color: #485545;
             }
             p{  
                 font-family:"Poppings";
@@ -44,7 +52,16 @@
                 justify-content: center;
                 z-index: 1;
             }
-
+            hr{
+                color:#485545;
+                border-top: 1px solid #485545;
+                background: #485545;
+                position: absolute;
+                width: 360px;
+                margin-top: 5rem;
+                margin-left: 4rem;
+                /* padding-left:5rem; */
+            }
             /* Style for the popup content */
             .popup-content {
                 font-family:"Poppings";
@@ -58,19 +75,21 @@
 
             /* Close button style */
             .popup-close {
-                /* position: absolute; */
-                top: 10px;
-                right: 0px;
+                position: absolute;
+                width:400px;
+                margin-top: 1rem;
+                margin-left: 48rem;
                 cursor: pointer;
             }
             .popup-pic{
                 position:absolute;
                 display:inline-block;
                 /* background:lightgreen; */
-                margin-top:4%;
+                margin-top:75px;
                 width: 220px;
                 height: 340px;
-                right: 34%;
+                margin-left:30rem;
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
             }
             .aa{  
                 margin: 30px 0;
@@ -90,50 +109,58 @@
             }
             .clicktoview:hover{
                 background: #657661;
-                box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
+                box-shadow: 2px 2px rgb(39,34,34);
             }
             .popup-bookname{
                 font-family:"Poppings";
                 position:absolute;
                 display:inline-block;
                 /* background-color:lightcoral; */
-                padding:20px 100px 20px 40px;
-                margin-top: 70px;
-                margin-left:20px;
-                margin-right:50%;
-                font-size:50px;
+                padding:20px 0px 20px 40px;
+                margin-top: 60px;
+                margin-left:30px;
+                margin-right:55rem;
+                font-size:40px;
                 font: "Poppings";
             }
             .clicktoborrow{
                 position:absolute;
                 display:inline-block;
                 width: 10%;
-                margin-left:4%;
-                margin-top:19%;
+                margin-left:100px;
+                margin-top:20rem;
                 background: #485545;
-                padding: 1% 1.5%;
+                padding: 20px 15px 20px 15px;
+                color: #FDF5D0;
+                border-radius: 3px;
+                box-shadow: 2px 2px rgb(39,34,34);
+            }
+            .clicktoborrow:hover{
+                position:absolute;
+                display:inline-block;
+                width: 10%;
+                margin-left:100px;
+                margin-top:20rem;
+                background: #657661;
+
                 color: #FDF5D0;
                 border-radius: 3px;
                 box-shadow: 2px 2px rgb(39,34,34);
             }
             .popup-author{
-                margin:4% 0 20% 4%;
+                margin:50px 0 50px 70px;
                 font-family:"Poppings";
                 position:absolute;
                 display:inline-block;
                 /* background-color:lightskyblue; */
             }
-            .pic{
-                width:95px;
-                height: 140px;
-            }
-            .square1{
+            .ssquare1{
                 margin-top: 9%;
                 width: 10px;
                 height: 120px;
                 background-color: #485545;
             }
-            .square2{
+            .ssquare2{
                 margin-top: 7%;
                 width: 10px;
                 height: 50px;
@@ -153,13 +180,13 @@
                         $result = $conn->query($sql);
                         while ($row = $result->fetch_assoc()) {
                             if($cates == $row['cate_id']){
-                                echo '<div class="square2"></div>';
+                                echo '<div class="ssquare2"></div>';
                                 echo '<div class="newarrival">';
                                 echo '<b>' . strtoupper($row['category_name']) . '</b>';
                                 echo '</div>';
                             } 
                             else if(empty($cates)){
-                                echo '<div class="square1"></div>';
+                                echo '<div class="ssquare1"></div>';
                                 echo '<div class="newarrival">';
                                 echo '<b>ALL</b><br>BOOKS';
                                 echo '</div>';
@@ -217,10 +244,11 @@
                                         '<span class="popup-close" onclick="closePopup()">X</span>' +
                                         
                                         '<input type="hidden" name="book_id" value="' + bookId + '">' +
-                                        
+                                        '<div class="square2"></div>' +
                                         '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
-                                        '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
-                                        '<p class="popup-author">Author : ' + ' ' + bookOwner + '</p>' +
+                                        '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
+                                        '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
+                                        // '<hr>'+
                                         '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
                                         '</form>';
 

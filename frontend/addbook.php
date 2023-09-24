@@ -25,10 +25,10 @@
 </head>
 <body>
     <section class="add-books">
-        <h1 class="title">BOOK</h1>
+        <h1 class="title">ADD NEW BOOK</h1>
 
         <form action="../backend/addbook.php" method="post" enctype="multipart/form-data">
-            <h3>Add new book</h3>
+            
             <input type="text" name="bookname" class="box" placeholder="Enter your book name" required>
             <input type="text" name="bookowner" class="box" placeholder="Enter author" required>
             <input type="url" name="imgsrc" class="box" placeholder="Enter your url image" required>

@@ -41,7 +41,7 @@
           </g>
       </svg>
       <div class="description Box-root">
-        <h3>Subscription to Starter plan successful!</h3>
+        <h3>Subscription to the plan successful!</h3>
       </div>
     </div>
     <form action="/create-portal-session.php" method="POST">

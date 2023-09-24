@@ -269,7 +269,7 @@ $conn->close();
     background: #485545;
     padding: 5px 10px;
     color: #FDF5D0;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 2px 2px rgb(39,34,34);
     }
     .clicktoview:hover{

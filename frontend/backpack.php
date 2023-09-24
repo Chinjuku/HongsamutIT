@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include '../backend/database.php';
     include './layout/navbar.php';
 ?>
@@ -83,14 +84,14 @@
                                             if ($cate_res->num_rows > 0) {
                                                 while($row3 = $cate_res->fetch_assoc()) {
                                                     $cate_name = $row3['category_name'];
-                                                    $sql4 = "SELECT * FROM borrow_books WHERE book_id = '{$book_id}'";
+                                                    $sql4 = "SELECT * FROM borrow_books WHERE book_id = '{$book_id}' AND user_id = '{$_SESSION['user_id']}' AND date_return > CURDATE()";
                                                     $result4 = $conn->query($sql4);
                                                     if ($result4->num_rows > 0) {
                                                         while($row4 = $result4->fetch_assoc()) {
                                                             $date_borrow = $row4['date_borrow'];
                                                             $date_return = $row4['date_return'];
                                                             echo "<tr>";
-                                                            // show 20x20 book's cover
+                                                            
                                                             echo "<td><img src='{$imgsrc}' width = '150' height = '150'></td>";
                                                             echo "<td>{$book_name}</td>";
                                                             echo "<td>{$cate_name}</td>";

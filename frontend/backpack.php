@@ -115,11 +115,39 @@
                 
                 <div class="container">
                     <div class="borrowing">BORROWING
-                        <div class="circle1"></div>
+                        <?php
+                        // create bottom bar that increaseing when user borrow book
+                        $sql = "SELECT * FROM borrow_books WHERE user_id = '{$_SESSION['user_id']}' AND date_return > CURDATE()";
+                        $result = $conn->query($sql);
+                        $count = 0;
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()) {
+                                $count++;
+                            }
+                        }
+
+                        //get max number of book that user can own.
+                        $plan_id = $_SESSION['plan_id'];
+                        $num_book = "SELECT * FROM subscription_plans WHERE plan_id = '{$plan_id}'";
+                        $num_book_stmt = $conn->query($num_book);
+                        $num_book_row = $num_book_stmt->fetch_assoc();
+                        $max_book = $num_book_row['max_book'];
+                        // create circle that increaseing when user borrow book
+                        
+                        for ($i = 1; $i <= $max_book+1; $i++) {
+                            if($i <= $count){
+                                echo "<div class='circle1'></div>";
+                            }
+                            else{
+                                echo "<div class='circle0'></div>";
+                            }
+                          }
+                        ?>
+                        <!-- <div class="circle1"></div>
                         <div class="circle2"></div>
                         <div class="circle3"></div>
                         <div class="circle4"></div>
-                        <div class="circle5"></div>
+                        <div class="circle5"></div> -->
                     </div> 
                 </div>
                 

@@ -94,8 +94,14 @@ body{
 .table2 tbody tr:last-of-type{
     border-bottom: 1px solid #372114 ;
 }
-.circle1{
+.circle0{
     background-color: #697566;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.circle1{
+    background-color: #312b2a;
     height: 50px;
     width: 50px;
     border-radius: 50%;

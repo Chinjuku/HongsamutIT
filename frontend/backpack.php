@@ -112,7 +112,6 @@
                 <hr>
 
             <div class="bottombar">
-                
                 <div class="container">
                     <div class="borrowing">BORROWING
                         <?php

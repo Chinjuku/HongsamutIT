@@ -132,8 +132,8 @@ hr{
         width: 1440px;
         bottom: 0;
         background-color: #FDF5D0;
-        padding: 10px;
-        justify-content: right;
+        padding: 5px;
+        justify-content: center;
         /* border-top: 2px solid black; */
     }
     .mid{

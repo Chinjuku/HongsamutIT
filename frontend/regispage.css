@@ -1,7 +1,7 @@
 .page {
     height: 900px;
     width: 500px;
-    background-color: #433c3c;
+    background-color: #37322F;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,14 +17,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 .container .page .input {
     width: 200px;
-    background-color: #cad2c5;
+    background-color: #fcfcfc;
     border-radius: 10px;
-    padding: 6px .8rem;
-    outline: 2px solid rgb(212, 212, 134);
+    padding: 15px 1rem;
+    /* outline: 2px solid rgb(212, 212, 134); */
 }
 .mar{
     text-align: start;
@@ -33,7 +33,7 @@
 .container .page .button {
     margin-top: 20px;
     padding: 5px 10px 5px 10px;
-    background-color: #cad2c5;
+    background-color: #889585;
     border-radius: 8px;
     transition-property: transfrom, background-color;
     /* transition-duration: 2s; */
@@ -50,10 +50,10 @@
     scale: -2;
 }
 .lb{
-    color: #cad2c5;
-    margin-top: 10px;
+    color: #e0e0e0;
+    margin-top: 5px;
     padding-top: 10px;
-    padding: 6px 0.2rem;
+    padding: 1px 0.2rem;
 }
 .color{
     margin-left: 120px;
@@ -93,4 +93,8 @@
 }
 .form-control.error small{
     visibility: visible;
+}
+.lbb{
+    font-size: 30px;
+    color: white;
 }

@@ -46,7 +46,7 @@ if ($result->num_rows == 1) {
         
     $insert_payment_sql = "INSERT INTO payments (amount, date_paid, user_id, is_success, ref) VALUES ('{$plan_price}', '{$start_date}', '{$user_id}', 0, '{$_SESSION['ref']}')"; // สร้าง payment ใหม่
     $conn->query($insert_payment_sql); // สร้าง payment ใหม่
-
+    
         
         // $payment_sql = "SELECT * FROM payments WHERE user_id = '{$user_id}' AND is_success = 0"; // ดึง payment ที่สร้างไปใหม่
         // $payment_result = $conn->query($payment_sql);
@@ -77,7 +77,8 @@ if ($result->num_rows == 1) {
     $_SESSION['subscription_status'] = "Invalid subscription plan selected.";
   }
 } else {
-  echo "$email";
+  echo '<script>alert("YOU ALREADY SUBSCRIBED TO A PLAN");</script>';
+  echo '<script>window.location.href = "../../../frontend/profile.php";</script>';
 }
     
 
@@ -96,7 +97,7 @@ try {
     ]],
     'mode' => 'subscription',
     'success_url' => $YOUR_DOMAIN . '/success.php?session_id={CHECKOUT_SESSION_ID}',
-    'cancel_url' => 'http://localhost/hongsamut/frontend/member.php',
+    'cancel_url' => 'https://hongsamutit2.iservkmitl.tech/frontend/member.php',
   ]);
 
   header("HTTP/1.1 303 See Other");

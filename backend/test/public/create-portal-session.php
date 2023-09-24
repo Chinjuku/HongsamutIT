@@ -1,13 +1,13 @@
 <?php
 
-require_once '../vendor/autoload.php';
+require_once '../../../vendor/autoload.php';
 require_once '../secrets.php';
 
 \Stripe\Stripe::setApiKey($stripeSecretKey);
 
 header('Content-Type: application/json');
 
-$YOUR_DOMAIN = 'https://hongsamutit2.iservkmitl.tech/';
+$YOUR_DOMAIN = 'https://hongsamutit2.iservkmitl.tech/backend/test/public';
 
 try {
   $checkout_session = \Stripe\Checkout\Session::retrieve($_POST['session_id']);

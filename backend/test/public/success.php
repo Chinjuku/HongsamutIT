@@ -19,7 +19,7 @@
   $update_user_sql = "UPDATE users SET plan_id = '{$_SESSION['selected_plan_id']}' WHERE user_id = '{$_SESSION['user_id']}'"; // อัพเดท user ว่ามี subscription plan อะไร
   $conn->query($update_user_sql);// อัพเดท user ว่ามี subscription plan อะไร
   $_SESSION['plan_id'] = $_SESSION['selected_plan_id'];
-
+  echo '<script>window.location.href = "../../../frontend/profile.php";</script>';
 ?>
 
 <!DOCTYPE html>

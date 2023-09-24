@@ -36,13 +36,11 @@
     background-color: #bdc7bb;
     border-radius: 8px;
     transition-property: transfrom, background-color;
-    /* transition-duration: 2s; */
-    transition: 1s;
-    /* transition-delay: 0s, 1s; */
+    transition: 0.5s;
 }
 .button:hover {
-    /* scale: 1.6; */
-    rotate: 360deg;
+    scale: 1.1;
+    /* rotate: 360deg; */
     background-color: #4a5846;
     color: white;
 }

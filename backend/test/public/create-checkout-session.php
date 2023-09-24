@@ -9,7 +9,7 @@ require_once '../secrets.php';
 
 header('Content-Type: application/json');
 
-$YOUR_DOMAIN = 'http://localhost/hongsamut/backend/test/public';
+$YOUR_DOMAIN = 'https://hongsamutit2.iservkmitl.tech/backend/test/public';
 
 function generateRandomString($length = 10) {
   $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -46,7 +46,7 @@ if ($result->num_rows == 1) {
         
     $insert_payment_sql = "INSERT INTO payments (amount, date_paid, user_id, is_success, ref) VALUES ('{$plan_price}', '{$start_date}', '{$user_id}', 0, '{$_SESSION['ref']}')"; // สร้าง payment ใหม่
     $conn->query($insert_payment_sql); // สร้าง payment ใหม่
-    
+
         
         // $payment_sql = "SELECT * FROM payments WHERE user_id = '{$user_id}' AND is_success = 0"; // ดึง payment ที่สร้างไปใหม่
         // $payment_result = $conn->query($payment_sql);

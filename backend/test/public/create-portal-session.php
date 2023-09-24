@@ -7,7 +7,7 @@ require_once '../secrets.php';
 
 header('Content-Type: application/json');
 
-$YOUR_DOMAIN = 'http://localhost:4242/success.html';
+$YOUR_DOMAIN = 'http://localhost/hongsamut/backend/test/public';
 
 try {
   $checkout_session = \Stripe\Checkout\Session::retrieve($_POST['session_id']);

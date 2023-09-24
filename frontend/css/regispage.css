@@ -33,7 +33,7 @@
 .container .page .button {
     margin-top: 20px;
     padding: 5px 10px 5px 10px;
-    background-color: #889585;
+    background-color: #bdc7bb;
     border-radius: 8px;
     transition-property: transfrom, background-color;
     /* transition-duration: 2s; */
@@ -77,7 +77,7 @@
     margin-bottom: 4px;
 }
 .container .page small{
-    color: orange;
+    color: rgb(236, 236, 236);
     visibility: hidden;
     margin: 10px 0 -9px 0;
 }

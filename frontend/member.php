@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Choose your plan</h2>
+        <h2>CHOOSE YOUR PLAN</h2>
         
         <div class="pricerow">
             <div class="pricecol">

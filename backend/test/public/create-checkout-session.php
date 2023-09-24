@@ -47,7 +47,29 @@ if ($result->num_rows == 1) {
     $insert_payment_sql = "INSERT INTO payments (amount, date_paid, user_id, is_success, ref) VALUES ('{$plan_price}', '{$start_date}', '{$user_id}', 0, '{$_SESSION['ref']}')"; // สร้าง payment ใหม่
     $conn->query($insert_payment_sql); // สร้าง payment ใหม่
     
-        
+    try {
+      $prices = \Stripe\Price::all([
+        // retrieve lookup_key from form data POST body
+        'lookup_keys' => [$selected_plan_id],
+        'expand' => ['data.product']
+      ]);
+    
+      $checkout_session = \Stripe\Checkout\Session::create([
+        'line_items' => [[
+          'price' => $prices->data[0]->id,
+          'quantity' => 1,
+        ]],
+        'mode' => 'subscription',
+        'success_url' => $YOUR_DOMAIN . '/success.php?session_id={CHECKOUT_SESSION_ID}',
+        'cancel_url' => 'https://hongsamutit2.iservkmitl.tech/frontend/member.php',
+      ]);
+    
+      header("HTTP/1.1 303 See Other");
+      header("Location: " . $checkout_session->url);
+    } catch (Error $e) {
+      http_response_code(500);
+      echo json_encode(['error' => $e->getMessage()]);
+    }
         // $payment_sql = "SELECT * FROM payments WHERE user_id = '{$user_id}' AND is_success = 0"; // ดึง payment ที่สร้างไปใหม่
         // $payment_result = $conn->query($payment_sql);
         // $payment_row = $payment_result->fetch_assoc();

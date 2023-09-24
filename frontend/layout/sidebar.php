@@ -140,6 +140,18 @@
             transform: translateY(-50%) rotate(-180deg);
 
         }
+        @media only screen and (max-width:1500px) {
+            nav ul form li{
+            text-align: start;
+            line-height: 38px;
+            border-bottom: none;
+
+        }
+        nav ul li{
+            line-height: 55px;
+
+        }
+        }
         </style>
     </head>
     <body>

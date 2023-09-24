@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     include '../backend/database.php';
     include './layout/navbar.php';
 ?>
@@ -112,7 +112,6 @@
                 <hr>
 
             <div class="bottombar">
-                
                 <div class="container">
                     <div class="borrowing">BORROWING
                         <?php
@@ -143,11 +142,6 @@
                             }
                           }
                         ?>
-                        <!-- <div class="circle1"></div>
-                        <div class="circle2"></div>
-                        <div class="circle3"></div>
-                        <div class="circle4"></div>
-                        <div class="circle5"></div> -->
                     </div> 
                 </div>
                 

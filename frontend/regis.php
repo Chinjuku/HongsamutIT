@@ -6,7 +6,7 @@
 <html>
 <head>
     <title>HongsamutIT</title>
-    <link rel="stylesheet" href="regispage.css">
+    <link rel="stylesheet" href="css/regispage.css">
     <link rel="icon" href="https://th.bing.com/th/id/OIP.nBwIfauMfjWd0qbnifW7YgHaHa?pid=ImgDet&rs=1">
 </head>
 <body>

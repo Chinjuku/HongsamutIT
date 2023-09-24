@@ -45,10 +45,9 @@
                 ?>
                 
                 <a href="profile.php" style="--i:3;">
-                    
                     <?php
                     if (isset($_SESSION['user_id'])){
-                        echo $_SESSION['user_name'];
+                        echo '<i class="bi bi-person-circle"></i>', ' ' ,$_SESSION['user_name'];
                         }
                     else{
                         echo 'LOGIN';

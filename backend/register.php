@@ -19,16 +19,23 @@
     $sql_2 = "SELECT * FROM users WHERE phone_number = '{$phone_num}' LIMIT 1";
     $stmt_2 = $conn->query($sql_2);
 
+    $sql_3 = "SELECT * FROM users WHERE user_name = '{$username}' LIMIT 1";
+    $stmt_3 = $conn->query($sql_3);
+
     if ($stmt->num_rows == 1) {
         echo '<script>alert("This email already existed.");</script>';
         echo '<script>window.location.href = "../frontend/regis.php";</script>';
         // header('Location: ../frontend/regis.php');
     }
     else if($stmt_2->num_rows == 1){
-        echo '<script>alert("This phonenumber already existed.");</script>';
+        echo '<script>alert("This phone number already existed.");</script>';
         echo '<script>window.location.href = "../frontend/regis.php";</script>';
-
-    } else {
+    }
+    else if($stmt_3->num_rows == 1){
+        echo '<script>alert("This username already existed.");</script>';
+        echo '<script>window.location.href = "../frontend/regis.php";</script>';
+    }
+    else {
         // ถ้าไม่มีชื่อหรืออีเมลนี้ในระบบ สามารถเพิ่มข้อมูลได้
         $sql = "INSERT INTO users (user_name, first_name, last_name, email, password, phone_number, user_type_id, date_register)
          VALUES ('{$username}', '{$firstname}', '{$lastname}','{$email}', '{$password}', '{$phone_num}', '{$usertypeid}', '{$date_register}')";

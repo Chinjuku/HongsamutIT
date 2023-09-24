@@ -78,7 +78,6 @@ if ($result->num_rows == 1) {
 } else {
   echo '<script>alert("YOU ALREADY SUBSCRIBED TO A PLAN");</script>';
   echo '<script>window.location.href = "../../../frontend/profile.php";</script>';
-  header("location: ../../../frontend/profile.php");
 }
     
 

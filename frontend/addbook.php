@@ -24,11 +24,6 @@
     </style> -->
 </head>
 <body>
-    <?php
-        if ($_SESSION['user_id'] == NULL) {
-            echo '<script>window.location.href = "login.php";</script>';
-        }
-    ?>
     <section class="add-books">
         <h1 class="title">ADD NEW BOOK</h1>
 

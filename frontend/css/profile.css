@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Mitr;
 }
 
 #card{
@@ -88,7 +89,7 @@ body{
 label {
     margin-top: 10px;
     margin-right: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
 }
 .log {
     display: flex;

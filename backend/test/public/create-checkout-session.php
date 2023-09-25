@@ -9,7 +9,7 @@ require_once '../secrets.php';
 
 header('Content-Type: application/json');
 
-$YOUR_DOMAIN = 'https://hongsamutit2.iservkmitl.tech/backend/test/public';
+$YOUR_DOMAIN = 'https://hongsamutit.iservkmitl.tech/backend/test/public';
 
 function generateRandomString($length = 10) {
   $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';

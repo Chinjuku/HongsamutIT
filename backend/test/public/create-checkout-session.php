@@ -96,7 +96,7 @@ try {
     ]],
     'mode' => 'subscription',
     'success_url' => $YOUR_DOMAIN . '/success.php?session_id={CHECKOUT_SESSION_ID}',
-    'cancel_url' => 'https://hongsamutit2.iservkmitl.tech/frontend/member.php',
+    'cancel_url' => 'https://hongsamutit.iservkmitl.tech/frontend/member.php',
   ]);
 
   header("HTTP/1.1 303 See Other");

@@ -10,6 +10,7 @@ require_once '../secrets.php';
 header('Content-Type: application/json');
 
 $YOUR_DOMAIN = 'https://hongsamutit.iservkmitl.tech/backend/test/public';
+// $YOUR_DOMAIN = 'http://localhost/backend/test/public';
 
 function generateRandomString($length = 10) {
   $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -97,6 +98,7 @@ try {
     'mode' => 'subscription',
     'success_url' => $YOUR_DOMAIN . '/success.php?session_id={CHECKOUT_SESSION_ID}',
     'cancel_url' => 'https://hongsamutit.iservkmitl.tech/frontend/member.php',
+    // 'cancel_url' => 'http://localhost/frontend/member.php',
   ]);
 
   header("HTTP/1.1 303 See Other");

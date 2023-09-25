@@ -1,6 +1,8 @@
 <?php
 require_once '../vendor/autoload.php';
 require_once '../secrets.php';
+session_start();
+include '../../database.php';
 
 \Stripe\Stripe::setApiKey($stripeSecretKey);
 

@@ -14,6 +14,8 @@
     $date_borrow = date('Y-m-d H:i:s');
     $date_return = date("Y-m-d H:i:s", strtotime("+7 days", strtotime($date_borrow)));
 
+    $current_date = date('Y-m-d H:i:s');
+
     //check if user own more than 10 books.
     $check_sql = "SELECT * FROM borrow_books WHERE user_id = '{$_SESSION['user_id']}' AND date_return >= '{$date_borrow}'";
     // $check_sql = "SELECT * FROM borrow WHERE user_id = '{$_SESSION['user_id']}' AND  <= date_return";
@@ -58,7 +60,17 @@
         }
         
     }
-    
-    
 
+    // // check returning books
+    // $returndate = "SELECT * FROM borrow_books where date_return <= '{$current_date}'";
+    // $date_return_stmt = $conn->query($returndate);
+    // while ($row_return = $date_return_stmt->fetch_assoc()){
+    //     $book_id_return = $date_return_row['book_id'];
+    //     $date_return = $date_return_row['date_return'];
+    //     if($current_date >= $date_return){
+    //         $sql = "UPDATE books SET status = 1 where book_id = '{$book_id_return}'";
+    //         $available_stmt = $conn->prepare($sql);
+    //         $available_stmt->execute();
+    //     }
+    // }
 ?>

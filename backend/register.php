@@ -38,7 +38,7 @@
     else {
         // ถ้าไม่มีชื่อหรืออีเมลนี้ในระบบ สามารถเพิ่มข้อมูลได้
         $sql = "INSERT INTO users (user_name, first_name, last_name, email, password, phone_number, user_type_id, date_register)
-         VALUES ('{$username}', '{$firstname}', '{$lastname}','{$email}', '{$password}', '{$phone_num}', '{$usertypeid}', '{$date_register}')";
+        VALUES ('{$username}', '{$firstname}', '{$lastname}','{$email}', '{$password}', '{$phone_num}', '{$usertypeid}', '{$date_register}')";
 
         // ใช้ prepared statement
         $stmt = $conn->prepare($sql);

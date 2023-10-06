@@ -64,49 +64,35 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- get book id from borrow table where user_id = session-userid -->
-                        <?php
-                            $sql = "SELECT * FROM borrow_books WHERE user_id = '{$_SESSION['user_id']}'";
+                            <?php
+                            $sql = "SELECT b.book_name, c.category_name, bb.date_borrow, bb.date_return, b.imgsrc
+                                    FROM borrow_books bb
+                                    INNER JOIN books b ON bb.book_id = b.book_id
+                                    INNER JOIN categories c ON b.cate_id = c.cate_id
+                                    WHERE bb.user_id = '{$_SESSION['user_id']}' AND bb.date_return > CURDATE()";
+                            
                             $result = $conn->query($sql);
+                            
                             if ($result->num_rows > 0) {
-                                while($row = $result->fetch_assoc()) { // วนลูปแสดงรายการหนังสือที่ยืม
-                                    $book_id = $row['book_id'];
-                                    $book_sql = "SELECT * FROM books WHERE book_id = '{$book_id}'";
-                                    $book_result = $conn->query($book_sql);
-                                    if ($book_result->num_rows > 0) {
-                                        while($row2 = $book_result->fetch_assoc()) {
-                                            $book_name = $row2['book_name'];
-                                            $cate_id = $row2['cate_id'];
-                                            $status = $row2['status'];
-                                            $imgsrc = $row2['imgsrc'];
-                                            $cate_sql = "SELECT * FROM categories WHERE cate_id = '{$cate_id}'";
-                                            $cate_res = $conn->query($cate_sql);
-                                            if ($cate_res->num_rows > 0) {
-                                                while($row3 = $cate_res->fetch_assoc()) {
-                                                    $cate_name = $row3['category_name'];
-                                                    $sql4 = "SELECT * FROM borrow_books WHERE book_id = '{$book_id}' AND user_id = '{$_SESSION['user_id']}' AND date_return > CURDATE()";
-                                                    $result4 = $conn->query($sql4);
-                                                    if ($result4->num_rows > 0) {
-                                                        while($row4 = $result4->fetch_assoc()) {
-                                                            $date_borrow = $row4['date_borrow'];
-                                                            $date_return = $row4['date_return'];
-                                                            echo "<tr>";
-                                                            
-                                                            echo "<td><img src='{$imgsrc}' width = '150' height = '150'></td>";
-                                                            echo "<td>{$book_name}</td>";
-                                                            echo "<td>{$cate_name}</td>";
-                                                            echo "<td>{$date_borrow}</td>";
-                                                            echo "<td>{$date_return}</td>";
-                                                            echo "</tr>";
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
+                                while ($row = $result->fetch_assoc()) {
+                                    $book_name = $row['book_name'];
+                                    $category_name = $row['category_name'];
+                                    $date_borrow = $row['date_borrow'];
+                                    $date_return = $row['date_return'];
+                                    $imgsrc = $row['imgsrc'];
+
+                                    echo "<tr>";
+                                    echo "<td><img src='{$imgsrc}' width='120' height='150'></td>";
+                                    echo "<td>{$book_name}</td>";
+                                    echo "<td>{$category_name}</td>";
+                                    echo "<td>{$date_borrow}</td>";
+                                    echo "<td>{$date_return}</td>";
+                                    echo "</tr>";
                                 }
-                            }?>
+                            }
+                            ?>
                     </tbody>
+
                     
                 </table>
                 <hr>

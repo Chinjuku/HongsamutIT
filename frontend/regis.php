@@ -6,14 +6,14 @@
 <html>
 <head>
     <title>HongsamutIT</title>
-    <link rel="stylesheet" href="./css/regispage.css">
+    <link rel="stylesheet" href="css/regispage.css">
     <link rel="icon" href="https://th.bing.com/th/id/OIP.nBwIfauMfjWd0qbnifW7YgHaHa?pid=ImgDet&rs=1">
 </head>
 <body>
 <div class="container">
         <form class="page" action="../backend/register.php" method="post">
             <!-- /db-project/backend/userconnect.php -->
-            <h3 class="lb">Registor Form</h3>
+            <h3 class="lbb">Sign up</h3>
             
             <div class="form-control">    
             <label class="lb">Username</label>
@@ -47,7 +47,7 @@
 
             <div class="form-control">    
             <label for="phone_num" class="lb">Phone Number</label>
-            <input type="text" name="phone_num" placeholder="phone_num" class="input" required>
+            <input type="text" name="phone_num" placeholder="Phone number" class="input" required>
             <small>type error</small>
             </div>
 
@@ -59,7 +59,7 @@
             </select>
             </div>
 
-            <button type="submit" class="button mar" value="submit">Registor</button>
+            <button type="submit" class="button mar" value="submit">CREATE ACCOUNT</button>
         </form>
     </div>
     <p id="child" class="ageform">

@@ -1,5 +1,6 @@
 <?php
     session_start();
+    error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 ?>
 <!DOCTYPE html>
     <html lang="en">
@@ -39,16 +40,18 @@
                 <?php
                     if($_SESSION['user_type'] == 2) {
                         echo "<a href='addbook.php'>ADD BOOK</a>";
-                        echo "<a href='viewhistory.php'>HISTORY</a>";
+                        echo "<a href='historyborrow.php'>HISTORY</a>";
                     }
                 ?>
                 
                 <a href="profile.php" style="--i:3;">
-                    <i href="login.php" class="bi bi-person-circle"></i>
                     <?php
                     if (isset($_SESSION['user_id'])){
-                        echo $_SESSION['user_name'];
-                        }            
+                        echo '<i class="bi bi-person-circle"></i>', ' ' ,$_SESSION['user_name'];
+                        }
+                    else{
+                        echo 'LOGIN';
+                    }
                     ?>
                 </a>
 

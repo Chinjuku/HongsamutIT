@@ -13,9 +13,9 @@
         if ($allbook_page === "/frontend/allbook.php") {
             while($row = $result->fetch_assoc()) {
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
             }
@@ -24,9 +24,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 1){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -37,9 +37,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 2){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -49,9 +49,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 3){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -61,9 +61,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 3){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -73,9 +73,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 4){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -85,9 +85,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 5){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic"  src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -97,9 +97,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 6){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic"  src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -109,9 +109,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 7){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -121,9 +121,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 9){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -133,9 +133,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 10){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -145,9 +145,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 11){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -157,9 +157,9 @@
             while($row = $result->fetch_assoc()) {
                 if($row['cate_id'] == 12){
                 echo '<div class="nabox">';
-                echo '<p>Book: ' . $row['book_name'] . '</p>';
-                echo '<p>Author: ' . $row['book_owner'] . '</p>';
-                echo '<img src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                echo '<p>' . $row['book_owner'] . '</p>';
                 echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                 echo '</div>';
                     }
@@ -169,6 +169,37 @@
 $conn->close();
 ?>
 <style>
+    .nabox{
+    position: relative;
+    background-color: #fffcee;
+    width: 20%;
+    height: 290px;
+    /* border-radius: 10px; */
+    
+    text-align: center;
+    margin: 10px;
+    border-style: solid;
+    border-width: thin;
+    box-shadow: 10px 10px 5px #fdf1b9;
+    
+}
+    .pic{
+        margin-top: 7%;
+        width: 95px;
+        height: 140px;
+    }
+    .bookname{
+        font-weight:bold;
+    }
+    .square2{
+        position: absolute;
+        
+        margin-top: 0rem;
+        margin-left: 32.5rem;
+        width: 150px;
+        height: 500px;
+        background-color: #485545;
+    }
     p{  
         font-family:"Poppings";
         /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
@@ -186,7 +217,16 @@ $conn->close();
         justify-content: center;
         z-index: 1;
     }
-
+    hr{
+        color:#485545;
+        border-top: 1px solid #485545;
+        background: #485545;
+        position: absolute;
+        width: 360px;
+        margin-top: 5rem;
+        margin-left: 4rem;
+        /* padding-left:5rem; */
+    }
     /* Style for the popup content */
     .popup-content {
         font-family:"Poppings";
@@ -200,19 +240,21 @@ $conn->close();
 
     /* Close button style */
     .popup-close {
-        /* position: absolute; */
-        top: 10px;
-        right: 0px;
+        position: absolute;
+        width:400px;
+        margin-top: 1rem;
+        margin-left: 48rem;
         cursor: pointer;
     }
-    .pic{
+    .popup-pic{
         position:absolute;
         display:inline-block;
-        background:lightgreen;
-        margin-top:6%;
-        width: 190px;
-        height: 310px;
-        right: 32%;
+        /* background:lightgreen; */
+        margin-top:75px;
+        width: 220px;
+        height: 340px;
+        margin-left:30rem;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     }
     .aa{  
         margin: 30px 0;
@@ -227,41 +269,55 @@ $conn->close();
     background: #485545;
     padding: 5px 10px;
     color: #FDF5D0;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 2px 2px rgb(39,34,34);
     }
     .clicktoview:hover{
-        box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
+        background: #657661;
+        box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-bookname{
         font-family:"Poppings";
         position:absolute;
         display:inline-block;
-        background-color:lightcoral;
-        position: fixed;
-        padding:20px 10px;
-        margin-top: 70px;
-        margin-left:20px;
-        font-size:50px;
+        /* background-color:lightcoral; */
+        padding:20px 0px 20px 40px;
+        margin-top: 60px;
+        margin-left:30px;
+        margin-right:55rem;
+        font-size:40px;
         font: "Poppings";
     }
     .clicktoborrow{
         position:absolute;
         display:inline-block;
-        width: 20%;
-        margin-top:30%;
+        width: 10%;
+        margin-left:100px;
+        margin-top:20rem;
         background: #485545;
-        padding: 1% 1.5%;
+        padding: 20px 15px 20px 15px;
+        color: #FDF5D0;
+        border-radius: 3px;
+        box-shadow: 2px 2px rgb(39,34,34);
+    }
+    .clicktoborrow:hover{
+        position:absolute;
+        display:inline-block;
+        width: 10%;
+        margin-left:100px;
+        margin-top:20rem;
+        background: #657661;
+
         color: #FDF5D0;
         border-radius: 3px;
         box-shadow: 2px 2px rgb(39,34,34);
     }
     .popup-author{
-        margin:4% 0 20% 2%;
+        margin:50px 0 50px 70px;
         font-family:"Poppings";
         position:absolute;
         display:inline-block;
-        background-color:lightskyblue;
+        /* background-color:lightskyblue; */
     }
 </style>
 
@@ -271,15 +327,16 @@ $conn->close();
         var popupContent = document.getElementById('popup-content');
                             
         popupContent.innerHTML = '<form action="../backend/borrow.php" method="post">' +
-                                 '<span class="popup-close" onclick="closePopup()">X</span>' +
-                                 
-                                 '<input type="hidden" name="book_id" value="' + bookId + '">' +
-                                 
-                                 '<img class="pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
-                                 '<h1 class="popup-bookname"> ' + bookName + '</h1>' +
-                                 '<p class="popup-author">Author : ' + ' ' + bookOwner + '</p>' +
-                                 '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
-                                 '</form>';
+                                '<span class="popup-close" onclick="closePopup()">X</span>' +
+                                
+                                '<input type="hidden" name="book_id" value="' + bookId + '">' +
+                                '<div class="square2"></div>' +
+                                '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
+                                '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
+                                '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
+                                // '<hr>'+
+                                '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
+                                '</form>';
 
         popup.style.display = 'flex';
     }
@@ -290,12 +347,16 @@ $conn->close();
     }
 </script>
 
+<!DOCTYPE html>
 <html>
-<div class="popup-overlay" id="popup">
-    <div class="popup-content" id="popup-content">
-        
-    </div>
-</div>
+    <body>
+        <div class="popup-overlay" id="popup">
+            <div class="popup-content" id="popup-content">
+                
+            </div>
+        </div>
+    </body>
+
 </html>
 
 

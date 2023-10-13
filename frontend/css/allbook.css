@@ -15,6 +15,8 @@ body{
 }
 
 .mid{
+    
+    /* margin-left: 40rem; */
     margin-left: 45%;
     margin-top: 7%;
     /* padding-left: 30%; */
@@ -59,29 +61,31 @@ body{
 }
 .nabox{
     position: relative;
-    background-color: white;
-    width: 17%;
-    height: 280px;
-    border-radius: 10px;
+    background-color: #fffcee;
+    width: 20%;
+    height: 290px;
+    /* border-radius: 10px; */
     
     text-align: center;
     margin: 10px;
     border-style: solid;
     border-width: thin;
+    box-shadow: 10px 10px 5px #fdf1b9;
     
 }
 
 
 /* ปรับหนังสือฝั่ง backend */
-img {
-    width: 140px;
-    height: 170px;
+.pic {
+    margin-top: 7%;
+    width: 90px;
+    height: 140px;
 }
 .bookname{
     font-size: 20px;
     font-weight: bold;
 }
-/* @media (max-width:1620px){
+@media (max-width:1620px){
     .mid{
         margin-left: 36%;
         margin-top: 7%;
@@ -97,7 +101,9 @@ img {
         width: 100%;
         display: block;
     }
-} */
+}
+
+
 .clicktoview{
     width: 50%;
     background: #485545;

@@ -1,6 +1,7 @@
 <?php
     include './layout/navbar.php';
     include './layout/page.php';
+    include '../backend/database.php';
 ?>
 
 <!DOCTYPE html>
@@ -27,37 +28,51 @@
             <div class="txt_field">
                 <label>Username : </label>
                 <?php
-                    echo $_SESSION['user_name'];
+                    echo '<label>' . $_SESSION['user_name'] . '</label>';
                 ?>
             </div>
             <div class="txt_field1">
                 <label>Name : </label>
                 <?php
-                    echo $_SESSION['first_name'], ' ' ,$_SESSION['last_name'];
+                    echo '<label>' . $_SESSION['first_name'], ' ' ,$_SESSION['last_name'] . '</label>';
                 ?>
             </div>
             <div class="txt_field2">
                 <label>Tel : </label>
                 <?php
-                    echo $_SESSION['phone_num'];
+                    echo '<label>' . $_SESSION['phone_num'] . '</label>';
                 ?>
             </div>
             <div class="txt_field1">
                 <label>Email : </label>
                 <?php
-                    echo $_SESSION['email'];
+                    echo '<label>' . $_SESSION['email'] . '</label>';
                 ?>
             </div>
             <div class="txt_field1">
                 <label>Password : </label>
                 <?php
-                    echo $_SESSION['password'];
+                    echo '<label>' . $_SESSION['password'] . '</label>';
                 ?>
             </div>
             <div class="txt_field1">
-                <label>Plan_id : </label>
+                <label>Plan name: </label>
                 <?php
-                    echo $_SESSION['plan_id'];
+                    $sqli = "SELECT * from subscription_plans where plan_id = '{$_SESSION['plan_id']}'";
+                    $result = $conn->query($sqli);
+                        while ($row = ($result->fetch_assoc())){
+                            echo '<label>' . $row['plan_name'] . '</label>';
+                        }
+                ?>
+            </div>
+            <div class="txt_field1">
+                <label>User type: </label>
+                <?php
+                    $sql = "SELECT * from user_type where user_type_id = '{$_SESSION['user_type']}'";
+                    $result2 = $conn->query($sql);
+                        while ($row2 = ($result2->fetch_assoc())){
+                            echo '<label>' . $row2['user_type'] . '</label>';
+                        }
                 ?>
             </div>
             <form action="../backend/logout.php" class="log">

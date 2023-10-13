@@ -4,7 +4,7 @@ include 'database.php';
 $username = $_POST['user_name'];
 $password = $_POST['password'];
 
-$sql = "SELECT * FROM user where user_name = '{$username}' and password = '{$password}'";
+$sql = "SELECT * FROM users where user_name = '{$username}' and password = '{$password}'";
 $result = $conn->query($sql);
 
 if ($result->num_rows == 1) {

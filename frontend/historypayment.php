@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include '../backend/database.php';
     // include './layout/leftbar.php';
     include './layout/navbar.php';
@@ -10,7 +9,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HONGSAMUT</title>
-        <link rel="stylesheet" href="css/backpack.css">
+        <link rel="stylesheet" href="css/historypage.css">
         <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600;700&family=Mitr:wght@200;300;400;500;600;700&display=swap" 
@@ -46,6 +45,9 @@
     <body>
         <div class="main">
             <div class="mid">
+                <?php
+                    include './layout/historynav.php';
+                ?>
                 <div class="payment"><h2 style="font-size: 50px;text-align: center;">History of Payment</h2></div>
                 <table class="table2">
                     <thead>
@@ -55,6 +57,29 @@
                         <th>DATE</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        <?php
+                            include '../backend/database.php';
+                            
+                            $sql = "SELECT * FROM payments";
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                    $sql2 = "SELECT * FROM users where user_id = '{$row['user_id']}'";
+                                    $results = $conn->query($sql2);
+                                    while($rows = $results->fetch_assoc()) {
+                                        $username = $rows['user_name'];
+                                    }
+                                    echo "<tr>";
+                                    echo "<td>" . $username . "</td>";
+                                    echo "<td>" . $row['amount'] . "</td>";
+                                    echo "<td>" . $row['date_paid'] . "</td>";
+                                    echo "</tr>";
+                                }
+                            }
+                        ?>
+                    </tbody>
                 </table>
             </div>
 

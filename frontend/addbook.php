@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     include './layout/page.php';
     include './layout/navbar.php';
 ?>
@@ -10,7 +10,7 @@
     <title>HONGSAMUT</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/addbook.css">
+    <link rel="stylesheet" href="css/addbook.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- <style>
@@ -25,16 +25,16 @@
 </head>
 <body>
     <section class="add-books">
-        <h1 class="title">BOOK</h1>
+        <h1 class="title">ADD NEW BOOK</h1>
 
         <form action="../backend/addbook.php" method="post" enctype="multipart/form-data">
-            <h3>Add new book</h3>
+            
             <input type="text" name="bookname" class="box" placeholder="Enter your book name" required>
             <input type="text" name="bookowner" class="box" placeholder="Enter author" required>
             <input type="url" name="imgsrc" class="box" placeholder="Enter your url image" required>
             <input type="url" name="urlbook" class="box" placeholder="Enter your url book" required>
             <div class="selects">
-                <label for="select">Catagory :</label>
+                <label for="select">Catagories :</label>
                 <select name="cate_id">
                     <option value=8 name="cate_id" required>Miscellaneous</option>
                     <option value=1 name="cate_id">Comic</option>

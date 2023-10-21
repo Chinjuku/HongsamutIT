@@ -159,7 +159,7 @@
         <div class="text">Menu</div>
         <ul>
             <li class="newarr">
-                <a href="home.php"><i class="bi bi-stars"></i> NEW ARRIVALS</a>
+                <a href="newarrivals.php"><i class="bi bi-stars"></i> NEW ARRIVALS</a>
             </li>
 
             <li>

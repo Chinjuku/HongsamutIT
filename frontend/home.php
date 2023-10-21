@@ -43,7 +43,7 @@
                 <div class="container">
                     <!-- ใส่ new book นะ (ใส่ไว้ได้เลย แต่เอาข้อมูลหนังสือใหม่เข้า database ด้วย)-->
                     <?php
-                        $sql = "SELECT * from books order by book_id desc";
+                        $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id order by book_id desc";
                         $result = $conn->query($sql);
                         $num = 1;
                         while ($row = $result->fetch_assoc()){
@@ -51,7 +51,7 @@
                                 echo '<div class="nabox">';
                                 echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
                                 echo '<p class="bookname">' . $row['book_name'] . '</p>';
-                                echo '<p>' . $row['book_owner'] . '</p>';
+                                echo '<p>' . $row['author_name'] . '</p>';
                                 // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                                 echo '</div>';
                                 $num++;

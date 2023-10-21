@@ -33,13 +33,17 @@
           <p>หนังสือแต่ละประเภท</p>
         </div>
       </div>
-
-      <section class="attendance1">
+      <div class = "nametable">
+        <h1 class = "name1">รายการยืม</h1>
+        <h1 class = "name2">รายการชำระเงิน</h1>
+      </div>
+      <div class="attendance1">
+        
         <div class="attendance-list1">
-          <h1>ตาราง1</h1>
+          
           <table class="table">
             <thead>
-              <tr>
+              <tr class = "tablebar">
                 <th>BORROOWID</th>
                 <th>USERNAME</th>
                 <th>BOOKNAME</th>
@@ -86,13 +90,11 @@
                     </tbody>
           </table>
         </div>
-    </section>
-    <section class="attendance2">
         <div class="attendance-list2">
-          <h1>ตาราง</h1>
+          
           <table class="table">
             <thead>
-              <tr>
+              <tr class = "tablebar">
                 <th>ID</th>
                 <th>USERNAME</th>
                 <th>PAID</th>
@@ -126,7 +128,10 @@
             </tbody>
           </table>
         </div>
-      </section> 
+      </div>
+    <!-- <section class="attendance2">
+        
+      </section>  -->
   </div>
 </body>
 </html>

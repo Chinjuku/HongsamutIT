@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Mitr");
 *{
   margin: 0;
   padding: 0;
@@ -6,10 +6,10 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family:Mitr;
 }
 body{
-  background: rgb(226, 226, 226);
+  background: rgb(255, 255, 255);
 }
 nav{
   position: sticky;
@@ -83,6 +83,9 @@ a:hover i{
 }
 
 /* MAin Section */
+div .main-top{
+  position: sticky;
+}
 .main{
   position: relative;
   padding: 20px;
@@ -104,8 +107,9 @@ a:hover i{
   width: 100%;
 }
 .users .card{
-  width: 25%;
-  margin: 10px;
+  position: center;
+  width: 50%;
+  margin-inline: 11.25%;
   background: #fff;
   text-align: center;
   border-radius: 10px;
@@ -152,31 +156,75 @@ a:hover i{
   transition: 0.5s;
 }
 
+.nametable{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  /* margin-inline: 25%; */
+  /* text-align: center; */
+  text-transform: capitalize;
+}
+.name1{
+  width: 50%;
+  text-align: center;
+}
+.name2{
+  width: 50%;
+  text-align: center;
+
+}
 /*Attendance List serction 1 */
 .attendance1{
   margin-top: 20px;
-  text-transform: capitalize;
-}
-.attendance-list1{
+  display: flex;
   width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background: #fff;
+  height: 10%;
+  padding-top: 0px;
+  text-transform: capitalize;
+  
+  
+}
+
+.attendance-list1{
+  width: 47.5%;
+  margin-right: 2%;
+  margin-left: 2%;
+  overflow-y: scroll;
+  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+  box-sizing: content-box;
+  /* overflow-x:hidden; */
+  /* overflow-y:hidden; */
+  /* height: 10%; *none
+  padding-top: 0px;
+  padding-inline: 5px;
+  /* margin-top: 10px; */
+  background: transparent;
   border-radius: 10px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  transition: 3s;
+  /* box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1); */
+}
+div :hover{
+  overflow-x: hidden;
+  /* overflow-y: scroll; */
+  /* overflow-wrap: normal; */
 }
 /*Attendance List serction 2 */
-.attendance2{
+/* .attendance2{
     margin-top: 20px;
     text-transform: capitalize;
-  }
+    overflow-y:scroll;
+  } */
   .attendance-list2{
-    width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    width: 47.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100%;
+    padding: 5px;
+    overflow-y:scroll;
+    /* margin-top: 10px; */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
   }
 .table{
   border-collapse: collapse;
@@ -185,39 +233,40 @@ a:hover i{
   min-width: 100%;
   overflow: hidden;
   border-radius: 5px 5px 0 0;
+  
 }
+/* thead tr { position: sticky; top: 0; } */
 table thead tr{
   color: #fff;
-  background: #34AF6D;
+  background: #4e5e55;
   text-align: left;
   font-weight: bold;
 }
-.table th,
+.table th{
+  position: sticky; top: 0px;
+  padding: 10px 15px;
+}
 .table td{
-  padding: 12px 15px;
+  
+  padding: 10px 15px;
 }
 .table tbody tr{
-  border-bottom: 1px solid #ddd;
+
+  border-bottom: 1px solid #2e1608c0;
 }
 .table tbody tr:nth-of-type(odd){
-  background: #f3f3f3;
+  background: #dadada83;
 }
-.table tbody tr.active{
-  font-weight: bold;
-  color: #4AD489;
+.table tbody tr:nth-of-type(even){
+  background: #92929288;
 }
+
+
 .table tbody tr:last-of-type{
-  border-bottom: 2px solid #4AD489;
+  border-bottom: 10px solid #4e5e55;
 }
-.table button{
-  padding: 6px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #4AD489;
-}
-.table button:hover{
-  background: #4AD489;
-  color: #fff;
-  transition: 0.5rem;
+
+.table tbody{
+  
+  opacity: 100%;
 }

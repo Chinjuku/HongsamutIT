@@ -1,0 +1,186 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:Mitr ;
+}
+
+body{
+    background-color: #FDF5D0;
+    text-align: center;
+    display: grid;
+    margin-top: 7%;
+    margin-bottom: 100px;
+    flex-direction: column;
+    place-items: center;
+}
+
+.title{
+    /* margin-bottom: 20px; */
+    color: #272222;
+    font-size: 56px;
+}
+
+.add-books form{
+    background-color: #6C776A;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    max-width: 30rem;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+
+.add-books form h3{
+    font-size: 28px;
+    color: var(--black);
+    padding-top: 8px;
+    margin-bottom: 10px;
+}
+
+.add-books form .box{
+    width: 60%;
+    height: 20px;
+    background-color: white;
+    border-radius: .5rem;
+    margin: 0.7rem 0;
+    padding: 1.2rem 1.4rem;
+    color: var(--black);
+    font-size: 1rem;
+}
+
+.add-books form .box1{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #272222;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 65px;
+}
+
+.add-books form .btn{
+    width: 30%;
+    height: 32px;
+    background-color: #2D342C;
+    color: aliceblue;
+    font-size: 15px;
+    left: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 15px;
+}
+
+.selects{
+    scale: 1.2;
+    margin: 13px 0;
+}
+.selects select{
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+/* Edit & Delete */
+.mid{
+    width: 80%;
+}
+.head{
+    gap: 20px;
+    left: 0px;
+    margin-top: 5%;
+    /* margin-left: 1%; */
+    display: inline-flex;
+    justify-content: space-between;
+}
+.square{
+    margin-top: 9%;
+    width: 10px;
+    height: 120px;
+    background-color: #485545;
+}
+
+.container{
+    /* background-color: white; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 30px;
+    width: 1400px;
+    height: auto;
+
+}
+.nabox{
+    position: relative;
+    background-color: #fffcee;
+    width: 15%;
+    height: 350px;
+    /* border-radius: 10px; */
+    text-align: center;
+    /* margin: 10px; */
+    border-style: solid;
+    border-width: thin;
+    box-shadow: 10px 10px 5px #fdf1b9;
+    
+}
+/* dsadwadawsdawdwaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+/* ปรับหนังสือฝั่ง backend */
+.pic {
+    margin-top: 7%;
+    width: 90px;
+    height: 140px;
+}
+.bookname{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.clicktoview{
+    margin: 5px 0 5px 0;
+    width: 50%;
+    background: #485545;
+    padding: 5px 10px;
+    color: #FDF5D0;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(39,34,34);
+}
+
+/* POP-UP */
+/* Styling for the popup container */
+#popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Styling for the popup content */
+#popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 700px;
+    height: 300px;
+    text-align: center;
+}
+
+/* Styling for the close button (X) */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}

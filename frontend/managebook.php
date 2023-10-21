@@ -1,6 +1,8 @@
 <?php
+    include '../backend/database.php';
     include './layout/page.php';
     include './layout/navbar.php';
+    $cates = $_POST['categories'];
 ?>
 
 <!DOCTYPE html>
@@ -9,19 +11,13 @@
     <title>HONGSAMUT</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/addbook.css">
+    <link rel="stylesheet" href="css/managebook.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- <style>
-        body{
-            background-color: #FDF5D0;
-        }
-        .add-books{
-            background-color: rgb(255, 255, 255);
-            border-radius: 10px;
-        }
-    </style> -->
 </head>
+    <style>
+
+    </style>
 <body>
     <section class="add-books">
         <h1 class="title">ADD NEW BOOK</h1>
@@ -55,7 +51,79 @@
             </div>
         </form>
     </section>
+    
+    <!-- Edit & Delete -->
+            <div class="mid">
+                <div class="head">
+                    EDIT & DELETE
+                </div>
+                <div class="container">
+                    <!-- <button onclick="togglePopup()" class="nabox"> -->
+                    <?php
+                        $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id;"; 
+                        $result = $conn->query($sql);
+                        $sql2 = "SELECT * FROM users";
+                        $result2 = $conn->query($sql2);
+                        while ($row2 = $result2->fetch_assoc()) {
+                            $user = $row2['user_type_id'];
+                        }
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                if (!empty($cates) && $row['cate_id'] == $cates) {
+                                    $display = true;
+                                } elseif (empty($cates)) {
+                                    $display = true;
+                                } else {
+                                    $display = false;
+                                }
+                                if ($display) {
+                                    echo '<div class="nabox">';
+                                    echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                                    echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                                    echo '<p>' . $row['author_name'] . '</p>';
+                                    echo '<p>Amount : ' . $row['copy'] . '</p>';
+                                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['author_name'] . '\',
+                                    \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\',  \'' . $row['author_id'] . '\')">Edit Book</button>';
+                                    // delete //
+                                    echo '<form action="../backend/deletebook.php" method="post">';
+                                    echo '<button class="clicktoview" type="submit" value="'. $row["book_id"] .'" name="book_id">Delete Book</button>';
+                                    echo '</form>';
+                                    echo '</div>';
+                                }
+                            }
+                        }
+                        $conn->close();
+                    ?>
+            </div>
+        </div>
+        <div class="popup-overlay" id="popup">
+            <div class="popup-content" id="popup-content">
+        
+            </div>
+        </div>
+        <script>
+            function togglePopup(bookName, bookOwner, imgSrc, bookId, authorId) {
+                var popup = document.getElementById('popup');
+                var popupContent = document.getElementById('popup-content');
+                                    
+                var popupcoN = '<form action="../backend/editbook.php" method="post">' +
+                                        '<input type="hidden" name="author_id" value="' + authorId + '">' +
+                                        '<input type="hidden" name="book_id" value="' + bookId + '">' +
+                                        '<span class="popup-close" onclick="closePopup()">X</span>' +
+                                        '<h3> Edit Book </h3>' +
+                                        '<input class="input" type="text" name="book_name" value="' + bookName + '">' +
+                                        '<input class="input" type="text" name="book_owner" value="' + bookOwner + '">' +
+                                        '<input class="input" type="text" name="img" value="' + imgSrc + '">' + '<br>' +
+                                        '<button class="input" type="submit" class="clicktoborrow">Submit</button>' +
+                                        '</form>';
+                popupContent.innerHTML = popupcoN;
+                popup.style.display = 'flex';
+            }
 
-    <!-- <script src="javascript/addbook.js"></script> -->
+            function closePopup() {
+                var popup = document.getElementById('popup');
+                popup.style.display = 'none';
+            }
+        </script>
 </body>
 </html>

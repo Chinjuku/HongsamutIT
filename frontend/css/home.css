@@ -124,3 +124,15 @@ body{
 .clicktoview:hover{
     box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
 }
+.recommend{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    top: 0px;
+    font: "Poppings";
+    width: 100%;
+    font-size: 70px;
+    color:#342b2b;
+
+}

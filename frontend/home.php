@@ -51,7 +51,11 @@
                         }
                     ?>
                 </div>
-                <br>
+                <div class="head2">
+                    <div class="recommend"><i>RECOMMENDED BOOKS</i></div>
+                </div>
+                <div class="container">
+        
             </div>
         </div>
     </body>

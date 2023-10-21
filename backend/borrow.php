@@ -16,10 +16,11 @@
 
     $current_date = date('Y-m-d H:i:s');
 
-    //check if user own more than 10 books.
-    $check_sql = "SELECT * FROM borrow_books WHERE user_id = '{$_SESSION['user_id']}' AND date_return >= '{$date_borrow}'";
-    // $check_sql = "SELECT * FROM borrow WHERE user_id = '{$_SESSION['user_id']}' AND  <= date_return";
+    //check amount of book that user own
+    $check_sql = "SELECT * FROM users WHERE user_id = '{$_SESSION['user_id']}'";
     $check_stmt = $conn->query($check_sql);
+    $check_row = $check_stmt->fetch_assoc();
+    $amount_book = $check_row['amount_book'];
     //check numrow
 
     //get max number of book that user can own.
@@ -28,7 +29,7 @@
     $num_book_row = $num_book_stmt->fetch_assoc();
     $max_book = $num_book_row['max_book'];
 
-    if ($check_stmt->num_rows >= $max_book) {
+    if ($amount_book >= $max_book) {
         echo '<script>alert("You have reached the maximum number of books you can borrow.");</script>';
         echo '<script>window.location.href = "../frontend/allbook.php";</script>';
         exit();
@@ -58,7 +59,7 @@
                 $update_amount_book_sql = "UPDATE users SET amount_book = amount_book + 1 WHERE user_id = '{$_SESSION['user_id']}'";
                 $update_amount_book_stmt = $conn->prepare($update_amount_book_sql);
                 $update_amount_book_stmt->execute();
-                
+
                 //update status in books table
                 $update_sql = "UPDATE books SET copy = copy - 1 WHERE book_id = '{$book_id}'";
                 $update_stmt = $conn->prepare($update_sql);

@@ -60,7 +60,7 @@
                 <div class="container">
                     <!-- <button onclick="togglePopup()" class="nabox"> -->
                     <?php
-                        $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id;"; 
+                        $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id;";
                         $result = $conn->query($sql);
                         $sql2 = "SELECT * FROM users";
                         $result2 = $conn->query($sql2);

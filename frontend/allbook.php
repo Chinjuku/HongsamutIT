@@ -43,7 +43,7 @@
                 <div class="container">
                     <!-- <button onclick="togglePopup()" class="nabox"> -->
                     <?php
-                        $sql = "SELECT * FROM books"; 
+                        $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id;";
                         $result = $conn->query($sql);
                         $sql2 = "SELECT * FROM users";
                         $result2 = $conn->query($sql2);
@@ -63,11 +63,11 @@
                                     echo '<div class="nabox">';
                                     echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
                                     echo '<p class="bookname">' . $row['book_name'] . '</p>';
-                                    echo '<p>' . $row['book_owner'] . '</p>';
+                                    echo '<p>' . $row['author_name'] . '</p>';
                                     if($row['copy'] == 0){
                                         echo '<p class="bookname un">The book is unavaliable.</p>';
                                     }
-                                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\',
+                                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['author_name'] . '\',
                                     \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\',  \'' . $_SESSION['user_type'] . '\')">VIEW</button>';
                                     echo '</div>';
                                 }

@@ -76,7 +76,11 @@
                                 if ($display) {
                                     echo '<div class="nabox">';
                                     echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                                    echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                                    $book_name_wow = $row['book_name'];
+                                    if ($book_name_wow == "Don\'t do that!"){
+                                        $book_name_wow = "Don't do that!";
+                                    }
+                                    echo '<p class="bookname">' . $book_name_wow . '</p>';
                                     echo '<p>' . $row['author_name'] . '</p>';
                                     if($row['copy'] == 0){
                                         echo '<p class="bookname un">The book is unavaliable.</p>';

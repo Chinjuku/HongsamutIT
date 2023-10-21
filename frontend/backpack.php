@@ -80,13 +80,8 @@
                                     $date_borrow = $row['date_borrow'];
                                     $date_return = $row['date_return'];
                                     $imgsrc = $row['imgsrc'];
-
                                     echo "<tr>";
                                     echo "<td><img src='{$imgsrc}' width='120' height='150'></td>";
-                                    
-                                    if ($book_name == "Don\'t do that!"){
-                                        $book_name = "Don't do that!";
-                                    }
                                     echo "<td>{$book_name}</td>";
                                     echo "<td>{$category_name}</td>";
                                     echo "<td>{$date_borrow}</td>";

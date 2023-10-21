@@ -77,12 +77,17 @@
                                     $display = false;
                                 }
                                 if ($display) {
+                                    $book_name_wow = $row['book_name'];
                                     echo '<div class="nabox">';
                                     echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                                    echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                                    echo '<p class="bookname">' . $book_name_wow . '</p>';
                                     echo '<p>' . $row['author_name'] . '</p>';
                                     echo '<p>Amount : ' . $row['copy'] . '</p>';
-                                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['author_name'] . '\',
+                                    
+                                    if ($book_name_wow == "Don't do that!"){
+                                        $book_name_wow = "Don\'t do that!";
+                                    }
+                                    echo '<button class="clicktoview" onclick="togglePopup(\'' . $book_name_wow . '\', \'' . $row['author_name'] . '\',
                                     \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\',  \'' . $row['author_id'] . '\')">Edit Book</button>';
                                     // delete //
                                     echo '<form action="../backend/deletebook.php" method="post">';

@@ -11,7 +11,7 @@
         if($current_date >= $date_return){
             //check show returning
             echo $date_return, 'and', $book_id_return, '<br>';
-            $sql = "UPDATE books SET copy = copy + 1 where book_id = '{$book_id_return}'";
+            $sql = "UPDATE books SET copy = copy + 1 AND is_check = 1 where book_id = '{$book_id_return}' AND is_check = 0";
             $available_stmt = $conn->prepare($sql);
             $available_stmt->execute();
         }

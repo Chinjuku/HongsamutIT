@@ -107,9 +107,9 @@ body{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
-    gap: 30px;
-    width: 1400px;
+    justify-content: center;
+    /* gap: 30px; */
+    width: 100%;
     height: auto;
 
 }

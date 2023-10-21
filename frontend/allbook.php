@@ -13,6 +13,20 @@
         <link rel="stylesheet" href="css/allbook.css">
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <style>
+            .ssquare1{
+                margin-top: 9%;
+                width: 10px;
+                height: 120px;
+                background-color: #485545;
+            }
+            .ssquare2{
+                margin-top: 7%;
+                width: 10px;
+                height: 50px;
+                background-color: #485545;
+            }
+        </style>
     </head>
     <body>
 

@@ -10,7 +10,7 @@
     <head>
         <title>HONGSAMUT</title>
         <meta name="viewport" content="width=1920, height=1080, initial-scale=1">
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <style>
@@ -32,61 +32,70 @@
                     <img class="img2" src="../img/img2.jpg" alt="Girl in a jacket" style="width:250px;height:350px;">
                     
                 </div>
+            </div>
                 <button class="explorebut">EXPLORE OUR BOOKS</button>
             </div>
-            <div class="mid">
-                    <!-- <div class="square"></div> -->
-                    <div class="newarrival"><i>NEW ARRIVALS</i></div>
-                    <hr>
-                    <div class="newarrdes">our newest books is here!</div>
+                <div class="mid">
+                    <div class="midsub">
+                        <div class="newarrival"><i>NEW ARRIVALS</i></div>
+                        <hr class="hr1">
+                        <div class="newarrdes">our newest books is here!</div>
 
-                <div class="container">
-                    <!-- ใส่ new book นะ (ใส่ไว้ได้เลย แต่เอาข้อมูลหนังสือใหม่เข้า database ด้วย)-->
+                    <div class="container">
+                        <!-- ใส่ new book นะ (ใส่ไว้ได้เลย แต่เอาข้อมูลหนังสือใหม่เข้า database ด้วย)-->
+                        <?php
+                            $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id order by book_id desc";
+                            $result = $conn->query($sql);
+                            $num = 1;
+                            while ($row = $result->fetch_assoc()){
+                                if($num <= 5){
+                                    echo '<div class="nabox">';
+                                    echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                                    echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                                    echo '<p>' . $row['author_name'] . '</p>';
+                                    // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
+                                    echo '</div>';
+                                    $num++;
+                                    }
+                                else{
+                                    break;
+                                }
+                            }
+                        ?>
+                    </div>
+                </div>
+                <div class="space1"></div>
+                <div class="recommend">
+                    <div class="head2">
+                        <div class="recommendtxt"><i>RECOMMENDED BOOKS</i></div>
+                        <hr class="hr2">
+                        <div class="recdes">we bring out the book that relate to your recently borrowed book✦</div>
+            
+                    </div>
+                    <div class="container"> 
                     <?php
-                        $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id order by book_id desc";
-                        $result = $conn->query($sql);
-                        $num = 1;
-                        while ($row = $result->fetch_assoc()){
-                            if($num <= 5){
-                                echo '<div class="nabox">';
-                                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                                echo '<p class="bookname">' . $row['book_name'] . '</p>';
-                                echo '<p>' . $row['author_name'] . '</p>';
-                                // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
-                                echo '</div>';
-                                $num++;
+                            $sql = "SELECT * from books order by book_id desc";
+                            $result = $conn->query($sql);
+                            $num = 1;
+                            while ($row = $result->fetch_assoc()){
+                                if($num <= 5){
+                                    echo '<div class="nabox">';
+                                    echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                                    echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                                    echo '<p>' . $row['book_owner'] . '</p>';
+                                    // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
+                                    echo '</div>';
+                                    $num++;
+                                    }
+                                else{
+                                    break;
                                 }
-                            else{
-                                break;
                             }
-                        }
-                    ?>
+                        ?>
+                    </div>
                 </div>
-                <div class="head2">
-                    <div class="recommend"><i>RECOMMENDED BOOKS</i></div>
-                </div>
-                <div class="container"> 
-                <?php
-                        $sql = "SELECT * from books order by book_id desc";
-                        $result = $conn->query($sql);
-                        $num = 1;
-                        while ($row = $result->fetch_assoc()){
-                            if($num <= 5){
-                                echo '<div class="nabox">';
-                                echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                                echo '<p class="bookname">' . $row['book_name'] . '</p>';
-                                echo '<p>' . $row['book_owner'] . '</p>';
-                                // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
-                                echo '</div>';
-                                $num++;
-                                }
-                            else{
-                                break;
-                            }
-                        }
-                    ?>
-        
+                
             </div>
-        </div>
+            <div class="brown"></div>
     </body>
 </html>

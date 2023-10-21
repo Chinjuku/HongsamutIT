@@ -54,6 +54,11 @@
             $borrow_sql = "INSERT INTO borrow_books (book_id, user_id, date_borrow, date_return) VALUES ('{$book_id}', '{$_SESSION['user_id']}', '{$date_borrow}', '{$date_return}')";
             $borrow_stmt = $conn->prepare($borrow_sql);
             if ($borrow_stmt->execute()) {
+                // update amount_book in users table
+                $update_amount_book_sql = "UPDATE users SET amount_book = amount_book + 1 WHERE user_id = '{$_SESSION['user_id']}'";
+                $update_amount_book_stmt = $conn->prepare($update_amount_book_sql);
+                $update_amount_book_stmt->execute();
+                
                 //update status in books table
                 $update_sql = "UPDATE books SET copy = copy - 1 WHERE book_id = '{$book_id}'";
                 $update_stmt = $conn->prepare($update_sql);

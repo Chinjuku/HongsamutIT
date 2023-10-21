@@ -2,6 +2,10 @@
     include './layout/navbar.php';
     include './layout/page.php';
     include '../backend/database.php';
+    
+    include '../backend/update_db.php';
+    add_author_name($conn);
+
 ?>
 
 <!DOCTYPE html>

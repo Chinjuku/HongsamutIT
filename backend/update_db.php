@@ -19,6 +19,29 @@
             }
         }
     }
+
+    function add_author_name($conn){
+        // fetch to all book_owner in books table
+        $book_owner_sql = "SELECT book_owner FROM books";
+        $book_owner_result = $conn->query($book_owner_sql);
+        if ($book_owner_result->num_rows > 0) {
+            while($book_owner_row = $book_owner_result->fetch_assoc()){
+                $book_owner = $book_owner_row['book_owner'];
+
+                // check if author_name already exist in author table
+                $author_sql = "SELECT * FROM author WHERE author_name = '{$book_owner}'";
+                $author_result = $conn->query($author_sql);
+                if ($author_result->num_rows == 0) {
+                    // add author_name to author table
+                    $author_sql = "INSERT INTO author (author_name) VALUES ('{$book_owner}')";
+                    $conn->query($author_sql);
+                }
+                
+
+
+            }
+        }
+    }
     
 
 

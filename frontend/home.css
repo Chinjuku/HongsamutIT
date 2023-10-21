@@ -2,12 +2,15 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    max-width: 100%;
+
     /* font: comic; */
     /* font-family:Mitr ; */
 }
 
 body{
     background-color: #FDF5D0;
+
     display: flex;
     flex-direction: row;
     /* padding-left: 400px; */
@@ -15,21 +18,9 @@ body{
 
 .mid{
     display: block;
-<<<<<<< Updated upstream
     margin-left: 20%;
     margin-top: 40%;
     width: 60%;
-=======
-    margin-left: 21%;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 10%;
-
-
-    width: 150%;
->>>>>>> Stashed changes
     /* background-color: lightsalmon; */
 
 }
@@ -65,11 +56,13 @@ body{
 
 }
 .nabox{
+    
     position: relative;
     background-color: #fffcee;
-    width: 15%;
+    margin-top: 5%;
+    width: 40%;
     height: 290px;
-    border-radius: 6px;
+    border-radius: 3px;
     
     text-align: center;
     /* margin: 10px; */
@@ -121,38 +114,49 @@ body{
 .clicktoview:hover{
     box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
 }
-.recommend{
+.recommendtxt{
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 9%;
     top: 0px;
     font: "Poppings";
     width: 100%;
-    font-size: 60px;
-    color:#342b2b;
-    background-color: lightcoral;
+    font-weight: 300;
+    font-size: 70px;
+    color:#fffbdc;
+    /* background-color: lightcoral; */
 }
 .explorebut{
-    color: rgb(229, 229, 229);
+    color: rgb(255, 255, 255);
     position: absolute;
     left: 12%;
-    margin-top:3%;
+    margin-top:25%;
     padding: 20px;
     background-color:transparent;
     border: 1px solid #fefffe;
     font: comic;
 }
 .newarrdes{
-    margin-top: 1%;
+    margin-top: 2%;
     display: flex;
+    font-weight: 10;
     justify-content: center;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+
+}
+.recdes{
+    margin-top: 2%;
+    display: flex;
+    font-weight: 10;
+    justify-content: center;
+    color:#fff3f3;
+    /* background-color: lightgray; */
 
 }
 
-hr{
+.hr1{
     display: flex;
     width: 20%;
     align-items: center;
@@ -160,18 +164,26 @@ hr{
     margin: 0 auto;
     
 }
+.hr2{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    border-top: 2px solid rgb(255, 255, 255);
+    margin: 0 auto;
+    
+}
 .gt1{
-    color: #dddacc;
+    color: #fff5c8;
     margin-top: 11%;
     width: 100%;
     height: 20%;
     font-size: 70px;
     margin-left: 12%;
-    font-weight: 500;
+    font-weight: 50;
     line-height: 1.1;
 }
 .gt2{
-
+    color: #fefffe;
     width: 100%;
     height: 20%;
     font-size: 20px;
@@ -181,21 +193,23 @@ hr{
 
 }
 .greenbg{
+    overflow-x: hidden;
+    left:0;
     z-index: -1;
-    left: 0;
     position: absolute;
-    width: 100%;
     height: 70%;
+    width: 100%;
     background: #485545;
 }
 .newarrival{
     display: flex;
     justify-content: center;
-    background-color: lightblue;
-    margin-top: 50%;
+    /* background-color: lightblue; */
+    margin-top: 0%;
     font: "Poppings";
     width: 100%;
-    font-size: 70px;
+    font-weight: 300;
+    font-size: 100px;
     color:#3a2d2d;
     
 
@@ -223,4 +237,32 @@ hr{
     margin-top: 10%;
     margin-left: 70%;
     box-shadow: rgb(31, 31, 31) 0px 20px 30px -10px;
+}
+.brownblock{
+    position: relative;
+    width: 150%;
+    height: 100%;
+    background-color: rgb(59, 55, 50);
+}
+
+.space1{
+
+    width: 100%;
+    height: 5%;
+}
+.space{
+
+    width: 100%;
+    height: 5%;
+}
+.brown{
+    z-index: -1;
+    margin-top: 80%;
+    left: 0;
+    display: flex;
+    position: absolute;
+    /* background-color: #443d38; */
+    background: #485545;
+    width: 100%;
+    height: 90%;
 }

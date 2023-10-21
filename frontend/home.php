@@ -46,6 +46,7 @@
                         <?php
                             $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id order by book_id desc";
                             $result = $conn->query($sql);
+                            // $sql2 = "SELECT book_id from borrowS_book";
                             $num = 1;
                             while ($row = $result->fetch_assoc()){
                                 if($num <= 5){
@@ -75,24 +76,29 @@
             
                     echo '</div>';
                     echo '<div class="container">';
-                            $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id order by book_id desc";
-                            $result = $conn->query($sql);
-                            // $sql2 = "SELECT book_id from borrowS_book";
-                            $num = 1;
-                            while ($row = $result->fetch_assoc()){
-                                if($num <= 5){
-                                    echo '<div class="nabox">';
-                                    echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                                    echo '<p class="bookname">' . $row['book_name'] . '</p>';
-                                    echo '<p>' . $row['author_name'] . '</p>';
-                                    // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
-                                    echo '</div>';
-                                    $num++;
-                                    }
-                                else{
-                                    break;
-                                }
-                            }
+                        // $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id order by book_id desc";
+                        // $result = $conn->query($sql);
+                        // $sql2 = "";
+                        // $result2 = $conn->query($sql2); 
+                        // $num = 1;
+                        // while ($row = $result->fetch_assoc()){
+                            // while ($row2 = $result2->fetch_assoc()){
+                                // if($num <= 5){
+                                    // echo $row['count_books'];
+                                    // echo '<div class="nabox">';
+                                    // echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                                    // echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                                    // echo '<p>' . $row['author_name'] . '</p>';
+                                    // // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
+                                    // echo '</div>';
+                                    // $num++;
+                                    // }
+                                // else{
+                                //     break;
+                                // }
+                            // }
+                        // }
+                            
                     echo '</div>';
                 echo '</div>';
                 }

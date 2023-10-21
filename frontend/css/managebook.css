@@ -172,7 +172,7 @@ body{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     position: relative;
     width: 700px;
-    height: 300px;
+    height: 350px;
     text-align: center;
 }
 
@@ -183,4 +183,31 @@ body{
     right: 10px;
     cursor: pointer;
     font-size: 20px;
+}
+
+.boxesz {
+    margin: 25px 0 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr;
+    place-items: center;
+    
+}
+.input{
+    padding: 5px 20px 5px 20px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+.name{
+    font-size: 18px;
+}
+h3 {
+    font-size: 24px;
+}
+.inputsubmit{
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color: #485545;
 }

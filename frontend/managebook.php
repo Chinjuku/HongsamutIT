@@ -116,10 +116,19 @@
                                         '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                         '<span class="popup-close" onclick="closePopup()">X</span>' +
                                         '<h3> Edit Book </h3>' +
-                                        '<input class="input" type="text" name="book_name" value="' + bookName + '">' +
-                                        '<input class="input" type="text" name="book_owner" value="' + bookOwner + '">' +
-                                        '<input class="input" type="text" name="img" value="' + imgSrc + '">' + '<br>' +
-                                        '<button class="input" type="submit" class="clicktoborrow">Submit</button>' +
+                                        '<div class="boxesz">' +
+                                        '<label class="name 1">Edit book name</label>' +
+                                        '<input class="input 1" type="text" name="book_name" value="' + bookName + '">' +
+                                        '</div>' +
+                                        '<div class="boxesz">' +
+                                        '<label class="name 2">Edit Author book</label>' +
+                                        '<input class="input 2" type="text" name="book_owner" value="' + bookOwner + '">' +
+                                        '</div>' +
+                                        '<div class="boxesz">' +
+                                        '<label class="name 3">Edit Image book</label>' +
+                                        '<input class="input 3" type="text" name="img" value="' + imgSrc + '">' + '<br>' +
+                                        '</div>' +
+                                        '<button class="inputsubmit" type="submit" class="clicktoborrow">Submit</button>' +
                                         '</form>';
                 popupContent.innerHTML = popupcoN;
                 popup.style.display = 'flex';

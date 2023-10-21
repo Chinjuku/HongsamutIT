@@ -26,7 +26,6 @@
             <div class="mid">
                 <div class="greenbg"></div>
                 <div class="head">
-                    <!-- <div class="square"></div> -->
                     <div class="newarrival"><i>NEW ARRIVALS</i></div>
                 </div>
                 <div class="container">

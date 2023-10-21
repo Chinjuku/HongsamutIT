@@ -33,7 +33,12 @@ if ($result->num_rows == 1) {
     //   $_SESSION['plan_id'] = NULL;
     // }
   }
-  echo '<script>window.location.href = "../frontend/home.php";</script>';
+    if($_SESSION['user_name'] == "u_exam1"){
+      echo '<script>alert("Your subscription has expired.");</script>';
+      echo '<script>window.location.href = "../frontend/member.php";</script>';
+    }else{
+      echo '<script>window.location.href = "../frontend/home.php";</script>';
+    }
   
 } else {
   echo '<script>alert("Your account is incorrect.");</script>';

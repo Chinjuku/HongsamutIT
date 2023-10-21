@@ -3,6 +3,8 @@
     include './layout/navbar.php';
     include './layout/sidebar.php';
     include '../backend/database.php';
+    include '../backend/update_db.php';
+    update_amount_book($conn);
     
 ?>
 

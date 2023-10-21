@@ -42,6 +42,14 @@
             exit();
         }
         else{
+            //check if user already borrow this book and not return yet
+            $check_borrow_sql = "SELECT * FROM borrow_books WHERE user_id = '{$_SESSION['user_id']}' AND book_id = '{$book_id}' AND date_return >= '{$current_date}'";
+            $check_borrow_stmt = $conn->query($check_borrow_sql);
+            if ($check_borrow_stmt->num_rows > 0) {
+                echo '<script>alert("You already borrow this book.");</script>';
+                echo '<script>window.location.href = "../frontend/allbook.php";</script>';
+                exit();
+            }
             //add to borrow table
             $borrow_sql = "INSERT INTO borrow_books (book_id, user_id, date_borrow, date_return) VALUES ('{$book_id}', '{$_SESSION['user_id']}', '{$date_borrow}', '{$date_return}')";
             $borrow_stmt = $conn->prepare($borrow_sql);

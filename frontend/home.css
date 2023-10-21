@@ -127,7 +127,7 @@ body{
     width: 100%;
     font-size: 60px;
     color:#342b2b;
-    /* background-color: lightcoral; */
+    background-color: lightcoral;
 }
 .explorebut{
     color: rgb(229, 229, 229);
@@ -143,9 +143,10 @@ body{
     margin-top: 1%;
     display: flex;
     justify-content: center;
-    /* background-color: lightgray; */
+    background-color: lightgray;
 
 }
+
 hr{
     display: flex;
     width: 20%;
@@ -172,7 +173,7 @@ hr{
     margin-left: 12%;
     margin-top: 1.5%;
     font-weight: 10;
- 
+
 }
 .greenbg{
     z-index: -1;
@@ -185,7 +186,7 @@ hr{
 .newarrival{
     display: flex;
     justify-content: center;
-    /* background-color: lightblue; */
+    background-color: lightblue;
     margin-top: 50%;
     font: "Poppings";
     width: 100%;

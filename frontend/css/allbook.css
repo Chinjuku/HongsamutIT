@@ -296,5 +296,5 @@ label{
     color: var(--black);
 }
 label:hover{
-    color : brown;
+    color : rgb(39,34,34);
 }

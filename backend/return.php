@@ -1,11 +1,12 @@
 <?php
-    $session_start();
+    session_start();
     include 'database.php';
     date_default_timezone_set('Asia/Bangkok');
     $current_date = date("Y-m-d H:i:s");
     // check returning books
     $returndate = "SELECT * FROM borrow_books where date_return <= '{$current_date}' AND is_check = 0 AND user_id = '{$_SESSION['user_id']}'";
     $date_return_stmt = $conn->query($returndate);
+    
     while ($row_return = $date_return_stmt->fetch_assoc()){
         $book_id_return = $row_return['book_id'];
         $date_return = $row_return['date_return'];

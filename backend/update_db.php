@@ -42,6 +42,26 @@
             }
         }
     }
+
+    function add_author_id($conn){
+        // update author_id to books table
+        // fetch to all author_id in author table
+        $author_id_sql = "SELECT * FROM author";
+        $author_id_result = $conn->query($author_id_sql);
+        if ($author_id_result->num_rows > 0) {
+            while($author_id_row = $author_id_result->fetch_assoc()){
+                $author_id = $author_id_row['author_id'];
+                $author_name = $author_id_row['author_name'];
+
+                // update author_id to books table
+                $update_author_id_sql = "UPDATE books SET author_id = '{$author_id}' WHERE book_owner = '{$author_name}'";
+                $conn->query($update_author_id_sql);
+
+            }
+            echo '<script>alert("done");</script>';
+        }
+
+    }
     
 
 

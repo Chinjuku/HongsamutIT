@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=1920, height=1080, initial-scale=1">
         <link rel="stylesheet" href="css/allbook.css">
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <style>
             .ssquare1{
@@ -29,16 +30,12 @@
         </style>
     </head>
     <body>
-
-        <div>
-            <form action="" class="search">
-                <input type="search" name="" placeholder="search here..." id="search-box">
-                <label for="search-box" class="fas-fa-search"></label>
-            </form>
-        </div>
-
         <div class="main">
             <div class="mid">
+                    <form action="" class="search">
+                    <input type="search" name="" placeholder="search here..." id="search-box">
+                    <label for="search-box" class="fas fa-search"></label>
+                    </form>
                 <div class="head">
                     <?php
                         $sql = "SELECT * FROM categories";

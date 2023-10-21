@@ -27,14 +27,14 @@
         
         <div class="form-box">
             <div class="form-value">
-                <form action="">
+                <form action="../backend/req.php" method="post">
                     <h2>REQUESTING BOOK</h2>
                     <div class="inputbox">
-                        <input type="Book's name" required>
+                        <input type="Book's name" name="req_book" id="req_book" required>
                         <label for="">Book's name</label>
                     </div>
                     <div class="inputbox">
-                        <input type="Author" required>
+                        <input type="Author" name = "req_auth" id = "req_auth" required>
                         <label for="">Author</label>
                     </div>
                     <button>

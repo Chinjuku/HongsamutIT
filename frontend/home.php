@@ -33,7 +33,7 @@
                     
                 </div>
             </div>
-                <button class="explorebut">EXPLORE OUR BOOKS</button>
+                <a class="explorebut" href="allbook.php">EXPLORE OUR BOOKS</a>
             </div>
                 <div class="mid">
                     <div class="midsub">
@@ -65,24 +65,26 @@
                     </div>
                 </div>
                 <div class="space1"></div>
-                <div class="recommend">
-                    <div class="head2">
-                        <div class="recommendtxt"><i>RECOMMENDED BOOKS</i></div>
-                        <hr class="hr1">
-                        <div class="recdes">we bring out the book that relate to your recently borrowed book✦</div>
+                <?php
+                if($_SESSION['plan_id'] != NULL) {
+                echo '<div class="recommend">';
+                    echo '<div class="head2">';
+                        echo '<div class="recommendtxt"><i>RECOMMENDED BOOKS</i></div>';
+                        echo '<hr class="hr1">';
+                        echo '<div class="recdes">we bring out the book that relate to your recently borrowed book✦</div>';
             
-                    </div>
-                    <div class="container"> 
-                    <?php
-                            $sql = "SELECT * from books order by book_id desc";
+                    echo '</div>';
+                    echo '<div class="container">';
+                            $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id order by book_id desc";
                             $result = $conn->query($sql);
+                            // $sql2 = "SELECT book_id from borrowS_book";
                             $num = 1;
                             while ($row = $result->fetch_assoc()){
                                 if($num <= 5){
                                     echo '<div class="nabox">';
                                     echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
                                     echo '<p class="bookname">' . $row['book_name'] . '</p>';
-                                    echo '<p>' . $row['book_owner'] . '</p>';
+                                    echo '<p>' . $row['author_name'] . '</p>';
                                     // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
                                     echo '</div>';
                                     $num++;
@@ -91,13 +93,18 @@
                                     break;
                                 }
                             }
-                        ?>
-                    </div>
-                </div>
+                    echo '</div>';
+                echo '</div>';
+                }
+                ?>
                 <div class="space"></div>
                 <div class="space"></div>
                 
             </div>
-            <div class="brown"></div>
+            <?php
+            if($_SESSION['plan_id'] != NULL) {
+            echo '<div class="brown"></div>';
+            }
+            ?>
     </body>
 </html>

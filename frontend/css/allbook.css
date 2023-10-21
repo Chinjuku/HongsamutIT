@@ -286,15 +286,15 @@ border-radius: 5px;
     text-transform: none;
     color: var(--black);
 }
-.search input #search-box{
+.search #search-box{
     width: 50%;
     height: 50%;
 }
-.label{
+label{
     font-size: 2.5rem;
     padding-left: 1.5rem;
     color: var(--black);
 }
-.search label :hover{
-    color : var(--green);
+label:hover{
+    color : brown;
 }

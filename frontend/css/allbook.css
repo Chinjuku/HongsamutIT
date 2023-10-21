@@ -290,6 +290,7 @@ border-radius: 5px;
     width: 50%;
     height: 50%;
     border-radius: 10px;
+    padding-left: 20px;
 }
 label{
     font-size: 2rem;

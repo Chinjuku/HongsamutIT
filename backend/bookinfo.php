@@ -326,17 +326,19 @@ $conn->close();
         var popup = document.getElementById('popup');
         var popupContent = document.getElementById('popup-content');
                             
-        popupContent.innerHTML = '<form action="../backend/borrow.php" method="post">' +
-                                '<span class="popup-close" onclick="closePopup()">X</span>' +
-                                
+        popupContent.innerHTML = '<span class="popup-close" onclick="closePopup()">X</span>' +
                                 '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                 '<div class="square2"></div>' +
                                 '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                 '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
                                 '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
-                                // '<hr>'+
+                                '<form action="../backend/borrow.php" method="post">' +
                                 '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
-                                '</form>';
+                                '</form>'
+                                '<form action="../backend/review.php" method="post">' +
+                                '<button type="submit" class="clicktoborrow">REVIEW</button>' + 
+                                '</form>'
+                                ;
 
         popup.style.display = 'flex';
     }

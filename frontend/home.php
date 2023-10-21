@@ -22,7 +22,7 @@
     </head>
     <body>
 
-        <div class="main">
+        
             <div class="greenbg">
                 <div class="greentext">
                     <div class="gt1">Welcome to our <br>E-Book library</div>

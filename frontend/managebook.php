@@ -25,9 +25,8 @@
 <body>
     <section class="add-books">
         <h1 class="title">ADD NEW BOOK</h1>
-
+        <!-- AddBook -->
         <form action="../backend/addbook.php" method="post" enctype="multipart/form-data">
-            
             <input type="text" name="bookname" class="box" placeholder="Enter your book name" required>
             <input type="text" name="bookowner" class="box" placeholder="Enter author" required>
             <input type="url" name="imgsrc" class="box" placeholder="Enter your url image" required>
@@ -50,7 +49,7 @@
                 </select>
             </div>
             <!-- ทำเป็นselector -->
-            <!-- <input type="file" accept="image/jpg, image/jpeg, image/png" class="box1" name="imgsrc" id='file' required> -->
+            <input type="number" name="copy_book" placeholder="Enter your copy" class="box">
             <div>
                 <input type="submit" value="add book" name="add_book" class="btn">
             </div>

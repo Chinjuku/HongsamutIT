@@ -34,7 +34,7 @@
         exit();
     }else{
         //check if book is available
-        $check_book_sql = "SELECT * FROM books WHERE book_id = '{$book_id}' AND status = 1";
+        $check_book_sql = "SELECT * FROM books WHERE book_id = '{$book_id}' AND copy > 0";
         $check_book_stmt = $conn->query($check_book_sql);
         if ($check_book_stmt->num_rows == 0) {
             echo '<script>alert("This book is not available.");</script>';
@@ -47,10 +47,10 @@
             $borrow_stmt = $conn->prepare($borrow_sql);
             if ($borrow_stmt->execute()) {
                 //update status in books table
-                $update_sql = "UPDATE books SET status = 0 WHERE book_id = '{$book_id}'";
+                $update_sql = "UPDATE books SET copy = copy - 1 WHERE book_id = '{$book_id}'";
                 $update_stmt = $conn->prepare($update_sql);
                 $update_stmt->execute();
-                echo '<script>window.location.href = "../frontend/allbook.php";</script>';
+                echo '<script>window.location.href = "../frontend/backpack.php";</script>';
                 exit();
             } else {
                 echo '<script>window.location.href = "../frontend/allbook.php";</script>';

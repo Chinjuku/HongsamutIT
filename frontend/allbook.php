@@ -225,7 +225,7 @@
                                     echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
                                     echo '<p class="bookname">' . $row['book_name'] . '</p>';
                                     echo '<p>' . $row['book_owner'] . '</p>';
-                                    if($row['status'] == 0){
+                                    if($row['copy'] == 0){
                                         echo '<p class="bookname un">The book is unavaliable.</p>';
                                     }
                                     echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\',

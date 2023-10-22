@@ -9,6 +9,12 @@
         exit();
     }
     $book_id = $_POST["book_id"];
+    // get book's category from book_id
+    $sql = "SELECT * FROM books WHERE book_id = '{$book_id}'";
+    $stmt = $conn->query($sql);
+    $row = $stmt->fetch_assoc();
+    $cate_id = $row['cate_id'];
+
     // $userid = $_SESSION['user_id'];
     date_default_timezone_set('Asia/Bangkok');
     $date_borrow = date('Y-m-d H:i:s');
@@ -52,7 +58,7 @@
                 exit();
             }
             //add to borrow table
-            $borrow_sql = "INSERT INTO borrow_books (book_id, user_id, date_borrow, date_return) VALUES ('{$book_id}', '{$_SESSION['user_id']}', '{$date_borrow}', '{$date_return}')";
+            $borrow_sql = "INSERT INTO borrow_books (book_id, user_id, date_borrow, date_return, cate_id) VALUES ('{$book_id}', '{$_SESSION['user_id']}', '{$date_borrow}', '{$date_return}', '{$cate_id}')";
             $borrow_stmt = $conn->prepare($borrow_sql);
             if ($borrow_stmt->execute()) {
                 // update amount_book in users table

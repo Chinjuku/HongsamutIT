@@ -118,6 +118,7 @@
                                         '<p class="popup-author">by ' + ' ' + bookOwner + '</p>';
                                         if (userType == 1) {
                                             popupcoN += '<button type="submit" class="clicktoborrow">BORROW NOW</button>';
+                                            popupcoN += '<button type="submit" class="clicktoborrow">REVIEW BOOK</button>';
                                         }
                                         popupcoN += '</form>';
                                         popupContent.innerHTML = popupcoN;

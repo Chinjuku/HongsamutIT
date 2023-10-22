@@ -18,7 +18,7 @@ function show_dash(){
             labels: name,
             datasets: [
               {
-                label: 'User\'s Subscription Plan statistics',
+                label: 'User\'s Subscription Plan subscription\'statistics',
                 backgroundColor: '#AFC0B1',
                 borderColor: '#AFC0B1',
                 hoverBackgroundColor: '#485545',
@@ -63,7 +63,7 @@ function show_dash(){
             labels: name,
             datasets: [
               {
-                label: 'Book\'s categories statistics',
+                label: 'Book\'s categories borrow\'s statistics',
                 backgroundColor: '#AFC0B1',
                 borderColor: '#AFC0B1',
                 hoverBackgroundColor: '#485545',

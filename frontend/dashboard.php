@@ -10,7 +10,7 @@ include './layout/navbar.php';
   <meta charset="UTF-8" />
   <title>HONGSAMUT</title>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <meta name="viewport" content="width=1920, height=1080, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome Cdn Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="

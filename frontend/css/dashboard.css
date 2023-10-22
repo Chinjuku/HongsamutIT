@@ -10,6 +10,7 @@
 }
 body{
   background:#EFE7DE;
+  height:100%;
 }
 
 
@@ -25,6 +26,7 @@ div .main-top{
   position: relative;
   padding: 20px;
   width: 100%;
+  
 }
 .main-top{
   display: flex;

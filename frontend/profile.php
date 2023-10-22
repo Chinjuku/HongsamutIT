@@ -56,13 +56,14 @@
                 ?>
             </div>
             <div class="txt_field1">
-                <label>Plan name: </label>
                 <?php
+                    if ($_SESSION['user_type'] == 1){
                     $sqli = "SELECT * from subscription_plans where plan_id = '{$_SESSION['plan_id']}'";
                     $result = $conn->query($sqli);
                         while ($row = ($result->fetch_assoc())){
-                            echo '<label>' . $row['plan_name'] . '</label>';
+                            echo '<label>Plan name : ' . $row['plan_name'] . '</label>';
                         }
+                    }
                 ?>
             </div>
             <div class="txt_field1">

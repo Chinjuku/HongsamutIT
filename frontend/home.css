@@ -137,6 +137,7 @@ body{
     background-color:transparent;
     border: 1px solid #fefffe;
     font: comic;
+    text-decoration: none;
 }
 .newarrdes{
     margin-top: 2%;

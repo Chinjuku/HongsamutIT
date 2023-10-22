@@ -91,6 +91,7 @@
                                     }
                                     echo '<button class="clicktoview" onclick="togglePopup(\'' . $book_name_wow . '\', \'' . $row['author_name'] . '\',
                                     \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\',  \'' . $_SESSION['user_type'] . '\')">VIEW</button>';
+
                                     echo '</div>';
                                 }
                             }
@@ -109,19 +110,28 @@
                 var popup = document.getElementById('popup');
                 var popupContent = document.getElementById('popup-content');
                                     
-                var popupcoN = '<form action="../backend/borrow.php" method="post">' +
+                var popupcoN =          '<form action="../backend/borrow.php" method="post">' +
                                         '<span class="popup-close" onclick="closePopup()">X</span>' +
                                         '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                         '<div class="square2"></div>' +
                                         '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                         '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
                                         '<p class="popup-author">by ' + ' ' + bookOwner + '</p>';
+                                        
                                         if (userType == 1) {
                                             popupcoN += '<button type="submit" class="clicktoborrow">BORROW NOW</button>';
-                                            popupcoN += '<button type="submit" class="clicktoborrow">REVIEW BOOK</button>';
                                         }
-                                        popupcoN += '</form>';
+                                        popupcoN += '</form>' +
+                                        '<form action="reviewbook.php" method="post">' +
+                                        '<input type="hidden" name="book_id" value="' + bookId + '">' +
+                                        '<input type="hidden" name="book_name" value="' + bookName + '">' +
+                                        '<input type="hidden" name="book_author" value="' + bookOwner + '">' +
+                                        '<input type="hidden" name="img" value="' + imgSrc + '">' +
+                                        '<button type="submit" class="num">REVIEW BOOK</button>' +
+                                        '</form>';
+
                                         popupContent.innerHTML = popupcoN;
+
                                         // '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
                                         // '</form>';
 

@@ -1,5 +1,6 @@
 <?php
     include './layout/navbar.php';
+    $bookid = $_POST['book_id'];
     // include './managebook/showManageBook.php';
     // $manage = new showManageBook();
 ?>
@@ -18,27 +19,26 @@
     
     <div class="main">
         <div class="left">
-            <div><img src="harry.jpg" alt="Girl in a jacket" style="width:200px;height:300px;">
-            </div>
-            <div class="textgroup">
-                <div class="bookname">HARRY POTTER </div>
-                <div class="author"> by J.K. ROWLING</div>
-            </div>
+            <?php
+                echo '<div><img src=' . $_POST['img'] . ' alt="Girl in a jacket" style="width:200px;height:300px;">';
+                echo '</div>';
+                echo '<div class="textgroup">';
+                echo '<div class="bookname">' . $_POST['book_name']. '</div>';
+                echo '<div class="author"> by ' . $_POST['book_author'] . '</div>';
+                echo '</div>';
+            ?>
             
             
             <div class="form-box">
             <div class="form-value">
-                <form action="../backend/req.php" method="post">
-                    <div class="reviewtitle">WRITE A REVIEW</div>
-                    <div class="inputbox">
-                        <textarea  id="" rows="8"></textarea>
-                        <!-- <label for="message">Your view</label> -->
-                    </div>
-
-                    <button>
-                        Sent comment
-                    </button>
-                </form>
+                <?php
+                    echo '<form action="../backend/review.php" method="post">';
+                    echo '<div class="reviewtitle">WRITE A REVIEW</div>';
+                    echo '<div class="inputbox">';
+                    echo '<input type="hidden" name="book_id" value="' . $bookid . '">';
+                    echo '<textarea name="comment" id="" rows="8" required></textarea>';
+                    echo '</div><button type="submit">Sent comment</button></form>';
+                ?>
             </div>
             </div>
         </div>

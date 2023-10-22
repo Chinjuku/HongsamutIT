@@ -65,7 +65,7 @@
                         echo '</div>';
                     }
                 } else {
-                    echo 'No reviews found.'; // Display a message if no reviews are found.
+                    // echo 'No reviews found.'; // Display a message if no reviews are found.
                 }
                 
             ?>

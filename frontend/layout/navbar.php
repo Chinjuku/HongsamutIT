@@ -35,7 +35,6 @@
                         echo "<a href='member.php'>SUBSCRIPTION</a>";
                         echo "<a href='backpack.php' style='--i:2;'>BACKPACK</a>";
                         echo "<a href='requestbook.php'>REQUEST</a>";
-                        echo "<a href='reviewbook.php'>REVIEW</a>";
                     }
                 ?>
                 

@@ -1,5 +1,6 @@
 <?php
     include './layout/navbar.php';
+    $bookid = $_POST['book_id'];
     // include './managebook/showManageBook.php';
     // $manage = new showManageBook();
 ?>
@@ -18,50 +19,57 @@
     
     <div class="main">
         <div class="left">
-            <div><img src="harry.jpg" alt="Girl in a jacket" style="width:200px;height:300px;">
-            </div>
-            <div class="textgroup">
-                <div class="bookname">HARRY POTTER </div>
-                <div class="author"> by J.K. ROWLING</div>
-            </div>
+            <?php
+                echo '<div><img src=' . $_POST['img'] . ' alt="Girl in a jacket" style="width:200px;height:300px;">';
+                echo '</div>';
+                echo '<div class="textgroup">';
+                echo '<div class="bookname">' . $_POST['book_name']. '</div>';
+                echo '<div class="author"> by ' . $_POST['book_author'] . '</div>';
+                echo '</div>';
+            ?>
             
             
             <div class="form-box">
             <div class="form-value">
-                <form action="../backend/req.php" method="post">
-                    <div class="reviewtitle">WRITE A REVIEW</div>
-                    <div class="inputbox">
-                        <textarea  id="" rows="8"></textarea>
-                        <!-- <label for="message">Your view</label> -->
-                    </div>
-
-                    <button>
-                        Sent comment
-                    </button>
-                </form>
+                <?php
+                    echo '<form action="../backend/review.php" method="post">';
+                    echo '<div class="reviewtitle">WRITE A REVIEW</div>';
+                    echo '<div class="inputbox">';
+                    echo '<input type="hidden" name="book_id" value="' . $bookid . '">';
+                    echo '<textarea name="comment" id="" rows="8" required></textarea>';
+                    echo '</div><button type="submit">Sent comment</button></form>';
+                ?>
             </div>
             </div>
         </div>
 
         <div class="right">
-
-            <div class="box">
-                <div class="profile">
-                    <div class="iconcomment"><i class="bi bi-person-circle"></i> </div>
-                    <div class="protext">
-                        <div class="username">Bibibibibibibibi</div>
-                        <div class="date"> 10/11/2003 9.30 A.M </div>
-                    </div>
-                    
-                </div>
-                <div class="inboxtext">
-                    
-                    <div class="comment">เล่มนี้สนุกมากเลอจ้า แนะนำให้ไปอ่านน้า เต้ม 10 เอาไป 11 สนุกกว่านี้ไม่มีล้า สนุกมากกด้อจ้า สนุกแบบวัวตายควายล้ม ตุ๊กล้มแล้วไม่ลุก นอนแล่วไม่หลับ หลับแล่้วไม่ตื่นเลอสู เอาจริงแกรต้องอ่านละ</div>               
-                </div>
-            </div>
-
-
-            <div class="box">
+            <?php
+                include '../backend/database.php';
+                $sql = "SELECT * FROM review JOIN users USING (user_id) WHERE book_id = {$bookid}";
+                $result = $conn->query($sql);
+                
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        echo '<div class="box">';
+                        echo '<div class="profile">';
+                        echo '<div class="iconcomment"><i class="bi bi-person-circle"></i> </div>';
+                        echo '<div class="protext">';
+                        echo '<div class="username">' . $row['user_name'] . '</div>';
+                        echo '<div class="date">' . $row['datetime_review'] . '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '<div class="inboxtext">';
+                        echo '<div class="comment">' . $row['review_in'] . '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
+                } else {
+                    // echo 'No reviews found.'; // Display a message if no reviews are found.
+                }
+                
+            ?>
+            <!-- <div class="box">
                 <div class="profile">
                     <div class="iconcomment"><i class="bi bi-person-circle"></i> </div>
                     <div class="protext">
@@ -74,9 +82,9 @@
                     
                     <div class="comment">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,</div>               
                 </div>
-            </div>
+            </div> -->
 
-            <div class="box">
+            <!-- <div class="box">
                 <div class="profile">
                     <div class="iconcomment"><i class="bi bi-person-circle"></i> </div>
                     <div class="protext">
@@ -119,7 +127,7 @@
                     
                     <div class="comment">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by thei</div>               
                 </div>
-            </div>
+            </div> -->
             
 
         </div>

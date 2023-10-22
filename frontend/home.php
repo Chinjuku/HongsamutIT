@@ -92,7 +92,7 @@
                             $_SESSION['max_cate'] = $row2['maxCate'];
                             $count = $row2['countCate'];
                         }
-                        $sql = "SELECT * FROM books WHERE cate_id = ?";
+                        $sql = "SELECT * FROM books JOIN author USING (author_id) WHERE cate_id = ?";
                         $stmt = $conn->prepare($sql);
                         $stmt->bind_param("i", $_SESSION['max_cate']);
                         $stmt->execute();

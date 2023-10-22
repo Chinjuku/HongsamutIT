@@ -3,7 +3,7 @@
     padding: 0%;
     box-sizing: border-box;
     /* font: comic; */
-    /* font-family:Mitr ; */
+    font-family:Mitr ;
 }
 
 body{
@@ -188,6 +188,10 @@ hr{
     height: 340px;
     margin-left:30rem;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+.popup-pic:hover{
+    scale:1.05;
 }
 .aa{  
     margin: 30px 0;
@@ -209,44 +213,98 @@ border-radius: 5px;
     box-shadow: 2px 2px rgb(39,34,34);
 }
 .popup-bookname{
-    font-family:"Poppings";
+    font-family:Mitr;
     position:absolute;
     display:inline-block;
     /* background-color:lightcoral; */
     padding:20px 0px 20px 40px;
     margin-top: 60px;
     margin-left:30px;
+    width:20%;
     margin-right:55rem;
     font-size:40px;
     font: "Poppings";
 }
-.clicktoborrow{
+.pop_button_contain{
+    position:center;
+    display:flex;
+    width:100%;
+}
+.clicktoborrow2{
     position:absolute;
     display:inline-block;
-    width: 10%;
-    margin-left:100px;
+    width: 8%;
+    margin-left:3%;
     margin-top:20rem;
-    background: #485545;
-    padding: 20px 15px 20px 15px;
+    background: #657661;
+    padding: 1%;
+
     color: #FDF5D0;
     border-radius: 3px;
     box-shadow: 2px 2px rgb(39,34,34);
+    transition: 0.5s;
 }
-.clicktoborrow:hover{
+.clicktoborrow2:hover{
+    transform: scale(1.1);
+    background: #485545;
+}
+
+.clicktoborrow1{
     position:absolute;
     display:inline-block;
-    width: 10%;
-    margin-left:100px;
+    width: 8%;
+    margin-left:13%;
     margin-top:20rem;
     background: #657661;
 
     color: #FDF5D0;
     border-radius: 3px;
+    padding: 1%;
     box-shadow: 2px 2px rgb(39,34,34);
+    transition:0.5s;
+}
+.clicktoborrow1:hover{
+    transform: scale(1.1);
+    background: #485545;
 }
 .popup-author{
     margin:50px 0 50px 70px;
     font-family:"Poppings";
+    position:absolute;
+    display:inline-block;
+    /* background-color:lightskyblue; */
+}
+
+/* .likebutt{
+    background-color: transparent;
+    border: transparent;
+} */
+
+.fas.fa-heart{
+    color: #485545;
+    scale: 1.4;
+    transition: 0.3s;
+    background-color: transparent;
+    border:transparent;
+}
+
+.fas.fa-heart:hover{
+    color: red;
+    scale: 1.6;
+}
+.fas.fa-heart:focus{
+    color: red;
+    scale: 1.6;
+}
+.fas.fa-heart:active{
+    color: red;
+    scale: 1.4;
+}
+
+.popup-like{
+    margin:150px 0 100px 70px;
+    padding: 0.23%;
+    font-family: Mitr;
     position:absolute;
     display:inline-block;
     /* background-color:lightskyblue; */

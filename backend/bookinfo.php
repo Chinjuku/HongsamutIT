@@ -321,7 +321,7 @@ $conn->close();
     }
 </style>
 
-<script>
+<!-- <script>
     function togglePopup(bookName, bookOwner, imgSrc, bookId) {
         var popup = document.getElementById('popup');
         var popupContent = document.getElementById('popup-content');
@@ -332,12 +332,16 @@ $conn->close();
                                 '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                                 '<h1 class="popup-bookname">Title : ' + bookName + '</h1>' +
                                 '<p class="popup-author">by ' + ' ' + bookOwner + '</p>' +
+
+                                '<div class = "pop_button_contain">'+
                                 '<form action="../backend/borrow.php" method="post">' +
-                                '<button type="submit" class="clicktoborrow">BORROW NOW</button>' + 
-                                '</form>'
+                                '<button type="submit" class="clicktoborrow1">BORROW NOWs</button>' + 
+                                '</form>'+'</div>'+
+
+                                '<div class = "pop_button_contain">'+
                                 '<form action="../backend/review.php" method="post">' +
-                                '<button type="submit" class="clicktoborrow">REVIEW</button>' + 
-                                '</form>'
+                                '<button type="submit" class="clicktoborrow2">REVIEW</button>' + 
+                                '</form>'+ '</div>'
                                 ;
 
         popup.style.display = 'flex';
@@ -347,7 +351,7 @@ $conn->close();
         var popup = document.getElementById('popup');
         popup.style.display = 'none';
     }
-</script>
+</script> -->
 
 <!DOCTYPE html>
 <html>

@@ -4,7 +4,6 @@ function togglePopup(bookName, bookOwner, imgSrc, bookId, userType, likeAmount) 
                         
     var popupcoN =
                             '<span class="popup-close" onclick="closePopup()">X</span>' +
-                            
                             '<div class="square2"></div>' +
                             '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                             '<h1 class="popup-bookname">' + bookName + '</h1>' +

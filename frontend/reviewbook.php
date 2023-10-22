@@ -1,6 +1,11 @@
 <?php
     include './layout/navbar.php';
+    include '../backend/get_book.php';
+    include '../backend/database.php';
     $bookid = $_POST['book_id'];
+    $book_img = get_books_img($conn, $bookid);
+    $book_name = get_books_name($conn, $bookid);
+    $book_author = get_books_author($conn, $bookid);
     // include './managebook/showManageBook.php';
     // $manage = new showManageBook();
 ?>
@@ -20,11 +25,11 @@
     <div class="main">
         <div class="left">
             <?php
-                echo '<div><img src=' . $_POST['img'] . ' alt="Girl in a jacket" style="width:200px;height:300px;">';
+                echo '<div><img src=' . $book_img . ' alt="Girl in a jacket" style="width:200px;height:300px;">';
                 echo '</div>';
                 echo '<div class="textgroup">';
-                echo '<div class="bookname">' . $_POST['book_name']. '</div>';
-                echo '<div class="author"> by ' . $_POST['book_author'] . '</div>';
+                echo '<div class="bookname">' . $book_name . '</div>';
+                echo '<div class="author"> by ' . $book_author . '</div>';
                 echo '</div>';
             ?>
             

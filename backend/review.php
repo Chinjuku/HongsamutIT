@@ -15,7 +15,7 @@
 
     if ($stmt->execute()) {
         echo "<script>alert('Review submitted!');</script>";
-        echo "<script>window.location.href='../frontend/reviewbook.php';</script>";
+        echo "<script>window.location.href='../frontend/allbook.php';</script>";
         exit();
     } else {
         echo "Error: " . $stmt->error;

@@ -44,24 +44,32 @@
         </div>
 
         <div class="right">
-
-            <div class="box">
-                <div class="profile">
-                    <div class="iconcomment"><i class="bi bi-person-circle"></i> </div>
-                    <div class="protext">
-                        <div class="username">Bibibibibibibibi</div>
-                        <div class="date"> 10/11/2003 9.30 A.M </div>
-                    </div>
-                    
-                </div>
-                <div class="inboxtext">
-                    
-                    <div class="comment">เล่มนี้สนุกมากเลอจ้า แนะนำให้ไปอ่านน้า เต้ม 10 เอาไป 11 สนุกกว่านี้ไม่มีล้า สนุกมากกด้อจ้า สนุกแบบวัวตายควายล้ม ตุ๊กล้มแล้วไม่ลุก นอนแล่วไม่หลับ หลับแล่้วไม่ตื่นเลอสู เอาจริงแกรต้องอ่านละ</div>               
-                </div>
-            </div>
-
-
-            <div class="box">
+            <?php
+                include '../backend/database.php';
+                $sql = "SELECT * FROM review JOIN users USING (user_id) WHERE book_id = {$bookid}";
+                $result = $conn->query($sql);
+                
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        echo '<div class="box">';
+                        echo '<div class="profile">';
+                        echo '<div class="iconcomment"><i class="bi bi-person-circle"></i> </div>';
+                        echo '<div class="protext">';
+                        echo '<div class="username">' . $row['user_name'] . '</div>';
+                        echo '<div class="date">' . $row['datetime_review'] . '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '<div class="inboxtext">';
+                        echo '<div class="comment">' . $row['review_in'] . '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
+                } else {
+                    echo 'No reviews found.'; // Display a message if no reviews are found.
+                }
+                
+            ?>
+            <!-- <div class="box">
                 <div class="profile">
                     <div class="iconcomment"><i class="bi bi-person-circle"></i> </div>
                     <div class="protext">
@@ -74,9 +82,9 @@
                     
                     <div class="comment">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,</div>               
                 </div>
-            </div>
+            </div> -->
 
-            <div class="box">
+            <!-- <div class="box">
                 <div class="profile">
                     <div class="iconcomment"><i class="bi bi-person-circle"></i> </div>
                     <div class="protext">
@@ -119,7 +127,7 @@
                     
                     <div class="comment">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by thei</div>               
                 </div>
-            </div>
+            </div> -->
             
 
         </div>

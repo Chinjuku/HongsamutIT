@@ -1,6 +1,6 @@
 <?php
     include '../backend/database.php';
-    // include './layout/navbar.php';
+    include './layout/navbar.php';
 ?>
 
 <!DOCTYPE html>

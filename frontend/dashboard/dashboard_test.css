@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Mitr");
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* font: comic; */
+    font-family:Mitr ;
+}
+
+body{
+    background-color : rgb(255, 255, 255);
+}
+
+.card{
+    background-color : white;
+    background-color: #666666;
+    
+}
+#graph-canvas{
+    scale: 50%;
+}

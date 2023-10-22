@@ -1,0 +1,191 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+    /* font: comic; */
+    /* font-family:Mitr ; */
+}
+
+.main{
+    background-color: #FDF5D0;
+    margin-top: 4.6%;
+    height: 796px;
+    display: flex;
+
+    justify-content: center;
+}
+.bookname{
+    position: relative;
+    /* background-color: lightgreen; */
+    width: 100%;
+    font-size: 40px;
+    
+}
+.author{
+    margin-top: 2%;
+    /* background-color: lightcoral; */
+}
+.left{
+    background-color: #FDF5D0;
+    margin-left:10%;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    height:781px;
+    /* border: solid; */
+}
+.right {
+    background-color: #FDF5D0;
+    overflow-y: scroll;
+    position: relative;
+    gap: 10px;
+    height:781px;
+    width: 50%;
+    /* border: solid; */
+}
+.box{
+    border-radius: 10px;
+    display: block;
+    justify-content: center;
+    background-color: rgb(255, 253, 253);
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 2%;
+    text-align: center;
+    height: 220px;
+    border: 1px solid rgb(246, 248, 222);
+    box-shadow: rgba(66, 64, 49, 0.19) 0px 10px 20px, rgba(255, 235, 235, 0.23) 0px 6px 6px;
+}
+img{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.reviewform{
+    width: 100%;
+    background-color: lightyellow;
+}
+.form-box{
+    
+    position: relative;
+    width: 80%;
+    height: 33%;
+    margin-left: 8%;
+    margin-top: 9%;
+    background-color: #fffafa;
+
+    border: 2px solid #222222;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: rgb(250, 229, 185) 0px 20px 30px -10px;
+}
+.reviewtitle{
+    margin-top: 2%;
+    font-size: 1.5em;
+    color: rgb(31, 29, 27);
+    text-align: center;
+}
+.inputbox{
+    background-color: #485545;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin:2% 10%;
+    width: 80%;
+    height: 160px;
+    border: 2px solid #353535;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(64, 63, 63);
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+
+button{
+    border: 2px solid #353535;
+    color: white;
+    width: 100%;
+    height: 30px;
+    border-radius: 40px;
+    background-color: #2D342C;;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+textarea{
+    cursor: none;
+    width: 100%;
+    padding: 5% 10%;
+    outline: 0;
+    height: 160px;
+    /* border: 1px solid #fff; */
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 25;
+}
+.textgroup{
+    position: absolute;
+    display: block;
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 20%;
+    top: 0;
+    /* justify-content: space-between; */
+}
+.inboxtext{
+    padding: 1% 8% 0 8%;
+}
+.profile{
+    display: flex;
+    /* background-color: lightcoral; */
+    height: 30%;
+}
+.iconcomment{
+    font-size: 2.5em;
+    width: 15%;
+    padding-top: 1%;
+    padding-left: 2%;
+    /* background-color: lightblue; */
+}
+.comment{
+    color: #3a2d2d;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 30;
+    line-height: 20px;
+}
+.username{
+    width: 120%;
+    height: 50%;
+    color: #485545;;
+    /* background-color: lightgreen; */
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 13%;
+}
+.date{
+    color: gray;
+    width: 200%;
+    height: 50%;
+    font-size: 10px;
+    font-weight: 10;
+    /* background-color: lightslategrey; */
+    text-align: left;
+    padding-left: 7%;
+    padding-top: 2%;
+}

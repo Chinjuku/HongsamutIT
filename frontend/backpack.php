@@ -1,7 +1,10 @@
 <?php
-    // session_start();
+    session_start();
     include '../backend/database.php';
     include './layout/navbar.php';
+    if (isset($_SESSION['book_id'])){
+        unset($_SESSION['book_id']);
+    }
 ?>
 
 <!DOCTYPE html>

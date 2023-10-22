@@ -2,7 +2,22 @@
     include './layout/navbar.php';
     include '../backend/get_book.php';
     include '../backend/database.php';
-    $bookid = $_POST['book_id'];
+    session_start();
+    // check if book_id session
+    if (isset($_SESSION['book_id'])){
+        $bookid = $_SESSION['book_id'];
+    } else {
+        // if not have book_id session
+        // check if book_id post
+        if (isset($_POST['book_id'])){
+            $bookid = $_POST['book_id'];
+        } else {
+            // if not have book_id post
+            // redirect to index.php
+            echo '<script>window.location.href = "./index.php";</script>';
+            exit();
+        }
+    }
     $book_img = get_books_img($conn, $bookid);
     $book_name = get_books_name($conn, $bookid);
     $book_author = get_books_author($conn, $bookid);

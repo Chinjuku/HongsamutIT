@@ -4,21 +4,24 @@ function togglePopup(bookName, bookOwner, imgSrc, bookId, userType, likeAmount) 
                         
     var popupcoN =
                             '<span class="popup-close" onclick="closePopup()">X</span>' +
-                            '<input type="hidden" name="book_id" value="' + bookId + '">' +
+                            
                             '<div class="square2"></div>' +
                             '<img class="popup-pic" src="' + imgSrc + '" alt="Image">' + '<br>' +
                             '<h1 class="popup-bookname">' + bookName + '</h1>' +
                             '<p class="popup-author">by ' + ' ' + bookOwner + '</p>'+
                             '<form action="./reviewbook.php" method="post">'+
-                            '<p class="popup-like">' + ' ' + '<button class="fas fa-heart"></button>' 
-                            +' '+ likeAmount + ' likes</p></form>';
+                            '<input type="hidden" name="book_id" value="' + bookId + '">' +
+                            '<p class="popup-like">' + ' ' + '<button class="fas fa-heart"></button>'+
+                            ' '+ likeAmount + ' likes</p></input></form>';
                             if (userType == 1) {
                                 popupcoN += '<div class = "pop_button_contain">'+
                                 '<form action="../backend/borrow.php" method="post">' +
-                                '<button type="submit" class="clicktoborrow1">BORROW NOW</button></form></div>'+
+                                '<input type="hidden" name="book_id" value="' + bookId + '">' +
+                                '<button type="submit" class="clicktoborrow1">BORROW NOW</button></input></form></div>'+
                                 '<div class = "pop_button_contain">'+
                                 '<form action="./reviewbook.php" method="post">' +
-                                '<button type="submit" class="clicktoborrow2">REVIEW</button></form>' + '</div>';
+                                '<input type="hidden" name="book_id" value="' + bookId + '">' +
+                                '<button type="submit" class="clicktoborrow2">REVIEW</button></input></form>' + '</div>';
                             }
                             
                             popupContent.innerHTML = popupcoN;

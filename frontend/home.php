@@ -51,7 +51,7 @@
                             while ($row = $result->fetch_assoc()){
                                 if($num <= 5){
                                     echo '<div class="nabox">';
-                                    echo '<p class="bookname">' . $_SESSION['max_cate'] . '</p>';
+                                    // echo '<p class="bookname">' . $_SESSION['max_cate'] . '</p>';
                                     echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
                                     echo '<p class="bookname">' . $row['book_name'] . '</p>';
                                     echo '<p>' . $row['author_name'] . '</p>';
@@ -68,8 +68,7 @@
                 </div>
                 <div class="space1"></div>
                 <?php 
-                if($_SESSION['plan_id'] != NULL) {
-                    $userid = $SESSION["user_id"];
+                if($_SESSION['plan_id'] != NULL) {     
                 echo '<div class="recommend">';
                     echo '<div class="head2">';
                         echo '<div class="recommendtxt"><i>RECOMMENDED BOOKS</i></div>';
@@ -78,8 +77,26 @@
             
                     echo '</div>';
                     echo '<div class="container">';
-                        $sql = "SELECT * FROM books WHERE cate_id = {$_SESSION['max_cate']}";
-                        $result = $conn->query($sql);
+                        $userid = $_SESSION["user_id"];
+                        $sql2 = "SELECT user_id, MAX(cate_id) AS maxCate, COUNT(cate_id) AS countCate
+                                FROM borrow_books
+                                WHERE user_id = ?
+                                GROUP BY user_id;";
+                        $stmt2 = $conn->prepare($sql2);
+                        $stmt2->bind_param("i", $userid);
+                        $stmt2->execute();
+                        $result2 = $stmt2->get_result();
+                        $cate_id = null;
+                    
+                        while ($row2 = $result2->fetch_assoc()) {
+                            $_SESSION['max_cate'] = $row2['maxCate'];
+                            $count = $row2['countCate'];
+                        }
+                        $sql = "SELECT * FROM books WHERE cate_id = ?";
+                        $stmt = $conn->prepare($sql);
+                        $stmt->bind_param("i", $_SESSION['max_cate']);
+                        $stmt->execute();
+                        $result = $stmt->get_result();                        
                         $num = 1;
                         while ($row = $result->fetch_assoc()){
                             if($num <= 5){

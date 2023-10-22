@@ -85,7 +85,7 @@
                                     echo '<p>Amount : ' . $row['copy'] . '</p>';
                                     
                                     if ($book_name_wow == "Don't do that!"){
-                                        $book_name_wow = "Don\'t do that!";
+                                        $book_name_wow = "Don't do that!";
                                     }
                                     echo '<button class="clicktoview" onclick="togglePopup(\'' . $book_name_wow . '\', \'' . $row['author_name'] . '\',
                                     \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\',  \'' . $row['author_id'] . '\')">Edit Book</button>';

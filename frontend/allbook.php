@@ -95,7 +95,7 @@
                                         echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
                                         $book_name_wow = $row['book_name'];
                                         echo '<p class="bookname">' . $book_name_wow . '</p>';
-                                        echo '<p>' . $row['author_name'] . '</p>';
+                                        echo '<p class="authorname">' . $row['author_name'] . '</p>';
                                         if($row['copy'] == 0){
                                             echo '<p class="bookname un">The book is unavaliable.</p>';
                                         }

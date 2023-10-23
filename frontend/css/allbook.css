@@ -61,19 +61,35 @@ body{
 }
 .nabox{
     position: relative;
-    background-color: #fffcee;
+    background-color: #afc0b169;
     width: 20%;
     height: 290px;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     
     text-align: center;
     margin: 10px;
+    border:#485545;
     border-style: solid;
-    border-width: thin;
-    box-shadow: 10px 10px 5px #fdf1b9;
+    border-width:medium;
+    box-shadow: 10px 10px 5px -4px #4946392c;
+    transition:0.3s;
     
 }
-
+.nabox:hover{
+    scale:1.05;
+}
+.fas.fa-search{
+    color:#494639;
+    margin-top:-10%;
+    padding-left:1%;
+    padding-bottom: 0.5%;
+    transition:0.3s;
+    cursor:pointer;
+}
+.fas.fa-search:hover{
+    color:#242524;
+    scale:1.1;
+}
 
 /* ปรับหนังสือฝั่ง backend */
 .pic {
@@ -83,7 +99,13 @@ body{
 }
 .bookname{
     font-size: 20px;
-    font-weight: bold;
+    font-family: Mitr;
+    font-weight: medium;
+}
+.authorname{
+    font-family: Mitr;
+    font-weight: thin;
+    opacity: 0.6;
 }
 @media (max-width:1620px){
     .mid{
@@ -110,9 +132,12 @@ body{
     color: #FDF5D0;
     border-radius: 5px;
     box-shadow: 2px 2px rgb(39,34,34);
+    transition:0.3s;
+    cursor: pointer;
 }
 
 .clicktoview:hover{
+    scale:1.08;
     box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
 }
 /* pop-up */
@@ -121,9 +146,7 @@ body{
     width: 95px;
     height: 140px;
 }
-.bookname{
-    font-weight:bold;
-}
+
 .square2{
     position: absolute;
     

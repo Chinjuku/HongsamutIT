@@ -76,9 +76,10 @@
                     echo '<form action="../backend/review.php" method="post">';
                     echo '<div class="reviewtitle">WRITE A REVIEW</div>';
                     echo '<div class="inputbox">';
+                    // echo '<input type="hidden" name="comment">';
+                    echo '<textarea name="comment" class ="txtarea"placeholder = "type review text here" conname="comment" id="" rows="8" required></textarea>';
                     echo '<input type="hidden" name="book_id" value="' . $bookid . '">';
-                    echo '<textarea class ="txtarea"placeholder = "type review text here" conname="comment" id="" rows="8" required></textarea>';
-                    echo '</div><button class="sentcom" type="submit">Sent comment</button></form>';
+                    echo '</div><button class="sentcom" type="submit">Sent comment</button></input></form>';
                 ?>
             </div>
             </div>

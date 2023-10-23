@@ -218,15 +218,28 @@ textarea{
     background-color: transparent;
     /* width: 50%; */
     height: 20%;
-    margin-top:0%;
+    margin-top:4%;
     position:absolute;
+    gap:20%;
     display: flex;
     /* flex */
 }
-.like_svg{
+#like_svg{
     scale: 1;
+    filter: invert(26%) sepia(9%) saturate(850%) hue-rotate(11deg) brightness(93%) contrast(90%);
+    transition: scale 0.3s;
+    cursor:pointer;
 }
 
+#like_svg:hover{
+    scale:1.1;
+    filter: invert(66%) sepia(74%) saturate(5617%) hue-rotate(332deg) brightness(91%) contrast(85%);
+}
+
+#like_svg:active{
+    scale: 0.9;
+    filter: invert(66%) sepia(74%) saturate(5617%) hue-rotate(332deg) brightness(91%) contrast(85%);
+}
 .likebutt{
     /* position:absolute; */
     position:absolute;

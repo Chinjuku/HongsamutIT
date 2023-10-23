@@ -84,6 +84,13 @@
                                         $display = false;
                                     }
                                     if ($display) {
+                                        $book_id = $row['book_id'];
+                                        // get like
+                                        $sql3 = "SELECT COUNT(*) AS cnt_like FROM book_like WHERE book_id = '{$book_id}' AND user_id = '{$_SESSION['user_id']}'";
+                                        $result3 = $conn->query($sql3);
+                                        $row3 = $result3->fetch_assoc();
+                                        $cnt_like = $row3['cnt_like'];
+
                                         echo '<div class="nabox">';
                                         echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
                                         $book_name_wow = $row['book_name'];
@@ -95,8 +102,8 @@
                                         if ($book_name_wow == "Don't do that!"){
                                             $book_name_wow = "Don\'t do that!";
                                         }
-                                        echo '<button class="clicktoview" onclick="togglePopup(\'' . $book_name_wow . '\', \'' . $row['author_name'] . '\',
-                                        \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\',  \'' . $_SESSION['user_type'] . '\', \'' .$row['cnt_like']. '\')">VIEW</button>';
+                                        echo '<button id = "wow" class="clicktoview" onclick="togglePopup(\'' . $book_name_wow . '\', \'' . $row['author_name'] . '\',
+                                        \'' . $row['imgsrc'] . '\',  \'' . $book_id . '\',  \'' . $_SESSION['user_type'] . '\', \'' .$row['cnt_like']. '\', \'' .$cnt_like. '\')">VIEW</button>';
                                         echo '</div>';
                                     }
                                 }

@@ -6,10 +6,11 @@
     // check if book_id session
     if (isset($_SESSION['book_id'])){
         $bookid = $_SESSION['book_id'];
-        unset($_SESSION['book_id']);
+        // unset($_SESSION['book_id']);
     } else {
         // alert
         $bookid = $_POST['book_id'];
+        $_SESSION['book_id'] = $bookid;
         // echo '<script>alert("Please select a book.");</script>';
         // if not have book_id session
         // check if book_id post
@@ -22,6 +23,16 @@
         //     // exit();
         // }
     }
+
+    // check if user like this book
+    $like_sql = "SELECT * FROM book_like WHERE user_id = '{$_SESSION['user_id']}' AND book_id = '{$bookid}'";
+    $like_stmt = $conn->query($like_sql);
+    if ($like_stmt->num_rows > 0) {
+        $did_like = 1;
+    } else {
+        $did_like = 0;
+    }
+    // get book data
     $book_img = get_books_img($conn, $bookid);
     $book_name = get_books_name($conn, $bookid);
     $book_author = get_books_author($conn, $bookid);
@@ -51,7 +62,10 @@
                 echo '<div class="textgroup">';
                 echo '<div class="bookname">' . $book_name . '</div>';
                 echo '<div class="author"> by ' . $book_author . '</div>';
-                echo '<p class="like_contain"><img class="like_svg" src= "./heart-solid.svg"><button class="likebutt"></button>"    '.$book_like. '"</p>';
+                echo '<form action="../backend/like.php" method="post">';
+                echo '<input type="hidden" name="book_id" value="' . $bookid . '">';
+                echo '<p class="like_contain"><img id = "like_svg" class="like_svg" src= "./heart-solid.svg">' .$book_like. '</p></input></form>';
+                // <button onclick="red_heart()" class="likebutt"></button>'
                 echo '</div>';
             ?>
             
@@ -96,68 +110,37 @@
                 }
                 
             ?>
-            <!-- <div class="box">
-                <div class="profile">
-                    <div class="iconcomment"><i class="bi bi-person-circle"></i> </div>
-                    <div class="protext">
-                        <div class="username">nai cheraaim</div>
-                        <div class="date"> 10/11/2003 9.30 A.M </div>
-                    </div>
-                    
-                </div>
-                <div class="inboxtext">
-                    
-                    <div class="comment">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,</div>               
-                </div>
-            </div> -->
-
-            <!-- <div class="box">
-                <div class="profile">
-                    <div class="iconcomment"><i class="bi bi-person-circle"></i> </div>
-                    <div class="protext">
-                        <div class="username">นางชินจัง</div>
-                        <div class="date"> 10/11/2003 9.30 A.M </div>
-                    </div>
-                    
-                </div>
-                <div class="inboxtext">
-                    
-                    <div class="comment">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human h</div>               
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="profile">
-                    <div class="iconcomment"><i class="bi bi-person-circle"></i> </div>
-                    <div class="protext">
-                        <div class="username">ดช สไป้</div>
-                        <div class="date"> 10/11/2003 9.30 A.M </div>
-                    </div>
-                    
-                </div>
-                <div class="inboxtext">
-                    
-                    <div class="comment">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by thei</div>               
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="profile">
-                    <div class="iconcomment"><i class="bi bi-person-circle"></i> </div>
-                    <div class="protext">
-                        <div class="username">ป๋วยป๋วยเอง</div>
-                        <div class="date"> 10/11/2003 9.30 A.M </div>
-                    </div>
-                    
-                </div>
-                <div class="inboxtext">
-                    
-                    <div class="comment">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by thei</div>               
-                </div>
-            </div> -->
+            
             
 
         </div>
     </div> 
+    <script>
+
+        var like_session = "<?php echo $did_like; ?>";
+        if (like_session == 1){
+            console.log("like");
+            change_red();
+        }else{
+            console.log("not like");
+        }
+
+
+        function change_red(){
+            document.getElementById("like_svg").style.filter="invert(66%) sepia(74%) saturate(5617%) hue-rotate(332deg) brightness(91%) contrast(85%)";
+        }
+        function red_heart() {
+            if(like_session == 0){
+                document.getElementById("like_svg").style.filter="invert(66%) sepia(74%) saturate(5617%) hue-rotate(332deg) brightness(91%) contrast(85%)";
+            }else{
+                document.getElementById("like_svg").style.filter="invert(26%) sepia(9%) saturate(850%) hue-rotate(11deg) brightness(93%) contrast(90%)";
+            }
+            
+            window.location.href = "../backend/like.php";
+        }
+
+        document.getElementById("like_svg").addEventListener("click", red_heart);
+        // document.getElementById("like_svg").addEventListener("click", red_heart, {once : true});
+    </script>
     </body>
 </html>

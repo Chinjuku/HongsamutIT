@@ -72,7 +72,7 @@
                                     FROM borrow_books bb
                                     INNER JOIN books b ON bb.book_id = b.book_id
                                     INNER JOIN categories c ON b.cate_id = c.cate_id
-                                    WHERE bb.user_id = '{$_SESSION['user_id']}' AND bb.date_return > CURDATE()";
+                                    WHERE bb.user_id = '{$_SESSION['user_id']}' AND bb.date_return > CURDATE() AND bb.is_check = 0";
                             
                             $result = $conn->query($sql);
                             

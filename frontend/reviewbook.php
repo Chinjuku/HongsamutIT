@@ -6,17 +6,21 @@
     // check if book_id session
     if (isset($_SESSION['book_id'])){
         $bookid = $_SESSION['book_id'];
+        unset($_SESSION['book_id']);
     } else {
+        // alert
+        $bookid = $_POST['book_id'];
+        // echo '<script>alert("Please select a book.");</script>';
         // if not have book_id session
         // check if book_id post
-        if (isset($_POST['book_id'])){
-            $bookid = $_POST['book_id'];
-        } else {
-            // if not have book_id post
-            // redirect to index.php
-            echo '<script>window.location.href = "./index.php";</script>';
-            exit();
-        }
+        // if (isset($_POST['book_id'])){
+        //     $bookid = $_POST['book_id'];
+        // } else {
+        //     // if not have book_id post
+        //     // redirect to index.php
+        //     // echo '<script>window.location.href = "./index.php";</script>';
+        //     // exit();
+        // }
     }
     $book_img = get_books_img($conn, $bookid);
     $book_name = get_books_name($conn, $bookid);

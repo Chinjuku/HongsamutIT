@@ -5,6 +5,8 @@
     date_default_timezone_set('Asia/Bangkok');
     $datereview = date('Y-m-d H:i:s');
     $bookid = $_POST['book_id'];
+    $_SESSION['book_id'] = $bookid;
+    
     $comment = $_POST['comment'];
 
     $sql = "INSERT INTO review (user_id, book_id, review_in, datetime_review, like_amount) 

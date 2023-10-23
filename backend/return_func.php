@@ -19,9 +19,9 @@
 
         //check show returning
         //alert user
-        $sql = "UPDATE books b , borrow_books bb SET b.copy = b.copy + 1 AND bb.is_check = 1 where book_id = '{$book_id_return}' AND bb.is_check = 0";
-        $available_stmt = $conn->prepare($sql);
-        $available_stmt->execute();
+        // $sql = "UPDATE books b , borrow_books bb SET b.copy = b.copy + 1 AND bb.is_check = 1 where book_id = '{$book_id_return}' AND bb.is_check = 0";
+        // $available_stmt = $conn->prepare($sql);
+        // $available_stmt->execute();
 
         // update copy in books table
         $update_copy_sql = "UPDATE books SET copy = copy + 1 WHERE book_id = '{$book_id_return}'";

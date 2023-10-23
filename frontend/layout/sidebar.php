@@ -39,6 +39,9 @@
             background-color: #272222;
             border-radius: 20%;
         }
+        .bi.bi-chevron-double-right:hover{
+            opacity: 0.5;
+        }
 
         .sidebar .text{
             

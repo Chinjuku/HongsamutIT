@@ -114,6 +114,27 @@ hr{
     border-radius: 10px;
     width: 1500px;
 }
+.rebtn{
+    padding: 5px 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #312b2a;
+    color: #f5f5f5;
+}
+.rebtn:hover{
+    background-color: #697566;
+    /* scale: 1.1; */
+}
+.give{
+    display: flex;
+    /* background-color: #372114; */
+}
+.give1{
+    width: 55%;
+}
+.give2{
+    width: 45%;
+}
 
 @media only screen and (max-width: 1500px){
     .table2{

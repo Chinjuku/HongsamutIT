@@ -68,7 +68,7 @@
                     </thead>
                     <tbody>
                             <?php
-                            $sql = "SELECT b.book_name, c.category_name, bb.date_borrow, bb.date_return, b.imgsrc
+                            $sql = "SELECT b.book_id, b.book_name, c.category_name, bb.date_borrow, bb.date_return, b.imgsrc
                                     FROM borrow_books bb
                                     INNER JOIN books b ON bb.book_id = b.book_id
                                     INNER JOIN categories c ON b.cate_id = c.cate_id
@@ -78,6 +78,7 @@
                             
                             if ($result->num_rows > 0) {
                                 while ($row = $result->fetch_assoc()) {
+                                    $bookid = $row['book_id'];
                                     $book_name = $row['book_name'];
                                     $category_name = $row['category_name'];
                                     $date_borrow = $row['date_borrow'];
@@ -86,9 +87,14 @@
                                     echo "<tr>";
                                     echo "<td><img src='{$imgsrc}' width='120' height='150'></td>";
                                     echo "<td>{$book_name}</td>";
-                                    echo "<td>{$category_name}</td>";
+                                    echo "<td>". strtoupper($category_name) ."</td>";
                                     echo "<td>{$date_borrow}</td>";
-                                    echo "<td>{$date_return}</td>";
+                                    echo "<td><div class='give'>";
+                                    echo '<div class="give1"><p>' . $date_return . '</p></div>';
+                                    echo '<div class="give2"><form action="../backend/return_func.php" method="post">';
+                                    echo '<input type="hidden" name="book_id_return" value="' . $bookid .'">';
+                                    echo "<button class='rebtn' >Return</button></div>";
+                                    echo "</form></div></td>";
                                     echo "</tr>";
                                 }
                             }

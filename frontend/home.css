@@ -3,9 +3,8 @@
     padding: 0%;
     box-sizing: border-box;
     max-width: 100%;
-
     /* font: comic; */
-    /* font-family:Mitr ; */
+    font-family:Mitr;
 }
 
 body{
@@ -17,12 +16,11 @@ body{
 }
 
 .mid{
-    display: block;
-    margin-left: 20%;
-    margin-top: 40%;
-    width: 60%;
-    /* background-color: lightsalmon; */
-
+    /* display: block; */
+    margin-left: 25%;
+    margin-top: 45%;
+    /* width: 60%; */
+    background-color: transparent;
 }
 
 .head{
@@ -94,7 +92,7 @@ body{
 
 @media (max-width:1500px){
     .mid{
-        margin-left: 34%;
+        margin-left: 0%;
         margin-top: 7%;
         width: 100%;
         display: block;
@@ -212,8 +210,6 @@ body{
     font-weight: 300;
     font-size: 100px;
     color:#3a2d2d;
-    
-
 }
 .img1{
     display: flex;
@@ -222,7 +218,9 @@ body{
     margin-top: 10%;
     margin-left: 50%;
     box-shadow: rgb(31, 31, 31) 0px 20px 30px -10px;
+    z-index: 10;
 }
+
 .img2{
     display: flex;
     position: absolute;
@@ -230,6 +228,7 @@ body{
     margin-top: 11%;
     margin-left: 60%;
     box-shadow: rgb(31, 31, 31) 0px 20px 30px -10px;
+    z-index: 11;
 }
 .img3{
     display: flex;
@@ -238,6 +237,7 @@ body{
     margin-top: 10%;
     margin-left: 70%;
     box-shadow: rgb(31, 31, 31) 0px 20px 30px -10px;
+    z-index: 9;
 }
 .brownblock{
     position: relative;

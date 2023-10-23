@@ -66,8 +66,14 @@ body{
     /* margin: 10px; */
     border-style: solid;
     border-width: thin;
+    transition:0.3s;
 
     
+}
+
+.nabox:hover{
+    scale:1.1;
+    box-shadow: 1.5px 1.5px rgba(68, 68, 68, 0.377);
 }
 
 

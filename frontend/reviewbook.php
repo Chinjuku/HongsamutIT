@@ -25,6 +25,7 @@
     $book_img = get_books_img($conn, $bookid);
     $book_name = get_books_name($conn, $bookid);
     $book_author = get_books_author($conn, $bookid);
+    $book_like = get_books_like($conn, $bookid);
     // include './managebook/showManageBook.php';
     // $manage = new showManageBook();
 ?>
@@ -38,17 +39,19 @@
     <link rel="stylesheet" href="css/reviewbook.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <script src="https://fontawesome.com/icons/heart?f=classic&s=solid" crossorigin="anonymous"></script> -->
 </head>
 <body>
     
     <div class="main">
         <div class="left">
             <?php
-                echo '<div><img src=' . $book_img . ' alt="Girl in a jacket" style="width:200px;height:300px;">';
+                echo '<div><img class="cover"src=' . $book_img . ' alt="Girl in a jacket" style="width:200px;height:300px;">';
                 echo '</div>';
                 echo '<div class="textgroup">';
                 echo '<div class="bookname">' . $book_name . '</div>';
                 echo '<div class="author"> by ' . $book_author . '</div>';
+                echo '<p class="like_contain"><img class="like_svg" src= "./heart-solid.svg"><button class="likebutt"></button>"    '.$book_like. '"</p>';
                 echo '</div>';
             ?>
             
@@ -60,8 +63,8 @@
                     echo '<div class="reviewtitle">WRITE A REVIEW</div>';
                     echo '<div class="inputbox">';
                     echo '<input type="hidden" name="book_id" value="' . $bookid . '">';
-                    echo '<textarea name="comment" id="" rows="8" required></textarea>';
-                    echo '</div><button type="submit">Sent comment</button></form>';
+                    echo '<textarea class ="txtarea"placeholder = "type review text here" conname="comment" id="" rows="8" required></textarea>';
+                    echo '</div><button class="sentcom" type="submit">Sent comment</button></form>';
                 ?>
             </div>
             </div>

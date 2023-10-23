@@ -8,13 +8,14 @@
     /* font: comic; */
     font-family:Mitr ;
 }
-
+body{
+    background-color: #FDF5D0;
+}
 .main{
     background-color: #FDF5D0;
     margin-top: 4.6%;
-    height: 796px;
+    height: 200%;
     display: flex;
-
     justify-content: center;
 }
 .bookname{
@@ -24,6 +25,28 @@
     font-family: Mitr;
     font-size: 40px;
     
+}
+.sentcom{
+    border: transparent;
+    color: white;
+    width: 50%;
+    height: 30px;
+    position: center;
+    border-radius: 40px;
+    background-color: #494639;
+    margin-left: 25%;
+    margin-top: 5%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Mitr;
+    transition:0.5s;
+    /* font-weight: 600; */
+}
+.sentcom:hover{
+    transform: scale(1.1);
+    background-color: #485545;
 }
 .author{
     margin-top: 2%;
@@ -61,14 +84,16 @@
     border: 1px solid rgb(246, 248, 222);
     box-shadow: rgba(66, 64, 49, 0.19) 0px 10px 20px, rgba(255, 235, 235, 0.23) 0px 6px 6px;
 }
-img{
+.cover{
     margin-left: 10%;
     margin-top: 10%;
 }
 .reviewform{
     width: 100%;
-    background-color: lightyellow;
+    background-color: rgb(86, 102, 85);
+    border:transparent;
 }
+
 .form-box{
     
     position: relative;
@@ -76,21 +101,23 @@ img{
     height: 33%;
     margin-left: 8%;
     margin-top: 9%;
-    background-color: #fffafa;
+    background-color: #ffffff8c;
 
-    border: 2px solid #222222;
+    border: transparent;
     border-radius: 20px;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     box-shadow: rgb(250, 229, 185) 0px 20px 30px -10px;
 }
 .reviewtitle{
     margin-top: 2%;
     font-size: 1.5em;
-    color: rgb(31, 29, 27);
+    color: #494639;
+    font-weight: bold;
     text-align: center;
 }
 .inputbox{
-    background-color: #485545;
+    background-color: #9F967F;
+    cursor:text;
     display: flex;
     justify-items: center;
     justify-content: center;
@@ -99,7 +126,8 @@ img{
     margin:2% 10%;
     width: 80%;
     height: 160px;
-    border: 2px solid #353535;
+    border:transparent;
+    /* border: 2px solid #353535; */
 }
 .inputbox label{
     position: absolute;
@@ -113,31 +141,25 @@ img{
     transition: 0.5s;
 }
 
-
-button{
-    border: 2px solid #353535;
-    color: white;
-    width: 100%;
-    height: 30px;
-    border-radius: 40px;
-    background-color: #2D342C;;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 600;
+textarea::placeholder {
+    font-weight: normal;
+    opacity: 0.5;
+    color: #525252;
 }
 textarea{
-    cursor: none;
+    cursor: text;
+    resize: none;
     width: 100%;
     padding: 5% 10%;
     outline: 0;
     height: 160px;
+    
     /* border: 1px solid #fff; */
-    color: #fff;
+    color: #1b1b1b;
     background: transparent;
     font-size: 15px;
-    font-weight: 25;
+    font-family: Mitr;
+    font-weight: 350;
 }
 .textgroup{
     position: absolute;
@@ -190,4 +212,27 @@ textarea{
     text-align: left;
     padding-left: 7%;
     padding-top: 2%;
+}
+.like_contain{
+    text-align: center;
+    background-color: transparent;
+    /* width: 50%; */
+    height: 20%;
+    margin-top:0%;
+    position:absolute;
+    display: flex;
+    /* flex */
+}
+.like_svg{
+    scale: 1;
+}
+
+.likebutt{
+    /* position:absolute; */
+    position:absolute;
+    background-color: transparent;
+    height:100%;
+    left:0%;
+    width: 100%;
+    scale:1;
 }

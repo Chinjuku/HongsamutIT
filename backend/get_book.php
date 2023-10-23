@@ -1,6 +1,17 @@
 <?php
     include './database.php';
 
+    function get_books_like($conn, $book_id){
+        // fetch to book_like in books table
+        $book_like_sql = "SELECT cnt_like FROM books WHERE book_id = '{$book_id}'";
+        $book_like_result = $conn->query($book_like_sql);
+        if ($book_like_result->num_rows > 0) {
+            while($book_like_row = $book_like_result->fetch_assoc()){
+                $book_like = $book_like_row['cnt_like'];
+                return $book_like;
+            }
+        }
+    }
     function get_books_img($conn, $book_id){
         // fetch to book_img in books table
         $book_img_sql = "SELECT imgsrc FROM books WHERE book_id = '{$book_id}'";

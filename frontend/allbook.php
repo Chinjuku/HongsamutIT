@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     include '../backend/database.php';
     include './layout/navbar.php';
     include './layout/sidebar.php';
@@ -12,7 +12,8 @@
 <!DOCTYPE html>
     <head>
         <title>HONGSAMUT</title>
-        <meta name="viewport" content="width=1920, height=1080, initial-scale=1">
+        <!-- <meta name="viewport" content="width= ,initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/allbook.css">
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">

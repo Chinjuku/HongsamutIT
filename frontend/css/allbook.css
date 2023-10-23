@@ -131,14 +131,19 @@ body{
     padding: 5px 10px;
     color: #FDF5D0;
     border-radius: 5px;
-    box-shadow: 2px 2px rgb(39,34,34);
+    box-shadow: 2px 2px rgba(39, 34, 34, 0.192);
     transition:0.3s;
+    border-color: #374134;
     cursor: pointer;
 }
 
 .clicktoview:hover{
     scale:1.08;
-    box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
+    
+}
+.clicktoview:active{
+    scale:1;
+    
 }
 /* pop-up */
 .pic{

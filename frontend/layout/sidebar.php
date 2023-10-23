@@ -40,6 +40,7 @@
             border-radius: 20%;
         }
         .bi.bi-chevron-double-right:hover{
+            background-color:red;
             opacity: 0.5;
         }
 

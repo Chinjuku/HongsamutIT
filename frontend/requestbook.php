@@ -20,7 +20,7 @@
     
         <div class="left">
             <div class="text1">CAN'T FIND BOOK?</div>
-            <div class="text">FEELS FREE TO BRING THE NEW <br>BOOKS TO OUR LIBRARY</div>
+            <div class="text">FEEL FREE TO SEND US<br>A BOOK REQUEST AT ANY TIME !!!</div>
             <img src="../img/image2.png" alt="Girl in a jacket" style="width:300px;height:350px;">
         </div>
         
@@ -28,7 +28,7 @@
         <div class="form-box">
             <div class="form-value">
                 <form action="../backend/req.php" method="post">
-                    <h2>REQUESTING BOOK</h2>
+                    <h2>REQUEST BOOK</h2>
                     <div class="inputbox">
                         <input type="Book's name" name="req_book" id="req_book" required>
                         <label for="">Book's name</label>
@@ -38,7 +38,7 @@
                         <label for="">Author</label>
                     </div>
                     <button>
-                        Submit
+                        Make a WISH!!
                     </button>
                 </form>
             </div>

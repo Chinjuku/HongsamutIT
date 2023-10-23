@@ -371,7 +371,12 @@ border-radius: 5px;
     width: 50%;
     height: 50%;
     border-radius: 10px;
+    opacity: 0.8;
     padding-left: 20px;
+    transition:0.3s;
+}
+.search #search-box:hover{
+    opacity: 1;
 }
 label{
     font-size: 2rem;

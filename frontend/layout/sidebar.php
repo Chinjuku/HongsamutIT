@@ -24,9 +24,22 @@
             height: 100%;
             left: 0px;
             margin-top: 69px;
+            margin-left: -11.5%;
             padding-left: 0px;
             background-color: #272222;
+            transition:0.3s;
         }
+        .sidebar:hover{
+            margin-left:0%;
+        }
+        .bi.bi-chevron-double-right{
+            margin-left: 50%;
+            /* color:red; */
+            pointer-events: none;
+            background-color: #272222;
+            border-radius: 20%;
+        }
+
         .sidebar .text{
             
             color: white;
@@ -164,7 +177,7 @@
 
             <li>
                 <a id="toggleButton" class="feat-btn"><i class="bi bi-book"></i> CATEGORIES
-                    <span><i class="bi bi-caret-down"></i></span>
+                    <span><i class="bi bi-chevron-double-right"></i></span>
                 </a>
                 <!-- <ul class="feat-show" id="content"> -->
                     <form action="allbook.php" method="post" class="feat-show" id="content">

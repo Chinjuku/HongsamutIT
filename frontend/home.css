@@ -142,6 +142,10 @@ body{
     border: 1px solid #fefffe;
     font: comic;
     text-decoration: none;
+    transition:0.3s;
+}
+.explorebut:hover{
+    scale:1.1;
 }
 .newarrdes{
     margin-top: 2%;

@@ -118,6 +118,9 @@ body{
 .clicktoview:hover{
     box-shadow: 1.5px 1.5px rgb(253,245,208, 0.8);
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 .recommendtxt{
     display: flex;
     align-content: center;

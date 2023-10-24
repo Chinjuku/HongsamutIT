@@ -23,8 +23,8 @@ include './layout/navbar.php';
   <div class="container">
     <section class="main">
       <div class="tab">
-          <button id="conbutt1" class="tablinks" onclick = "openCity(event, 'content1', 'conbutt1')">DASHBOARD</button>
-          <button id="conbutt2" class="tablinks" onclick = "openCity(event, 'content2', 'conbutt2')">REQUEST</button>
+          <button id="conbutt1" class="tablinks" onclick = "openCity(event, 'content1', 'conbutt1')"></button>
+          <button id="conbutt2" class="tablinks" onclick = "openCity(event, 'content2', 'conbutt2')"></button>
       </div>
       <div id="content1" class ="tabcontent">
         <div class="users">

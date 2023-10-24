@@ -1,28 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Exo);
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     max-width: 100%;
     /* font: comic; */
-    font-family:Mitr;
+    font-family:Exo;
 }
 
 body{
-    background-color: #FDF5D0;
-
+    /* background-color: #FDF5D0; */
+    background-image:url(../img/253342.jpg);
+    background-attachment: fixed;
+    justify-content: center;
     display: flex;
     flex-direction: row;
+    /* background-blend-mode: darken; */
+    background-color: #1b201a;
     /* padding-left: 400px; */
 }
 
 .mid{
     /* display: block; */
-    margin-left: 25%;
-    margin-top: 45%;
-    /* width: 60%; */
+    /* margin-left: 25%; */
+    justify-content: center;
+    margin-top: 34.6%;
+    width: 100%;
     background-color: transparent;
+    position:relative;
 }
-
+.midsub{
+    width:100%;
+    /* height: 100%; */
+    /* position:absolute; */
+    /* text-align: center; */
+    /* background-color: #0000008e; */
+    z-index: -1;
+    justify-content: center;
+}
 .head{
     margin-top: 6%;
     display: flex;
@@ -38,25 +53,34 @@ body{
     height: 120px;
     background-color: #485545;
 }
-
+.black{
+    /* position:absolute; */
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    z-index: -1;
+    background-color: #000000a4;
+}
 .container{
     /* background-color: lightgreen; */
     position: relative;
+    margin-left: 20%;
     display: flex;
     /* flex-wrap: wrap; */
-    margin-top: 2%;
+    margin-top: 0%;
     align-content: center;
     justify-content: center;
     gap: 20px;
-    width: 100%;
+    width: 60%;
     height: auto;
+    padding-bottom: 5%;
     
 
 }
 .nabox{
     
     position: relative;
-    background-color: #fffcee;
+    background-color: #fffceeb9;
     margin-top: 5%;
     width: 40%;
     height: 290px;
@@ -66,6 +90,7 @@ body{
     /* margin: 10px; */
     border-style: solid;
     border-width: thin;
+    font-family: Mitr;
     transition:0.3s;
 
     
@@ -87,7 +112,7 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
-@media (max-width:1620px){
+/* @media (max-width:1620px){
     .mid{
         margin-left: 36%;
         margin-top: 7%;
@@ -103,7 +128,7 @@ body{
         width: 100%;
         display: block;
     }
-}
+} */
 
 
 .clicktoview{
@@ -126,9 +151,9 @@ body::-webkit-scrollbar{
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin-top: 9%;
+    margin-top: 0%;
     top: 0px;
-    font: "Poppings";
+    font-family: Exo;
     width: 100%;
     font-weight: 300;
     font-size: 70px;
@@ -152,12 +177,38 @@ body::-webkit-scrollbar{
     scale:1.1;
 }
 .newarrdes{
-    margin-top: 2%;
-    display: flex;
-    font-weight: 10;
-    justify-content: center;
-    /* background-color: lightgray; */
-
+    position: relative;
+    top: 50%;  
+    /* margin-top: 4%; */
+    width: 12em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    color:wheat;
+    transform: translateY(-50%);    
+}
+.anim-typewriter{
+    animation: typewriter 2s steps(22) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+}
+.wow{
+    /* margin-inline:44.8% auto;
+    width: 10.5%; */
+    margin-top:2%;
+    text-align: center;
+    
+}
+/* The typing effect */
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 12em;}
+  }
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
 }
 .recdes{
     margin-top: 2%;
@@ -237,12 +288,13 @@ body::-webkit-scrollbar{
     display: flex;
     justify-content: center;
     /* background-color: lightblue; */
-    margin-top: 0%;
-    font: "Poppings";
+    /* margin-top: 2%; */
+    font-family:'Exo';
+    padding-top:4%;
     width: 100%;
     font-weight: 300;
     font-size: 100px;
-    color:#3a2d2d;
+    color:#fffbdc;
 }
 .img1{
     display: flex;
@@ -410,7 +462,7 @@ body::-webkit-scrollbar{
 }
 .brown{
     z-index: -1;
-    margin-top: 80%;
+    margin-top: 70%;
     left: 0;
     display: flex;
     position: absolute;

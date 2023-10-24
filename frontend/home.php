@@ -24,8 +24,7 @@
         </style>
     </head>
     <body>
-
-        
+        <!-- <img class="lib_bg" src="../img/253342.jpg"> -->
             <div class="greenbg">
                 <div class="greentext">
                     <div class="gt1">Welcome to our <br>E-Book library</div>
@@ -37,44 +36,47 @@
                 </div>
             </div>
                 <a class="explorebut" href="allbook.php">EXPLORE OUR BOOKS</a>
-            </div>
                 <div class="mid">
-                    <div class="midsub">
-                        <div class="newarrival"><i>NEW ARRIVALS</i></div>
-                        <hr class="hr1">
-                        <div class="newarrdes">our newest books is here!</div>
+                        <div class="midsub">
+                            <svg class="black" width="100%">
+                                <rect/>
+                            </svg>
+                            <div class="newarrival"><p>NEW ARRIVALS</p></div>
+                            <hr class="hr1">
+                            <div class="wow">
+                            <p class="newarrdes anim-typewriter">our newest books is here!!!</p></div>
 
-                    <div class="container">
-                        <!-- ใส่ new book นะ (ใส่ไว้ได้เลย แต่เอาข้อมูลหนังสือใหม่เข้า database ด้วย)-->
-                        <?php
-                            $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id order by book_id desc";
-                            $result = $conn->query($sql);
-                            // $sql2 = "SELECT book_id from borrowS_book";
-                            $num = 1;
-                            while ($row = $result->fetch_assoc()){
-                                if($num <= 5){
-                                    echo '<div class="nabox">';
-                                    // echo '<p class="bookname">' . $_SESSION['max_cate'] . '</p>';
-                                    echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
-                                    echo '<p class="bookname">' . $row['book_name'] . '</p>';
-                                    echo '<p>' . $row['author_name'] . '</p>';
-                                    // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
-                                    echo '</div>';
-                                    $num++;
+                            <div class="container">
+                                <!-- ใส่ new book นะ (ใส่ไว้ได้เลย แต่เอาข้อมูลหนังสือใหม่เข้า database ด้วย)-->
+                                <?php
+                                    $sql = "SELECT * FROM books b INNER JOIN author a ON b.author_id = a.author_id order by book_id desc";
+                                    $result = $conn->query($sql);
+                                    // $sql2 = "SELECT book_id from borrowS_book";
+                                    $num = 1;
+                                    while ($row = $result->fetch_assoc()){
+                                        if($num <= 5){
+                                            echo '<div class="nabox">';
+                                            // echo '<p class="bookname">' . $_SESSION['max_cate'] . '</p>';
+                                            echo '<img class="pic" src="' . $row['imgsrc'] . '" alt="Image">', '<br>';
+                                            echo '<p class="bookname">' . $row['book_name'] . '</p>';
+                                            echo '<p>' . $row['author_name'] . '</p>';
+                                            // echo '<button class="clicktoview" onclick="togglePopup(\'' . $row['book_name'] . '\', \'' . $row['book_owner'] . '\', \'' . $row['imgsrc'] . '\',  \'' . $row['book_id'] . '\')">VIEW</button>';
+                                            echo '</div>';
+                                            $num++;
+                                            }
+                                        else{
+                                            break;
+                                        }
                                     }
-                                else{
-                                    break;
-                                }
-                            }
-                        ?>
-                    </div>
-                </div>
+                                ?>
+                            </div>
+                        </div>
                 <div class="space1"></div>
                 <?php 
                 if($_SESSION['plan_id'] != NULL) {     
                 echo '<div class="recommend">';
                     echo '<div class="head2">';
-                        echo '<div class="recommendtxt"><i>RECOMMENDED BOOKS</i></div>';
+                        echo '<div class="recommendtxt"><p>RECOMMENDED BOOKS</p></div>';
                         echo '<hr class="hr1">';
                         echo '<div class="recdes">we bring out the book that relate to your recently borrowed book✦</div>';
             

@@ -29,12 +29,12 @@
             </label>
             <nav class="menubar">
                 <a href="allbook.php" style="--i:1;">VIEW BOOK</a>
+                <a href='requestbook.php'>REQUEST</a>
                 <?php
                     $check_type = $_SESSION['user_type'];
                     if($check_type == 1) {
                         echo "<a href='member.php'>SUBSCRIPTION</a>";
                         echo "<a href='backpack.php' style='--i:2;'>BACKPACK</a>";
-                        echo "<a href='requestbook.php'>REQUEST</a>";
                     }
                 ?>
                 

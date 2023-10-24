@@ -2,6 +2,11 @@
     session_start();
     // include './layout/page.php';
     include './layout/navbar.php';
+    // if no session user_id redirect to login
+    if (!isset($_SESSION['user_id'])) {
+        echo '<script>window.location.href = "./login.php";</script>';
+        exit();
+    }
 ?>
 
 <!DOCTYPE html>

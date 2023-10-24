@@ -57,9 +57,20 @@
     <link rel="stylesheet" href="./style.css" />
     <div>
       <link href="./index.css" rel="stylesheet" />
-
       <div class="landing-container">
         <div class="landing-landing">
+        <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+      </ul>
           <a href="./frontend/home.php" class="landing-text button">
             <div><span>EXPLORE OUR BOOKS</span></div>
           </a>

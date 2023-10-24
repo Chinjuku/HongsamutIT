@@ -4,6 +4,11 @@
     include '../backend/database.php';
     session_start();
     // check if book_id session
+    if (!isset($_SESSION['user_id'])) {
+        echo '<script>alert("LOGIN FIRST!");</script>';
+        echo '<script>window.location.href = "./login.php";</script>';
+        exit();
+    }
     if (isset($_SESSION['book_id'])){
         $bookid = $_SESSION['book_id'];
         // unset($_SESSION['book_id']);

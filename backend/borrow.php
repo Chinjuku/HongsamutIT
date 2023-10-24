@@ -1,6 +1,11 @@
 <?php
     session_start();
     include 'database.php';
+    if (!isset($_SESSION['user_id'])) {
+        echo '<script>alert("LOGIN FIRST!");</script>';
+        echo '<script>window.location.href = "../frontend/login.php";</script>';
+        exit();
+    }
     $plan_id = $_SESSION['plan_id'];
     //check if user subscribe to any plan
     if ($plan_id == NULL) {

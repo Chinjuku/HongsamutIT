@@ -1,7 +1,11 @@
 <?php
     include 'database.php';
     session_start();
-
+    if (!isset($_SESSION['user_id'])) {
+        echo '<script>alert("LOGIN FIRST!");</script>';
+        echo '<script>window.location.href = "../frontend/login.php";</script>';
+        exit();
+    }
     if(isset($_SESSION['book_id'])){
         $bookid = $_SESSION['book_id'];
     }

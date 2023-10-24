@@ -14,7 +14,6 @@ function togglePopup(bookName, bookOwner, imgSrc, bookId, userType, likeAmount, 
                             ' '+ likeAmount + ' likes</p>';
                             // '</input></form>'
                             
-                            if (userType == 1) {
                                 popupcoN += '<div class = "pop_button_contain">'+
                                 '<form action="../backend/borrow.php" method="post">' +
                                 '<input type="hidden" name="book_id" value="' + bookId + '">' +
@@ -23,7 +22,6 @@ function togglePopup(bookName, bookOwner, imgSrc, bookId, userType, likeAmount, 
                                 '<form action="./reviewbook.php" method="post">' +
                                 '<input type="hidden" name="book_id" value="' + bookId + '">' +
                                 '<button type="submit" class="clicktoborrow2">REVIEW</button></input></form>' + '</div>';
-                            }
 
                             // popupcoN += '<script>if(didLike == 1) {document.getElementById("likes_svg").style.color = "red";}' +
                             // 'document.getElementById("likes_svg").addEventListener("click", red_heart(bookId));</script>';

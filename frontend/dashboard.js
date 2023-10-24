@@ -96,3 +96,27 @@ function show_dash(){
         });
     }
 }
+
+function openCity(evt, tabName, butID) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+
+    if(butID == "conbutt1"){
+        document.getElementById("conbutt1").style.backgroundColor = "#485545b4";
+        document.getElementById("conbutt2").style.backgroundColor = "#48554544";
+    }else{
+        document.getElementById("conbutt2").style.backgroundColor = "#485545b4";
+        document.getElementById("conbutt1").style.backgroundColor = "#48554544";
+    }
+    // document.getElementById(tabName).getElementsByClassName("tablinks").style.backgroundColor = "red";
+    evt.currentTarget.className += " active";
+}
+

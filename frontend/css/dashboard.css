@@ -16,12 +16,11 @@ body{
 
 .container{
   display: flex;
+  /* position:relative; */
 }
 
 /* MAin Section */
-div .main-top{
-  position: sticky;
-}
+
 .main{
   position: relative;
   padding: 20px;
@@ -42,7 +41,7 @@ div .main-top{
 .main .users{
   display: flex;
   width: 100%;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .users .card{
   position: center;
@@ -56,7 +55,9 @@ div .main-top{
   /* margin-top: 5%; */
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
-
+.tabcontent{
+  display:block;
+}
 .users table{
   margin:  auto;
 }
@@ -90,17 +91,35 @@ div .main-top{
   margin-top: 0%;
   display: flex;
   width: 100%;
-  height: 13%;
+  /* height: 13%; */
+  height: 465px;
   padding-top: 0px;
   text-transform: capitalize;
+  
+  
+  
+}
+
+.attendance2{
+  margin-top: 0%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* height: 13%; */
+  height: 465px;
+  padding-top: 0px;
+  text-transform: capitalize;
+  
   
   
 }
 
 .attendance-list1{
   width: 47.5%;
+  /* height: 50%; */
   margin-right: 2%;
   margin-left: 2%;
+  display: flex;
   overflow-y: scroll;
   padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
   box-sizing: content-box;
@@ -144,17 +163,30 @@ div .main-top{
   min-width: 100%;
   overflow: hidden;
   border-radius: 5px 5px 0 0;
+  /* make this parents */
+  /* display: contents; */
   
 }
+
+/* .table thead{
+  position:sticky;
+} */
 /* thead tr { position: sticky; top: 0; } */
+/* .tablebar{
+  position:sticky;
+} */
+
+.tablebar th{
+  background-color: #4e5e55;
+}
 table thead tr{
   color: #fff;
-  background: #4e5e55;
+  /* background: #4e5e55; */
   text-align: left;
   font-weight: bold;
 }
 .table th{
-  position: sticky; top: 0px;
+  /* position: sticky; top: 0px; */
   padding: 10px 15px;
 }
 .table td{
@@ -180,4 +212,70 @@ table thead tr{
 .table tbody{
   
   opacity: 100%;
+}
+
+
+
+/* tab */
+.tab {
+  /* margin-bottom: 4%; */
+  margin-top:4%;
+  /* margin-left:37.5%; */
+  margin-left:749.652px;
+  overflow: hidden;
+  width: 319.750px;
+  height: 100px;
+  border: transparent;
+  background-color: transparent;
+  position: sticky;
+  top:9%;
+  /* padding-top:50%; */
+  /* padding-inline: 50%; */
+  /* make content compose in linear */
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  width: 25%;
+  height: 20%;
+  background-color: #48554544;
+  text-align: center;
+  /* font-size:x-small; */
+  /* color:transparent; */
+  border-radius: 8px;
+  margin-inline:10%;
+  margin-top:5%;
+  float: left;
+  /* position:flex; */
+  border:transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: x-small;
+  scale: 1.4;
+  transition: color 0.2s;
+  transition: scale 0.3s;
+  /* padding:30px 0px; */
+  /* padding-inline: 0px; */
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #485545;
+  border-radius: 8px;
+  color:black;
+  scale:1.6;
+  /* padding: 14px 16px; */
+}
+
+/* Create an active/current tablink class */
+.tab button:active {
+  background-color: rgb(40, 48, 39);
+  color:#485545;
+  scale:1.4;
+}
+
+#conbutt1{
+  background-color: #485545b4;
 }

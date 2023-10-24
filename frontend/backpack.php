@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     include '../backend/database.php';
     include './layout/navbar.php';
     if (isset($_SESSION['book_id'])){
@@ -10,7 +10,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, height=device-width, initial-scale=1.0">
         <title>HONGSAMUT</title>
         <link rel="stylesheet" href="css/backpack.css">
         <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">

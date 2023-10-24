@@ -5,6 +5,7 @@
     /* font: comic; */
     font-family:Mitr;
 }
+
 body::-webkit-scrollbar{
     display: none;
 }
@@ -15,8 +16,31 @@ body{
     width: 100%;
     position: absolute;
     margin-top: 69px;
-    background-color: #6C776A;
+    /* background-color: #6C776A; */
     height: 800px;
+    --s:67px; /* shape size */
+    --m:4px;  /* line thickness */
+
+    --v1: #2c332b 119.5deg, #0000 120.5deg;
+    --v2: #131712 119.5deg, #0000 120.5deg;
+    background: conic-gradient(at var(--m) calc(var(--s)*0.5777), transparent 270deg, #131712 0deg), 
+    conic-gradient(at calc(100% - var(--m)) calc(var(--s)*0.5777), #131712 90deg, #00000038 0deg), 
+    conic-gradient(from -60deg at 50% calc(var(--s)*0.8662) , var(--v1)), 
+    conic-gradient(from -60deg at 50% calc(var(--s)*0.8662 + 2*var(--m)), var(--v2)), 
+    conic-gradient(from 120deg at 50% calc(var(--s)*1.4435 + 3*var(--m)), var(--v1)), 
+    conic-gradient(from 120deg at 50% calc(var(--s)*1.4435 + var(--m)), var(--v2)), 
+    linear-gradient(90deg, #2c332a calc(50% - var(--m)),#131712 0 calc(50% + var(--m)), #2c332a 0);
+    background-size: calc(var(--s) + 2*var(--m)) calc(var(--s)*1.732 + 3*var(--m));
+    /* background:
+        conic-gradient(at var(--m)              calc(var(--s)*0.5777), transparent 270deg, #131712 0deg),
+        conic-gradient(at calc(100% - var(--m)) calc(var(--s)*0.5777), #131712 90deg,  transparent 0deg),
+        conic-gradient(from -60deg at 50% calc(var(--s)*0.8662)             , var(--v1)),
+        conic-gradient(from -60deg at 50% calc(var(--s)*0.8662 + 2*var(--m)), var(--v2)),
+        conic-gradient(from 120deg at 50% calc(var(--s)*1.4435 + 3*var(--m)), var(--v1)),
+        conic-gradient(from 120deg at 50% calc(var(--s)*1.4435 +   var(--m)), var(--v2)),
+        linear-gradient(90deg, #2c332a calc(50% - var(--m)),#131712 0 calc(50% + var(--m)), #2c332a 0);
+    background-size: calc(var(--s) + 2*var(--m)) calc(var(--s)*1.732 + 3*var(--m));  */
+    /* background-blend-mode:lighten; */
 
 }
 .mybackpack{
@@ -39,7 +63,7 @@ body{
     position: fixed;
     width: 100%;
     bottom: 0;
-    background-color: #fffef7;
+    background-color: #FDF5D0;
     padding: 10px;
     justify-content: right;
     /* border-top: 2px solid black; */
@@ -68,7 +92,7 @@ body{
 .table2{
     width: 1400px;
     margin-top: 30px;
-    background-color: #FDF5D0;
+    background-color: transparent;
     border-collapse: collapse;
     margin-left: 231px;
     font-size: 20px;
@@ -76,11 +100,16 @@ body{
     overflow: hidden;
 
 }
+.table2 thead{
+    /* color:transparent; */
+    background-color: transparent;
+}
 .table2 thead tr{
     color: rgb(255, 255, 255);
     background-color: #312b2a;
     text-align: left;
     font-weight: bold;
+    border:transparent;
 }
 .table2 th, .table2 td{
     padding: 25px 15px;
@@ -158,12 +187,6 @@ hr{
         padding: 5px;
         justify-content: center;
         /* border-top: 2px solid black; */
-    }
-    .mid{
-        width: 1440px;
-        margin-top: 69px;
-        background-color: #FDF5D0;
-        height: 800px;
     }
     .circle1{
         background-color: #312b2a;

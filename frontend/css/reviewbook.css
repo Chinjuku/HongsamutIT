@@ -224,6 +224,9 @@ textarea{
     display: flex;
     /* flex */
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 #like_svg{
     scale: 1;
     filter: invert(26%) sepia(9%) saturate(850%) hue-rotate(11deg) brightness(93%) contrast(90%);

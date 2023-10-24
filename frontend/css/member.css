@@ -15,7 +15,9 @@
     padding: 200px 0 100px;
     text-align: center;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 .pricerow{
     width: 100%;
     margin: auto;

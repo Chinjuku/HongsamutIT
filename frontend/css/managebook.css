@@ -14,7 +14,9 @@ body{
     flex-direction: column;
     place-items: center;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 .title{
     /* margin-bottom: 20px; */
     color: #272222;

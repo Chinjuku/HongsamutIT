@@ -10,7 +10,9 @@ body{
     overflow: hidden;
 
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 .back{
     text-align: left;
     width: 100%;

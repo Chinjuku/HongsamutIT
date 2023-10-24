@@ -5,7 +5,9 @@
     /* font: comic; */
     font-family:Mitr ;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 body{
     background-color: #FDF5D0;
 

@@ -12,6 +12,9 @@ body{
   background:#EFE7DE;
   height:100%;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
 
 
 .container{
@@ -55,12 +58,15 @@ body{
   /* margin-top: 5%; */
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
-.tabcontent{
+#content1{
   display:block;
+}
+#content2{
+  display:none;
 }
 .users table{
   margin:  auto;
-}
+} 
 
 .users td{
   font-size: 14px;

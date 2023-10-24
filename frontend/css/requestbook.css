@@ -17,6 +17,9 @@ section{
     
     /* background-color: #FDF5D0; */
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 .form-box{
     
     position: relative;

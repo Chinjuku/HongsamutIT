@@ -145,6 +145,7 @@ include './layout/navbar.php';
               <tr class="tablebar">
                 <th>BOOK'S NAME</th>
                 <th>AUTHOR'S NAME</th>
+                <th>AMOUNT</th>
               </tr>
             </thead>
             <tbody>
@@ -161,6 +162,7 @@ include './layout/navbar.php';
                   echo "<tr>";
                   echo "<td>" . $req_bookname . "</td>";
                   echo "<td>" . $req_author . "</td>";
+                  echo "<td>" . $row['req_cnt'] . "</td>";
                   echo "</tr>";
                 }
               }

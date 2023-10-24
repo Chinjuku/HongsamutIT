@@ -13,7 +13,9 @@ body{
     flex-direction: row;
     /* padding-left: 400px; */
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 .mid{
     
     /* margin-left: 40rem; */

@@ -67,7 +67,7 @@ body{
     width: 20%;
     height: 290px;
     border-radius: 10px;
-    
+    font-family: Mitr !important;
     text-align: center;
     margin: 10px;
     border:#485545;
@@ -101,7 +101,7 @@ body{
 }
 .bookname{
     font-size: 20px;
-    font-family: Mitr;
+    font-family: Mitr !important;
     font-weight: medium;
 }
 .authorname{

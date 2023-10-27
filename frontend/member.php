@@ -30,7 +30,7 @@
                     <li>สามารถยืมหนังสือได้สูงสุด 10 เล่ม</li>
                     <li>1 ครั้ง / 1 เดือน</li>
                 </ul>
-                <form action="../backend/test/public/create-checkout-session.php" method="POST">
+                <form action="./qr_page.php" method="POST">
                 <input type="hidden" name="lookup_key" value= 1 />
                 <button type="submit">Checkout</button></form>
             </div>
@@ -41,7 +41,7 @@
                     <li>สามารถยืมหนังสือได้สูงสุด 20 เล่ม</li>
                     <li>1 ครั้ง / 1 เดือน</li>
                 </ul>
-                <form action="../backend/test/public/create-checkout-session.php" method="POST">
+                <form action="./qr_page.php" method="POST">
                 <input type="hidden" name="lookup_key" value= 2 />
                 <button type="submit">Checkout</button></form>
             </div>
@@ -52,7 +52,7 @@
                     <li>สามารถยืมหนังสือสูงสุด 10 เล่ม</li>
                     <li>1 ครั้ง / 1 ปี</li>
                 </ul>
-                <form action="../backend/test/public/create-checkout-session.php" method="POST">
+                <form action="./qr_page.php" method="POST">
                 <input type="hidden" name="lookup_key" value= 3 />
                 <button type="submit">Checkout</button></form>
             </div>

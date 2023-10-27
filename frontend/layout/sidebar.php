@@ -207,7 +207,7 @@
         const toggleButton = document.getElementById('toggleButton');
         const content = document.getElementById('content');
         
-        toggleButton.addEventListener('click', () => {
+        toggleButton.addEventListener('hover', () => {
             if (content.style.display === 'none' || content.style.display === '') {
                 content.style.display = 'block';
             } else {
